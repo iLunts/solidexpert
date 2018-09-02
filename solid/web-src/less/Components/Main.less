@@ -1,0 +1,61 @@
+// out: ../../css/components/main.css, compress: true
+@import '../variables.less';
+
+// ------------------------------------------------
+// Block 'body' and other elements
+// ------------------------------------------------
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Mukta', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-btn{
+    position: fixed;
+    display: inline-block;
+    top: 40px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+
+    & &__line{
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+
+        & + .menu-btn__line{
+            margin-top: 8px;
+        }
+    }
+}
+
+// ------------------------------------------------
+// Block '.main'
+// ------------------------------------------------
+.main{
+    
+}
+
+
+// ---------------------------------------------------------------------------
+// size: xSmall
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-xs-max) and (min-width: @breakpoint-xs-min) {
+
+}
