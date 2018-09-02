@@ -1,0 +1,41 @@
+.open .header {
+  display: block;
+  height: auto;
+  transition: height 10s;
+}
+.header {
+  display: none;
+  padding: 120px 0 60px;
+  height: 0;
+  transition: height 10s;
+}
+.header .header__list {
+  margin: 0;
+  padding: 0;
+}
+.header .header__link {
+  font-size: 3em;
+  line-height: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: #000;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.header .header__link:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  background-color: #f44336;
+  transition: all .5s;
+  height: 5px;
+}
+.header .header__link:hover:after {
+  width: 100px;
+}

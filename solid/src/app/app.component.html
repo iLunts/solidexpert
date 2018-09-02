@@ -1,8 +1,8 @@
-<!-- <h1>Header</h1> -->
+<app-header [ngClass]="{'open': isShowMenu}"></app-header>
 
-<a href="#" role="button" aria-label="Menu Button" class="menu-btn">
+<a href="#" role="button" aria-label="Menu Button" class="menu-btn" [ngClass]="{'open': isShowMenu}" (click)="showMenu()">
   <span class="menu-btn__line menu-btn__line--upper"></span>
   <span class="menu-btn__line menu-btn__line--lower"></span>
 </a>
 
-<router-outlet></router-outlet>
+<router-outlet [ngClass]="{'open': isShowMenu}"></router-outlet>

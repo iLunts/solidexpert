@@ -32,15 +32,35 @@ ul{
     width: 40px;
     height: 40px;
     margin-left: -20px;
+    padding: 14px 0;
 
     & &__line{
         display: block;
         width: 40px;
         height: 2px;
         background-color: #fff;
+        transition: all .4s;
 
         & + .menu-btn__line{
             margin-top: 8px;
+        }
+    }
+
+    &.open{
+
+        .menu-btn__line{
+            background-color: #000;
+
+            &:nth-child(1){
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                transform: rotate(-45deg);
+            }
+
+            & + .menu-btn__line{
+                margin-top: -1px;
+            }
         }
     }
 }
