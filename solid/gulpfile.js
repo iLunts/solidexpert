@@ -6,7 +6,7 @@ requireDir('./gulp-tasks');
 
 // ------------------------------------------------------------------------
 
-gulp.task('style', ['css.admin', 'css.site', 'css.dash']);
+gulp.task('style', ['css.site']);
 // gulp.task('scripts', ['scripts.core', 'scripts.iframe', 'scripts.admin', 'scripts.website']);
 // gulp.task('svg', ['svg.min', 'svg.inject']);
 
