@@ -7,14 +7,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  isShowMenu: boolean = false;
+  // isShowMenu = false;
 
-  showMenu(){
-    if(this.isShowMenu){
-      this.isShowMenu = false;
-    }
-    else{
-      this.isShowMenu = true;
-    }
-  }
+  // showMenu() {
+  //   if (this.isShowMenu) {
+  //     this.isShowMenu = false;
+  //   } else {
+  //     this.isShowMenu = true;
+  //   }
+  // }
 }

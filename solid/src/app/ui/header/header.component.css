@@ -1,13 +1,26 @@
-.open .header {
-  display: block;
-  height: auto;
-  transition: height 10s;
+.header .header__burger {
+  position: fixed;
+  display: inline-block;
+  top: 40px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  padding: 14px 0;
 }
-.header {
+.header .header__burger-line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .4s;
+}
+.header .header__burger-line + .header__burger-line {
+  margin-top: 8px;
+}
+.header .header__body {
   display: none;
-  padding: 120px 0 60px;
   height: 0;
-  transition: height 10s;
 }
 .header .header__list {
   margin: 0;
@@ -38,4 +51,22 @@
 }
 .header .header__link:hover:after {
   width: 100px;
+}
+.header.open .header__burger-line {
+  background-color: #000;
+}
+.header.open .header__burger-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+.header.open .header__burger-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.header.open .header__burger-line + .header__burger-line {
+  margin-top: -1px;
+}
+.header.open .header__body {
+  display: block;
+  height: auto;
+  padding: 120px 0 60px;
+  transition: height 10s;
 }

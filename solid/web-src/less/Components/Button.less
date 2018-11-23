@@ -29,10 +29,12 @@ button{
     cursor: pointer;
     outline: none;
     box-shadow: none;
+    border: none;
+    background: transparent;
 }
 
 // -------------------------------------------
-// Block '.btn' ~ button 
+// Block '.btn' ~ button
 // -------------------------------------------
 .btn{
     margin: 0;
@@ -62,12 +64,12 @@ button{
     max-width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 300ms ease-in-out;
-    
+
     &:hover{
         background: #fff;
         color: #333;
@@ -118,7 +120,7 @@ button{
         line-height: 18px;
         font-size: 8px;
         font-weight: 600;
-        
+
         // Modificator '.btn.btn--mini.btn--circle'
         &.btn--circle{
             width: 18px;
@@ -132,21 +134,21 @@ button{
         padding: 0 5px;
         line-height: 25px;
         font-size: 10px;
-        
+
         // Modificator '.btn.btn--ssm.btn--circle'
         &.btn--circle{
             width: 25px;
             height: 25px;
         }
     }
-    
+
     // Modificator '.btn.btn--sm'
     &&--sm{
         min-height: @btn-height-sm;
         padding: 0 @btn-padding-sm;
         line-height: @btn-height-sm;
         font-size: @btn-font-size-sm;
-        
+
         // Modificator '.btn.btn--sm.btn--circle'
         &.btn--circle{
             width: @btn-height-sm;
@@ -165,7 +167,7 @@ button{
         padding: 0 @btn-padding-md;
         line-height: @btn-height-md;
         font-size: @btn-font-size-md;
-        
+
         // Modificator '.btn.btn--md.btn--circle'
         &.btn--circle{
             width: @btn-height-md;
@@ -179,7 +181,7 @@ button{
         padding: 0 @btn-padding-lg;
         line-height: @btn-height-lg;
         font-size: @btn-font-size-lg;
-        
+
         // Modificator '.btn.btn--lg.btn--circle'
         &.btn--circle{
             width: @btn-height-lg;
@@ -199,7 +201,7 @@ button{
         font-weight: 600;
         box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
         transition: all .3s;
-        
+
         &:hover{
             color: @color-green;
             text-decoration: underline;
@@ -226,12 +228,12 @@ button{
         width: 100%;
         margin: 10px 0;
         text-align: center;
-        
+
         &:focus{
             box-shadow: none;
             outline: none;
         }
-        
+
         // Modificator '.btn.btn--splite.btn--md'
         &.btn--md{
             .btn__text{
@@ -249,7 +251,7 @@ button{
             right: 0;
             border: 1px solid @color-green;
         }
-        
+
         & .btn__text{
             position: relative;
             display: inline-block;
@@ -271,22 +273,22 @@ button{
     &&--gray{
         background: #ebebeb;
         color: #666;
-        
+
         // Modificator '.btn.btn--gray.btn--border'
         &.btn--border{
             border-color: #ebebeb;
             color: #666;
             text-shadow: none;
         }
-        
+
         // Element '.btn.btn--gray .btn__icon'
         // Element '.btn.btn--gray .btn__text'
         .btn__icon,
         .btn__text{
-            color: #666;    
+            color: #666;
         }
     }
-    
+
     // Modificator '.btn.btn--green'
     &&--green{
         background: @color-green;
@@ -307,7 +309,7 @@ button{
             text-shadow: none;
 
             &:hover{
-                background: lighten(@color-green, 48%);                
+                background: lighten(@color-green, 48%);
             }
 
             &:focus{
@@ -320,7 +322,7 @@ button{
             }
         }
     }
-    
+
     // Modificator '.btn.btn--blue'
     &&--blue{
         background: @color-blue;
@@ -341,7 +343,7 @@ button{
             text-shadow: none;
 
             &:hover{
-                background: lighten(@color-blue, 48%);                
+                background: lighten(@color-blue, 48%);
             }
         }
     }
@@ -363,7 +365,7 @@ button{
             text-shadow: none;
 
             &:hover{
-                background: lighten(@color-red, 48%);                
+                background: lighten(@color-red, 48%);
             }
 
             &:focus{
@@ -381,11 +383,11 @@ button{
     &&--yellow{
         background: @color-yellow;
         color: @color-brown;
-        
+
         &:focus{
             box-shadow: 0 0 0 3px lighten(@color-yellow, 30%);
         }
-        
+
         .btn__icon,
         .btn__text{
             color: @color-brown;
@@ -466,14 +468,14 @@ button{
             box-shadow: none;
             background: transparent;
         }
-        
+
         // Modificator '.btn.btn--link.btn--ssm'
         &.btn--ssm{
             &:before{
                 bottom: 4px;
             }
         }
-        
+
         // Modificator '.btn.btn--link.btn--sm'
         &.btn--sm{
             &:before{
@@ -488,7 +490,7 @@ button{
                 right: 0;
             }
         }
-        
+
         &:before{
             content: "";
             position: absolute;
@@ -505,7 +507,7 @@ button{
     .icon{
         line-height: 1;
     }
-    
+
     // Element '.btn .btn__icon'
     & &__icon{
         display: flex;
@@ -514,8 +516,8 @@ button{
 
         width: 24px;
         padding: 4px;
-        
-        
+
+
         &.btn__icon--ssm{
             width: 20px;
             padding: 4px;
@@ -533,7 +535,7 @@ button{
             max-width: 100%;
         }
     }
-    
+
     // Element '.btn .btn__text'
     & &__text{
 
@@ -553,7 +555,7 @@ button{
     // Element '.btn.dropdown-toggle'
     // &.dropdown-toggle{
     //     display: inline-flex;
-    // }    
+    // }
 }
 
 // -----------------------------------------------
@@ -578,12 +580,12 @@ a{
     box-shadow: none;
     transition: all .3s;
     text-decoration: none;
-    
+
     // Element '.link + .link'
     &:not(.ng-hide) + .link {
         margin-left: @link-margin;
     }
-    
+
     // Action '.link:hover'
     &:hover {
         text-decoration: none;
@@ -631,7 +633,7 @@ a{
     // Modificator '.link.link--green'
     &&--green{
         color: @color-green !important;
-        
+
         &:hover{
             color: @color-green-dark !important;
         }
@@ -692,7 +694,7 @@ a{
     // State '.btn-radio.active'
     &.active{
         border-color: @color-yellow;
-        
+
         // Element '.btn-radio.active .btn-radio__check'
         .btn-radio__check{
             border-color: #d69c33;
@@ -701,7 +703,7 @@ a{
             // Elements '.btn-radio.active .btn-radio__check-svg'
             &-svg{
                 opacity: 1;
-                visibility: visible;                
+                visibility: visible;
                 color: #fff;
                 transition: all .3s;
             }
@@ -723,15 +725,15 @@ a{
     &&--empty{
         border: 2px dashed #ddd;
         background: transparent;
-        
+
         &:hover{
             border-color: #bbb;
-            
+
             .btn-radio__title{
                 color: #444;
             }
         }
-        
+
             // Element '.btn-radio.btn-radio--empty .btn-radio__title'
             & &__title{
                 font-size: 1rem;
@@ -766,7 +768,7 @@ a{
             transition: all .3s;
         }
     }
-    
+
     // Element '.btn-radio .btn-radio__title'
     & &__title{
         display: block;
@@ -776,14 +778,14 @@ a{
         line-height: 1.5rem;
         transition: all .3s;
     }
-    
+
     // Element '.btn-radio .btn-radio__desc'
     & &__desc{
         display: block;
         color: #bbb;
         transition: all .3s;
     }
-    
+
     // Element '.btn-radio .btn-radio__img'
     & &__img{
         display: block;

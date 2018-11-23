@@ -1,50 +1,93 @@
-.open .header{
-    display: block;
-    height: auto;
-    transition: height 10s;
-}
-
 .header{
-    display: none;
-    padding: 120px 0 60px;
-    height: 0;
-    transition: height 10s;
 
-    & &__list{
-        margin: 0;
-        padding: 0;
-    }
+  & &__burger{
+    position: fixed;
+    display: inline-block;
+    top: 40px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    padding: 14px 0;
 
-    & &__link{
-        position: relative;
-        font-size: 3em;
-        line-height: 3rem;
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: normal;
-        letter-spacing: 0;
-        color: #000;
-        position: relative;
+    &-line{
         display: block;
-        text-decoration: none;
-        padding: 10px 0;
-        
-        &:after{
-            content: '';
-            position: absolute;
-            bottom: 0px;
-            left: 0;
-            width: 0;
-            // background-color: #000;
-            background-color: #f44336;
-            transition: all .5s;
-            height: 5px;
-        }
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        transition: all .4s;
 
-        &:hover{
-            &:after{
-                width: 100px;   
-            }
+        & + .header__burger-line{
+            margin-top: 8px;
         }
     }
+  }
+
+  & &__body {
+    display: none;
+    height: 0;
+  }
+
+  & &__list{
+      margin: 0;
+      padding: 0;
+  }
+
+  & &__link{
+      position: relative;
+      font-size: 3em;
+      line-height: 3rem;
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      letter-spacing: 0;
+      color: #000;
+      position: relative;
+      display: block;
+      text-decoration: none;
+      padding: 10px 0;
+
+      &:after{
+          content: '';
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          width: 0;
+          // background-color: #000;
+          background-color: #f44336;
+          transition: all .5s;
+          height: 5px;
+      }
+
+      &:hover{
+          &:after{
+              width: 100px;
+          }
+      }
+  }
+  &.open{
+
+    .header__burger-line{
+      background-color: #000;
+
+      &:nth-child(1){
+          transform: rotate(45deg);
+      }
+      &:nth-child(2){
+          transform: rotate(-45deg);
+      }
+
+      & + .header__burger-line{
+          margin-top: -1px;
+      }
+    }
+
+    .header__body {
+      display: block;
+      height: auto;
+      padding: 120px 0 60px;
+      transition: height 10s;
+    }
+  }
 }
+
