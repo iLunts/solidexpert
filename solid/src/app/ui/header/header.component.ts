@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isShowMenu = false;
 
-  constructor() { }
+  constructor(protected router: Router) {
+    this.router.events.subscribe( x => {
+      this.isShowMenu = false;
+    });
+   }
 
   ngOnInit() {
   }
