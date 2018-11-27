@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SlideComponent } from 'ngx-bootstrap/carousel/public_api';
+
+
 
 @Component({
   selector: 'app-development-page',

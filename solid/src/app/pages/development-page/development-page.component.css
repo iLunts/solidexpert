@@ -1,61 +1,20 @@
-.development-page {
+.dp {
   background: #000;
-  height: 100vh;
+  color: #fff;
 }
-.development-page .development-page__backdrop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 100%;
+.dp .dp__title {
+  min-height: 600px;
+  background: #000 url(/assets/img/page-dev/dp-dev.jpg) no-repeat;
+  background-position: 50% 50%;
+}
+.dp .dp__title-text {
   width: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  height: 100%;
+  margin-top: 3em;
+  text-align: center;
 }
-.development-page .development-page__backdrop .col {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 1px;
-  background-color: rgba(255, 255, 255, 0.16);
-  z-index: 2;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+.dp .dp__title-text--left {
+  transform: translateY(100%);
 }
-.development-page .development-page__backdrop .col:first-child:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  height: 1px;
-  width: calc(16.66666667vw);
-  background-color: rgba(255, 255, 255, 0.16);
-  right: 1px;
-}
-.development-page .development-page__backdrop .col:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  height: 1px;
-  width: calc(16.66666667vw);
-  background-color: rgba(255, 255, 255, 0.16);
-  left: 1px;
-}
-.development-page .development-page__backdrop .col.col--1 {
-  left: 16.66666667%;
-}
-.development-page .development-page__backdrop .col.col--2 {
-  left: 33.33333333%;
-}
-.development-page .development-page__backdrop .col.col--3 {
-  left: 50%;
-}
-.development-page .development-page__backdrop .col.col--4 {
-  left: 66.66666667%;
-}
-.development-page .development-page__backdrop .col.col--5 {
-  left: 83.33333333%;
+.dp .dp__title-text--right {
+  transform: translateY(-100%);
 }

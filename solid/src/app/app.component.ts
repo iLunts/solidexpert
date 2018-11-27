@@ -7,7 +7,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  // isShowMenu = false;
+    // isShowMenu = false;
 
   // showMenu() {
   //   if (this.isShowMenu) {
