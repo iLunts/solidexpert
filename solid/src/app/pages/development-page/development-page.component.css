@@ -4,7 +4,10 @@
 }
 .dp .dp__title {
   min-height: 600px;
-  background: #000 url(/assets/img/page-dev/dp-dev.jpg) no-repeat;
+  background: #000;
+  background-image: url('/assets/img/page-dev/page-dev.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
 }
 .dp .dp__title-text {
