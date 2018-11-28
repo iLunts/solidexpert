@@ -2,6 +2,45 @@
   background: #000;
   color: #fff;
 }
+.dp .dp__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  height: 100%;
+}
+.dp .dp__backdrop .col {
+  padding-right: 0;
+  padding-left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.16);
+  z-index: 2;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.dp .dp__backdrop .col.col--1 {
+  left: 16.66666667%;
+}
+.dp .dp__backdrop .col.col--2 {
+  left: 33.33333333%;
+}
+.dp .dp__backdrop .col.col--3 {
+  left: 50%;
+}
+.dp .dp__backdrop .col.col--4 {
+  left: 66.66666667%;
+}
+.dp .dp__backdrop .col.col--5 {
+  left: 83.33333333%;
+}
 .dp .dp__title {
   min-height: 600px;
   background: #000;
@@ -28,4 +67,7 @@
 }
 .dp .dp__link-inner {
   margin-left: 15%;
+}
+.dp .dp__content {
+  max-width: 68%;
 }
