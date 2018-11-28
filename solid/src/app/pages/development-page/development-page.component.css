@@ -21,3 +21,11 @@
 .dp .dp__title-text--right {
   transform: translateY(-100%);
 }
+.dp .dp__link {
+  display: block;
+  background: #000 url('/assets/img/page-dev/dev-link.jpg') no-repeat;
+  background-size: cover;
+}
+.dp .dp__link-inner {
+  margin-left: 15%;
+}
