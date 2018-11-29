@@ -69,5 +69,13 @@
   margin-left: 15%;
 }
 .dp .dp__content {
-  max-width: 68%;
+  max-width: 70.4%;
+}
+.dp .dp__content-examples-slider {
+  padding-right: 0;
+}
+.dp .dp__footer {
+  color: #000;
+  background: #fff;
+  z-index: 3;
 }
