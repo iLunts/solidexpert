@@ -53,10 +53,10 @@
   width: 100%;
 }
 .dp .dp__title-text--left {
-  transform: translateY(100%);
+  transform: translate(-7.5%, 0%);
 }
 .dp .dp__title-text--right {
-  transform: translateY(-100%);
+  transform: translate(10%, 0%);
 }
 .dp .dp__content {
   max-width: 66.666667%;
