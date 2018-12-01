@@ -27,29 +27,6 @@
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
 
-      // &:first-child{
-      //   &:before{
-      //     content: "";
-      //     display: block;
-      //     position: absolute;
-      //     top: 50%;
-      //     height: 1px;
-      //     width: calc(17.66666667vw - 1px);
-      //     background-color: hsla(0,0%,100%,.16);
-      //     right: 1px;
-      //   }
-      // }
-      // &:after{
-      //   content: "";
-      //   display: block;
-      //   position: absolute;
-      //   top: 50%;
-      //   height: 1px;
-      //   width: calc(17.66666667vw - 1px);
-      //   background-color: hsla(0,0%,100%,.16);
-      //   left: 1px;
-      // }
-
       &.col--1 {
         left: 16.66666667%;
       }
@@ -78,8 +55,6 @@
 
     &-text {
       width: 100%;
-      margin-top: 3em;
-      text-align: center;
 
       &--left{
         transform: translateY(100%);
@@ -90,29 +65,89 @@
     }
   }
 
-  & &__link {
-    display: block;
-    background: #000 url('/assets/img/page-dev/dev-link.jpg') no-repeat;
-    background-size: cover;
-
-    &-inner{
-      margin-left: 15%; // temp
-    }
-  }
-
   & &__content{
-    max-width:  70.4%;
+    max-width:  66.666667%;
+
+    &-introduction{
+      left: -25%;
+      padding-left: 25%;
+      transform: translateY(-180px);
+      background: #000;
+    }
+
+    &-facilities{
+      max-width: 75%;
+    }
 
     &-examples-slider{
       padding-right: 0;
     }
+    &-news-item:before{
+      content: '';
+      position: absolute;
+      top: -20%;
+      width: 5%;
+      height: 5%;
+      background: #fff;
+    }
+  }
+
+  & &__team {
+    overflow: hidden;
+
+    &-backdrop{
+      width: 100%;
+      height: 100%;
+      background: url('/assets/img/page-dev/dev-link.jpg') no-repeat;
+      background-size: 100%;
+      background-position: cover ;
+      transform: scale( 1);
+      opacity: 0.45;
+
+      transition:all 3s;
+
+      &:hover{
+        transform: scale(1.1);
+        opacity: 0.9;
+        // background-size: 102%;
+      }
+    }
+
+    &-inner{
+        top: 5%;
+        width: 15%;
+        padding-left: 1.7%;
+        margin-left: 15%;
+        z-index: 2;
+      }
   }
 
   & &__footer {
-    color: #000;
-    background: #fff;
-    z-index: 3;
-  }
+      color: #000 ;
+      background: #fff url('/assets/img/page-dev/map.png') no-repeat;
 
+
+
+      &-container{
+      max-width: 66.666667%;
+    }
+
+
+
+    &-contact{
+      padding-left: 16.666667%;
+
+    }
+
+    &-contact:before{
+      content: '';
+      position: absolute;
+      top: 15%;
+      width: 4%;
+      height: 2%;
+      background: #000;
+    }
+  }
 }
+
 

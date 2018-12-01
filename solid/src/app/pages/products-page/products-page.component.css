@@ -2,3 +2,50 @@
   background: #000;
   color: #fff;
 }
+.products .products__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  height: 100%;
+}
+.products .products__backdrop .col {
+  padding-right: 0;
+  padding-left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.16);
+  z-index: 2;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.products .products__backdrop .col.col--1 {
+  left: 16.66666667%;
+}
+.products .products__backdrop .col.col--2 {
+  left: 33.33333333%;
+}
+.products .products__backdrop .col.col--3 {
+  left: 50%;
+}
+.products .products__backdrop .col.col--4 {
+  left: 66.66666667%;
+}
+.products .products__backdrop .col.col--5 {
+  left: 83.33333333%;
+}
+.products .products__title-text {
+  width: 100%;
+  margin-top: 3em;
+  text-align: center;
+}
+.products .products__content {
+  max-width: 70.4%;
+}

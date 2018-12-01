@@ -9,42 +9,43 @@
   </div>
   <!-- Development content -->
   <div class="block dp__title">
-    <h1 class="dp__title-text t--title">
+    <h1 class="dp__title-text t--title m--t-xxlg t--c">
       <span class="dp__title-text dp__title-text--left">Devel</span>
       <span class="dp__title-text dp__title-text--right">opment</span>
     </h1>
   </div>
 
-  <div class="container dp__content">
+  <div class="container dp__content p--reset">
 
-    <div class="grid development-page__content-introduction">
-      <div class="col col--3-4">
+    <div class="block dp__content-introduction">
+
         <h2 class="t--h2 t--bold">Coming to watch a broadcast or got a meeting in the building?</h2>
         <h3 class="t--h4 ">Below you’ll find all you need to organise your visit</h3>
-        <p class="" >
+        <p class="m--v-lg" >
           The programmes Zapplive, Opsporing Verzocht and Radar are all made in M.
            You can also watch broadcasts live from our public gallery.
         </p>
-      </div>
+
     </div>
 
-    <div class="grid dp__content-facilities">
-      <div class="col col--3-4">
+    <div class="block dp__content-facilities">
+
           <h2 class="t--h1 t--bold">Facilities</h2>
           <h3 class="t--h4" >Make yourself at home</h3>
-          <p>
+          <p class="m--v-lg">
               Hiring office space, organizing an event: it’s all possible here.
               Whether dropping by our café or you need to hire a room for an appointment or larger meeting.
               Just let us know your needs and we'll help you out.
           </p>
-      </div>
+
     </div>
 
-    <div class="grid dp__content-examples">
+    <div class="dp__content-examples">
         <div class="grid dp__content-examples-headline">
             <div class="col col--1-4 t--h4">Café</div>
             <div class="col col--1-4 t--h4">Restaurant</div>
             <div class="col col--1-4 t--h4">Lounge</div>
+            <div class="col col--1-4 t--h4"></div>
         </div>
         <div class="grid ">
             <div class="col col--1-1 dp__content-examples-slider">
@@ -55,14 +56,14 @@
 
     <div class="grid ">
       <div class="col col--1-2 dp__content-info">
-        <h2 class="t--h1 t--bold"> Practical information </h2>
-        <h3 class="t--h4 t--bold"> Adres </h3>
+        <h2 class="t--h1 t--bold  m--v-lg"> Practical information </h2>
+        <h3 class="t--h4 t--bold "> Adres </h3>
         <p>
           ’s Gravelandseweg 80
           1217 EW Hilversum
         </p>
         <a class="t--uppercase link link--line" href="">View in Google Maps</a>
-        <h3 class="t--h4 t--bold"> How to get to M </h3>
+        <h3 class="t--h4 t--bold m--v-md"> How to get to M </h3>
         <p>
           M is easy to reach by public or private transport.
           We’re about 10 minutes from the A27. And the 105 and 106 buses
@@ -70,12 +71,12 @@
           Below you’ll find our address details to plan your route in
           Google Maps.
         </p>
-        <h3 class="t--h4 t--bold"> Parking </h3>
+        <h3 class="t--h4 t--bold m--v-md"> Parking </h3>
         <p>
           Under the media building, you’ll find a car park with 366 spaces,
           including charging stations for electric cars and e-bikes.
         </p>
-        <h3 class="t--h4 t--bold"> Accessibility </h3>
+        <h3 class="t--h4 t--bold m--v-md"> Accessibility </h3>
         <p>
           In general, M’s buildings are all easily accessible.
           This includes the toilets, lifts and main entrances.
@@ -84,13 +85,15 @@
         </p>
       </div>
       <div class="col col--1-2 dp__content-news">
-        <h2 class="t--h1 t--bold"> Agenda </h2>
-        <div>
-          <p class="t--md t--uppercase"> 29 November | 18:00 | M-gebouw </p>
+        <h2 class="t--h1 t--bold  m--v-lg"> Agenda </h2>
+        <div class="dp__content-news-item position--r  m--v-md">
+          <p class="t--md t--uppercase m"> 29 November | 18:00 | M-gebouw </p>
           <p class="t--h5 t--bold">
             GrowthMatters workshop: The war on Talent
           </p>
-          <p class="t--md t--uppercase"> 07 December | 12:00 | M-gebouw </p>
+        </div>
+        <div class="dp__content-news-item position--r m--v-md">
+          <p class="t--md t--uppercase m"> 07 December | 12:00 | M-gebouw </p>
           <p class="t--h5 t--bold">
             Tineke Live with live performances of Venice & Douwe Bob
           </p>
@@ -99,33 +102,42 @@
     </div>
   </div>
 
-  <a class="block h--400 dp__link">
-    <div class="block dp__link-inner">
+  <a class="block dp__team d--b h--400 ">
+    <div class="dp__team-backdrop position--a"></div>
+    <div class="dp__team-inner position--a">
       <h2 class="t--h1 t--bold"> Who's based here? </h2>
-      <p class="t--uppercase link link--line"> View all residents </p>
+      <p class="t--h5 t--uppercase link link--line"> View all residents </p>
     </div>
-  </a>                                      <!--router-link -->
+  </a>
 
-  <div class="grid dp__footer">
-    <div class="col col--1-2 dp__footer-nav ">
-      <ul>
-        <li>Home</li>
-        <li>Development</li>
-        <li>Products</li>
-        <li>Projects</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
-    <a class="dp__footer-contacts" href="">
-      <div class="col col--1-2 ">
-          Homebase of the media-minded
-          <p>
+  <footer class="dp__footer">
+    <div class="dp__footer-container container p--reset">
+      <div class="flex">
+        <nav class="col col--1-2 p--reset m--v-md ">
+          <ul class="dp__footer-nav ">
+            <li><a class="link m--sm t--h4 t--bold" [routerLink]="['/']">Home</a></li>
+            <li><a class="link m--sm t--h4 t--bold" [routerLink]="['/development']">Development</a></li>
+            <li><a class="link m--sm t--h4 t--bold" [routerLink]="['/products']">Products</a></li>
+            <li><a class="link m--sm t--h4 t--bold" [routerLink]="['/projects']">Projects</a></li>
+            <li><a class="link m--sm t--h4 t--bold" [routerLink]="['/contact']">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="dp__footer-contact flex flex--column flex--center col col--1-2 m--v-md">
+          <a class="dp__footer-contact-map link  m--v-md" href="">
+            <p class=" t--h4 t--bold">
+              Homebase of the media-minded
+            </p>
+            <p class=" t--h5">
               ‘s-Gravelandseweg 80, 1217 EW  Hilversum
-          </p>
+            </p>
+          </a>
+          <div class="dp__footer-contact-statment">
+            <a class="link t--h6  t--uppercase t--bold" href="">Privacy statement</a>
+            <a class="link t--h6  t--uppercase t--bold" href="">Cookie statement</a>
+          </div>
+        </div>
       </div>
-      <a href="">Privacy statement</a>
-      <a href="">Cookie statement</a>
-    </a>
-  </div>
+    </div>
+  </footer>
 </div>
 
