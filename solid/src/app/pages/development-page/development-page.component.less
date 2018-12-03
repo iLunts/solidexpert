@@ -54,13 +54,16 @@
     background-position: 50% 50%;
 
     &-text {
-      width: 100%;
 
       &--left{
-        transform: translate(-7.5%, 0%);
+        // top: 0;
+        // left: 0;
+        transform: translate(-100%, -10%);
       }
       &--right{
-        transform: translate(10%, -0%);
+        // top: 0;
+        // left: 0;
+        transform: translate(0%, 50%);
       }
     }
   }
@@ -120,33 +123,6 @@
         margin-left: 15%;
         z-index: 2;
       }
-  }
-
-  & &__footer {
-      color: #000 ;
-      background: #fff url('/assets/img/page-dev/map.png') no-repeat;
-
-
-
-      &-container{
-      max-width: 66.666667%;
-    }
-
-
-
-    &-contact{
-      padding-left: 16.666667%;
-
-    }
-
-    &-contact:before{
-      content: '';
-      position: absolute;
-      top: 15%;
-      width: 4%;
-      height: 2%;
-      background: #000;
-    }
   }
 }
 

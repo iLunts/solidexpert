@@ -41,11 +41,18 @@
 .products .products__backdrop .col.col--5 {
   left: 83.33333333%;
 }
-.products .products__title-text {
-  width: 100%;
-  margin-top: 3em;
-  text-align: center;
+.products .products__title {
+  min-height: 300px;
+}
+.products .products__title-text--left {
+  transform: translate(-100%, -10%);
+}
+.products .products__title-text--right {
+  transform: translate(0%, 50%);
 }
 .products .products__content {
-  max-width: 70.4%;
+  max-width: 66.666667%;
+}
+.products .products__content-text {
+  max-width: 75%;
 }
