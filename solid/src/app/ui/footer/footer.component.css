@@ -1,6 +1,8 @@
 .footer {
   color: #000 ;
   background: #fff url('/assets/img/page-dev/map.png') no-repeat;
+  background-position: cover ;
+  background-size: 100%;
 }
 .footer__container {
   max-width: 66.666667%;

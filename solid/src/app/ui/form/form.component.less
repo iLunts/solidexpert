@@ -1,0 +1,29 @@
+.form {
+
+  & &__button{
+
+    &-line{
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      transition: all .4s;
+
+      & + .form__button-line{
+          margin-top: 8px;
+      }
+      &--left{
+        left: 47%;
+        transform: rotate(25deg);
+      }
+      &--right{
+        left: 47%;
+        transform: rotate(-25deg);
+      }
+    }
+    
+  }
+  
+  
+
+}
