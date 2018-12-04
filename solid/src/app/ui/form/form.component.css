@@ -1,10 +1,15 @@
 .form .form__button-line {
   display: block;
-  width: 40px;
+  width: 20px;
   height: 2px;
   background-color: #fff;
   transition: all .4s;
 }
-.form .form__button-line + .form__button-line {
-  margin-top: 8px;
+.form .form__button-line--left {
+  left: 47%;
+  transform: rotate(25deg);
+}
+.form .form__button-line--right {
+  left: 50%;
+  transform: rotate(-25deg);
 }

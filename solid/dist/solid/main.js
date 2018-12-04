@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header ></app-header>\r\n<!-- <app-header [ngClass]=\"{'open': isShowMenu}\"></app-header> -->\r\n<router-outlet></router-outlet>\r\n<!-- <router-outlet [ngClass]=\"{'open': isShowMenu}\"></router-outlet> -->\r\n"
+module.exports = "<app-header ></app-header>\r\n<!-- <app-header [ngClass]=\"{'open': isShowMenu}\"></app-header> -->\r\n<router-outlet></router-outlet>\r\n<!-- <router-outlet [ngClass]=\"{'open': isShowMenu}\"></router-outlet> -->\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
@@ -95,22 +95,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/home-page/home-page.component */ "./src/app/pages/home-page/home-page.component.ts");
-/* harmony import */ var _ui_header_header_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ui/header/header.component */ "./src/app/ui/header/header.component.ts");
-/* harmony import */ var _pages_development_page_development_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/development-page/development-page.component */ "./src/app/pages/development-page/development-page.component.ts");
-/* harmony import */ var _pages_products_page_products_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/products-page/products-page.component */ "./src/app/pages/products-page/products-page.component.ts");
-/* harmony import */ var _pages_projects_page_projects_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/projects-page/projects-page.component */ "./src/app/pages/projects-page/projects-page.component.ts");
-/* harmony import */ var _pages_contact_us_page_contact_us_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/contact-us-page/contact-us-page.component */ "./src/app/pages/contact-us-page/contact-us-page.component.ts");
-/* harmony import */ var ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-bootstrap/carousel */ "./node_modules/ngx-bootstrap/carousel/fesm5/ngx-bootstrap-carousel.js");
-/* harmony import */ var _ui_slider_slider_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/slider/slider.component */ "./src/app/ui/slider/slider.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _routing__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./routing */ "./src/app/routing.ts");
-/* harmony import */ var _pages_cv_generator_page_cv_generator_page_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/cv-generator-page/cv-generator-page.component */ "./src/app/pages/cv-generator-page/cv-generator-page.component.ts");
+/* harmony import */ var _pages_development_page_development_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/development-page/development-page.component */ "./src/app/pages/development-page/development-page.component.ts");
+/* harmony import */ var _pages_products_page_products_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/products-page/products-page.component */ "./src/app/pages/products-page/products-page.component.ts");
+/* harmony import */ var _pages_projects_page_projects_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/projects-page/projects-page.component */ "./src/app/pages/projects-page/projects-page.component.ts");
+/* harmony import */ var _pages_contact_us_page_contact_us_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/contact-us-page/contact-us-page.component */ "./src/app/pages/contact-us-page/contact-us-page.component.ts");
+/* harmony import */ var _pages_cv_generator_page_cv_generator_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/cv-generator-page/cv-generator-page.component */ "./src/app/pages/cv-generator-page/cv-generator-page.component.ts");
+/* harmony import */ var _ui_header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/header/header.component */ "./src/app/ui/header/header.component.ts");
+/* harmony import */ var _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/footer/footer.component */ "./src/app/ui/footer/footer.component.ts");
+/* harmony import */ var _ui_slider_slider_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/slider/slider.component */ "./src/app/ui/slider/slider.component.ts");
+/* harmony import */ var ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-bootstrap/carousel */ "./node_modules/ngx-bootstrap/carousel/fesm5/ngx-bootstrap-carousel.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _routing__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./routing */ "./src/app/routing.ts");
+/* harmony import */ var _ui_form_form_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./ui/form/form.component */ "./src/app/ui/form/form.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -133,19 +137,21 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
                 _pages_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_3__["HomePageComponent"],
-                _ui_header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"],
-                _pages_development_page_development_page_component__WEBPACK_IMPORTED_MODULE_5__["DevelopmentPageComponent"],
-                _ui_slider_slider_component__WEBPACK_IMPORTED_MODULE_10__["SliderComponent"],
-                _pages_products_page_products_page_component__WEBPACK_IMPORTED_MODULE_6__["ProductsPageComponent"],
-                _pages_projects_page_projects_page_component__WEBPACK_IMPORTED_MODULE_7__["ProjectsPageComponent"],
-                _pages_contact_us_page_contact_us_page_component__WEBPACK_IMPORTED_MODULE_8__["ContactUsPageComponent"],
-                _pages_cv_generator_page_cv_generator_page_component__WEBPACK_IMPORTED_MODULE_13__["CvGeneratorPageComponent"]
+                _ui_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
+                _pages_development_page_development_page_component__WEBPACK_IMPORTED_MODULE_4__["DevelopmentPageComponent"],
+                _pages_products_page_products_page_component__WEBPACK_IMPORTED_MODULE_5__["ProductsPageComponent"],
+                _pages_projects_page_projects_page_component__WEBPACK_IMPORTED_MODULE_6__["ProjectsPageComponent"],
+                _pages_contact_us_page_contact_us_page_component__WEBPACK_IMPORTED_MODULE_7__["ContactUsPageComponent"],
+                _pages_cv_generator_page_cv_generator_page_component__WEBPACK_IMPORTED_MODULE_8__["CvGeneratorPageComponent"],
+                _ui_slider_slider_component__WEBPACK_IMPORTED_MODULE_11__["SliderComponent"],
+                _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"],
+                _ui_form_form_component__WEBPACK_IMPORTED_MODULE_15__["FormComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterModule"],
-                _routing__WEBPACK_IMPORTED_MODULE_12__["route"],
-                ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_9__["CarouselModule"].forRoot()
+                _angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterModule"],
+                _routing__WEBPACK_IMPORTED_MODULE_14__["route"],
+                ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_12__["CarouselModule"].forRoot()
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -291,7 +297,7 @@ var CvGeneratorPageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".dp {\n  background: #000;\n  color: #fff;\n}\n.dp .dp__backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  min-height: 100%;\n  width: 100%;\n  overflow: hidden;\n  pointer-events: none;\n  height: 100%;\n}\n.dp .dp__backdrop .col {\n  padding-right: 0;\n  padding-left: 0;\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 1px;\n  background-color: rgba(255, 255, 255, 0.16);\n  z-index: 2;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n.dp .dp__backdrop .col.col--1 {\n  left: 16.66666667%;\n}\n.dp .dp__backdrop .col.col--2 {\n  left: 33.33333333%;\n}\n.dp .dp__backdrop .col.col--3 {\n  left: 50%;\n}\n.dp .dp__backdrop .col.col--4 {\n  left: 66.66666667%;\n}\n.dp .dp__backdrop .col.col--5 {\n  left: 83.33333333%;\n}\n.dp .dp__title {\n  min-height: 600px;\n  background: #000;\n  background-image: url('/assets/img/page-dev/page-dev.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n.dp .dp__title-text {\n  width: 100%;\n}\n.dp .dp__title-text--left {\n  -webkit-transform: translate(-7.5%, 0%);\n          transform: translate(-7.5%, 0%);\n}\n.dp .dp__title-text--right {\n  -webkit-transform: translate(10%, 0%);\n          transform: translate(10%, 0%);\n}\n.dp .dp__content {\n  max-width: 66.666667%;\n}\n.dp .dp__content-introduction {\n  left: -25%;\n  padding-left: 25%;\n  -webkit-transform: translateY(-180px);\n          transform: translateY(-180px);\n  background: #000;\n}\n.dp .dp__content-facilities {\n  max-width: 75%;\n}\n.dp .dp__content-examples-slider {\n  padding-right: 0;\n}\n.dp .dp__content-news-item:before {\n  content: '';\n  position: absolute;\n  top: -20%;\n  width: 5%;\n  height: 5%;\n  background: #fff;\n}\n.dp .dp__team {\n  overflow: hidden;\n}\n.dp .dp__team-backdrop {\n  width: 100%;\n  height: 100%;\n  background: url('/assets/img/page-dev/dev-link.jpg') no-repeat;\n  background-size: 100%;\n  background-position: cover ;\n  -webkit-transform: scale(1);\n          transform: scale(1);\n  opacity: 0.45;\n  transition: all 3s;\n}\n.dp .dp__team-backdrop:hover {\n  -webkit-transform: scale(1.1);\n          transform: scale(1.1);\n  opacity: 0.9;\n}\n.dp .dp__team-inner {\n  top: 5%;\n  width: 15%;\n  padding-left: 1.7%;\n  margin-left: 15%;\n  z-index: 2;\n}\n.dp .dp__footer {\n  color: #000 ;\n  background: #fff url('/assets/img/page-dev/map.png') no-repeat;\n}\n.dp .dp__footer-container {\n  max-width: 66.666667%;\n}\n.dp .dp__footer-contact {\n  padding-left: 16.666667%;\n}\n.dp .dp__footer-contact:before {\n  content: '';\n  position: absolute;\n  top: 15%;\n  width: 4%;\n  height: 2%;\n  background: #000;\n}\n"
+module.exports = ".dp {\n  background: #000;\n  color: #fff;\n}\n.dp .dp__backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  min-height: 100%;\n  width: 100%;\n  overflow: hidden;\n  pointer-events: none;\n  height: 100%;\n}\n.dp .dp__backdrop .col {\n  padding-right: 0;\n  padding-left: 0;\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 1px;\n  background-color: rgba(255, 255, 255, 0.16);\n  z-index: 2;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n.dp .dp__backdrop .col.col--1 {\n  left: 16.66666667%;\n}\n.dp .dp__backdrop .col.col--2 {\n  left: 33.33333333%;\n}\n.dp .dp__backdrop .col.col--3 {\n  left: 50%;\n}\n.dp .dp__backdrop .col.col--4 {\n  left: 66.66666667%;\n}\n.dp .dp__backdrop .col.col--5 {\n  left: 83.33333333%;\n}\n.dp .dp__title {\n  min-height: 600px;\n  background: #000;\n  background-image: url('/assets/img/page-dev/page-dev.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n.dp .dp__title-text--left {\n  -webkit-transform: translate(-100%, -10%);\n          transform: translate(-100%, -10%);\n}\n.dp .dp__title-text--right {\n  -webkit-transform: translate(0%, 50%);\n          transform: translate(0%, 50%);\n}\n.dp .dp__content {\n  max-width: 66.666667%;\n}\n.dp .dp__content-introduction {\n  left: -25%;\n  padding-left: 25%;\n  -webkit-transform: translateY(-180px);\n          transform: translateY(-180px);\n  background: #000;\n}\n.dp .dp__content-facilities {\n  max-width: 75%;\n}\n.dp .dp__content-examples-slider {\n  padding-right: 0;\n}\n.dp .dp__content-news-item:before {\n  content: '';\n  position: absolute;\n  top: -20%;\n  width: 5%;\n  height: 5%;\n  background: #fff;\n}\n.dp .dp__team {\n  overflow: hidden;\n}\n.dp .dp__team-backdrop {\n  width: 100%;\n  height: 100%;\n  background: url('/assets/img/page-dev/dev-link.jpg') no-repeat;\n  background-size: 100%;\n  background-position: cover ;\n  -webkit-transform: scale(1);\n          transform: scale(1);\n  opacity: 0.45;\n  transition: all 3s;\n}\n.dp .dp__team-backdrop:hover {\n  -webkit-transform: scale(1.1);\n          transform: scale(1.1);\n  opacity: 0.9;\n}\n.dp .dp__team-inner {\n  top: 5%;\n  width: 15%;\n  padding-left: 1.7%;\n  margin-left: 15%;\n  z-index: 2;\n}\n"
 
 /***/ }),
 
@@ -302,7 +308,7 @@ module.exports = ".dp {\n  background: #000;\n  color: #fff;\n}\n.dp .dp__backdr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid dp\">\n  <!-- Development backdrop -->\n    <div class=\"dp__backdrop\">\n      <span class=\"col col--1\"></span>\n      <span class=\"col col--2\"></span>\n      <span class=\"col col--3\"></span>\n      <span class=\"col col--4\"></span>\n      <span class=\"col col--5\"></span>\n  </div>\n  <!-- Development content -->\n  <div class=\"block dp__title\">\n    <h1 class=\"dp__title-text t--title m--t-xxlg t--c\">\n      <span class=\"dp__title-text dp__title-text--left d--b\">Devel</span>\n      <span class=\"dp__title-text dp__title-text--right d--b\">opment</span>\n    </h1>\n  </div>\n\n  <div class=\"container dp__content p--reset\">\n\n    <div class=\"block dp__content-introduction\">\n\n        <h2 class=\"t--h2 t--bold\">Coming to watch a broadcast or got a meeting in the building?</h2>\n        <h3 class=\"t--h4 \">Below you’ll find all you need to organise your visit</h3>\n        <p class=\"m--v-lg\" >\n          The programmes Zapplive, Opsporing Verzocht and Radar are all made in M.\n           You can also watch broadcasts live from our public gallery.\n        </p>\n\n    </div>\n\n    <div class=\"block dp__content-facilities\">\n\n          <h2 class=\"t--h1 t--bold\">Facilities</h2>\n          <h3 class=\"t--h4\" >Make yourself at home</h3>\n          <p class=\"m--v-lg\">\n              Hiring office space, organizing an event: it’s all possible here.\n              Whether dropping by our café or you need to hire a room for an appointment or larger meeting.\n              Just let us know your needs and we'll help you out.\n          </p>\n\n    </div>\n\n    <div class=\"dp__content-examples\">\n        <div class=\"grid dp__content-examples-headline\">\n            <div class=\"col col--1-4 t--h4\">Café</div>\n            <div class=\"col col--1-4 t--h4\">Restaurant</div>\n            <div class=\"col col--1-4 t--h4\">Lounge</div>\n            <div class=\"col col--1-4 t--h4\"></div>\n        </div>\n        <div class=\"grid \">\n            <div class=\"col col--1-1 dp__content-examples-slider\">\n              <app-slider></app-slider>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"grid \">\n      <div class=\"col col--1-2 dp__content-info\">\n        <h2 class=\"t--h1 t--bold  m--v-lg\"> Practical information </h2>\n        <h3 class=\"t--h4 t--bold \"> Adres </h3>\n        <p>\n          ’s Gravelandseweg 80\n          1217 EW Hilversum\n        </p>\n        <a class=\"t--uppercase link link--line\" href=\"\">View in Google Maps</a>\n        <h3 class=\"t--h4 t--bold m--v-md\"> How to get to M </h3>\n        <p>\n          M is easy to reach by public or private transport.\n          We’re about 10 minutes from the A27. And the 105 and 106 buses\n          run to and from both Hilversum and Bussum railway stations.\n          Below you’ll find our address details to plan your route in\n          Google Maps.\n        </p>\n        <h3 class=\"t--h4 t--bold m--v-md\"> Parking </h3>\n        <p>\n          Under the media building, you’ll find a car park with 366 spaces,\n          including charging stations for electric cars and e-bikes.\n        </p>\n        <h3 class=\"t--h4 t--bold m--v-md\"> Accessibility </h3>\n        <p>\n          In general, M’s buildings are all easily accessible.\n          This includes the toilets, lifts and main entrances.\n          M is also accessible in the sense of hospitality.\n          We are always delighted to welcome guests into our home.\n        </p>\n      </div>\n      <div class=\"col col--1-2 dp__content-news\">\n        <h2 class=\"t--h1 t--bold  m--v-lg\"> Agenda </h2>\n        <div class=\"dp__content-news-item position--r  m--v-md\">\n          <p class=\"t--md t--uppercase m\"> 29 November | 18:00 | M-gebouw </p>\n          <p class=\"t--h5 t--bold\">\n            GrowthMatters workshop: The war on Talent\n          </p>\n        </div>\n        <div class=\"dp__content-news-item position--r m--v-md\">\n          <p class=\"t--md t--uppercase m\"> 07 December | 12:00 | M-gebouw </p>\n          <p class=\"t--h5 t--bold\">\n            Tineke Live with live performances of Venice & Douwe Bob\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <a class=\"block dp__team d--b h--400 \">\n    <div class=\"dp__team-backdrop position--a\"></div>\n    <div class=\"dp__team-inner position--a\">\n      <h2 class=\"t--h1 t--bold\"> Who's based here? </h2>\n      <p class=\"t--h5 t--uppercase link link--line\"> View all residents </p>\n    </div>\n  </a>\n\n  <footer class=\"dp__footer\">\n    <div class=\"dp__footer-container container p--reset\">\n      <div class=\"flex\">\n        <nav class=\"col col--1-2 p--reset m--v-md \">\n          <ul class=\"dp__footer-nav \">\n            <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/']\">Home</a></li>\n            <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/development']\">Development</a></li>\n            <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/products']\">Products</a></li>\n            <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/projects']\">Projects</a></li>\n            <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/contact']\">Contact Us</a></li>\n          </ul>\n        </nav>\n        <div class=\"dp__footer-contact flex flex--column flex--center col col--1-2 m--v-md\">\n          <a class=\"dp__footer-contact-map link  m--v-md\" href=\"\">\n            <p class=\" t--h4 t--bold\">\n              Homebase of the media-minded\n            </p>\n            <p class=\" t--h5\">\n              ‘s-Gravelandseweg 80, 1217 EW  Hilversum\n            </p>\n          </a>\n          <div class=\"dp__footer-contact-statment\">\n            <a class=\"link t--h6  t--uppercase t--bold\" href=\"\">Privacy statement</a>\n            <a class=\"link t--h6  t--uppercase t--bold\" href=\"\">Cookie statement</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</div>\n\n"
+module.exports = "<div class=\"container-fluid dp\">\n  <!-- Development backdrop -->\n    <div class=\"dp__backdrop\">\n      <span class=\"col col--1\"></span>\n      <span class=\"col col--2\"></span>\n      <span class=\"col col--3\"></span>\n      <span class=\"col col--4\"></span>\n      <span class=\"col col--5\"></span>\n  </div>\n  <!-- Development content -->\n  <div class=\"block dp__title\">\n    <h1 class=\"dp__title-text position--r t--title m--t-xxlg t--c\">\n      <span class=\"dp__title-text dp__title-text--left position--a\">Devel</span>\n      <span class=\"dp__title-text dp__title-text--right position--a\">opment</span>\n    </h1>\n  </div>\n\n  <div class=\"container dp__content p--reset\">\n\n    <div class=\"block dp__content-introduction\">\n\n        <h2 class=\"t--h2 t--bold\">Coming to watch a broadcast or got a meeting in the building?</h2>\n        <h3 class=\"t--h4 \">Below you’ll find all you need to organise your visit</h3>\n        <p class=\"m--v-lg\" >\n          The programmes Zapplive, Opsporing Verzocht and Radar are all made in M.\n           You can also watch broadcasts live from our public gallery.\n        </p>\n\n    </div>\n\n    <div class=\"block dp__content-facilities\">\n\n          <h2 class=\"t--h1 t--bold\">Facilities</h2>\n          <h3 class=\"t--h4\" >Make yourself at home</h3>\n          <p class=\"m--v-lg\">\n              Hiring office space, organizing an event: it’s all possible here.\n              Whether dropping by our café or you need to hire a room for an appointment or larger meeting.\n              Just let us know your needs and we'll help you out.\n          </p>\n\n    </div>\n\n    <div class=\"dp__content-examples\">\n        <div class=\"grid dp__content-examples-headline\">\n            <div class=\"col col--1-4 t--h4\">Café</div>\n            <div class=\"col col--1-4 t--h4\">Restaurant</div>\n            <div class=\"col col--1-4 t--h4\">Lounge</div>\n            <div class=\"col col--1-4 t--h4\"></div>\n        </div>\n        <div class=\"grid \">\n            <div class=\"col col--1-1 dp__content-examples-slider\">\n              <app-slider></app-slider>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"grid \">\n      <div class=\"col col--1-2 dp__content-info\">\n        <h2 class=\"t--h1 t--bold  m--v-lg\"> Practical information </h2>\n        <h3 class=\"t--h4 t--bold \"> Adres </h3>\n        <p>\n          ’s Gravelandseweg 80\n          1217 EW Hilversum\n        </p>\n        <a class=\"t--uppercase link link--line\" href=\"\">View in Google Maps</a>\n        <h3 class=\"t--h4 t--bold m--v-md\"> How to get to M </h3>\n        <p>\n          M is easy to reach by public or private transport.\n          We’re about 10 minutes from the A27. And the 105 and 106 buses\n          run to and from both Hilversum and Bussum railway stations.\n          Below you’ll find our address details to plan your route in\n          Google Maps.\n        </p>\n        <h3 class=\"t--h4 t--bold m--v-md\"> Parking </h3>\n        <p>\n          Under the media building, you’ll find a car park with 366 spaces,\n          including charging stations for electric cars and e-bikes.\n        </p>\n        <h3 class=\"t--h4 t--bold m--v-md\"> Accessibility </h3>\n        <p>\n          In general, M’s buildings are all easily accessible.\n          This includes the toilets, lifts and main entrances.\n          M is also accessible in the sense of hospitality.\n          We are always delighted to welcome guests into our home.\n        </p>\n      </div>\n      <div class=\"col col--1-2 dp__content-news\">\n        <h2 class=\"t--h1 t--bold  m--v-lg\"> Agenda </h2>\n        <div class=\"dp__content-news-item position--r  m--v-md\">\n          <p class=\"t--md t--uppercase m\"> 29 November | 18:00 | M-gebouw </p>\n          <p class=\"t--h5 t--bold\">\n            GrowthMatters workshop: The war on Talent\n          </p>\n        </div>\n        <div class=\"dp__content-news-item position--r m--v-md\">\n          <p class=\"t--md t--uppercase m\"> 07 December | 12:00 | M-gebouw </p>\n          <p class=\"t--h5 t--bold\">\n            Tineke Live with live performances of Venice & Douwe Bob\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <a class=\"block dp__team d--b h--400 \">\n    <div class=\"dp__team-backdrop position--a\"></div>\n    <div class=\"dp__team-inner position--a\">\n      <h2 class=\"t--h1 t--bold\"> Who's based here? </h2>\n      <p class=\"t--h5 t--uppercase link link--line\"> View all residents </p>\n    </div>\n  </a>\n</div>\n\n"
 
 /***/ }),
 
@@ -418,7 +424,7 @@ var HomePageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid products\">\n  <!-- Products backdrop -->\n  <div class=\"products__backdrop\">\n    <span class=\"col col--1\"></span>\n    <span class=\"col col--2\"></span>\n    <span class=\"col col--3\"></span>\n    <span class=\"col col--4\"></span>\n    <span class=\"col col--5\"></span>\n  </div>\n\n  <!-- Products content -->\n  <section class=\"block products__title\">\n    <h1 class=\"products__title-text t--title\">\n      <span class=\"products__title-text products__title-text--left d--b\">Pro</span>\n      <span class=\"products__title-text products__title-text--right d--b\">ducts</span>\n    </h1>\n  </section>\n  <main class=\"container products__content\">\n\n    <section class=\"grid\">\n      <h2 class=\"t--h2 t--bold\">Coming to watch a broadcast or got a meeting in the building?</h2>\n      <h3 class=\"t--h4\">Below you’ll find all you need to organise your visit</h3>\n      <p class=\"\" >\n        The programmes Zapplive, Opsporing Verzocht and Radar are all made in M.\n          You can also watch broadcasts live from our public gallery.\n      </p>\n      <div class=\"grid\">\n        <div class=\"col col--1-4 t--h4\"><img src=\"assets/img/page-prod/logo.png\" alt=\"logo\"></div>\n        <div class=\"col col--1-4 t--h4\"><img src=\"assets/img/page-prod/logo.png\" alt=\"logo\"></div>\n        <div class=\"col col--1-4 t--h4\"><img src=\"assets/img/page-prod/logo.png\" alt=\"logo\"></div>\n        <div class=\"col col--1-4 t--h4\"><img src=\"assets/img/page-prod/logo.png\" alt=\"logo\"></div>\n      </div>\n    </section>\n\n    <section class=\"grid\">\n      <h2 class=\"t--h2 t--bold\">Coming to watch a broadcast or got a meeting in the building?</h2>\n      <h3 class=\"t--h4 \">Below you’ll find all you need to organise your visit</h3>\n      <p class=\"\" >\n        The programmes Zapplive, Opsporing Verzocht and Radar are all made in M.\n          You can also watch broadcasts live from our public gallery.\n      </p>\n      <div class=\"grid\">\n        <div class=\"col col--1-4 t--h4\"><img src=\"/src/assets/img/page-prod/logo.svg.png\" alt=\"logo\"></div>\n        <div class=\"col col--1-4 t--h4\"><img src=\"/src/assets/img/page-prod/logo.svg.png\" alt=\"logo\"></div>\n        <div class=\"col col--1-4 t--h4\"><img src=\"/src/assets/img/page-prod/logo.svg.png\" alt=\"logo\"></div>\n        <div class=\"col col--1-4 t--h4\"><img src=\"/src/assets/img/page-prod/logo.svg.png\" alt=\"logo\"></div>\n      </div>\n    </section>\n  </main>\n</div>\n"
+module.exports = "<div class=\"products container-fluid \">\n  <!-- Products backdrop -->\n  <div class=\"products__backdrop\">\n    <span class=\"col col--1\"></span>\n    <span class=\"col col--2\"></span>\n    <span class=\"col col--3\"></span>\n    <span class=\"col col--4\"></span>\n    <span class=\"col col--5\"></span>\n  </div>\n\n  <!-- Products content -->\n  <div class=\"block \">\n    <h1 class=\"products__title t--title position--r t--title m--t-xxlg t--c\">\n      <span class=\"products__title-text products__title-text--left position--a\">Pro</span>\n      <span class=\"products__title-text products__title-text--right position--a\">ducts</span>\n    </h1>\n  </div>\n  <main class=\"products__content container p--reset\">\n    <div class=\"grid products__content-text\">\n      <h2 class=\"t--h1 t--bold\">Coming to watch a broadcast or got a meeting in the building?</h2>\n      <h3 class=\"t--h4\">Below you’ll find all you need to organise your visit</h3>\n      <p class=\"m--v-lg\" >\n        The programmes Zapplive, Opsporing Verzocht and Radar are all made in M.\n        You can also watch broadcasts live from our public gallery.\n      </p>\n    </div>\n    <div class=\"grid products__content-logo m--v-lg\">\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n    </div>\n    <div class=\"grid products__content-text\">\n      <h2 class=\"t--h1 t--bold\">Coming to watch a broadcast or got a meeting in the building?</h2>\n      <h3 class=\"t--h4 \">Below you’ll find all you need to organise your visit</h3>\n      <p class=\"m--v-lg\">\n        The programmes Zapplive, Opsporing Verzocht and Radar are all made in M.\n        You can also watch broadcasts live from our public gallery.\n      </p>\n    </div>\n    <div class=\"grid products__content-logo m--v-lg\">\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n      <div class=\"col col--1-4 t--h4\"><img src=\"/assets/img/page-prod/200.png\" alt=\"logo\"></div>\n    </div>\n    <app-form></app-form>\n  </main>\n</div>\n"
 
 /***/ }),
 
@@ -429,7 +435,7 @@ module.exports = "<div class=\"container-fluid products\">\n  <!-- Products back
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".products {\n  background: #000;\n  color: #fff;\n}\n.products .products__backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  min-height: 100%;\n  width: 100%;\n  overflow: hidden;\n  pointer-events: none;\n  height: 100%;\n}\n.products .products__backdrop .col {\n  padding-right: 0;\n  padding-left: 0;\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 1px;\n  background-color: hsla(0, 0%, 100%, 0.16);\n  z-index: 2;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n.products .products__backdrop .col.col--1 {\n  left: 16.66666667%;\n}\n.products .products__backdrop .col.col--2 {\n  left: 33.33333333%;\n}\n.products .products__backdrop .col.col--3 {\n  left: 50%;\n}\n.products .products__backdrop .col.col--4 {\n  left: 66.66666667%;\n}\n.products .products__backdrop .col.col--5 {\n  left: 83.33333333%;\n}\n.products .products__title-text {\n  width: 100%;\n  margin-top: 3em;\n  text-align: center;\n}\n.products .products__content {\n  max-width: 70.4%;\n}\n"
+module.exports = ".products {\n  background: #000;\n  color: #fff;\n}\n.products .products__backdrop {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  min-height: 100%;\n  width: 100%;\n  overflow: hidden;\n  pointer-events: none;\n  height: 100%;\n}\n.products .products__backdrop .col {\n  padding-right: 0;\n  padding-left: 0;\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 1px;\n  background-color: hsla(0, 0%, 100%, 0.16);\n  z-index: 2;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n.products .products__backdrop .col.col--1 {\n  left: 16.66666667%;\n}\n.products .products__backdrop .col.col--2 {\n  left: 33.33333333%;\n}\n.products .products__backdrop .col.col--3 {\n  left: 50%;\n}\n.products .products__backdrop .col.col--4 {\n  left: 66.66666667%;\n}\n.products .products__backdrop .col.col--5 {\n  left: 83.33333333%;\n}\n.products .products__title {\n  min-height: 300px;\n}\n.products .products__title-text--left {\n  -webkit-transform: translate(-100%, -10%);\n          transform: translate(-100%, -10%);\n}\n.products .products__title-text--right {\n  -webkit-transform: translate(0%, 50%);\n          transform: translate(0%, 50%);\n}\n.products .products__content {\n  max-width: 66.666667%;\n}\n.products .products__content-text {\n  max-width: 75%;\n}\n"
 
 /***/ }),
 
@@ -569,6 +575,132 @@ var routes = [
     // { path: '**', component: HomePageComponent },
 ];
 var route = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes);
+
+
+/***/ }),
+
+/***/ "./src/app/ui/footer/footer.component.html":
+/*!*************************************************!*\
+  !*** ./src/app/ui/footer/footer.component.html ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<footer class=\"footer\">\n  <div class=\"footer__container container p--reset\">\n    <div class=\"flex\">\n      <nav class=\"col col--1-2 p--reset m--v-md \">\n        <ul class=\"footer__nav \">\n          <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/']\">Home</a></li>\n          <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/development']\">Development</a></li>\n          <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/products']\">Products</a></li>\n          <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/projects']\">Projects</a></li>\n          <li><a class=\"link m--sm t--h4 t--bold\" [routerLink]=\"['/contact']\">Contact Us</a></li>\n        </ul>\n      </nav>\n      <div class=\"footer__contact flex flex--column flex--center col col--1-2 m--v-md\">\n        <a class=\"footer__contact-map link  m--v-md\" href=\"\">\n          <p class=\" t--h4 t--bold\">\n            Homebase of the media-minded\n          </p>\n          <p class=\" t--h5\">\n            ‘s-Gravelandseweg 80, 1217 EW  Hilversum\n          </p>\n        </a>\n        <div class=\"footer__contact-statment\">\n          <a class=\"link t--h6  t--uppercase t--bold\" href=\"\">Privacy statement</a>\n          <a class=\"link t--h6  t--uppercase t--bold\" href=\"\">Cookie statement</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/footer/footer.component.less":
+/*!*************************************************!*\
+  !*** ./src/app/ui/footer/footer.component.less ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".footer {\n  color: #000;\n  background: #fff url('/assets/img/page-dev/map.png') no-repeat;\n  background-position: cover ;\n  background-size: 100%;\n}\n.footer__container {\n  max-width: 66.666667%;\n}\n.footer__contact {\n  padding-left: 16.666667%;\n}\n.footer__contact:before {\n  content: '';\n  position: absolute;\n  top: 15%;\n  width: 4%;\n  height: 2%;\n  background: #000;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/footer/footer.component.ts":
+/*!***********************************************!*\
+  !*** ./src/app/ui/footer/footer.component.ts ***!
+  \***********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-footer',
+            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/ui/footer/footer.component.html"),
+            styles: [__webpack_require__(/*! ./footer.component.less */ "./src/app/ui/footer/footer.component.less")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/ui/form/form.component.html":
+/*!*********************************************!*\
+  !*** ./src/app/ui/form/form.component.html ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"form t--c\">\n  <button class=\"form__button position--r t--white t--h1 t--bold t--c m--v-lg\" role=\"button\" aria-label=\"Menu Button\"  >    <!--  (click)=\"showMenu()\" -->\n    Become part of M?!\n    <span class=\"form__button-line form-button-line--left position--a\"></span>\n    <span class=\"form__button-line form-button-line--right position--a\"></span>\n  </button>\n  <form class=\"container form__body\">\n\n  </form>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/form/form.component.less":
+/*!*********************************************!*\
+  !*** ./src/app/ui/form/form.component.less ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".form .form__button-line {\n  display: block;\n  width: 20px;\n  height: 2px;\n  background-color: #fff;\n  transition: all 0.4s;\n}\n.form .form__button-line + .form__button-line {\n  margin-top: 8px;\n}\n.form .form__button-line--left {\n  left: 47%;\n  -webkit-transform: rotate(25deg);\n          transform: rotate(25deg);\n}\n.form .form__button-line--right {\n  left: 47%;\n  -webkit-transform: rotate(-25deg);\n          transform: rotate(-25deg);\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/form/form.component.ts":
+/*!*******************************************!*\
+  !*** ./src/app/ui/form/form.component.ts ***!
+  \*******************************************/
+/*! exports provided: FormComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormComponent", function() { return FormComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FormComponent = /** @class */ (function () {
+    function FormComponent() {
+    }
+    FormComponent.prototype.ngOnInit = function () {
+    };
+    FormComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-form',
+            template: __webpack_require__(/*! ./form.component.html */ "./src/app/ui/form/form.component.html"),
+            styles: [__webpack_require__(/*! ./form.component.less */ "./src/app/ui/form/form.component.less")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FormComponent);
+    return FormComponent;
+}());
+
 
 
 /***/ }),
