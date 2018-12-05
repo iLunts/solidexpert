@@ -70,12 +70,32 @@
 
   & &__content{
     max-width:  66.666667%;
+
+    &-text{
+      left: -25%;
+      padding-left: 25%;
+      transform: translateY(-180px);
+      background: #000;
+    }
+
+
   }
-  & &__slider-title{
-    // border-top: 1px solid hsla(0,0%,100%,.16);
-  }
+
+
   & &__slider-body{
     left: -24.4%;
   }
 
+  & &__slider-list-item:before{
+    content: '';
+    position: absolute;
+    left: 1px;
+    width: 1%;
+    height: 0.5%;
+    background: #fff;
+  }
+  & &__slider-btn{
+
+    border: 2px solid #fff;
+  }
 }

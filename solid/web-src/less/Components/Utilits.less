@@ -358,39 +358,94 @@ svg [STROKE*='#']{
 // ------------------------------------------------
 .p{
 
-    &--h{
-        padding: 0 @margin-padding !important;
+  &--sm{
+    padding: (@margin-padding / 2)  !important;
+  }
+  // Mini
+  &--mini{
+    padding: (@margin-padding / 4)  !important;
+  }
 
-        // Vertical large
-        &-xlg{
-            padding: 0 (@margin-padding * 4) !important;
-        }
-        &-lg{
-            padding: 0 (@margin-padding * 2) !important;
-        }
-        &-md{
-            padding: 0 (@margin-padding * 1.5) !important;
-        }
-        &-sm{
-            padding: 0 (@margin-padding / 2) !important;
-        }
-        &-mini{
-            padding: 0 (@margin-padding / 4) !important;
-        }
+  &--h{
+    padding: 0 @margin-padding !important;
+
+    // Vertical large
+    &-xlg{
+        padding: 0 (@margin-padding * 4) !important;
+    }
+    &-lg{
+        padding: 0 (@margin-padding * 2) !important;
+    }
+    &-md{
+        padding: 0 (@margin-padding * 1.5) !important;
+    }
+    &-sm{
+        padding: 0 (@margin-padding / 2) !important;
+    }
+    &-mini{
+        padding: 0 (@margin-padding / 4) !important;
+    }
+  }
+
+  &--v{
+    padding: @margin-padding 0 !important;
+
+    // Vertical large
+    &-xlg{
+        padding: (@margin-padding * 4) 0 !important;
+    }
+    &-lg{
+        padding: (@margin-padding * 2) 0 !important;
+    }
+    &-md{
+        padding: (@margin-padding * 1.5) 0 !important;
+    }
+    &-sm{
+        padding: (@margin-padding / 2) 0 !important;
+    }
+    &-mini{
+        padding: (@margin-padding / 4) 0 !important;
+    }
+  }
+
+  // Modificator TOP 'p--t'
+  &--t{
+
+    &-reset{
+       padding-top: 0 !important;
     }
 
-    // Modificator 'p--t'
-    &--t{
-
-        &-reset{
-            padding-top: 0 !important;
-        }
+    &-lg{
+      padding-top: (@margin-padding * 2) !important;
     }
-
-    // Modificator 'p--reset'
-    &--reset{
-        padding: 0 !important;
+    &-md{
+      padding-top: (@margin-padding * 1.5) !important;
     }
+    &-sm{
+      padding-top: (@margin-padding / 2) !important;
+    }
+  }
+
+  // Modificator Bpttom 'p--b'
+  &--b {
+    &-reset{
+      padding-bottom: 0 !important;
+    }
+    &-lg{
+      padding-bottom:(@margin-padding * 2)!important;
+    }
+    &-md{
+      padding-bottom:(@margin-padding * 1.5)!important;
+    }
+    &-sm{
+      padding-bottom:(@margin-padding / 2)!important;
+    }
+  }
+
+  // Modificator 'p--reset'
+  &--reset{
+    padding: 0 !important;
+  }
 }
 
 // ----------------------------------------
