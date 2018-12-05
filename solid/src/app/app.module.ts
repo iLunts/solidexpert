@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { DevelopmentPageComponent } from './pages/development-page/development-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
-import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { CvGeneratorPageComponent } from './pages/cv-generator-page/cv-generator-page.component';
 import { HeaderComponent } from './ui/header/header.component';
@@ -26,7 +26,7 @@ import { FormComponent } from './ui/form/form.component';
     HeaderComponent,
     DevelopmentPageComponent,
     ProductsPageComponent,
-    ProjectsPageComponent,
+    ServicesPageComponent,
     ContactUsPageComponent,
     CvGeneratorPageComponent,
     SliderComponent,
