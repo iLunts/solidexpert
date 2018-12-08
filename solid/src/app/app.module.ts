@@ -1,5 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+
+
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -11,12 +15,13 @@ import { CvGeneratorPageComponent } from './pages/cv-generator-page/cv-generator
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { SliderComponent } from './ui/slider/slider.component';
+import { FormComponent } from './ui/form/form.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-
-import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { route } from './routing';
-import { FormComponent } from './ui/form/form.component';
+import { ButtonFormComponent } from './ui/button-form/button-form.component';
+
 
 
 @NgModule({
@@ -31,13 +36,16 @@ import { FormComponent } from './ui/form/form.component';
     CvGeneratorPageComponent,
     SliderComponent,
     FooterComponent,
-    FormComponent
+    FormComponent,
+    ButtonFormComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule,
     route,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

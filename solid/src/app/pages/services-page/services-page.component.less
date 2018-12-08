@@ -1,8 +1,8 @@
-.services{
+.services {
   background: #000;
   // color: #fff;
 
-  & &__backdrop{
+  & &__backdrop {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     pointer-events: none;
     height: 100%;
 
-    .col{
+    .col {
       padding-right: 0;
       padding-left: 0;
       position: fixed;
@@ -22,7 +22,7 @@
       left: 0;
       height: 100vh;
       width: 1px;
-      background-color: hsla(0,0%,100%,.16);
+      background-color: hsla(0, 0%, 100%, 0.16);
       z-index: 2;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
@@ -45,22 +45,21 @@
     }
   }
 
-  & &__title{
+  & &__title {
     min-height: 600px;
     background: #000;
-    background-image: url('/assets/img/page-proj/project-title.jpg');
+    background-image: url("/assets/img/page-proj/project-title.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 
     &-text {
-
-      &--left{
+      &--left {
         // top: 0;
         // left: 0;
         transform: translate(-100%, -10%);
       }
-      &--right{
+      &--right {
         // top: 0;
         // left: 0;
         transform: translate(0%, 50%);
@@ -68,34 +67,33 @@
     }
   }
 
-  & &__content{
-    max-width:  66.666667%;
+  & &__content {
+    max-width: 70.4%;
 
-    &-text{
+    &-text {
       left: -25%;
       padding-left: 25%;
       transform: translateY(-180px);
       background: #000;
     }
-
-
+  }
+  & &__slider-title {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.16);
   }
 
-
-  & &__slider-body{
-    left: -24.4%;
+  & &__slider-body {
+    left: -25%;
   }
 
-  & &__slider-list-item:before{
-    content: '';
+  & &__slider-list-item:before {
+    content: "";
     position: absolute;
     left: 1px;
     width: 1%;
     height: 0.5%;
     background: #fff;
   }
-  & &__slider-btn{
-
+  & &__slider-btn {
     border: 2px solid #fff;
   }
 }

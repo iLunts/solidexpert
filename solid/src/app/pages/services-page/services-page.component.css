@@ -43,7 +43,7 @@
 .services .services__title {
   min-height: 600px;
   background: #000;
-  background-image: url('/assets/img/page-proj/project-title.jpg');
+  background-image: url("/assets/img/page-proj/project-title.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -55,7 +55,7 @@
   transform: translate(0%, 50%);
 }
 .services .services__content {
-  max-width: 66.666667%;
+  max-width: 70.4%;
 }
 .services .services__content-text {
   left: -25%;
@@ -63,11 +63,14 @@
   transform: translateY(-180px);
   background: #000;
 }
+.services .services__slider-title {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
 .services .services__slider-body {
-  left: -24.4%;
+  left: -25%;
 }
 .services .services__slider-list-item:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 1px;
   width: 1%;

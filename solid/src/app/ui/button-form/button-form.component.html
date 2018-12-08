@@ -1,0 +1,14 @@
+  <section class="page-form t--c" [ngClass]="{'open': isShownForm}">
+    <button
+      (click)="shownForm()"
+      class="page-form__button position--r t--white t--h1 t--bold t--c m--v-lg"
+      role="button"
+      aria-label="Contact-Button">
+      Contact us
+      <span class="page-form__button-line page-form__button-line--left position--a"></span>
+      <span class="page-form__button-line page-form__button-line--right position--a"></span>
+    </button>
+    <div class="page-form__body">
+      <app-form></app-form>
+    </div>
+  </section>

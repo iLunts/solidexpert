@@ -1,29 +1,22 @@
-.form {
+.form{
+  & &__button {
+    color: inherit;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 0;
+      background-color: #f44336;
+      transition: all 0.5s;
+      height: 3px;
+    }
 
-  & &__button{
-
-    &-line{
-      display: block;
-      width: 20px;
-      height: 2px;
-      background-color: #fff;
-      transition: all .4s;
-
-      // & + .form__button-line{
-      //   margin-top: 8px;
-      // }
-
-      &--left{
-        bottom: -40%;
-        left: 47%;
-        transform: rotate(25deg);
-      }
-
-      &--right{
-        bottom: -40%;
-        left: 50%;
-        transform: rotate(-25deg);
+    &:hover {
+      &:after {
+        width: 80%;
       }
     }
   }
+
 }

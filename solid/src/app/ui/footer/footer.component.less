@@ -1,23 +1,50 @@
 .footer {
-  color: #000 ;
-  background: #fff url('/assets/img/page-dev/map.png') no-repeat;
-  background-position: cover ;
+  color: #000;
+  background: #fff url("/assets/img/page-dev/map.png") no-repeat;
+  background-position: cover;
   background-size: 100%;
 
-  &__container{
+  &__container {
     max-width: 66.666667%;
   }
 
-  &__contact{
-   padding-left: 16.666667%;
+  &__contact {
+    padding-left: 16.666667%;
   }
 
-  &__contact:before{
-    content: '';
+  &__contact:before {
+    content: "";
     position: absolute;
     top: 15%;
     width: 4%;
     height: 2%;
     background: #000;
+  }
+
+  & &__nav-link {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 0;
+      // background-color: #000;
+      background-color: #f44336;
+      transition: all 0.5s;
+      height: 3px;
+    }
+
+    &:hover {
+      &:after {
+        width: 80%;
+      }
+    }
+  }
+
+  & &__contact-statment-link {
+    transition: all 0.5s;
+    &:hover::first-letter {
+      color: #f44336;
+    }
   }
 }

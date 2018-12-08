@@ -1,17 +1,16 @@
-.form .form__button-line {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  transition: all .4s;
+.form .form__button {
+  color: inherit;
 }
-.form .form__button-line--left {
-  bottom: -40%;
-  left: 47%;
-  transform: rotate(25deg);
+.form .form__button:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  background-color: #f44336;
+  transition: all 0.5s;
+  height: 3px;
 }
-.form .form__button-line--right {
-  bottom: -40%;
-  left: 50%;
-  transform: rotate(-25deg);
+.form .form__button:hover:after {
+  width: 80%;
 }

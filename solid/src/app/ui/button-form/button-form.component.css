@@ -1,0 +1,27 @@
+.page-form__button-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+.page-form__button-line--left {
+  bottom: -40%;
+  left: 44%;
+  transform: rotate(25deg);
+}
+.page-form__button-line--right {
+  bottom: -40%;
+  left: 50%;
+  transform: rotate(-25deg);
+}
+.page-form .page-form__body {
+  display: none;
+  height: 0;
+}
+.page-form.open .page-form__body {
+  display: block;
+  height: auto;
+  padding: 120px 0 60px;
+  transition: height 10s;
+}

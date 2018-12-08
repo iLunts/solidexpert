@@ -1,7 +1,7 @@
 .footer {
-  color: #000 ;
-  background: #fff url('/assets/img/page-dev/map.png') no-repeat;
-  background-position: cover ;
+  color: #000;
+  background: #fff url("/assets/img/page-dev/map.png") no-repeat;
+  background-position: cover;
   background-size: 100%;
 }
 .footer__container {
@@ -11,10 +11,29 @@
   padding-left: 16.666667%;
 }
 .footer__contact:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 15%;
   width: 4%;
   height: 2%;
   background: #000;
+}
+.footer .footer__nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  background-color: #f44336;
+  transition: all 0.5s;
+  height: 3px;
+}
+.footer .footer__nav-link:hover:after {
+  width: 80%;
+}
+.footer .footer__contact-statment-link {
+  transition: all 0.5s;
+}
+.footer .footer__contact-statment-link:hover::first-letter {
+  color: #f44336;
 }
