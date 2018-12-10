@@ -71,19 +71,3 @@
   padding: 120px 0 60px;
   transition: height 10s;
 }
-.header .form__input {
-  outline: none;
-  border: none;
-  margin: 12% 0;
-  line-height: 1.5;
-  width: 100%;
-  border-bottom: 1px solid #000;
-}
-.header .form__input:focus {
-  outline: #f44336;
-}
-.header .form__input::placeholder {
-  color: #808080;
-  font-size: 1.5em;
-  font-weight: 600;
-}

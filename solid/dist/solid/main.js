@@ -595,7 +595,7 @@ var route = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "  <section class=\"page-form t--c\" [ngClass]=\"{'open': isShowForm'}\">\n    <button\n      (click)=\"showForm()\"\n      class=\"page-form__button position--r t--white t--h1 t--bold t--c m--v-lg\"\n      role=\"button\"\n      aria-label=\"Contact-Button\">\n      Contact us\n      <span class=\"page-form__button-line page-form__button-line--left position--a\"></span>\n      <span class=\"page-form__button-line page-form__button-line--right position--a\"></span>\n    </button>\n    <div class=\"page-form__body\">\n      <app-form></app-form>\n    </div>\n  </section>\n"
+module.exports = "  <section class=\"page-form t--c\" [ngClass]=\"{'open': isShownForm}\">\n    <button\n      (click)=\"shownForm()\"\n      class=\"page-form__button position--r t--white t--h1 t--bold t--c m--v-lg\"\n      role=\"button\"\n      aria-label=\"Contact-Button\">\n      Contact us\n      <span class=\"page-form__button-line page-form__button-line--left position--a\"></span>\n      <span class=\"page-form__button-line page-form__button-line--right position--a\"></span>\n    </button>\n    <div class=\"page-form__body\">\n      <app-form></app-form>\n    </div>\n  </section>\n"
 
 /***/ }),
 
@@ -606,7 +606,7 @@ module.exports = "  <section class=\"page-form t--c\" [ngClass]=\"{'open': isSho
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-form .page-form__button-line {\n  display: block;\n  width: 20px;\n  height: 2px;\n  background-color: #fff;\n  transition: all 0.4s;\n}\n.page-form .page-form__button-line--left {\n  bottom: -40%;\n  left: 44%;\n  -webkit-transform: rotate(25deg);\n          transform: rotate(25deg);\n}\n.page-form .page-form__button-line--right {\n  bottom: -40%;\n  left: 50%;\n  -webkit-transform: rotate(-25deg);\n          transform: rotate(-25deg);\n}\n.page-form .page-form__body {\n  display: none;\n}\n.page-form.open .page-form__body {\n  display: block;\n}\n"
+module.exports = ".page-form__button-line {\n  display: block;\n  width: 20px;\n  height: 2px;\n  background-color: #fff;\n  transition: all 0.4s;\n}\n.page-form__button-line--left {\n  bottom: -40%;\n  left: 44%;\n  -webkit-transform: rotate(25deg);\n          transform: rotate(25deg);\n}\n.page-form__button-line--right {\n  bottom: -40%;\n  left: 50%;\n  -webkit-transform: rotate(-25deg);\n          transform: rotate(-25deg);\n}\n.page-form .page-form__body {\n  display: none;\n  height: 0;\n}\n.page-form.open .page-form__body {\n  display: block;\n  height: auto;\n  padding: 120px 0 60px;\n  transition: height 10s;\n}\n"
 
 /***/ }),
 
@@ -633,16 +633,16 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var ButtonFormComponent = /** @class */ (function () {
     function ButtonFormComponent() {
-        this.isShowForm = false;
+        this.isShownForm = false;
     }
     ButtonFormComponent.prototype.ngOnInit = function () {
     };
-    ButtonFormComponent.prototype.showForm = function () {
-        if (this.isShowForm) {
-            this.isShowForm = false;
+    ButtonFormComponent.prototype.shownForm = function () {
+        if (this.isShownForm) {
+            this.isShownForm = false;
         }
         else {
-            this.isShowForm = true;
+            this.isShownForm = true;
         }
     };
     ButtonFormComponent = __decorate([
@@ -678,7 +678,7 @@ module.exports = "<footer class=\"footer\">\n  <div class=\"footer__container co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".footer {\n  color: #000;\n  background: #fff url(\"/assets/img/page-dev/map.png\") no-repeat;\n  background-position: cover;\n  background-size: 100%;\n}\n.footer__container {\n  max-width: 66.666667%;\n}\n.footer__contact {\n  padding-left: 16.666667%;\n}\n.footer__contact:before {\n  content: \"\";\n  position: absolute;\n  top: 15%;\n  width: 4%;\n  height: 2%;\n  background: #000;\n}\n.footer .footer__nav-link:after {\n  content: \"\";\n  position: absolute;\n  bottom: 0px;\n  left: 0;\n  width: 0;\n  background-color: #f44336;\n  transition: all 0.5s;\n  height: 3px;\n}\n.footer .footer__nav-link:hover:after {\n  width: 50px;\n}\n.footer .footer__contact-statment-link {\n  transition: all 0.5s;\n}\n.footer .footer__contact-statment-link:hover::first-letter {\n  color: #f44336;\n}\n"
+module.exports = ".footer {\n  color: #000;\n  background: #fff url(\"/assets/img/page-dev/map.png\") no-repeat;\n  background-position: cover;\n  background-size: 100%;\n}\n.footer__container {\n  max-width: 66.666667%;\n}\n.footer__contact {\n  padding-left: 16.666667%;\n}\n.footer__contact:before {\n  content: \"\";\n  position: absolute;\n  top: 15%;\n  width: 4%;\n  height: 2%;\n  background: #000;\n}\n.footer .footer__nav-link:after {\n  content: \"\";\n  position: absolute;\n  bottom: 0px;\n  left: 0;\n  width: 0;\n  background-color: #f44336;\n  transition: all 0.5s;\n  height: 3px;\n}\n.footer .footer__nav-link:hover:after {\n  width: 80%;\n}\n.footer .footer__contact-statment-link {\n  transition: all 0.5s;\n}\n.footer .footer__contact-statment-link:hover::first-letter {\n  color: #f44336;\n}\n"
 
 /***/ }),
 
@@ -730,7 +730,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"form t--c\">\n  <dl id=\"sampleFormPanel\">\n    <dt>First Name:</dt>\n    <dd><input name=\"firstName\" type=\"text\" [(ngModel)]=\"firstName\" /></dd>\n    <dt>Last Name:</dt>\n    <dd><input name=\"lastName\" [(ngModel)]=\"lastName\" type=\"text\" /></dd>\n    <dt>Phone:</dt>\n    <dd>\n      <input\n        name=\"contactInfo_Phone_1\"\n        [(ngModel)]=\"contactInfo_Phone_1\"\n        type=\"text\"\n      />\n    </dd>\n    <dt>Email:</dt>\n    <dd>\n      <input\n        name=\"contactInfo_Email_1\"\n        [(ngModel)]=\"contactInfo_Email_1\"\n        type=\"text\"\n      />\n    </dd>\n    <dt>Message:</dt>\n    <dd><input name=\"message\" [(ngModel)]=\"message\" type=\"text\" /></dd>\n  </dl>\n  <button\n    (click)=\"click()\"\n    class=\"form__button position--r  t--bold t--c m--v-lg\"\n    role=\"button\"\n    aria-label=\"Send-Button\"\n  >\n    Send\n  </button>\n</section>\n"
+module.exports = "<section class=\"form t--c\">\n  <div class=\"grid\">\n    <div class=\"col col--1-2\">\n      <input class=\"form__input\"\n        name=\"firstName\"\n        type=\"text\"\n        [(ngModel)]=\"firstName\"\n        placeholder=\"First name\"\n      />\n\n      <input class=\"form__input\"\n        name=\"lastName\"\n        [(ngModel)]=\"lastName\"\n        type=\"text\"\n        placeholder=\"Last name\"\n      />\n\n      <input class=\"form__input\"\n        name=\"contactInfo_Phone_1\"\n        [(ngModel)]=\"contactInfo_Phone_1\"\n        type=\"tel\"\n        placeholder=\"Telephone number\"\n      />\n\n      <input class=\"form__input\"\n        name=\"contactInfo_Email_1\"\n        [(ngModel)]=\"contactInfo_Email_1\"\n        type=\"email\"\n        placeholder=\"E-mail address\"\n      />\n\n      <input class=\"form__input\"\n        name=\"company\"\n        [(ngModel)]=\"company\"\n        type=\"text\"\n        placeholder=\"Company\"\n      />\n    </div>\n    <div class=\"col col--1-2\">\n      <textarea class=\"form__input\"\n        name=\"message\"\n        id=\"message\"\n        cols=\"45\"\n        rows=\"16\"\n        placeholder=\"Your message\"\n      ></textarea>\n    </div>\n  </div>\n\n  <button\n    (click)=\"click()\"\n    class=\"form__button position--r t--h3 t--bold t--c m--v-lg\"\n    role=\"button\"\n    aria-label=\"Send-Button\"\n  >\n    Send\n  </button>\n</section>\n"
 
 /***/ }),
 
@@ -741,7 +741,7 @@ module.exports = "<section class=\"form t--c\">\n  <dl id=\"sampleFormPanel\">\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".form .form__button {\n  color: inherit;\n}\n.form .form__button:after {\n  content: \"\";\n  position: absolute;\n  bottom: 0px;\n  left: 0;\n  width: 0;\n  background-color: #f44336;\n  transition: all 0.5s;\n  height: 3px;\n}\n.form .form__button:hover:after {\n  width: 80%;\n}\n"
 
 /***/ }),
 
@@ -776,17 +776,19 @@ var FormComponent = /** @class */ (function () {
         this.contactInfo_Phone_1 = '';
         this.contactInfo_Email_1 = '';
         this.message = '';
+        this.company = '';
     }
     FormComponent.prototype.ngOnInit = function () {
     };
     FormComponent.prototype.click = function () {
         var body = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]()
-            .set('is_company', "false")
+            //  .set('is_company',"false")
             .set('firstName', this.firstName)
             .set('lastName', this.lastName)
             .set('contactInfo_Phone_1', this.contactInfo_Phone_1)
             .set('contactInfo_Email_1', this.contactInfo_Email_1)
             .set('message', this.message)
+            .set('company', this.company)
             .set('return_url', 'http://solidexpert.ltd')
             .set('web_form_key', '3a51d614-03b1-43b9-bca2-a3ff717ca08e')
             .set('notify_list', '61560477-f93c-11e8-94e2-6e81647443e7')
@@ -819,7 +821,7 @@ var FormComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header .header__burger {\n  position: fixed;\n  display: inline-block;\n  top: 40px;\n  left: 50%;\n  width: 40px;\n  height: 40px;\n  margin-left: -20px;\n  padding: 14px 0;\n  z-index: 1;\n}\n.header .header__burger-line {\n  display: block;\n  width: 40px;\n  height: 2px;\n  background-color: #fff;\n  transition: all .4s;\n}\n.header .header__burger-line + .header__burger-line {\n  margin-top: 8px;\n}\n.header .header__body {\n  display: none;\n  height: 0;\n}\n.header .header__list {\n  margin: 0;\n  padding: 0;\n}\n.header .header__link {\n  font-size: 3em;\n  line-height: 3rem;\n  font-style: normal;\n  font-weight: 700;\n  font-stretch: normal;\n  letter-spacing: 0;\n  color: #000;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  padding: 10px 0;\n}\n.header .header__link:after {\n  content: '';\n  position: absolute;\n  bottom: 0px;\n  left: 0;\n  width: 0;\n  background-color: #f44336;\n  transition: all .5s;\n  height: 5px;\n}\n.header .header__link:hover:after {\n  width: 100px;\n}\n.header.open .header__burger-line {\n  background-color: #000;\n}\n.header.open .header__burger-line:nth-child(1) {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n.header.open .header__burger-line:nth-child(2) {\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n}\n.header.open .header__burger-line + .header__burger-line {\n  margin-top: -1px;\n}\n.header.open .header__body {\n  display: block;\n  height: auto;\n  padding: 120px 0 60px;\n  transition: height 10s;\n}\n"
+module.exports = ".header .header__burger {\n  position: fixed;\n  display: inline-block;\n  top: 40px;\n  left: 50%;\n  width: 40px;\n  height: 40px;\n  margin-left: -20px;\n  padding: 14px 0;\n  z-index: 1;\n}\n.header .header__burger-line {\n  display: block;\n  width: 40px;\n  height: 2px;\n  background-color: #fff;\n  transition: all .4s;\n}\n.header .header__burger-line + .header__burger-line {\n  margin-top: 8px;\n}\n.header .header__body {\n  display: none;\n  height: 0;\n}\n.header .header__list {\n  margin: 0;\n  padding: 0;\n}\n.header .header__link {\n  font-size: 3em;\n  line-height: 3rem;\n  font-style: normal;\n  font-weight: 700;\n  font-stretch: normal;\n  letter-spacing: 0;\n  color: #000;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  padding: 10px 0;\n}\n.header .header__link:after {\n  content: '';\n  position: absolute;\n  bottom: 0px;\n  left: 0;\n  width: 0;\n  background-color: #f44336;\n  transition: all .5s;\n  height: 5px;\n}\n.header .header__link:hover:after {\n  width: 100px;\n}\n.header.open .header__burger-line {\n  background-color: #000;\n}\n.header.open .header__burger-line:nth-child(1) {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n.header.open .header__burger-line:nth-child(2) {\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n}\n.header.open .header__burger-line + .header__burger-line {\n  margin-top: -1px;\n}\n.header.open .header__body {\n  display: block;\n  height: auto;\n  padding: 120px 0 60px;\n  transition: height 10s;\n}\n.header .form__input {\n  outline: none;\n  border: none;\n  margin: 12% 0;\n  line-height: 1.5;\n  width: 100%;\n  border-bottom: 1px solid #000;\n}\n.header .form__input:focus {\n  outline: #f44336;\n}\n.header .form__input::-webkit-input-placeholder {\n  color: #808080;\n  font-size: 1.5em;\n  font-weight: 600;\n}\n.header .form__input:-ms-input-placeholder {\n  color: #808080;\n  font-size: 1.5em;\n  font-weight: 600;\n}\n.header .form__input::-ms-input-placeholder {\n  color: #808080;\n  font-size: 1.5em;\n  font-weight: 600;\n}\n.header .form__input::placeholder {\n  color: #808080;\n  font-size: 1.5em;\n  font-weight: 600;\n}\n"
 
 /***/ }),
 
@@ -830,7 +832,7 @@ module.exports = ".header .header__burger {\n  position: fixed;\n  display: inli
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header \" [ngClass]=\"{'open': isShowMenu}\">\r\n    <button role=\"button\" aria-label=\"Menu Button\" class=\"header__burger\" (click)=\"showMenu()\">\r\n      <span class=\"header__burger-line header__burger-line--upper\"></span>\r\n      <span class=\"header__burger-line header__burger-line--lower\"></span>\r\n    </button>\r\n    <div class=\"container header__body  \">\r\n        <div class=\"grid\">\r\n            <div class=\"col--2-5 push--1-5\">\r\n                <ul class=\"header__list\">\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/']\" class=\"header__link\">Home</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                         <a [routerLink]=\"['/development']\" class=\"header__link\">Development</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/products']\" class=\"header__link\">Products</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/services']\" class=\"header__link\">Services</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/contact']\" class=\"header__link\">Contact Us</a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <div class=\"col--1-5 push--1-5\">\r\n                <p>SolidExpert LOGO</p>\r\n                <app-form></app-form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+module.exports = "<div class=\"header \" [ngClass]=\"{'open': isShowMenu}\">\r\n    <button role=\"button\" aria-label=\"Menu Button\" class=\"header__burger\" (click)=\"showMenu()\">\r\n      <span class=\"header__burger-line header__burger-line--upper\"></span>\r\n      <span class=\"header__burger-line header__burger-line--lower\"></span>\r\n    </button>\r\n    <div class=\"container header__body  \">\r\n        <div class=\"grid\">\r\n            <div class=\"col--1-5 push--1-5\">\r\n                <ul class=\"header__list\">\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/']\" class=\"header__link\">Home</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                         <a [routerLink]=\"['/development']\" class=\"header__link\">Development</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/products']\" class=\"header__link\">Products</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/services']\" class=\"header__link\">Services</a>\r\n                    </li>\r\n                    <li class=\"header__item\">\r\n                        <a [routerLink]=\"['/contact']\" class=\"header__link\">Contact Us</a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <div class=\"col--2-5 push--2-5\">\r\n              <app-form></app-form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 

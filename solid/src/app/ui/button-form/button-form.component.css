@@ -21,6 +21,7 @@
 }
 .page-form.open .page-form__body {
   display: block;
+  background: #fff;
   height: auto;
   padding: 120px 0 60px;
   transition: height 10s;
