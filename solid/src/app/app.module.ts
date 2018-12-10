@@ -21,6 +21,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FormsModule } from '@angular/forms';
 import { route } from './routing';
 import { ButtonFormComponent } from './ui/button-form/button-form.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
+import { NavComponent } from './ui/nav/nav.component';
 
 
 
@@ -38,6 +40,8 @@ import { ButtonFormComponent } from './ui/button-form/button-form.component';
     FooterComponent,
     FormComponent,
     ButtonFormComponent,
+    MainPageComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
