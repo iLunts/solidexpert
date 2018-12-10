@@ -6,12 +6,12 @@
   transition: all 0.4s;
 }
 .page-form__button-line--left {
-  bottom: -40%;
-  left: 44%;
+  bottom: 5%;
+  left: 45%;
   transform: rotate(25deg);
 }
 .page-form__button-line--right {
-  bottom: -40%;
+  bottom: 5%;
   left: 50%;
   transform: rotate(-25deg);
 }
@@ -25,4 +25,10 @@
   height: auto;
   padding: 120px 0 60px;
   transition: height 10s;
+}
+.page-form.open .page-form__button-line--left {
+  transform: rotate(-25deg);
+}
+.page-form.open .page-form__button-line--right {
+  transform: rotate(25deg);
 }
