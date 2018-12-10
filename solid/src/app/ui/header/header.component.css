@@ -7,7 +7,7 @@
   height: 40px;
   margin-left: -20px;
   padding: 14px 0;
-  z-index: 1;
+  z-index: 4;
 }
 .header .header__burger-line {
   display: block;
@@ -53,6 +53,9 @@
 .header .header__link:hover:after {
   width: 100px;
 }
+.header.open .header__body {
+  background: #fff;
+}
 .header.open .header__burger-line {
   background-color: #000;
 }
@@ -67,6 +70,9 @@
 }
 .header.open .header__body {
   display: block;
+  position: fixed;
+  min-width: 100%;
+  z-index: 3;
   height: auto;
   padding: 120px 0 60px;
   transition: height 10s;

@@ -9,7 +9,7 @@
     height: 40px;
     margin-left: -20px;
     padding: 14px 0;
-    z-index: 1;
+    z-index: 4;
 
     &-line{
         display: block;
@@ -67,6 +67,9 @@
       }
   }
   &.open{
+    .header__body{
+      background: #fff;
+    }
 
     .header__burger-line{
       background-color: #000;
@@ -85,8 +88,9 @@
 
     .header__body {
       display: block;
-      // position: fixed;
-
+      position: fixed;
+      min-width:100%;
+      z-index: 3;
       height: auto;
       padding: 120px 0 60px;
       transition: height 10s;
