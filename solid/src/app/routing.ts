@@ -7,12 +7,14 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 
+
 const routes: Routes = [
-    { path: '', component: MainPageComponent, pathMatch: 'full' },
+    // { path: '', component: HomePageComponent, pathMatch: 'full' },
     { path: 'development', component: DevelopmentPageComponent },
     { path: 'products', component: ProductsPageComponent },
     { path: 'services', component: ServicesPageComponent },
-    { path: 'contact', component: ContactUsPageComponent }
+    { path: 'contact', component: ContactUsPageComponent },
+    { path: '', component: MainPageComponent },
     // { path: 'order', component: HomePageComponent, pathMatch: 'full' },
     // { path: '**', component: HomePageComponent },
 ];
