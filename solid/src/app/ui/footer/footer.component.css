@@ -1,6 +1,6 @@
 .footer {
   color: #000;
-  background: #fff url("/assets/img/page-dev/map.png") no-repeat;
+  background: #fff;
   background-position: cover;
   background-size: 100%;
 }
@@ -36,4 +36,7 @@
 }
 .footer .footer__contact-statment-link:hover::first-letter {
   color: #f44336;
+}
+.footer__contact-map:hover .footer {
+  background: blue;
 }
