@@ -46,6 +46,7 @@ button{
 // Block '.btn' ~ button
 // -------------------------------------------
 .btn{
+    position: relative;
     margin: 0;
     border: none;
     overflow: visible;
@@ -260,6 +261,36 @@ button{
         &.btn--border{
             border-color: #fff;
             color: #fff;
+
+            &:focus,
+            &:hover,
+            &:active{
+                box-shadow: none;
+                outline: none;
+                text-transform: none;
+            }
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 0;
+                background-color: #fff;
+                z-index: -1;
+                transition: height .3s ease-in-out;
+            }
+
+            &:hover{
+                color: #333;
+
+                &:before{
+                    height: 100%;
+                }
+            }
         }
     }
 
