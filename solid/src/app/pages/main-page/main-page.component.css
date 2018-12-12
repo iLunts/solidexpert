@@ -54,6 +54,20 @@
 .block.block--green .block__overlay {
   color: #0ca734;
 }
+.block.block--blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d7cfe;
+  color: #fff;
+}
+.block.block--blue .block__title {
+  color: #fff;
+}
+.block.block--blue .block__overlay {
+  color: #1976d2;
+}
 .block .block__title {
   font-size: 4rem;
   line-height: 4.2rem;
