@@ -159,7 +159,10 @@
 // width 1024 - 1219
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1))  {
   .block{
-    // padding: @block-padding-lg 0;
+    & &__body{
+      padding-top: 50px ;
+    }
+
     & &__overlay{
       font-size: 45rem;
     }
@@ -178,6 +181,11 @@
   .block{
     min-height: 50vh;
     padding: @block-padding-lg 0;
+
+    & &__body{
+      padding-top: 50px ;
+    }
+
     & &__overlay{
       font-size: 30rem;
     }
@@ -185,6 +193,7 @@
     & .container{
       padding: 0 100px;
     }
+
     & &__title{
       font-size: 3rem;
       line-height: 3.2rem;
@@ -210,6 +219,11 @@
   .block{
     min-height: 50vh;
     padding: @block-padding-lg 0;
+
+    & &__body{
+      padding-top: 50px ;
+    }
+
     & &__overlay{
       font-size: 16rem;
     }
@@ -243,6 +257,11 @@
   .block{
     min-height: 50vh;
     padding: @block-padding-lg 0;
+
+    & &__body{
+      padding-top: 50px ;
+    }
+
     & &__overlay{
       font-size: 10rem;
     }
