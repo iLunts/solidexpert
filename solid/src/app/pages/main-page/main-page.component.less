@@ -176,6 +176,7 @@
 // width 768 - 1023
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1))  {
   .block{
+    min-height: 50vh;
     padding: @block-padding-lg 0;
     & &__overlay{
       font-size: 30rem;
@@ -207,6 +208,7 @@
 // width 320 - 767
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1)  {
   .block{
+    min-height: 50vh;
     padding: @block-padding-lg 0;
     & &__overlay{
       font-size: 16rem;
@@ -239,6 +241,7 @@
 @media only screen and (max-width: @breakpoint-xs-min)  {
 
   .block{
+    min-height: 50vh;
     padding: @block-padding-lg 0;
     & &__overlay{
       font-size: 10rem;
@@ -265,5 +268,6 @@
       min-width: 100%;
     }
   }
+
 }
 

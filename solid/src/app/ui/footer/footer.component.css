@@ -10,14 +10,6 @@
 .footer__contact {
   padding-left: 16.666667%;
 }
-.footer__contact:before {
-  content: "";
-  position: absolute;
-  top: 15%;
-  width: 4%;
-  height: 2%;
-  background: #000;
-}
 .footer .footer__nav-link:after {
   content: "";
   position: absolute;
@@ -39,4 +31,33 @@
 }
 .footer__contact-map:hover .footer {
   background: blue;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .footer .footer__contact {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer .footer__nav {
+    display: none;
+  }
+  .footer .footer__contact {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px - 1) {
+  .footer .footer__nav {
+    display: none;
+  }
+  .footer .footer__contact {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer .footer__nav {
+    display: none;
+  }
+  .footer .footer__contact {
+    padding-left: 0;
+  }
 }

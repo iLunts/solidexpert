@@ -1,10 +1,15 @@
-<nav class="nav">
+<nav class="nav"[ngClass]="{'open': isShowMenu}">
 	<a href="" class="nav__logo">
 		<p>SOLID</p>
 		<p>Expert</p>
-	</a>
+  </a>
 
-	<ul class="nav__menu">
+  <button role="button" aria-label="Menu Button" class="nav__burger" (click)="showMenu()">
+    <span class="nav__burger-line nav__burger-line--upper"></span>
+    <span class="nav__burger-line nav__burger-line--lower"></span>
+  </button>
+
+	<ul class="nav__menu nav__menu-links">
 		<li class="nav__item">
 			<a [routerLink]="[ '/' ]" routerLinkActive="active" class="nav__link"></a>
 		</li>
@@ -25,7 +30,7 @@
 		</li>
 	</ul>
 
-	<ul class="nav__menu">
+	<ul class="nav__menu nav__menu-request">
 		<li class="nav__item">
 			<a [routerLink]="[ '/request' ]" routerLinkActive="active" class="nav__link">Send Request</a>
 		</li>

@@ -8,11 +8,31 @@
   width: 100%;
   background-color: #000;
   color: #fff;
-  padding: .75em;
-  letter-spacing: .1em;
+  padding: 0.75em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   transition: top 0.2s ease-in-out;
+}
+.nav .nav__burger {
+  position: fixed;
+  display: none;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  padding: 14px 0;
+  z-index: 4;
+}
+.nav .nav__burger-line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+.nav .nav__burger-line + .nav__burger-line {
+  margin-top: 8px;
 }
 .nav .nav__logo {
   position: relative;
@@ -27,7 +47,7 @@
   text-decoration: none;
 }
 .nav .nav__logo:after {
-  content: '';
+  content: "";
   position: absolute;
   right: -30px;
   top: 0;
@@ -65,10 +85,10 @@
   text-decoration: nonte;
   box-shadow: none;
   outline: none;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 .nav .nav__link:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 0;
@@ -90,4 +110,54 @@
 }
 .nav .nav__link.active:after {
   background-color: #00b715;
+}
+.nav.open .nav__menu-links {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.nav.open .nav__burger {
+  top: 8px;
+}
+.nav.open .nav__burger-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+.nav.open .nav__burger-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.nav.open .nav__burger-line + .header__burger-line {
+  margin-top: -1px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .nav .nav__menu-links {
+    display: none;
+  }
+  .nav .nav__burger {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav .nav__menu-links {
+    display: none;
+  }
+  .nav .nav__burger {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px - 1) {
+  .nav .nav__menu-links {
+    display: none;
+  }
+  .nav .nav__burger {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .nav .nav__menu-links {
+    display: none;
+  }
+  .nav .nav__burger {
+    display: inline-block;
+  }
 }

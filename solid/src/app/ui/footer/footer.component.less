@@ -1,3 +1,5 @@
+@import '../../../../web-src/less/variables.less';
+// --------------------------------------------------------
 .footer {
   color: #000;
   // background: #fff url("/assets/img/page-dev/map.png") no-repeat;
@@ -11,15 +13,6 @@
 
   &__contact {
     padding-left: 16.666667%;
-  }
-
-  &__contact:before {
-    content: "";
-    position: absolute;
-    top: 15%;
-    width: 4%;
-    height: 2%;
-    background: #000;
   }
 
   & &__nav-link {
@@ -51,4 +44,46 @@
 }
 .footer__contact-map:hover .footer{
   background:blue;
+}
+// width 1024 - 1219
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1))  {
+  .footer{
+    & &__contact{
+      padding-left: 0;
+    }
+  }
+}
+// width 768 - 1023
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1))  {
+  .footer{
+    & &__nav{
+      display: none;
+    }
+    & &__contact{
+      padding-left: 0;
+    }
+  }
+}
+// width 320 - 767
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1)  {
+  .footer{
+    & &__nav{
+      display: none;
+    }
+    & &__contact{
+      padding-left: 0;
+    }
+  }
+}
+
+// width 0 - 319
+@media only screen and (max-width: @breakpoint-xs-min)  {
+  .footer{
+    & &__nav{
+      display: none;
+    }
+    & &__contact{
+      padding-left: 0;
+    }
+  }
 }
