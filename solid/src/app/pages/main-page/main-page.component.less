@@ -142,9 +142,6 @@
         bottom: 0;
         left: 0;
         right: 0;
-        // background-color: #252525;
-        // background-color: #000;
-        // opacity: .7;
         background-color: rgba(0, 0, 0, 0.7);
         z-index: 1;
       }
@@ -195,19 +192,13 @@
     & &__overlay {
       font-size: 45rem;
     }
-
-    & .container {
-      padding: 0 100px;
-    }
-
-    [class=col--3-5] {
-      min-width: 100%;
-    }
   }
 }
 
-// width 768 - 1023
-@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1)) {
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
 
   .block {
     min-height: 50vh;
@@ -219,10 +210,6 @@
 
     & &__overlay {
       font-size: 30rem;
-    }
-
-    & .container {
-      padding: 0 100px;
     }
 
     & &__title {
@@ -239,16 +226,13 @@
     & &__text {
       font-weight: 600;
     }
-
-    [class=col--3-5] {
-      min-width: 100%;
-    }
   }
-
 }
 
-// width 320 - 767
-@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1) {
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
   .block {
     min-height: 50vh;
     padding: @block-padding-lg 0;
@@ -261,10 +245,6 @@
       font-size: 16rem;
     }
 
-    & .container {
-      padding: 0 50px;
-    }
-
     & &__title {
       font-size: 1.5rem;
       line-height: 2rem;
@@ -280,51 +260,5 @@
       font-size: 0.8rem;
       font-weight: 600;
     }
-
-    [class=col--3-5] {
-      min-width: 100%;
-    }
   }
-}
-
-// width 0 - 319
-@media only screen and (max-width: @breakpoint-xs-min) {
-
-  .block {
-    min-height: 50vh;
-    padding: @block-padding-lg 0;
-
-    &&--about {
-      padding-top: 100px;
-    }
-
-    & &__overlay {
-      font-size: 10rem;
-    }
-
-    & .container {
-      padding: 0 20px;
-    }
-
-    & &__title {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    & &__subtitle {
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-    }
-
-    & &__text {
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    [class=col--3-5] {
-      min-width: 100%;
-    }
-  }
-
 }

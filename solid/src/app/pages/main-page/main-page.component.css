@@ -131,12 +131,6 @@
   .block .block__overlay {
     font-size: 45rem;
   }
-  .block .container {
-    padding: 0 100px;
-  }
-  .block [class=col--3-5] {
-    min-width: 100%;
-  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .block {
@@ -148,9 +142,6 @@
   }
   .block .block__overlay {
     font-size: 30rem;
-  }
-  .block .container {
-    padding: 0 100px;
   }
   .block .block__title {
     font-size: 3rem;
@@ -164,11 +155,8 @@
   .block .block__text {
     font-weight: 600;
   }
-  .block [class=col--3-5] {
-    min-width: 100%;
-  }
 }
-@media only screen and (min-width: 320px) and (max-width: 768px - 1) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .block {
     min-height: 50vh;
     padding: 60px 0;
@@ -179,9 +167,6 @@
   .block .block__overlay {
     font-size: 16rem;
   }
-  .block .container {
-    padding: 0 50px;
-  }
   .block .block__title {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -194,39 +179,5 @@
   .block .block__text {
     font-size: 0.8rem;
     font-weight: 600;
-  }
-  .block [class=col--3-5] {
-    min-width: 100%;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .block {
-    min-height: 50vh;
-    padding: 60px 0;
-  }
-  .block.block--about {
-    padding-top: 100px;
-  }
-  .block .block__overlay {
-    font-size: 10rem;
-  }
-  .block .container {
-    padding: 0 20px;
-  }
-  .block .block__title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 1rem;
-  }
-  .block .block__subtitle {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  .block .block__text {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  .block [class=col--3-5] {
-    min-width: 100%;
   }
 }
