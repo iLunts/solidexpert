@@ -1,60 +1,58 @@
-<div class="contact container-fluid ">
-  <!-- Contact backdrop -->
-  <div class="contact__backdrop">
-    <span class="col col--1"></span> <span class="col col--2"></span>
-    <span class="col col--3"></span> <span class="col col--4"></span>
-    <span class="col col--5"></span>
-  </div>
-  <!-- Contact content -->
-
-  <header class="contact__title block ">
-    <h1
-      class="contact__title-text position--r position--r t--title m--t-xxlg t--c"
-    >
-      Contacts
-      <!--
-        <span class="contact__title-text contact__title-text--left position--a">Contact</span>
-        <span class="contact__title-text contact__title-text--right position--a">Us</span>
-      -->
-    </h1>
-
-  </header>
-
-  <main class="contact__content container p--b-lg ">
-    <section class="contact__content-form">
-      <app-form></app-form>
-    </section>
-    <section class="contact__content-details grid m--v-lg">
-      <div
-        class="contact__content-details-item  col--md-1-2 col--sm-1-2 col--xs-1-1"
-      >
-        <h3 class="t--h4">SOLID Expert</h3>
-        <p class="">Nemiga 3 , Minsk</p>
-      </div>
-      <div
-      class="contact__content-details-item  col--md-1-2 col--sm-1-2 col--xs-1-1"
-    >
-      <h3 class="t--h4">info@solidexpert.pro</h3>
-      <p class="">+1 ( 919 ) 323 36 12</p>
+<div class="contact">
+  <div class="contact__left">
+    <div class="contact__left-img">
+      <img src="https://sevenstars.nl/Assets/img/contact/contact-maico.jpg" alt="">
     </div>
-    </section>
-  </main>
+  </div>
+  <div class="contact__body">
+    <div class="grid">
+      <div class="col--xlg-2-3 col--lg-2-3 col--md-2-3 col--sm-1-1 col--xs-1-1">
+        <h2 class="t--h3 t--green">Have a question?</h2>
+        <div>
+          <label class="label">Your name</label>
+          <input class="input" type="text">
+        </div>
+        <div>
+          <label class="label">Telephone number</label>
+          <input class="input" type="text">
+        </div>
+        <div>
+          <label class="label">E-mail address</label>
+          <input class="input" type="text">
+        </div>
+        <div>
+          <label class="label">Your message</label>
+          <textarea class="input" rows="10"></textarea>
+        </div>
 
-  <!--
-    <a class="contact__team block  d--b h--400 ">
-      <div class="contact__team-backdrop position--a"></div>
-      <div class="contact__team-inner position--a">
-        <h2 class="t--h1 t--bold">We are here!</h2>
-      <p class="t--h5 t--uppercase link link--line">View a map</p>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" id="privacy-statement">
+          <label class="checkbox__label" for="privacy-statement">Yes, I authorize SolidExpert Ltd. process my personal data and agree to the privacy statement</label>
+        </div>
+
+        <hr class="line line--sm m--v">
+
+        <div class="contact__question-send">
+          <button class="btn btn--green btn--md">Send</button>
+        </div>
       </div>
-    </a>
-  -->
+
+      <div class="col--xlg-1-3 col--lg-1-3 col--md-1-3 col--sm-1-1 col--xs-1-1">
+        <h3 class="t--h3 t--green m--b-md">Main office</h3>
+        
+        <div class="contact__address">
+          <p class="contact__address-text t--semi-bold">SolidExpert Ltd</p>
+          <p class="contact__address-text">Nemiga 3, Minsk</p>
+          <a href="tel:+1(919)3233612" class="contact__address-link">+1 (919) 323-36-12</a>
+          <a href="mailto:info@solidexpert.pro" class="contact__address-link">info@solidexpert.pro</a>
+        </div>
+
+
+        <h3 class="t--h3 t--green m--v-md">Social media</h3>
+      </div>
+    </div>
+  </div>
 </div>
-<iframe
-    class="contact__map"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.564779469687!2d27.55035277568408!3d53.90393915930507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfeba2244dab%3A0x2fc998fd3e91b368!2sNemiga+3+Shopping+Mall!5e0!3m2!1sen!2sby!4v1544821022807"
-    frameborder="0"
-    style="border:0"
-    allowfullscreen
-  >
-  </iframe>
+<!-- <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.564779469687!2d27.55035277568408!3d53.90393915930507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfeba2244dab%3A0x2fc998fd3e91b368!2sNemiga+3+Shopping+Mall!5e0!3m2!1sen!2sby!4v1544821022807"
+  frameborder="0" style="border:0" allowfullscreen>
+</iframe> -->
