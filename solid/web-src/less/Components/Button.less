@@ -223,17 +223,16 @@ button{
     &&--green{
         background: @color-green;
         color: #fff;
-        // text-shadow: 0 1px 1px #006f04;
+
+        &:disabled{
+            background: #eee;
+            color: #bbb;
+        }
 
         &:hover{
-            // background: @color-green-dark;
             background: @color-green;
             border-color: @color-green;
         }
-
-        // &:focus{
-        //     box-shadow: 0 0 0 3px lighten(@color-green, 30%);
-        // }
 
         &.btn--border{
             border-color: @color-green;

@@ -18,7 +18,7 @@ import { SliderComponent } from './ui/slider/slider.component';
 import { FormComponent } from './ui/form/form.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { route } from './routing';
 import { ButtonFormComponent } from './ui/button-form/button-form.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
@@ -51,7 +51,8 @@ import { GridLineComponent } from './ui/grid-line/grid-line.component';
     RouterModule,
     route,
     CarouselModule.forRoot(),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

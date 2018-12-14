@@ -8,37 +8,41 @@
     <div class="grid">
       <div class="col--xlg-2-3 col--lg-2-3 col--md-2-3 col--sm-1-1 col--xs-1-1">
         <h2 class="t--h3 t--green">Have a question?</h2>
-        <div>
-          <label class="label">Your name</label>
-          <div class="input-group input-group--required">
-            <input class="input-group__input" type="text" [(ngModel)]="name">
+        
+        <form [formGroup]="requestForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label class="label">Your name</label>
+            <div class="input-group input-group--required" [ngClass]="{ 'isError': f.name.errors && (f.name.dirty || f.name.touched) }">
+              <input class="input-group__input" type="text" formControlName="name">
+            </div>
           </div>
-        </div>
-        <div>
-          <label class="label">E-mail address</label>
-          <div class="input-group input-group--required">
-            <input class="input-group__input" type="text" [(ngModel)]="email">
+          <div>
+            <label class="label">E-mail address</label>
+            <div class="input-group input-group--required" [ngClass]="{ 'isError': f.email.errors && (f.email.dirty || f.email.touched) }">
+              <input class="input-group__input" type="text" formControlName="email">
+            </div>
           </div>
-        </div>
-        <div>
-          <label class="label">Telephone number</label>
-          <input class="input" type="text" [(ngModel)]="telephone">
-        </div>
-        <div>
-          <label class="label">Your message</label>
-          <textarea class="input" rows="10"></textarea>
-        </div>
+          <div>
+            <label class="label">Telephone number</label>
+            <input class="input" type="text" formControlName="telephone">
+          </div>
+          <div>
+            <label class="label">Your message</label>
+            <textarea class="input" rows="10"></textarea>
+          </div>
 
-        <div class="checkbox">
-          <input class="checkbox__input" type="checkbox" id="privacy-statement" [(ngModel)]="privacy">
-          <label class="checkbox__label" for="privacy-statement">Yes, I authorize SolidExpert Ltd. process my personal data and agree to the privacy statement</label>
-        </div>
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="privacy-statement" formControlName="privacy">
+            <label class="checkbox__label" for="privacy-statement">Yes, I authorize SolidExpert Ltd. process my personal data and agree to the privacy statement</label>
+          </div>
 
-        <hr class="line line--sm m--v">
+          <hr class="line line--sm m--v">
 
-        <div class="contact__question-send">
-          <button class="btn btn--green btn--md" [disabled]="!email?.length || !name?.length || !privacy">Send</button>
-        </div>
+          <div class="contact__question-send">
+            <button class="btn btn--green btn--md" [disabled]="f.name.errors || f.email.errors || f.privacy.invalid">Send</button>
+          </div>
+        </form>
+
       </div>
 
       <div class="col--xlg-1-3 col--lg-1-3 col--md-1-3 col--sm-1-1 col--xs-1-1">
