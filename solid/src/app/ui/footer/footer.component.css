@@ -39,20 +39,20 @@
   .footer .footer__contact {
     padding-left: 0;
     align-items: center;
+    width: 100%;
   }
   .footer .footer__contact-statment {
     text-align: center;
+    width: 100%;
   }
   .footer .footer__contact-statment-link {
     margin: 0 5px ;
   }
   .footer .footer__contact-social-link {
-    width: 1.2rem;
+    width: 2rem;
   }
   .footer .footer__contact-statment-link {
     font-size: .8rem;
-  }
-  .footer [class=col--1-4] {
     width: 100%;
   }
 }
@@ -63,17 +63,19 @@
   .footer .footer__contact {
     padding-left: 0;
     align-items: center;
+    width: 100%;
+  }
+  .footer .footer__contact-location {
+    font-size: .6rem;
   }
   .footer .footer__contact-statment {
     text-align: center;
+    width: 100%;
   }
   .footer .footer__contact-social-link {
-    width: 1.2rem;
+    width: .8rem;
   }
   .footer .footer__contact-statment-link {
-    font-size: .8rem;
-  }
-  .footer [class=col--1-4] {
-    width: 100%;
+    font-size: .6rem;
   }
 }
