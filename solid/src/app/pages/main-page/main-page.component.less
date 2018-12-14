@@ -1,174 +1,202 @@
 @import '../../../../web-src/less/variables.less';
+
 // --------------------------------------------------------
-.block{
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: @block-large-padding-vertical-large 0;
+  overflow: hidden;
+
+  // ------------------------------------------------
+  // All modificators
+  // ------------------------------------------------
+  // Modificators '.block.block--about'
+  &&--about {
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #252525;
+    color: #fff;
+  }
+
+  // Modificators '.block.block--gray'
+  &&--gray {
+    align-items: center;
+    justify-content: center;
+
+    background-color: @color-gray;
+    color: #fff;
+
+    .block__title {
+      color: #fff;
+    }
+
+    .block__overlay {
+      color: @color-gray-dark;
+    }
+  }
+
+  // Modificators '.block.block--violet'
+  &&--violet {
+    align-items: center;
+    justify-content: center;
+
+    background-color: #885DF1;
+    color: #fff;
+
+    .block__title {
+      color: #fff;
+    }
+
+    .block__overlay {
+      color: #744ADD;
+    }
+  }
+
+  // Modificators '.block.block--green'
+  &&--green {
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0fb239;
+    color: #333;
+
+    .block__title {
+      color: #fff;
+    }
+
+    .block__overlay {
+      color: #0ca734;
+    }
+  }
+
+  // ------------------------------------------------
+  // All elements
+  // ------------------------------------------------
+  // Elements '.block .block__title'
+  & &__title {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    font-weight: 600;
+
+    margin-bottom: 3rem;
+  }
+
+  // Elements '.block .block__subtitle'
+  & &__subtitle {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 500;
+
+    margin-bottom: 3rem;
+  }
+
+  // Elements '.block .block__text'
+  & &__text {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: @block-large-padding-vertical-large 0;
-    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 500;
 
-    // ------------------------------------------------
-    // All modificators
-    // ------------------------------------------------
-    // Modificators '.block.block--about'
-    &&--about{
-        align-items: center;
-        justify-content: flex-end;
-        background-color: #252525;
-        color: #fff;
-    }
+    margin-bottom: 3rem;
+  }
 
-    // Modificators '.block.block--gray'
-    &&--gray{
-        align-items: center;
-        justify-content: center;
+  // Elements '.block .block__list'
+  & &__list {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 500;
 
-        background-color: @color-gray;
-        color: #fff;
+    margin-bottom: 3rem;
+  }
 
-        .block__title{
-            color: #fff;
-        }
+  // Elements '.block .block__body'
+  & &__body {
+    position: relative;
+    z-index: 10;
+  }
 
-        .block__overlay{
-            color: @color-gray-dark;
-        }
-    }
+  // Elements '.block .block__overlay'
+  & &__overlay {
+    position: absolute;
+    font-size: 60rem;
+    font-weight: 900;
+    z-index: 1;
 
-    // Modificators '.block.block--violet'
-    &&--violet{
-        align-items: center;
-        justify-content: center;
+    &.block__overlay--video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      border: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
 
-        background-color: #885DF1;
-        color: #fff;
-
-        .block__title{
-            color: #fff;
-        }
-
-        .block__overlay{
-            color: #744ADD;
-        }
-    }
-
-    // Modificators '.block.block--green'
-    &&--green{
-        align-items: center;
-        justify-content: center;
-
-        background-color: #0fb239;
-        color: #333;
-
-        .block__title{
-            color: #fff;
-        }
-        .block__overlay{
-            color: #0ca734;
-        }
-    }
-
-    // ------------------------------------------------
-    // All elements
-    // ------------------------------------------------
-    // Elements '.block .block__title'
-    & &__title{
-        font-size: 4rem;
-        line-height: 4.2rem;
-        font-weight: 600;
-
-        margin-bottom: 3rem;
-    }
-
-    // Elements '.block .block__subtitle'
-    & &__subtitle{
-        font-size: 2.4rem;
-        line-height: 3rem;
-        font-weight: 500;
-
-        margin-bottom: 3rem;
-    }
-
-    // Elements '.block .block__text'
-    & &__text{
-        position: relative;
-        font-size: 1rem;
-        line-height: 1.4rem;
-        font-weight: 500;
-
-        margin-bottom: 3rem;
-    }
-
-    // Elements '.block .block__body'
-    & &__body{
-        position: relative;
-        z-index: 10;
-    }
-
-    // Elements '.block .block__overlay'
-    & &__overlay{
+      &:after {
+        content: '';
         position: absolute;
-        font-size: 60rem;
-        font-weight: 900;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // background-color: #252525;
+        // background-color: #000;
+        // opacity: .7;
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: 1;
-
-        &.block__overlay--video{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            border: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-
-            &:after{
-                content: '';
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                // background-color: #252525;
-                // background-color: #000;
-                // opacity: .7;
-                background-color: rgba(0, 0, 0, 0.7);
-                z-index: 1;
-            }
-        }
-    }
-}
-//  width  1600 - ~
-@media only screen and  (min-width: @breakpoint-xlg-min) {
-  .block{
-    & &__text{
-      font-size: 1.5rem;
+      }
     }
   }
 }
-//  width 1220 - 1599
-@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-xlg-min - 1))  {
-  .block{
+
+// ----------------------------------------
+// Size : xLarge
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xlg-min) {
+  .block {
+    & &__text {
+      font-size: 1.5rem;
+    }
+
+    & &__list {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : Large
+// ----------------------------------------
+@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+  .block {
     padding: @block-padding-lg 0;
-    & &__overlay{
+
+    & &__overlay {
       font-size: 56rem;
     }
   }
 }
-// width 1024 - 1219
-@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1))  {
-  .block{
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+  .block {
     min-height: 50vh;
-    & &__body{
-      padding-top: 50px ;
+
+    & &__body {
+      padding-top: 50px;
     }
 
-    & &__overlay{
+    & &__overlay {
       font-size: 45rem;
     }
 
-    & .container{
+    & .container {
       padding: 0 100px;
     }
 
@@ -177,77 +205,82 @@
     }
   }
 }
-// width 768 - 1023
-@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1))  {
 
-  .block{
+// width 768 - 1023
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1)) {
+
+  .block {
     min-height: 50vh;
     padding: @block-padding-lg 0;
 
-    &&--about{
+    &&--about {
       padding-top: 100px;
     }
 
-    & &__overlay{
+    & &__overlay {
       font-size: 30rem;
     }
 
-    & .container{
+    & .container {
       padding: 0 100px;
     }
 
-    & &__title{
+    & &__title {
       font-size: 3rem;
       line-height: 3.2rem;
       margin-bottom: 2rem;
     }
 
-    & &__subtitle{
-        font-size: 2rem;
-        line-height: 3rem;
+    & &__subtitle {
+      font-size: 2rem;
+      line-height: 3rem;
     }
 
-    & &__text{
-        font-weight: 600;
+    & &__text {
+      font-weight: 600;
     }
+
     [class=col--3-5] {
       min-width: 100%;
     }
   }
 
 }
+
 // width 320 - 767
-@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1)  {
-  .block{
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1) {
+  .block {
     min-height: 50vh;
     padding: @block-padding-lg 0;
 
-    &&--about{
+    &&--about {
       padding-top: 100px;
     }
 
-    & &__overlay{
+    & &__overlay {
       font-size: 16rem;
     }
 
-    & .container{
+    & .container {
       padding: 0 50px;
     }
-    & &__title{
+
+    & &__title {
       font-size: 1.5rem;
       line-height: 2rem;
       margin-bottom: 1rem;
     }
 
-    & &__subtitle{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+    & &__subtitle {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
     }
 
-    & &__text{
+    & &__text {
       font-size: 0.8rem;
-        font-weight: 600;
+      font-weight: 600;
     }
+
     [class=col--3-5] {
       min-width: 100%;
     }
@@ -255,42 +288,43 @@
 }
 
 // width 0 - 319
-@media only screen and (max-width: @breakpoint-xs-min)  {
+@media only screen and (max-width: @breakpoint-xs-min) {
 
-  .block{
+  .block {
     min-height: 50vh;
     padding: @block-padding-lg 0;
 
-    &&--about{
+    &&--about {
       padding-top: 100px;
     }
 
-    & &__overlay{
+    & &__overlay {
       font-size: 10rem;
     }
 
-    & .container{
+    & .container {
       padding: 0 20px;
     }
-    & &__title{
+
+    & &__title {
       font-size: 1.5rem;
       line-height: 2rem;
       margin-bottom: 1rem;
     }
 
-    & &__subtitle{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+    & &__subtitle {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
     }
 
-    & &__text{
+    & &__text {
       font-size: 0.8rem;
-        font-weight: 600;
+      font-weight: 600;
     }
+
     [class=col--3-5] {
       min-width: 100%;
     }
   }
 
 }
-
