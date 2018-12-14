@@ -10,15 +10,19 @@
         <h2 class="t--h3 t--green">Have a question?</h2>
         <div>
           <label class="label">Your name</label>
-          <input class="input" type="text">
-        </div>
-        <div>
-          <label class="label">Telephone number</label>
-          <input class="input" type="text">
+          <div class="input-group input-group--required">
+            <input class="input-group__input" type="text" [(ngModel)]="name">
+          </div>
         </div>
         <div>
           <label class="label">E-mail address</label>
-          <input class="input" type="text">
+          <div class="input-group input-group--required">
+            <input class="input-group__input" type="text" [(ngModel)]="email">
+          </div>
+        </div>
+        <div>
+          <label class="label">Telephone number</label>
+          <input class="input" type="text" [(ngModel)]="telephone">
         </div>
         <div>
           <label class="label">Your message</label>
@@ -26,14 +30,14 @@
         </div>
 
         <div class="checkbox">
-          <input class="checkbox__input" type="checkbox" id="privacy-statement">
+          <input class="checkbox__input" type="checkbox" id="privacy-statement" [(ngModel)]="privacy">
           <label class="checkbox__label" for="privacy-statement">Yes, I authorize SolidExpert Ltd. process my personal data and agree to the privacy statement</label>
         </div>
 
         <hr class="line line--sm m--v">
 
         <div class="contact__question-send">
-          <button class="btn btn--green btn--md">Send</button>
+          <button class="btn btn--green btn--md" [disabled]="!email?.length || !name?.length || !privacy">Send</button>
         </div>
       </div>
 
