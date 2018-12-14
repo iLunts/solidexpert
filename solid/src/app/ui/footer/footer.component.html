@@ -71,20 +71,15 @@
         </li>
       </ul>
       <div class="footer__contact flex flex--column flex--top col col--1-4">
-        <a
-          class="footer__contact-location link t--black "
-          [routerLink]="['/contact']"
-        >
-          <ul class="t--c">
-            <li class=" t--h4 t--bold t--italic m--sm">
-              <span class="t--uppercase"> Solid </span> Expert
-            </li>
-            <li class="">Nemiga 3 , Minsk</li>
-            <li>+1(919) 323 36 12</li>
-            <li>info@solidexpert.pro</li>
-          </ul>
+        <a [routerLink]="[ '/' ]" class="footer__contact-logo">
+            <p>SOLID Expert</p>
+            <p></p>
         </a>
-
+        <ul class="footer__contact-location t--c">
+          <li class="">Nemiga 3 , Minsk</li>
+          <li>+1(919) 323 36 12</li>
+          <li>info@solidexpert.pro</li>
+        </ul>
         <div class="footer__contact-social m--sm">
           <a
             class="footer__contact-social-link link  t--bold t--gray"

@@ -5,13 +5,47 @@
 .footer__container {
   max-width: 70%;
 }
+.footer .footer__contact-logo {
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+.footer .footer__contact-logo:hover {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.footer .footer__contact-logo:after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 0;
+  width: 30px;
+  height: 32px;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzA2IDMwNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzA2IDMwNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJjaGV2cm9uLXJpZ2h0Ij4KCQk8cG9seWdvbiBwb2ludHM9Ijk0LjM1LDAgNTguNjUsMzUuNyAxNzUuOTUsMTUzIDU4LjY1LDI3MC4zIDk0LjM1LDMwNiAyNDcuMzUsMTUzICAgIiBmaWxsPSIjMGZiMjM5Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+  background-position: center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+.footer .footer__contact-logo p {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.1rem;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  color: #000;
+}
 .footer .footer__nav-link:after {
   content: "";
   position: absolute;
   bottom: 0px;
   left: 0;
   width: 0;
-  background-color: #8190a3;
+  background-color: #00b715;
   transition: all 0.5s;
   height: 3px;
 }
@@ -48,13 +82,13 @@
     width: 100%;
   }
   .footer .footer__contact-statment-link {
-    margin: 0 5px ;
+    margin: 0 5px;
   }
   .footer .footer__contact-social-link {
     width: 1.5rem;
   }
   .footer .footer__contact-statment-link {
-    font-size: .6rem;
+    font-size: 0.6rem;
     width: 100%;
   }
 }
@@ -68,16 +102,16 @@
     width: 100%;
   }
   .footer .footer__contact-location {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   .footer .footer__contact-statment {
     text-align: center;
     width: 100%;
   }
   .footer .footer__contact-social-link {
-    width: .8rem;
+    width: 0.8rem;
   }
   .footer .footer__contact-statment-link {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
