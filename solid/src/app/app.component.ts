@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,15 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-    // isShowMenu = false;
 
-  // showMenu() {
-  //   if (this.isShowMenu) {
-  //     this.isShowMenu = false;
-  //   } else {
-  //     this.isShowMenu = true;
-  //   }
-  // }
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
+  }
 }
