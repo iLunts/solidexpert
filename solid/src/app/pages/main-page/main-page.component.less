@@ -159,6 +159,7 @@
 // width 1024 - 1219
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1))  {
   .block{
+    min-height: 50vh;
     & &__body{
       padding-top: 50px ;
     }
@@ -178,12 +179,13 @@
 }
 // width 768 - 1023
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1))  {
+
   .block{
     min-height: 50vh;
     padding: @block-padding-lg 0;
 
-    & &__body{
-      padding-top: 50px ;
+    &&--about{
+      padding-top: 100px;
     }
 
     & &__overlay{
@@ -220,8 +222,8 @@
     min-height: 50vh;
     padding: @block-padding-lg 0;
 
-    & &__body{
-      padding-top: 50px ;
+    &&--about{
+      padding-top: 100px;
     }
 
     & &__overlay{
@@ -232,17 +234,18 @@
       padding: 0 50px;
     }
     & &__title{
-      font-size: 3rem;
-      line-height: 3.2rem;
-      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
     }
 
     & &__subtitle{
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
     }
 
     & &__text{
+      font-size: 0.8rem;
         font-weight: 600;
     }
     [class=col--3-5] {
@@ -258,8 +261,8 @@
     min-height: 50vh;
     padding: @block-padding-lg 0;
 
-    & &__body{
-      padding-top: 50px ;
+    &&--about{
+      padding-top: 100px;
     }
 
     & &__overlay{
@@ -270,17 +273,18 @@
       padding: 0 20px;
     }
     & &__title{
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 2rem;
       margin-bottom: 1rem;
     }
 
     & &__subtitle{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
     & &__text{
+      font-size: 0.8rem;
         font-weight: 600;
     }
     [class=col--3-5] {

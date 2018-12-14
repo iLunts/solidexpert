@@ -111,6 +111,9 @@
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .block {
+    min-height: 50vh;
+  }
   .block .block__body {
     padding-top: 50px ;
   }
@@ -129,8 +132,8 @@
     min-height: 50vh;
     padding: 60px 0;
   }
-  .block .block__body {
-    padding-top: 50px ;
+  .block.block--about {
+    padding-top: 100px;
   }
   .block .block__overlay {
     font-size: 30rem;
@@ -159,8 +162,8 @@
     min-height: 50vh;
     padding: 60px 0;
   }
-  .block .block__body {
-    padding-top: 50px ;
+  .block.block--about {
+    padding-top: 100px;
   }
   .block .block__overlay {
     font-size: 16rem;
@@ -169,15 +172,16 @@
     padding: 0 50px;
   }
   .block .block__title {
-    font-size: 3rem;
-    line-height: 3.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
   }
   .block .block__subtitle {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
   .block .block__text {
+    font-size: 0.8rem;
     font-weight: 600;
   }
   .block [class=col--3-5] {
@@ -189,8 +193,8 @@
     min-height: 50vh;
     padding: 60px 0;
   }
-  .block .block__body {
-    padding-top: 50px ;
+  .block.block--about {
+    padding-top: 100px;
   }
   .block .block__overlay {
     font-size: 10rem;
@@ -199,15 +203,16 @@
     padding: 0 20px;
   }
   .block .block__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 1rem;
   }
   .block .block__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
   }
   .block .block__text {
+    font-size: 0.8rem;
     font-weight: 600;
   }
   .block [class=col--3-5] {

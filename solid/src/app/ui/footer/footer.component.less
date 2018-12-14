@@ -2,18 +2,12 @@
 // --------------------------------------------------------
 .footer {
   color: #000;
-  // background: #fff url("/assets/img/page-dev/map.png") no-repeat;
   background: #fff;
-  background-position: cover;
-  background-size: 100%;
 
   &__container {
-    max-width: 66.666667%;
+    max-width: 70%;
   }
 
-  &__contact {
-    padding-left: 16.666667%;
-  }
 
   & &__nav-link {
     &:after {
@@ -23,7 +17,7 @@
       left: 0;
       width: 0;
       // background-color: #000;
-      background-color: #f44336;
+      background-color: @color-gray-light;
       transition: all 0.5s;
       height: 3px;
     }
@@ -34,24 +28,20 @@
       }
     }
   }
-
+  & &__contact-social-link{
+    width: 2.5rem;
+  }
   & &__contact-statment-link {
     transition: all 0.5s;
     &:hover::first-letter {
-      color: #f44336;
+      color: @color-green;
     }
   }
 }
-.footer__contact-map:hover .footer{
-  background:blue;
-}
+
 // width 1024 - 1219
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1))  {
-  .footer{
-    & &__contact{
-      padding-left: 0;
-    }
-  }
+
 }
 // width 768 - 1023
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1))  {
@@ -59,9 +49,11 @@
     & &__nav{
       display: none;
     }
-    & &__contact{
-      padding-left: 0;
-    }
+
+    // & &__contact-social-link{
+    //   width: 1.2rem;
+    // }
+
   }
 }
 // width 320 - 767
@@ -72,6 +64,23 @@
     }
     & &__contact{
       padding-left: 0;
+      align-items: center;
+    }
+    & &__contact-statment{
+      text-align: center;
+      &-link{
+        margin:0 5px ;
+      }
+    }
+
+    & &__contact-social-link{
+      width: 1.2rem;
+    }
+    & &__contact-statment-link{
+      font-size: .8rem;
+    }
+    [class = col--1-4]{
+      width: 100%
     }
   }
 }
@@ -84,6 +93,19 @@
     }
     & &__contact{
       padding-left: 0;
+      align-items: center;
+    }
+    & &__contact-statment{
+      text-align: center;
+    }
+    & &__contact-social-link{
+      width: 1.2rem;
+    }
+    & &__contact-statment-link{
+      font-size: .8rem;
+    }
+    [class=col--1-4]{
+      width: 100%
     }
   }
 }

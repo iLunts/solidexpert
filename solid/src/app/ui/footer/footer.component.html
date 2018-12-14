@@ -1,30 +1,118 @@
 <footer class="footer">
-  <div class="footer__container container p--reset">
-    <div class="flex">
-      <nav class="footer__nav col col--1-2 p--reset m--v-md ">
-        <ul class="">
-          <li><a class="footer__nav-link link m--sm t--h4 t--bold t--black" [routerLink]="['/']">Home</a></li>
-          <li><a class="footer__nav-link link m--sm t--h4 t--bold t--black" [routerLink]="['/development']">Development</a></li>
-          <li><a class="footer__nav-link link m--sm t--h4 t--bold t--black" [routerLink]="['/products']">Products</a></li>
-          <li><a class="footer__nav-link link m--sm t--h4 t--bold t--black" [routerLink]="['/services']">Services</a></li>
-          <li><a class="footer__nav-link link m--sm t--h4 t--bold t--black" [routerLink]="['/contact']">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="footer__contact flex flex--column flex--center col col--1-2 m--v-md">
-        <a class="footer__contact-map link m--v-md t--black" href="">
-          <p class=" t--h4 t--bold t--italic">
-           <span class="t--uppercase">Solid</span>
-            Expert
-          </p>
-          <p class=" t--h5">
-            Nemiga 3 , Minsk
-          </p>
+  <div class="footer__container container">
+    <div class="grid grid--collapse m--v-md">
+
+      <ul class="footer__nav footer__nav-left col col--1-4">
+        <li>
+          <a
+            class="footer__nav-link link m--sm t--h4 t--bold t--black"
+            [routerLink]="['/']"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__nav-link link m--sm t--h4 t--bold t--black"
+            [routerLink]="['/services']"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__nav-link link m--sm t--h4 t--bold t--black"
+            [routerLink]="['/products']"
+            >Products</a
+          >
+        </li>
+      </ul>
+
+      <ul class="footer__nav footer__nav-right col col--1-4">
+        <li>
+          <a
+            class="footer__nav-link link m--sm t--h4 t--bold t--black"
+            [routerLink]="['/about']"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__nav-link link m--sm t--h4 t--bold t--black"
+            [routerLink]="['/careers']"
+            >Careers</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__nav-link link m--sm t--h4 t--bold t--black"
+            [routerLink]="['/testimonials']"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__nav-link link m--sm t--h4 t--bold t--black"
+            [routerLink]="['/contact']"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+
+      <div class="footer__contact flex flex--column col col--1-4">
+        <a
+          class="footer__contact-location link t--black "
+          [routerLink]="['/contact']"
+        >
+          <ul class="">
+            <li class=" t--h4 t--bold t--italic m--sm">
+              <span class="t--uppercase"> Solid </span> Expert
+            </li>
+            <li class="">Nemiga 3 , Minsk</li>
+            <li>+1(919) 323 36 12</li>
+            <li>info@solidexpert.pro</li>
+          </ul>
         </a>
-        <div class="footer__contact-statment">
-          <a class="footer__contact-statment-link link t--h6  t--uppercase t--bold t--gray" href="">Privacy statement</a>
-          <a class="footer__contact-statment-link link t--h6  t--uppercase t--bold t--gray" href="">Cookie statement</a>
+
+        <div class="footer__contact-social m--sm">
+          <a
+            class="footer__contact-social-link link  t--bold t--gray"
+            href="https://www.linkedin.com/company/solidexpertltd"
+            target="_blanc"
+          >
+            <img src="/assets/img/icons/linkedin.svg" alt="Linkedin" />
+          </a>
+          <a
+            class="footer__contact-social-link link  t--bold t--gray"
+            href="https://www.facebook.com/solidexpert.ltd/"
+            target="_blanc"
+          >
+            <img src="/assets/img/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            class="footer__contact-social-link link  t--bold t--gray"
+            href="mailto:info@solidexpert.pro"
+          >
+            <img src="/assets/img/icons/email.svg" alt="Send email" />
+          </a>
         </div>
       </div>
+
+      <ul class="footer__contact-statment col col--1-4">
+        <li>
+          <a
+          class="footer__contact-statment-link link t--uppercase t--bold t--gray m--sm"
+          href=""
+          >Privacy statement</a
+        >
+        </li>
+        <li>
+          <a
+          class="footer__contact-statment-link link t--uppercase t--bold t--gray m--sm"
+          href=""
+          >Cookie statement</a
+        >
+        </li>
+      </ul>
+
     </div>
   </div>
 </footer>
