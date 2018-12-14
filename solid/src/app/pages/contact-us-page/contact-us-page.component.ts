@@ -30,6 +30,7 @@ export class ContactUsPageComponent implements OnInit {
       return;
     }
 
-    alert('Thx!!! :-)')
+    alert('Thx!!! :-)');
+    this.requestForm.reset();
   }
 }
