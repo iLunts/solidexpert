@@ -13,6 +13,7 @@
   text-transform: uppercase;
   font-size: 0.8125rem;
   transition: top 0.2s ease-in-out;
+  height: 54px;
 }
 .nav .nav__burger {
   position: fixed;

@@ -24,6 +24,7 @@ import { ButtonFormComponent } from './ui/button-form/button-form.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NavComponent } from './ui/nav/nav.component';
 import { GridLineComponent } from './ui/grid-line/grid-line.component';
+import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
 
 
 
@@ -44,6 +45,7 @@ import { GridLineComponent } from './ui/grid-line/grid-line.component';
     MainPageComponent,
     NavComponent,
     GridLineComponent,
+    ProductsListPageComponent,
   ],
   imports: [
     BrowserModule,
