@@ -68,11 +68,15 @@
   & &__contact {
     align-items: center;
   }
+  & &__contact-social{
+    margin: 3rem 0;
+  }
   & &__contact-social-link {
-    width: 2rem;
+    width: 1.8rem;
   }
   & &__contact-statment-link {
     transition: all 0.5s;
+    margin: 10px;
     &:hover::first-letter {
       color: @color-green;
     }
@@ -88,6 +92,7 @@
     & &__nav {
       display: none;
     }
+
   }
 }
 // width 320 - 767
@@ -99,21 +104,26 @@
     & &__contact {
       padding-left: 0;
       align-items: center;
-      width: 100%;
+      // width: 100%;
     }
     & &__contact-statment {
-      width: 100%;
+
+      text-align: center;
+
       &-link {
-        margin: 0 5px;
+        display: inline-block;
+        margin: 10px;
       }
     }
-
+    & &__contact-social{
+      margin: 1rem 0;
+    }
     & &__contact-social-link {
       width: 1.5rem;
     }
     & &__contact-statment-link {
       font-size: 0.6rem;
-      width: 100%;
+      // width: 100%;
     }
   }
 }
@@ -127,7 +137,7 @@
     & &__contact {
       padding-left: 0;
       align-items: center;
-      width: 100%;
+      // width: 100%;
     }
     & &__contact-location {
       font-size: 0.6rem;
@@ -136,9 +146,11 @@
       text-align: center;
       width: 100%;
     }
-
+    & &__contact-social{
+      margin: 1rem 0;
+    }
     & &__contact-social-link {
-      width: 0.8rem;
+      width: 1rem;
     }
     & &__contact-statment-link {
       font-size: 0.5rem;

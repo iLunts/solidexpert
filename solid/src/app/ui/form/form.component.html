@@ -1,18 +1,11 @@
 <section class="form t--c">
   <div class="grid">
-    <div class="col col--1-2">
+    <div class="col--md-1-2 col--sm-1-1 col--xs-1-1">
       <input class="form__input"
-        name="firstName"
+        name="yourName"
         type="text"
-        [(ngModel)]="firstName"
-        placeholder="First name"
-      />
-
-      <input class="form__input"
-        name="lastName"
-        [(ngModel)]="lastName"
-        type="text"
-        placeholder="Last name"
+        [(ngModel)]="yourName"
+        placeholder="Your name"
       />
 
       <input class="form__input"
@@ -29,14 +22,8 @@
         placeholder="E-mail address"
       />
 
-      <input class="form__input"
-        name="company"
-        [(ngModel)]="company"
-        type="text"
-        placeholder="Company"
-      />
     </div>
-    <div class="col col--1-2">
+    <div class="col--md-1-2 col--sm-1-1 col--xs-1-1">
       <textarea class="form__input form__input-message"
         name="message"
         id="message"
@@ -49,7 +36,7 @@
 
   <button
     (click)="click()"
-    class="form__button position--r t--h3 t--bold t--c m--v-lg"
+    class="form__button position--r t--h3 t-xs--h3 t--bold t--c m--v-lg m-xs--sm"
     role="button"
     aria-label="Send-Button"
   >

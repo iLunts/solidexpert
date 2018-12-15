@@ -1,3 +1,4 @@
+@import "../../../../web-src/less/variables.less";
 .contact {
   background: #000;
   color: #fff;
@@ -46,7 +47,7 @@
   }
 
   & &__title {
-    min-height: 400px;
+    min-height: 300px;
 
     &-text {
       &--left {
@@ -67,47 +68,65 @@
     &-story-img {
       width: 100%;
     }
-    &-details {
-      min-height: 200px;
 
-      // &-item {
-      //   content: '';
-      //   position: absolute;
-      //   left: 1px;
-      //   width: 1%;
-      //   height: 0.5%;
-      //   background: #fff;
-      // }
+    &-form{
+      background: #fff;
+      height: auto;
+      padding: 60px 5px 0;
     }
   }
 
-  & &__team {
-    overflow: hidden;
+}
+.contact__map{
+    height: 400px;
+    width: 100%;
+}
 
-    &-backdrop {
-      width: 100%;
-      height: 100%;
-      background: url("/assets/img/page-dev/dev-link.jpg") no-repeat;
-      background-size: 100%;
-      background-position: cover;
-      transform: scale(1);
-      opacity: 0.45;
+// width 1024 - 1219
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1)) {
 
-      transition: all 3s;
-
-      &:hover {
-        transform: scale(1.1);
-        opacity: 0.9;
-        // background-size: 102%;
-      }
+}
+// width 768 - 1023
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1)) {
+  .contact{
+    & &__title {
+      min-height: 200px;
     }
+    & &__title-text{
+      font-size: 4rem !important;
 
-    &-inner {
-      top: 5%;
-      width: 15%;
-      padding-left: 1.7%;
-      margin-left: 15%;
-      z-index: 2;
+    }
+    & &__content-form{
+      padding: 30px 5px 0;
+    }
+  }
+}
+// width 320 - 767
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1) {
+  .contact{
+    & &__title {
+      min-height: 200px;
+    }
+    & &__title-text{
+      font-size: 3rem !important;
+    }
+    & &__content-form{
+      padding: 20px 5px 0;
+    }
+  }
+}
+
+// width 0 - 319
+@media only screen and (max-width: @breakpoint-xs-min) {
+  .contact{
+    & &__title {
+      min-height: 150px;
+    }
+    & &__title-text{
+      font-size: 3rem !important;
+    }
+    & &__content-form{
+      padding: 20px 5px 0;
     }
   }
 }

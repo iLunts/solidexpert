@@ -8,12 +8,10 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 })
 export class FormComponent implements OnInit {
 
-  firstName = '';
-  lastName = '';
+  yourName = '';
   contactInfo_Phone_1 = '';
   contactInfo_Email_1 = '';
   message = '';
-  company = '';
   constructor(protected http: HttpClient) { }
 
   ngOnInit() {
@@ -22,12 +20,10 @@ export class FormComponent implements OnInit {
 
     const body = new HttpParams()
     //  .set('is_company',"false")
-     .set('firstName', this.firstName)
-     .set('lastName', this.lastName)
+     .set('firstName', this.yourName)
      .set('contactInfo_Phone_1', this.contactInfo_Phone_1)
      .set('contactInfo_Email_1', this.contactInfo_Email_1)
      .set('message', this.message)
-     .set('company', this.company)
      .set('return_url', 'http://solidexpert.ltd')
      .set('web_form_key', '3a51d614-03b1-43b9-bca2-a3ff717ca08e')
      .set('notify_list', '61560477-f93c-11e8-94e2-6e81647443e7')
