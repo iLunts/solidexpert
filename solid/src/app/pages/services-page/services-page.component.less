@@ -1,10 +1,15 @@
+@import "../../../../web-src/less/variables.less";
 .services {
-  & .list__item{
+  & &__text{
+    text-align: justify;
+  }
+
+  & &__list-item{
     list-style-type: square;
     list-style-position: inside;
   }
 
-  & .list__text {
+  & &__list-text {
     color: #000;
   }
 
@@ -16,19 +21,103 @@
       padding-right: 5%;
     }
   }
-  & &__custom-img {
+  & &__img--custom{
     background: url(/assets/img/page-service/custom.jpg) no-repeat;
     background-size: cover;
   }
 
-  & &__mobile {
-    &-img {
-      background: url(/assets/img/page-service/mobile2.jpg) no-repeat;
+  & &__img--mobile {
+    background: url(/assets/img/page-service/mobile2.jpg) no-repeat;
     background-size: cover;
-    }
   }
-  & &__design-img {
+  & &__img--design {
     background: url(/assets/img/page-service/design3.jpg) no-repeat;
     background-size: cover;
   }
 }
+
+// ----------------------------------------
+// Size : xLarge
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xlg-min) {
+
+  // ------------------------------------
+  // Block ''
+  // ------------------------------------
+
+}
+
+// ----------------------------------------
+// Size : Large
+// ----------------------------------------
+@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+
+  // ------------------------------------
+  // Block ''
+  // ------------------------------------
+
+}
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+
+  // ------------------------------------
+  // Block ''
+  // ------------------------------------
+  .services{
+    & &__header {
+      min-height: 40vh;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+
+  // ------------------------------------
+  // Block ''
+  // ------------------------------------
+  .services{
+    & &__header {
+      min-height: 40vh;
+    }
+    & &__img{
+      margin: 10px 0;
+    }
+    & &__custom{
+      flex-direction: column-reverse;
+    }
+    & &__img{
+      height: 50vh;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+  // ------------------------------------
+  // Block ''
+  // ------------------------------------
+  .services{
+    & &__img{
+      margin: 10px 0;
+    }
+    & &__header {
+      min-height: 40vh;
+    }
+    & &__custom{
+      flex-direction: column-reverse;
+    }
+    & &__img{
+      height: 50vh;
+    }
+  }
+}
+

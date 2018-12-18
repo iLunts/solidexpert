@@ -1,8 +1,11 @@
-.services .list__item {
+.services .services__text {
+  text-align: justify;
+}
+.services .services__list-item {
   list-style-type: square;
   list-style-position: inside;
 }
-.services .list__text {
+.services .services__list-text {
   color: #000;
 }
 .services .services__header {
@@ -12,15 +15,52 @@
 .services .services__header-subtitle {
   padding-right: 5%;
 }
-.services .services__custom-img {
+.services .services__img--custom {
   background: url(/assets/img/page-service/custom.jpg) no-repeat;
   background-size: cover;
 }
-.services .services__mobile-img {
+.services .services__img--mobile {
   background: url(/assets/img/page-service/mobile2.jpg) no-repeat;
   background-size: cover;
 }
-.services .services__design-img {
+.services .services__img--design {
   background: url(/assets/img/page-service/design3.jpg) no-repeat;
   background-size: cover;
+}
+@media only screen and (min-width: 1600px) {
+}
+@media only screen and (min-width: 1220px) and (max-width: 1599px) {
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .services .services__header {
+    min-height: 40vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .services .services__header {
+    min-height: 40vh;
+  }
+  .services .services__img {
+    margin: 10px 0;
+  }
+  .services .services__custom {
+    flex-direction: column-reverse;
+  }
+  .services .services__img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .services .services__img {
+    margin: 10px 0;
+  }
+  .services .services__header {
+    min-height: 40vh;
+  }
+  .services .services__custom {
+    flex-direction: column-reverse;
+  }
+  .services .services__img {
+    height: 50vh;
+  }
 }
