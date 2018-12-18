@@ -1,61 +1,123 @@
-<div class="services container-fluid t--white">
-  <!-- Services backdrop -->
-  <div class="services__backdrop">
-    <span class="col col--1"></span>
-    <span class="col col--2"></span>
-    <span class="col col--3"></span>
-    <span class="col col--4"></span>
-    <span class="col col--5"></span>
-  </div>
-  <!-- Services content -->
-  <header class="services__title block ">
-    <h1 class="services__title-text position--r t--title m--t-xxlg t--c">
-      <span class="services__title-text services__title-text--left position--a">Serv</span>
-      <span class="services__title-text services__title-text--right position--a">ices</span>
-    </h1>
+<div class="services container-fluid">
+  <header class="services__header block">
+    <h1 class="services__header-title">SERVICES</h1>
+    <h2 class="services__header-subtitle">
+      Lightweight solutions specifically tailored for your needs & to your
+      requirements.
+    </h2>
   </header>
-  <main class="services__content container p--b-lg ">
-    <section class="services__content-text block ">
-      <h2 class="t--h2 t--bold">Looking for a state-of-the-art studio?</h2>
-      <h3 class="t--h4 ">We're more than happy to look into the possibilities with you</h3>
-      <p class="m--v-lg" >
-        In M, you will be using only the very best facilities.
-        See the details for each studio below or download the pdf for a complete overview.
-      </p>
-    </section>
-    <section class="services__slider">
-      <div class="grid grid--collapse">
-        <div class="services__slider-title col col--1-4 t--h4">Studio A</div>
-        <div class="services__slider-title col col--1-4 t--h4">Studio B</div>
-        <div class="col col--1-4 t--h4"></div>
-        <div class="col col--1-4 t--h4"></div>
+
+  <main class="container">
+    <section class="services__custom grid m--v-lg">
+      <div class="col--1-2">
+        <h2 class="services__custom-title">Custom Web Development</h2>
+        <p class="services__custom-text">
+          We listen to you carefully because it’s important to deliver exactly
+          what you requested. We lavish attention on you to deliver even more
+          than you expected. We share our experience in building solid and
+          reasonable architecture & solutions.
+        </p>
+        <p class="services__custom-text">
+          Today the web world offers a variety of solutions both for your
+          business and your customers. We consider the latest trends and choose
+          the most efficient ones to bring you from MVP to scalable products.
+        </p>
+
+        <ul class="services__custom-list">
+          With the technical expertise in Node.js, AngularJS and React our web
+          development team is able to cope with any engineering challenge to
+          create:
+          <li class="services__custom-list-item">SaaS and Cloud Computing;</li>
+          <li class="services__custom-list-item">CRM & ERP Systems;</li>
+          <li class="services__custom-list-item">High-load Applications;</li>
+          <li class="services__custom-list-item">
+            Enterprise & Intranet Platforms;
+          </li>
+          <li class="services__custom-list-item">E-commerce Solutions;</li>
+          <li class="services__custom-list-item">Geo-based Applications.</li>
+        </ul>
       </div>
-      <div class="grid grid--collapse">
-        <div class="services__slider-body col col--1-1 p--reset">
-          <app-slider></app-slider>
-        </div>
-      </div>
-      <div class="grid ">
-        <div class="services__slider-description col col--1-1">
-          <p class="t--semi-bold">Studio A</p>
-          <p class="m--v-lg" >
-            Studio A is where the bigger, serial productions take place.
-            The studio is directly adjacent to the transit area,
-            so it’s easy to drive decors and technical materials right into the studio.
-            The lighting grid is fully equipped with hoists,
-            so the lighting can quickly and easily be adjusted.
-          </p>
-          <ol class="services__slider-list">
-            <li class="services__slider-list-item t--bold m">Direct access to transit area</li>
-            <li class="services__slider-list-item t--bold m">Lighting grid fully equipped with hoists, so adjustable without work platforms or ladders</li>
-            <li class="services__slider-list-item t--bold m">Sufficient hoists equipped with DMX, XLR, Speakon (NL2) and HD-SDI connections</li>
-          </ol>
-          <button class="services__slider-btn t--h5 t--bold  t--white m--v-lg p--sm">
-            Download the overview
-          </button>
-        </div>
+      <div class="services__custom-img col--1-2">
+        <!-- <img src="/assets/img/page-service/custom.jpg" alt="custom web"> -->
       </div>
     </section>
-    <app-button-form></app-button-form>
+
+    <section class="services__mobile grid">
+      <div class="col--1-3"></div>
+      <div class="col--2-3">
+        <h2 class="services__mobile-title">Mobile App Development</h2>
+        <p class="services__mobile-text">
+          With millions of operations that smart phone users process daily, the
+          mobile industry has become an effective channel to extend your
+          business. The proper usage of these technologies may contribute a lot
+          to businesses by lowering expenses and enhancing productivity within
+          the major business functions.
+        </p>
+        <ul class="services__mobile-list">
+          By handling the following technologies:
+          <li class="services__mobile-list-item">Swift</li>
+          <li class="services__mobile-list-item">Objective-C</li>
+          <li class="services__mobile-list-item">Java</li>
+          <li class="services__mobile-list-item">Kotlin</li>
+          <li class="services__mobile-list-item">React Native</li>
+          <li class="services__mobile-list-item">Cordova</li>
+          <li class="services__mobile-list-item">Ionic</li>
+          <li class="services__mobile-list-item">PhoneGap</li>
+        </ul>
+        <p class="services__mobile-text">
+          Our team is experiences to support you with both native or
+          cross-platform mobile development.
+        </p>
+        <p class="services__mobile-text">
+          We make apps that easily integrate with what people need and expect
+          from a trusted digital product.
+        </p>
+        <p class="services__mobile-text">
+          CONTUCT US now and get a fully functioning app your customers will
+          love.
+        </p>
+      </div>
+    </section>
+
+    <section class="services__design grid">
+      <div class="col--2-3">
+        <h2 class="services__design-title">UX/UI DESIGN</h2>
+        <p class="services__design-text">
+          Something that looks great but is difficult to use is an example of
+          great UI and poor UX. While something very usable that looks terrible
+          is an example of great UX and poor UI.
+        </p>
+        <p class="services__design-text">
+          By accommodating the best UI/UX practices and utilizing the amenities
+          of our onsite photo studio, our team is able to create designs of any
+          complexity to develop your branding and advertising campaigns.
+        </p>
+        <ul class="services__design-list">
+          Our services include:
+          <li class="services__design-list-item">
+            Product Structure and Strategy
+          </li>
+          <li class="services__design-list-item">Prototyping</li>
+          <li class="services__design-list-item">Design Research</li>
+          <li class="services__design-list-item">UI Prototyping</li>
+          <li class="services__design-list-item">
+            Branding and Graphic Development
+          </li>
+          <li class="services__design-list-item">
+            Interactivity and Animation
+          </li>
+          <li class="services__design-list-item">
+            Adaptation to All the Devices Screen-size
+          </li>
+        </ul>
+        <p class="services__design-text">
+          Want to enhance your business with a hi-tech solution? FILL OUT a form
+          and we’ll get back to you shortly to discuss your next digital
+          successful story!
+        </p>
+      </div>
+      <div class="col--1-3"></div>
+    </section>
   </main>
+  <!-- <app-button-form></app-button-form> -->
 </div>
