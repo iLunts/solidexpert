@@ -1,17 +1,21 @@
+.page-form__button {
+  width: 5rem;
+  height: 5rem;
+}
 .page-form__button-line {
   display: block;
   width: 20px;
   height: 2px;
-  background-color: #000;
+  background-color: #00b715;
   transition: all 0.4s;
 }
 .page-form__button-line--left {
-  bottom: 5%;
-  left: 45%;
+  bottom: 50%;
+  left: 25%;
   transform: rotate(25deg);
 }
 .page-form__button-line--right {
-  bottom: 5%;
+  bottom: 50%;
   left: 50%;
   transform: rotate(-25deg);
 }
@@ -25,6 +29,9 @@
   height: auto;
   padding: 120px 0 60px;
   transition: height 10s;
+}
+.page-form.open .page-form__button-line {
+  background-color: #000;
 }
 .page-form.open .page-form__button-line--left {
   transform: rotate(-25deg);

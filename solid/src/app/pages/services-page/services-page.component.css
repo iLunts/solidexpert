@@ -1,3 +1,10 @@
+.services .list__item {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.services .list__text {
+  color: #000;
+}
 .services .services__header {
   min-height: 50vh;
   padding-top: 150px;
@@ -12,12 +19,6 @@
 .services .services__mobile-img {
   background: url(/assets/img/page-service/mobile2.jpg) no-repeat;
   background-size: cover;
-}
-.services .services__mobile-list {
-  list-style-type: square;
-}
-.services .services__mobile-list-text {
-  color: #000;
 }
 .services .services__design-img {
   background: url(/assets/img/page-service/design3.jpg) no-repeat;
