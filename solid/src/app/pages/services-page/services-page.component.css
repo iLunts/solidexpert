@@ -10,7 +10,7 @@
   background-size: cover;
 }
 .services .services__mobile-img {
-  background: url(/assets/img/page-service/mobile.jpg) no-repeat;
+  background: url(/assets/img/page-service/mobile2.jpg) no-repeat;
   background-size: cover;
 }
 .services .services__mobile-list {
@@ -20,6 +20,6 @@
   color: #000;
 }
 .services .services__design-img {
-  background: url(/assets/img/page-service/design.jpg) no-repeat;
+  background: url(/assets/img/page-service/design3.jpg) no-repeat;
   background-size: cover;
 }
