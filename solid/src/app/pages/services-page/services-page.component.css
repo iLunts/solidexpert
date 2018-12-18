@@ -1,9 +1,25 @@
 .services .services__header {
   min-height: 50vh;
-  padding-top: 100px;
+  padding-top: 150px;
+}
+.services .services__header-subtitle {
+  padding-right: 5%;
 }
 .services .services__custom-img {
   background: url(/assets/img/page-service/custom.jpg) no-repeat;
   background-size: cover;
-  background-position: 50%;
+}
+.services .services__mobile-img {
+  background: url(/assets/img/page-service/mobile.jpg) no-repeat;
+  background-size: cover;
+}
+.services .services__mobile-list {
+  list-style-type: square;
+}
+.services .services__mobile-list-text {
+  color: #000;
+}
+.services .services__design-img {
+  background: url(/assets/img/page-service/design.jpg) no-repeat;
+  background-size: cover;
 }

@@ -2,9 +2,6 @@
   color: #000;
   background: #fff;
 }
-.footer__container {
-  max-width: 70%;
-}
 .footer .footer__contact-logo {
   position: relative;
   text-align: right;
