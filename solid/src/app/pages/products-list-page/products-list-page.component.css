@@ -6,6 +6,9 @@
   padding: 100px 0;
   overflow: hidden;
 }
+.block li {
+  list-style-type: disc;
+}
 .block.block--green {
   align-items: center;
   justify-content: center;
