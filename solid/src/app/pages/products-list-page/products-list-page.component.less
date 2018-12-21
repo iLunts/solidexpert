@@ -9,9 +9,6 @@
   padding: @block-large-padding-vertical-large 0;
   overflow: hidden;
 
-  li {
-    list-style-type: disc;
-  }
 
   // ------------------------------------------------
   // All modificators
@@ -34,7 +31,7 @@
   // ------------------------------------------------
   // Elements '.block .block__title'
   & &__title {
-    font-size: 10rem;
+    font-size: 8rem;
     line-height: 11.2rem;
     font-weight: 700;
 
@@ -74,6 +71,7 @@
 
   // Elements '.block .block__body'
   & &__body {
+    width:100%;
     position: relative;
     z-index: 10;
   }
@@ -86,6 +84,7 @@
     z-index: 1;
 
     &.block__overlay--img {
+      background-size: cover;
       position: absolute;
       top: 0;
       left: 0;
@@ -117,11 +116,6 @@
     & &__text {
       font-size: 1.5rem;
     }
-
-    & &__list {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
   }
 }
 
@@ -152,7 +146,15 @@
     & &__overlay {
       font-size: 45rem;
     }
+    & &__title {
+      font-size: 6rem;
+    }
+
+    & &__subtitle {
+      font-size: 3rem;
+    }
   }
+
 }
 
 // ----------------------------------------
@@ -179,12 +181,14 @@
     }
 
     & &__subtitle {
-      font-size: 2rem;
+      font-size: 2em;
       line-height: 3rem;
     }
 
     & &__text {
-      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      // font-weight: 600;
     }
   }
 }
@@ -218,7 +222,8 @@
 
     & &__text {
       font-size: 0.8rem;
-      font-weight: 600;
+      line-height: 1rem;
+      // font-weight: 600;
     }
   }
 }
