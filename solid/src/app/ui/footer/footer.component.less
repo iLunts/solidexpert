@@ -4,6 +4,10 @@
   color: #000;
   background: #fff;
 
+  li {
+    margin-bottom: 0.5rem;
+  }
+
   & &__contact-logo {
     position: relative;
     text-align: right;
@@ -15,18 +19,6 @@
       outline: none;
       box-shadow: none;
       text-decoration: none;
-    }
-
-
-    p {
-      font-size: 1.3rem;
-      font-weight: 800;
-      font-style: italic;
-      margin: 0;
-      line-height: 1.1rem;
-      letter-spacing: 0.2px;
-      text-transform: none;
-      color: #000;
     }
   }
 
@@ -50,11 +42,10 @@
     }
   }
 
-  & &__nav-social-svg{
+  & &__social-svg{
     width: 1.8rem;
   }
-  & &__contact-statment {
-
+  & &__statment {
     &:hover::first-letter {
       color: @color-green;
     }
@@ -70,7 +61,16 @@
     & &__nav {
       display: none;
     }
+    & &__statment {
+      text-align: center;
+    }
+    & &__contact-list {
+      text-align: center;
+      }
 
+    & &__social {
+      text-align: center;
+    }
   }
 }
 // width 320 - 767
@@ -79,36 +79,25 @@
     & &__nav {
       display: none;
     }
-    & &__contact {
-      padding-left: 0;
-      align-items: center;
 
-    }
-    & &__contact-statment {
-
-      text-align: center;
-
-      &-link {
-        display: inline-block;
-
-      }
-      & &__contact-location {
-      font-size: 0.6rem;
-      text-align: center;
-      }
-    }
-
-    & &__nav-social {
-      width: 1.5rem;
-      text-align: center;
-    }
-    & &__nav-social-svg {
-      width: 1.5rem;
-    }
-    & &__contact-statment {
+    & &__statment {
       font-size: 0.6rem;
       text-align: center;
     }
+    & &__contact-list {
+      font-size: 0.6rem;
+      text-align: center;
+      margin: 1rem 0;
+      }
+
+    & &__social {
+
+      text-align: center;
+    }
+    & &__social-svg {
+      width: 1.5rem;
+    }
+
   }
 }
 
@@ -118,27 +107,22 @@
     & &__nav {
       display: none;
     }
-    & &__contact {
-      padding-left: 0;
-      align-items: center;
-      // width: 100%;
+    & &__statment {
+      text-align: center;
+      width: 100%;
+      font-size: 0.5rem;
     }
-    & &__contact-location {
+    & &__contact-list {
       font-size: 0.6rem;
       text-align: center;
     }
-    & &__contact-statment {
-      text-align: center;
-      width: 100%;
-    }
-    & &__nav-social{
+
+    & &__social{
       margin: 1rem 0;
+      text-align: center;
     }
-    & &__nav-social-svg{
+    & &__social-svg{
       width: 1rem;
-    }
-    & &__contact-statment{
-      font-size: 0.5rem;
     }
   }
 }
