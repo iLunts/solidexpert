@@ -1,27 +1,52 @@
 @import "../../../../web-src/less/variables.less";
+
+// ----------------------------------------------------
+// Block '.service'
+// ----------------------------------------------------
 .services {
-  & &__text{
+
+  // Element '.services .services__text'
+  & &__text {
     text-align: justify;
   }
-
-  & &__list-item{
-    list-style-type: square;
-    list-style-position: inside;
+  
+  // Element '.services .services__list'
+  & &__list{
+    
+    // Element '.services .services__list-item'
+    &-item {
+      list-style-type: square;
+      list-style-position: inside;
+    }
+    
+    // Element '.services .services__list-text'
+    &-text {
+      color: #000;
+    }
   }
-
-  & &__list-text {
-    color: #000;
-  }
-
+  
+  // Element '.services .services__header'
   & &__header {
-    // background: url(/assets/img/page-service/title.jpg);
     min-height: 50vh;
     padding-top: 150px;
+    
+    // Element '.services .services__header-title'
+    &-title {
+      text-align: center;
+      color: #222;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+    
+    // Element '.services .services__header-subtitle'
     &-subtitle {
       padding-right: 5%;
     }
   }
-  & &__img--custom{
+
+  & &__img--custom {
     background: url(/assets/img/page-service/custom.jpg) no-repeat;
     background-size: cover;
   }
@@ -30,6 +55,7 @@
     background: url(/assets/img/page-service/mobile2.jpg) no-repeat;
     background-size: cover;
   }
+
   & &__img--design {
     background: url(/assets/img/page-service/design3.jpg) no-repeat;
     background-size: cover;
@@ -66,7 +92,7 @@
   // ------------------------------------
   // Block ''
   // ------------------------------------
-  .services{
+  .services {
     & &__header {
       min-height: 40vh;
     }
@@ -81,17 +107,20 @@
   // ------------------------------------
   // Block ''
   // ------------------------------------
-  .services{
+  .services {
     & &__header {
       min-height: 40vh;
     }
-    & &__img{
+
+    & &__img {
       margin: 10px 0;
     }
-    & &__custom{
+
+    & &__custom {
       flex-direction: column-reverse;
     }
-    & &__img{
+
+    & &__img {
       height: 50vh;
     }
   }
@@ -105,19 +134,21 @@
   // ------------------------------------
   // Block ''
   // ------------------------------------
-  .services{
-    & &__img{
+  .services {
+    & &__img {
       margin: 10px 0;
     }
+
     & &__header {
       min-height: 40vh;
     }
-    & &__custom{
+
+    & &__custom {
       flex-direction: column-reverse;
     }
-    & &__img{
+
+    & &__img {
       height: 50vh;
     }
   }
 }
-
