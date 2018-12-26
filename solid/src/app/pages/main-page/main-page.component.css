@@ -43,7 +43,7 @@
   color: #333;
 }
 .block.block--green .block__title {
-  color: #fff;
+  color: #111;
 }
 .block.block--green .block__overlay {
   color: #0ca734;
@@ -73,6 +73,22 @@
   line-height: 1.4rem;
   font-weight: 500;
   margin-bottom: 3rem;
+}
+.block .block__list-item {
+  position: relative;
+  line-height: 2rem;
+  padding-left: 20px;
+}
+.block .block__list-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #333;
 }
 .block .block__body {
   position: relative;

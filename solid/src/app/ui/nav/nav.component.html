@@ -1,8 +1,9 @@
 <nav class="nav"[ngClass]="{'open': isShowMenu}">
-	<a href="" class="nav__logo">
+	<!-- <a href="" class="nav__logo">
 		<p>SOLID</p>
 		<p>Expert</p>
-  </a>
+  </a> -->
+  <div class="nav__logo" aria-label="My icon" [inlineSVG]="'/assets/svg/logo-color-white.svg'"></div>
 
   <button role="button" aria-label="Menu Button" class="nav__burger" (click)="showMenu()">
     <span class="nav__burger-line nav__burger-line--upper"></span>

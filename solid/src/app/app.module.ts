@@ -24,7 +24,7 @@ import { ButtonFormComponent } from './ui/button-form/button-form.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NavComponent } from './ui/nav/nav.component';
 import { GridLineComponent } from './ui/grid-line/grid-line.component';
-
+import { InlineSVGModule } from 'ng-inline-svg';
 
 
 @NgModule({
@@ -52,7 +52,8 @@ import { GridLineComponent } from './ui/grid-line/grid-line.component';
     route,
     CarouselModule.forRoot(),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InlineSVGModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
