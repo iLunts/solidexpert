@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .block.block--white .carousel-inner {
   min-height: 50vh;
 }
@@ -30,3 +31,11 @@
   line-height: 2rem;
   font-weight: 500;
 }
+=======
+.carousel-indicators li {
+  background-color: #f8f8f8;
+}
+.carousel-indicators.active {
+  background-color: #0ca734;
+}
+>>>>>>> 5c5f026a30f91c35d7c2da0873c2d7b521cda8f3
