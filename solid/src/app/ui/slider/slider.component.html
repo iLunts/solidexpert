@@ -1,12 +1,15 @@
 <carousel>
   <slide *ngFor="let slide of slides">
-    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+    <h1 class="slider__title ">{{slide.company}}</h1>
 
-    <div class="carousel-caption">
-      <h4>Slide {{slide.index}}</h4>
-      <p>{{slide.text}}</p>
-    </div>
+    <p class="slider__text slider__text--mention m--v-lg m-xs--v-md">      
+      {{slide.mention}}      
+    </p>
+
+    <p class="slider__text t--bold ">{{slide.name}}</p>
+
+    <p class="slider__text ">{{slide.position}}</p>
+
+    <!-- <div class="carousel-caption"> </div> -->
   </slide>
 </carousel>
-
-

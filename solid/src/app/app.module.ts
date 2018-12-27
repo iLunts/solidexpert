@@ -51,6 +51,7 @@ import { InlineSVGModule } from 'ng-inline-svg';
     RouterModule,
     route,
     CarouselModule.forRoot(),
+    InlineSVGModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     InlineSVGModule.forRoot()

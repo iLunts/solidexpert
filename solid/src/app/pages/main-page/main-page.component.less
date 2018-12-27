@@ -1,4 +1,4 @@
-@import '../../../../web-src/less/variables.less';
+@import "../../../../web-src/less/variables.less";
 
 // --------------------------------------------------------
 .block {
@@ -37,21 +37,18 @@
     }
   }
 
-  // Modificators '.block.block--violet'
-  &&--violet {
+  // Modificators '.block.block--white'
+  &&--white {
     align-items: center;
     justify-content: center;
 
-    background-color: #885DF1;
-    color: #fff;
-
-    .block__title {
-      color: #fff;
-    }
-
+    background-color: #fff;
+    color: #000;
+    
     .block__overlay {
-      color: #744ADD;
+      color: #f8f8f8;
     }
+    
   }
 
   // Modificators '.block.block--green'
@@ -71,6 +68,7 @@
       color: #0ca734;
     }
   }
+ 
 
   // ------------------------------------------------
   // All elements
@@ -155,7 +153,7 @@
       z-index: 1;
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         bottom: 0;
@@ -165,6 +163,11 @@
         z-index: 1;
       }
     }
+  }
+  &__logo-item{
+    // height: 100%;
+    width: 12rem;
+    margin: 1rem;
   }
 }
 
@@ -181,18 +184,24 @@
       font-size: 1.5rem;
       line-height: 2rem;
     }
+    & &__logo{
+      flex-direction: column;
+    }
   }
 }
 
 // ----------------------------------------
 // Size : Large
 // ----------------------------------------
-@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
   .block {
     padding: @block-padding-lg 0;
 
     & &__overlay {
       font-size: 56rem;
+    }    
+    & &__logo{
+      flex-direction: column;
     }
   }
 }
@@ -210,7 +219,11 @@
 
     & &__overlay {
       font-size: 45rem;
-    }
+    }       
+    // .block__logo-item{
+    //   width: 10rem;
+    //   margin: 1rem;
+    // }
   }
 }
 
@@ -218,7 +231,6 @@
 // Size : Small
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
-
   .block {
     min-height: 50vh;
     padding: @block-padding-lg 0;
@@ -244,7 +256,11 @@
 
     & &__text {
       font-weight: 600;
-    }
+    }    
+    // .block__logo-item{
+    //   width: 8rem;
+    //   margin: 0.5rem;
+    // }
   }
 }
 
@@ -278,6 +294,11 @@
     & &__text {
       font-size: 0.8rem;
       font-weight: 600;
+    }
+
+    .block__logo-item{
+      width: 6rem;
+      margin: 0.5rem;
     }
   }
 }
