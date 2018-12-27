@@ -1,15 +1,28 @@
-<carousel>
-  <slide *ngFor="let slide of slides">
-    <h1 class="slider__title ">{{slide.company}}</h1>
+<div class="grid">
+  <div class="col--xlg-4-6 col--lg-4-6 col--md-1-1 col--sm-1-1 col--xs-1-1 ">
+    <carousel>
+      <slide *ngFor="let slide of slides">
+        <h1 class="slider__title ">{{slide.company}}</h1>
 
-    <p class="slider__text slider__text--mention m--v-lg m-xs--v-md">      
-      {{slide.mention}}      
-    </p>
+        <p class="slider__text slider__text--mention m--v-lg m-xs--v-md">
+          {{slide.mention}}
+        </p>
 
-    <p class="slider__text t--bold ">{{slide.name}}</p>
+        <p class="slider__text t--bold ">{{slide.name}}</p>
 
-    <p class="slider__text ">{{slide.position}}</p>
+        <p class="slider__text ">{{slide.position}}</p>
 
-    <!-- <div class="carousel-caption"> </div> -->
-  </slide>
-</carousel>
+        <!-- <div class="carousel-caption"> </div> -->
+      </slide>
+    </carousel>
+  </div>
+  <div class="col--xlg-1-6 col--lg-1-6 col--md-1-1 col--sm-1-1 col--xs-1-1 push--lg-1-6 ">
+    <div class="block__logo flex flex--center flex--wrap">
+      <!-- <div class="block__logo-item" *ngFor="let item of slides" [inlineSVG]="{{item.logoPath}}"></div> -->
+      <img class="block__logo-item" *ngFor="let item of slides" src="{{item.logoPath}}"/>
+      <!-- <span *ngFor="let item of slides">
+        {{item.logoPath}}
+      </span> -->
+    </div>
+  </div>
+</div>

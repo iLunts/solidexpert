@@ -20,7 +20,8 @@ export class SliderComponent implements OnInit {
       sometimes on purpose (injected humour and the like).`,
       name: 'Joe Spencer',
       position: 'Director',
-      company: 'PhotoBrief'
+      company: 'PhotoBrief',
+      logoPath: '/assets/svg/main-gallery/photobrief.svg'
     },
     {
       mention:
@@ -29,8 +30,9 @@ export class SliderComponent implements OnInit {
       more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
       making it look like readable English. `,
       name: 'Marvin Gutierrez',
-      position: ' Manager',
-      company: 'SolidEx CRM'
+      position: 'Manager',
+      company: 'SolidEx CRM',
+      logoPath: '/assets/svg/main-gallery/logo-gray.svg'
     },
     {
       mention:
@@ -43,9 +45,32 @@ export class SliderComponent implements OnInit {
       more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
       making it look like readable English. `,
       name: 'Fernando Sullivan',
-      position: 'Chief ',
-      company: 'SalesInteract'
-    }
+      position: 'Chief',
+      company: 'SalesInteract',
+      logoPath: '/assets/img/main-gallery/salesinteract.png'
+    },
+    {
+      mention:
+        ` It is a long established fact that a reader will be distracted by the readable content
+      of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+      more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+      making it look like readable English. `,
+      name: 'Ekaterina',
+      position: 'Project Manager',
+      company: 'ABW.by',
+      logoPath: '/assets/img/main-gallery/abw.png'
+    },
+    {
+      mention:
+        ` It is a long established fact that a reader will be distracted by the readable content
+      of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+      more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+      making it look like readable English. `,
+      name: 'Koen',
+      position: 'Project Manager',
+      company: 'joinUz.nl',
+      logoPath: '/assets/svg/main-gallery/joinuz.svg'
+    },
   ];
 
   constructor() {}

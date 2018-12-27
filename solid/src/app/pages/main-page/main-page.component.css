@@ -117,7 +117,10 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
-.block__logo-item {
+.block .block__logo {
+  position: relative;
+}
+.block .block__logo-item {
   width: 12rem;
   margin: 1rem;
 }
