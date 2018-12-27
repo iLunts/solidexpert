@@ -48,10 +48,7 @@
     .block__overlay {
       color: #f8f8f8;
     }
-    & .block__logo-item{
-      height: 4rem;
-      margin-bottom: 1rem;
-    }
+    
   }
 
   // Modificators '.block.block--green'
@@ -148,6 +145,11 @@
       }
     }
   }
+  &__logo-item{
+    // height: 100%;
+    width: 12rem;
+    margin: 1rem;
+  }
 }
 
 // ----------------------------------------
@@ -163,6 +165,9 @@
       font-size: 1.5rem;
       line-height: 2rem;
     }
+    & &__logo{
+      flex-direction: column;
+    }
   }
 }
 
@@ -176,6 +181,9 @@
     & &__overlay {
       font-size: 56rem;
     }    
+    & &__logo{
+      flex-direction: column;
+    }
   }
 }
 
@@ -192,7 +200,11 @@
 
     & &__overlay {
       font-size: 45rem;
-    }   
+    }       
+    // .block__logo-item{
+    //   width: 10rem;
+    //   margin: 1rem;
+    // }
   }
 }
 
@@ -225,7 +237,11 @@
 
     & &__text {
       font-weight: 600;
-    }
+    }    
+    // .block__logo-item{
+    //   width: 8rem;
+    //   margin: 0.5rem;
+    // }
   }
 }
 
@@ -259,6 +275,11 @@
     & &__text {
       font-size: 0.8rem;
       font-weight: 600;
+    }
+
+    .block__logo-item{
+      width: 6rem;
+      margin: 0.5rem;
     }
   }
 }

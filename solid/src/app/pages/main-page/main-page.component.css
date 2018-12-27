@@ -33,10 +33,6 @@
 .block.block--white .block__overlay {
   color: #f8f8f8;
 }
-.block.block--white .block__logo-item {
-  height: 4rem;
-  margin-bottom: 1rem;
-}
 .block.block--green {
   align-items: center;
   justify-content: center;
@@ -105,6 +101,10 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
+.block__logo-item {
+  width: 12rem;
+  margin: 1rem;
+}
 @media only screen and (min-width: 1600px) {
   .block .block__text {
     font-size: 1.5rem;
@@ -113,6 +113,9 @@
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  .block .block__logo {
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 1220px) and (max-width: 1599px) {
   .block {
@@ -120,6 +123,9 @@
   }
   .block .block__overlay {
     font-size: 56rem;
+  }
+  .block .block__logo {
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
@@ -180,5 +186,9 @@
   .block .block__text {
     font-size: 0.8rem;
     font-weight: 600;
+  }
+  .block .block__logo-item {
+    width: 6rem;
+    margin: 0.5rem;
   }
 }

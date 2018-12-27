@@ -1,7 +1,8 @@
-.block{
-  &&--white{
+@import "../../../../web-src/less/variables.less";
+.block--white{
     .carousel-inner{
       min-height: 50vh;
+      padding: 0 1rem;
     }
     .carousel-indicators li {
     background-color: #000;
@@ -32,9 +33,64 @@
       font-size: 1.5rem;
       line-height: 2rem;
       font-weight: 500;
-      
     }
   }
-
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+  .block--white {   
+    .carousel-inner{
+      min-height: 40vh;
+    }
+    .carousel-control{
+      display: none;
+    }
+  }
 }
-  
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+  .block--white {   
+    // .carousel-inner{
+    //   min-height: 50vh;
+    // }
+    .slider__title {
+      font-size: 3rem;
+      line-height: 3.2rem;
+      margin-bottom: 2rem;
+    } 
+
+    .slider__text {
+      font-weight: 600;
+    }    
+    .carousel-control{
+      display: none;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+  .block {
+    // .carousel-inner{
+    //   min-height: 30vh;
+    // }
+    .slider__title {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .slider__text {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .carousel-control{
+      display: none;
+    }
+  }
+}

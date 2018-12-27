@@ -1,41 +1,68 @@
-<<<<<<< HEAD
-.block.block--white .carousel-inner {
+.block--white .carousel-inner {
   min-height: 50vh;
+  padding: 0 1rem;
 }
-.block.block--white .carousel-indicators li {
+.block--white .carousel-indicators li {
   background-color: #000;
 }
-.block.block--white li.active {
+.block--white li.active {
   background-color: #0ca734;
 }
-.block.block--white .carousel-control-next-icon {
+.block--white .carousel-control-next-icon {
   background-image: url(/assets/img/icons/right-arrow.svg);
 }
-.block.block--white .carousel-control-prev-icon {
+.block--white .carousel-control-prev-icon {
   background-image: url(/assets/img/icons/left-arrow.svg);
 }
-.block.block--white .carousel-control-next {
+.block--white .carousel-control-next {
   right: -3rem;
 }
-.block.block--white .carousel-control-prev {
+.block--white .carousel-control-prev {
   left: -3rem;
 }
-.block.block--white .slider__title {
+.block--white .slider__title {
   font-size: 4rem;
   line-height: 4.2rem;
   font-weight: 600;
   margin-bottom: 3rem;
 }
-.block.block--white .slider__text {
+.block--white .slider__text {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
 }
-=======
-.carousel-indicators li {
-  background-color: #f8f8f8;
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .block--white .carousel-inner {
+    min-height: 40vh;
+  }
+  .block--white .carousel-control {
+    display: none;
+  }
 }
-.carousel-indicators.active {
-  background-color: #0ca734;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .block--white .slider__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  .block--white .slider__text {
+    font-weight: 600;
+  }
+  .block--white .carousel-control {
+    display: none;
+  }
 }
->>>>>>> 5c5f026a30f91c35d7c2da0873c2d7b521cda8f3
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .block .slider__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .block .slider__text {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .block .carousel-control {
+    display: none;
+  }
+}
