@@ -1,7 +1,6 @@
 @import "../../../../web-src/less/variables.less";
 // --------------------------------------------------------
 .nav {
-
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -16,6 +15,7 @@
   text-transform: uppercase;
   font-size: 0.8125rem;
   transition: top 0.2s ease-in-out;
+  height: @nav-heigth;
 
   & &__burger {
     position: fixed;
@@ -47,8 +47,8 @@
     text-decoration: none;
     outline: none;
     box-shadow: none;
-    width: 240px;
-    margin: 2px 0;
+    width: 200px;
+    margin: 4px 0;
 
     &:hover {
       outline: none;
