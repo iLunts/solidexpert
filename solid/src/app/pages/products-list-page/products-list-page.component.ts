@@ -12,13 +12,14 @@ export class ProductsListPageComponent implements OnInit {
       title: 'PRODUCTS',
       subtitle: 'Are you tired of switching between your email client, excel file, calendar and phone in the course of one interaction? This is where CRM comes into play.',
       text: 'To date, customer relations management (CRM) continues to be one of the most powerful tools for business automation. A well-tailored customized CRM system centralizes your communication in one place and gives you an advantage to manage all pipeline in a more efficient way.',
-      background_image: 'https://sevenstars.nl/assets/img/wemakeitspark/image06.jpg',
+      background_image: '/assets/img/product-list/products.jpg',
+      // background_image: 'https://sevenstars.nl/assets/img/wemakeitspark/image06.jpg',
     },
     {
       title: 'SolidExCRM.com',
       subtitle: 'CRM for your business',
       text: '',
-      background_image: 'https://sevenstars.nl/assets/img/wemakeitspark/image02.jpg',
+      background_image: '/assets/img/product-list/solidexcrm.jpg',
     },
     {
       title: 'Ineedatractor.com',
