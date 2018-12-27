@@ -1,16 +1,14 @@
 <carousel>
   <slide *ngFor="let slide of slides">
-    <h1 class="p--h-lg">{{slide.company}}</h1>
+    <h1 class="slider__title p--h-lg">{{slide.company}}</h1>
 
-    <p class="p--h-xlg m--v-lg">
-      <span class="t--green "> "</span>
-      {{slide.mention}}
-      <span class="t--green"> "</span>
+    <p class="slider__text p--h-xlg m--v-lg">      
+      {{slide.mention}}      
     </p>
 
-    <p class="t--bold p--h-xlg">{{slide.name}}</p>
+    <p class="slider__text t--bold p--h-xlg">{{slide.name}}</p>
 
-    <p class="p--h-xlg">{{slide.position}}</p>
+    <p class="slider__text p--h-xlg">{{slide.position}}</p>
 
     <!-- <div class="carousel-caption"> </div> -->
   </slide>

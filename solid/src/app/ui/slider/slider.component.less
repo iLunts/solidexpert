@@ -1,7 +1,40 @@
-
-  .carousel-indicators li {
-    background-color: #f8f8f8;
-  } 
-  .carousel-indicators.active {
-    background-color: #0ca734;
+.block{
+  &&--white{
+    .carousel-inner{
+      min-height: 50vh;
+    }
+    .carousel-indicators li {
+    background-color: #000;
+    } 
+    li.active {
+      background-color: #0ca734;
+    }
+    .carousel-control-next-icon{
+      background-image: url(/assets/img/icons/right-arrow.svg);
+  
+    }
+    .carousel-control-prev-icon{
+      background-image: url(/assets/img/icons/left-arrow.svg); 
+    }
+    .carousel-control-next{
+      right: -3rem;
+    }
+    .carousel-control-prev{
+      left: -3rem;
+    }
+    .slider__title{
+      font-size: 4rem;
+      line-height: 4.2rem;
+      font-weight: 600;  
+      margin-bottom: 3rem;
+    }
+    .slider__text{
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 500;
+      
+    }
   }
+
+}
+  

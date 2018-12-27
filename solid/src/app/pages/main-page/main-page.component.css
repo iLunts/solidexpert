@@ -33,10 +33,14 @@
 .block.block--white .block__overlay {
   color: #f8f8f8;
 }
+.block.block--white .block__logo-item {
+  height: 4rem;
+  margin-bottom: 1rem;
+}
 .block.block--green {
   align-items: center;
   justify-content: center;
-  background-color: #0fb239;
+  background-color: #0ca734;
   color: #333;
 }
 .block.block--green .block__title {

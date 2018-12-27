@@ -19,8 +19,8 @@ export class SliderComponent implements OnInit {
       sites still in their infancy. Various versions have evolved over the years, sometimes by accident,
       sometimes on purpose (injected humour and the like).`,
       name: 'Joe Spencer',
-      position: 'director',
-      company: 'fotoBel'
+      position: 'Director',
+      company: 'FotoBel'
     },
     {
       mention:
@@ -29,7 +29,7 @@ export class SliderComponent implements OnInit {
       more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
       making it look like readable English. `,
       name: 'Marvin Gutierrez',
-      position: ' manager',
+      position: ' Manager',
       company: 'SolidCRM'
     },
     {
@@ -43,7 +43,7 @@ export class SliderComponent implements OnInit {
       more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
       making it look like readable English. `,
       name: 'Fernando Sullivan',
-      position: 'chief ',
+      position: 'Chief ',
       company: 'Salesinteract'
     }
   ];

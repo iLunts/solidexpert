@@ -1,0 +1,32 @@
+.block.block--white .carousel-inner {
+  min-height: 50vh;
+}
+.block.block--white .carousel-indicators li {
+  background-color: #000;
+}
+.block.block--white li.active {
+  background-color: #0ca734;
+}
+.block.block--white .carousel-control-next-icon {
+  background-image: url(/assets/img/icons/right-arrow.svg);
+}
+.block.block--white .carousel-control-prev-icon {
+  background-image: url(/assets/img/icons/left-arrow.svg);
+}
+.block.block--white .carousel-control-next {
+  right: -3rem;
+}
+.block.block--white .carousel-control-prev {
+  left: -3rem;
+}
+.block.block--white .slider__title {
+  font-size: 4rem;
+  line-height: 4.2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.block.block--white .slider__text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
