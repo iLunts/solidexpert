@@ -20,7 +20,7 @@ export class SliderComponent implements OnInit {
       sometimes on purpose (injected humour and the like).`,
       name: 'Joe Spencer',
       position: 'Director',
-      company: 'FotoBel'
+      company: 'PhotoBrief'
     },
     {
       mention:
@@ -30,7 +30,7 @@ export class SliderComponent implements OnInit {
       making it look like readable English. `,
       name: 'Marvin Gutierrez',
       position: ' Manager',
-      company: 'SolidCRM'
+      company: 'SolidEx CRM'
     },
     {
       mention:
@@ -44,7 +44,7 @@ export class SliderComponent implements OnInit {
       making it look like readable English. `,
       name: 'Fernando Sullivan',
       position: 'Chief ',
-      company: 'Salesinteract'
+      company: 'SalesInteract'
     }
   ];
 

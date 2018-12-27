@@ -40,7 +40,8 @@
   text-decoration: none;
   outline: none;
   box-shadow: none;
-  width: 90px;
+  width: 240px;
+  margin: 2px 0;
 }
 .nav .nav__logo:hover {
   outline: none;
