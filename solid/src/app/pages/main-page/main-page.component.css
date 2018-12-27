@@ -24,17 +24,14 @@
 .block.block--gray .block__overlay {
   color: #303030;
 }
-.block.block--violet {
+.block.block--white {
   align-items: center;
   justify-content: center;
-  background-color: #885DF1;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
-.block.block--violet .block__title {
-  color: #fff;
-}
-.block.block--violet .block__overlay {
-  color: #744ADD;
+.block.block--white .block__overlay {
+  color: #f8f8f8;
 }
 .block.block--green {
   align-items: center;
@@ -95,7 +92,7 @@
   z-index: 1;
 }
 .block .block__overlay.block__overlay--video:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;

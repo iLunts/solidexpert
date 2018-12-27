@@ -1,4 +1,4 @@
-@import '../../../../web-src/less/variables.less';
+@import "../../../../web-src/less/variables.less";
 
 // --------------------------------------------------------
 .block {
@@ -37,20 +37,20 @@
     }
   }
 
-  // Modificators '.block.block--violet'
-  &&--violet {
+  // Modificators '.block.block--white'
+  &&--white {
     align-items: center;
     justify-content: center;
 
-    background-color: #885DF1;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 
-    .block__title {
-      color: #fff;
-    }
+    // .block__title {
+    //   color: #fff;
+    // }
 
     .block__overlay {
-      color: #744ADD;
+      color: #f8f8f8;
     }
   }
 
@@ -136,7 +136,7 @@
       z-index: 1;
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         bottom: 0;
@@ -168,7 +168,7 @@
 // ----------------------------------------
 // Size : Large
 // ----------------------------------------
-@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
   .block {
     padding: @block-padding-lg 0;
 
@@ -199,7 +199,6 @@
 // Size : Small
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
-
   .block {
     min-height: 50vh;
     padding: @block-padding-lg 0;

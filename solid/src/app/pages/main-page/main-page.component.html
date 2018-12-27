@@ -1,11 +1,17 @@
 <section class="block block--about">
-
   <app-grid-line [color]="'rgba(255, 255, 255, 0.1)'"></app-grid-line>
 
   <div class="block__overlay block__overlay--video">
-    <video class="block__overlay--video-item" autoplay loop poster="/assets/video/about/poster.jpg" muted plays-inline>
-      <source src="/assets/video/about/movie.mp4" type="video/mp4">
-      <source src="/assets/video/about/movie.webm" type="video/webm">
+    <video
+      class="block__overlay--video-item"
+      autoplay
+      loop
+      poster="/assets/video/about/poster.jpg"
+      muted
+      plays-inline
+    >
+      <source src="/assets/video/about/movie.mp4" type="video/mp4" />
+      <source src="/assets/video/about/movie.webm" type="video/webm" />
       Your browser does not support the video tag.
     </video>
   </div>
@@ -13,13 +19,13 @@
   <div class="block__body">
     <div class="container">
       <div class="grid ">
-        <div class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1 push--xlg-1-5 push--lg-1-5 t--c">
-          <h1 class="block__title">
-            YOUR SOLID SOLUTIONS
-          </h1>
+        <div
+          class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1 push--xlg-1-5 push--lg-1-5 t--c"
+        >
+          <h1 class="block__title">YOUR SOLID SOLUTIONS</h1>
           <h2 class="block__subtitle t--green">
-            Web & Mobile Customized Software
-            with the Core Expertise in CRM Development & Implementation.
+            Web & Mobile Customized Software with the Core Expertise in CRM
+            Development & Implementation.
           </h2>
         </div>
       </div>
@@ -28,32 +34,31 @@
 </section>
 
 <section class="block block--green">
-
   <app-grid-line></app-grid-line>
 
-  <div class="block__overlay">
-    8+
-  </div>
+  <div class="block__overlay">8+</div>
 
   <div class="block__body">
     <div class="container">
       <div class="grid">
-        <div class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1">
+        <div
+          class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1"
+        >
           <h2 class="block__title">
-            More than 8 years of experience in the software development services.
+            More than 8 years of experience in the software development
+            services.
           </h2>
           <h3 class="block__subtitle">
-            We’ll deliver delightful digital experiences
-            for your business and lift all the technical issues off your shoulders.
+            We’ll deliver delightful digital experiences for your business and
+            lift all the technical issues off your shoulders.
           </h3>
 
           <ul class="block__list m--reset">
-            <li> Mobile App Development</li>
-            <li> Web Development</li>
-            <li> UX/UI</li>
-            <li> Your Reliable Dedicated Team</li>
+            <li>Mobile App Development</li>
+            <li>Web Development</li>
+            <li>UX/UI</li>
+            <li>Your Reliable Dedicated Team</li>
           </ul>
-
         </div>
       </div>
     </div>
@@ -63,47 +68,85 @@
 <section class="block block--gray">
   <app-grid-line [color]="'rgba(255, 255, 255, 0.1)'"></app-grid-line>
 
-  <div class="block__overlay">
-    189K
-  </div>
+  <div class="block__overlay">189K</div>
 
   <div class="block__body">
     <div class="container">
       <div class="grid">
-        <div class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1">
+        <div
+          class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1"
+        >
           <h2 class="block__title">
             More than 189K of unique users of our system per 3 years
           </h2>
 
-          <p class="block__text">
-            Around 1200 of new visitors per day.
-          </p>
+          <p class="block__text">Around 1200 of new visitors per day.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block block--violet">
+<section class="block block--white">
   <app-grid-line [color]="'rgba(255, 255, 255, 0.1)'"></app-grid-line>
 
-  <div class="block__overlay">
-    94%
-  </div>
+  <div class="block__overlay">94%</div>
 
   <div class="block__body">
     <div class="container">
       <div class="grid">
         <div class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1">
           <h2 class="block__title">
-            According to the recent survey, more than 94% of
-            our clients continue working with us and are sure to recommend our services to their contacts.
+            According to the recent survey, more than 94% of our clients
+            continue working with us and are sure to recommend our services to
+            their contacts.
           </h2>
           <p class="block__text">
             We invite you to explore their comments on your own.
           </p>
         </div>
+        <div class="col--xlg-2-5 col--lg-2-5 col--md-1-1 col--sm-1-1 col--xs-1-1">
+          <app-slider></app-slider>
+        </div>
       </div>
+      <!-- <div class="grid">
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'"
+        ></div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+        <div
+          class="col--1-12"
+          [inlineSVG]="'/assets/img/logo/SolidExpert-logo-color.svg'">
+        </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -111,14 +154,14 @@
 <section class="block block--gray">
   <app-grid-line [color]="'rgba(255, 255, 255, 0.1)'"></app-grid-line>
 
-  <div class="block__overlay">
-    18+
-  </div>
+  <div class="block__overlay">18+</div>
 
   <div class="block__body">
     <div class="container">
       <div class="grid">
-        <div class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1">
+        <div
+          class="col--xlg-3-5 col--lg-3-5 col--md-1-1 col--sm-1-1 col--xs-1-1"
+        >
           <h2 class="block__title">
             Are you eager to make the digital world better for everyone?
           </h2>
