@@ -146,6 +146,10 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px - 1) {
+  .nav .nav__logo {
+    width: 120px;
+    margin: 12px 0;
+  }
   .nav .nav__menu-links {
     display: none;
   }
