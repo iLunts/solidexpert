@@ -10,6 +10,7 @@
     }
     .carousel-indicators li {
     background-color: #000;
+    height: 5px;
     } 
     li.active {
       background-color: #0ca734;
@@ -31,13 +32,13 @@
       font-size: 4rem;
       line-height: 4.2rem;
       font-weight: 600;  
-      margin-bottom: 3rem;
+      margin-bottom: 10rem;
     }
     .slider__text{
       font-size: 1.5rem;
       line-height: 2rem;
       font-weight: 500;
-      padding-left: 3rem;
+      padding-left: 4rem;
      &--mention::before{
        content: open-quote; 
        color: #0ca734;
@@ -55,6 +56,12 @@
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
   .block--white {   
+    .slider__title {
+      font-size: 3rem;
+      line-height: 3.2rem;
+      margin-bottom: 4rem;
+    } 
+    
     .carousel-inner{
       min-height: 40vh;
     }
