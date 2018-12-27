@@ -36,6 +36,14 @@
   font-weight: 500;
   padding-left: 3rem;
 }
+.block--white .slider__text--mention::before {
+  content: open-quote;
+  color: #0ca734;
+}
+.block--white .slider__text--mention::after {
+  content: close-quote;
+  color: #0ca734;
+}
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
   .block--white .carousel-inner {
     min-height: 40vh;
