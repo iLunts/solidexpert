@@ -1,6 +1,10 @@
 .block--white .carousel-inner {
   min-height: 50vh;
   padding: 0 1rem;
+  margin: 1rem 0;
+}
+.block--white .carousel-indicators {
+  bottom: 0;
 }
 .block--white .carousel-indicators li {
   background-color: #000;
@@ -15,10 +19,10 @@
   background-image: url(/assets/img/icons/left-arrow.svg);
 }
 .block--white .carousel-control-next {
-  right: -3rem;
+  right: -5rem;
 }
 .block--white .carousel-control-prev {
-  left: -3rem;
+  left: -5rem;
 }
 .block--white .slider__title {
   font-size: 4rem;
@@ -30,6 +34,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+  padding-left: 3rem;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
   .block--white .carousel-inner {
