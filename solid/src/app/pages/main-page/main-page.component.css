@@ -24,6 +24,18 @@
 .block.block--gray .block__overlay {
   color: #303030;
 }
+.block.block--violet {
+  align-items: center;
+  justify-content: center;
+  background-color: #885DF1;
+  color: #fff;
+}
+.block.block--violet .block__title {
+  color: #fff;
+}
+.block.block--violet .block__overlay {
+  color: #744ADD;
+}
 .block.block--white {
   align-items: center;
   justify-content: center;
