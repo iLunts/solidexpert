@@ -1,5 +1,4 @@
 @import "../../../../web-src/less/variables.less";
-
 // --------------------------------------------------------
 .footer {
   color: #000;
@@ -43,10 +42,9 @@
     }
   }
 
-  & &__social-svg {
+  & &__social-svg{
     width: 1.8rem;
   }
-
   & &__statment {
     &:hover::first-letter {
       color: @color-green;
@@ -55,29 +53,26 @@
 }
 
 // width 1024 - 1219
-@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1)) {}
-
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1)) {
+}
 // width 768 - 1023
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1)) {
   .footer {
     & &__nav {
       display: none;
     }
-
     & &__statment {
       text-align: center;
     }
-
     & &__contact-list {
       text-align: center;
-    }
+      }
 
     & &__social {
       text-align: center;
     }
   }
 }
-
 // width 320 - 767
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1) {
   .footer {
@@ -89,18 +84,16 @@
       font-size: 0.6rem;
       text-align: center;
     }
-
     & &__contact-list {
       font-size: 0.6rem;
       text-align: center;
       margin: 1rem 0;
-    }
+      }
 
     & &__social {
 
       text-align: center;
     }
-
     & &__social-svg {
       width: 1.5rem;
     }
@@ -114,24 +107,21 @@
     & &__nav {
       display: none;
     }
-
     & &__statment {
       text-align: center;
       width: 100%;
       font-size: 0.5rem;
     }
-
     & &__contact-list {
       font-size: 0.6rem;
       text-align: center;
     }
 
-    & &__social {
+    & &__social{
       margin: 1rem 0;
       text-align: center;
     }
-
-    & &__social-svg {
+    & &__social-svg{
       width: 1rem;
     }
   }

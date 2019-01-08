@@ -135,6 +135,7 @@
 .block .block__logo-item {
   width: 12rem;
   margin: 1rem;
+  height: 3rem;
 }
 @media only screen and (min-width: 1600px) {
   .block .block__text {
@@ -169,6 +170,9 @@
   .block .block__overlay {
     font-size: 45rem;
   }
+  .block .block__logo-item {
+    width: 10rem;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .block {
@@ -192,6 +196,9 @@
   }
   .block .block__text {
     font-weight: 600;
+  }
+  .block .block__logo-item {
+    width: 8rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
