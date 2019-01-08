@@ -223,14 +223,15 @@ button{
     &&--green{
         background: @color-green;
         color: #fff;
-        text-shadow: 0 1px 1px #006f04;
 
-        &:hover{
-            background: @color-green-dark;
+        &:disabled{
+            background: #eee;
+            color: #bbb;
         }
 
-        &:focus{
-            box-shadow: 0 0 0 3px lighten(@color-green, 30%);
+        &:hover{
+            background: @color-green;
+            border-color: @color-green;
         }
 
         &.btn--border{
@@ -238,13 +239,13 @@ button{
             color: @color-green-dark;
             text-shadow: none;
 
-            &:hover{
-                background: lighten(@color-green, 48%);
-            }
+            // &:hover{
+            //     background: lighten(@color-green, 48%);
+            // }
 
-            &:focus{
-                box-shadow: 0 0 0 3px lighten(@color-green, 30%);
-            }
+            // &:focus{
+            //     box-shadow: 0 0 0 3px lighten(@color-green, 30%);
+            // }
 
             &:disabled{
                 border-color: #bbb;

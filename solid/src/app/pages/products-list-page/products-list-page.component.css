@@ -1,0 +1,135 @@
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 100px 0;
+  overflow: hidden;
+}
+.block.block--green {
+  align-items: center;
+  justify-content: center;
+  background-color: #0fb239;
+  color: #fff;
+}
+.block .block__title {
+  font-size: 8rem;
+  line-height: 11.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.block .block__subtitle {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.block .block__text {
+  position: relative;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.block .block__body {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.block .block__overlay {
+  position: absolute;
+  font-size: 60rem;
+  font-weight: 900;
+  z-index: 1;
+}
+.block .block__overlay.block__overlay--img {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media only screen and (min-width: 1600px) {
+  .block .block__text {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1220px) and (max-width: 1599px) {
+  .block {
+    padding: 60px 0;
+  }
+  .block .block__overlay {
+    font-size: 56rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .block {
+    min-height: 50vh;
+  }
+  .block .block__body {
+    padding-top: 50px;
+  }
+  .block .block__overlay {
+    font-size: 45rem;
+  }
+  .block .block__title {
+    font-size: 6rem;
+  }
+  .block .block__subtitle {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .block {
+    min-height: 50vh;
+    padding: 60px 0;
+  }
+  .block.block--about {
+    padding-top: 100px;
+  }
+  .block .block__overlay {
+    font-size: 30rem;
+  }
+  .block .block__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  .block .block__subtitle {
+    font-size: 2em;
+    line-height: 3rem;
+  }
+  .block .block__text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .block {
+    min-height: 50vh;
+    padding: 60px 0;
+  }
+  .block.block--about {
+    padding-top: 100px;
+  }
+  .block .block__overlay {
+    font-size: 16rem;
+  }
+  .block .block__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .block .block__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .block .block__text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}

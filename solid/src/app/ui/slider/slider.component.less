@@ -1,0 +1,108 @@
+@import "../../../../web-src/less/variables.less";
+.block--white{
+    .carousel-inner{
+      min-height: 50vh;
+      padding: 0 1rem;
+      margin: 1rem 0;
+    }
+    .carousel-indicators{
+      bottom: 0;
+    }
+    .carousel-indicators li {
+    background-color: #000;
+    } 
+    li.active {
+      background-color: #0ca734;
+    }
+    .carousel-control-next-icon{
+      background-image: url(/assets/img/icons/right-arrow.svg);
+  
+    }
+    .carousel-control-prev-icon{
+      background-image: url(/assets/img/icons/left-arrow.svg); 
+    }
+    .carousel-control-next{
+      right: -5rem;
+    }
+    .carousel-control-prev{
+      left: -5rem;
+    }
+    .slider__title{
+      font-size: 4rem;
+      line-height: 4.2rem;
+      font-weight: 600;  
+      margin-bottom: 3rem;
+    }
+    .slider__text{
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 500;
+      padding-left: 3rem;
+     &--mention::before{
+       content: open-quote; 
+       color: #0ca734;
+     }
+     &--mention::after{
+      content: close-quote; 
+      color: #0ca734;
+      }
+    }
+  
+  }
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+  .block--white {   
+    .carousel-inner{
+      min-height: 40vh;
+    }
+    .carousel-control{
+      display: none;
+    }
+  }
+}
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+  .block--white {   
+    
+    .slider__title {
+      font-size: 3rem;
+      line-height: 3.2rem;
+      margin-bottom: 2rem;
+    } 
+
+    .slider__text {
+      font-weight: 600;
+
+    }    
+    .carousel-control{
+      display: none;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+  .block {
+    
+    .slider__title {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .slider__text {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .carousel-control{
+      display: none;
+    }
+  }
+}

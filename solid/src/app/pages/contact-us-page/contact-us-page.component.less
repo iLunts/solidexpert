@@ -1,132 +1,173 @@
 @import "../../../../web-src/less/variables.less";
+// ---------------------------------------
+// Block '.contact'
+// ---------------------------------------
 .contact {
-  background: #000;
-  color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  & &__backdrop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    min-height: 100%;
-    width: 100%;
-    overflow: hidden;
-    pointer-events: none;
-    height: 100%;
-
-    .col {
-      padding-right: 0;
-      padding-left: 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 1px;
-      background-color: hsla(0, 0%, 100%, 0.16);
-      z-index: 2;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-
-      &.col--1 {
-        left: 16.66666667%;
-      }
-      &.col--2 {
-        left: 33.33333333%;
-      }
-      &.col--3 {
-        left: 50%;
-      }
-      &.col--4 {
-        left: 66.66666667%;
-      }
-      &.col--5 {
-        left: 83.33333333%;
-      }
+    // Element '.contact .contact__left'
+    & &__left{
+        display: block;
+        width: 50%;
+        max-width: 50%;
+        max-height: 100vh;
+        overflow: hidden;
+        
+        // Element '.contact .contact__left-img'
+        &-img{
+            background-image: url('/assets/img/contact-page/contact.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            -webkit-clip-path: polygon(0 0,100% 0,88% 100%,0% 100%);
+            clip-path: polygon(0 0,100% 0,88% 100%,0% 100%);
+            
+            // Element '.contact .contact__left-img img'
+            img{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
     }
-  }
-
-  & &__title {
-    min-height: 300px;
-
-    &-text {
-      &--left {
-        // top: 0;
-        // left: 0;
-        transform: translate(-100%, -10%);
-      }
-      &--right {
-        // top: 0;
-        // left: 0;
-        transform: translate(0%, 50%);
-      }
-    }
-  }
-  & &__content {
-    max-width: 70.4%;
-
-    &-story-img {
-      width: 100%;
+    
+    // Element '.contact .contact__body'
+    & &__body{
+        display: block;
+        width: 50%;
+        min-height: 100vh;
+        padding: 100px;
     }
 
-    &-form{
-      background: #fff;
-      height: auto;
-      padding: 60px 5px 0;
-    }
-  }
+    // Element '.contact .contact__address'
+    & &__address{
+        
+        // Element '.contact .contact__address-text'
+        &-text{
+            display: block;
+            margin: 0;
+            line-height: 1.5;
+        }
 
-}
-.contact__map{
-    height: 400px;
-    width: 100%;
+        // Element '.contact .contact__address-link'
+        &-link{
+            display: block;
+            margin: 0;
+            line-height: 1.5;
+            color: #333;
+            text-decoration: underline;
+        }
+    }
+        
+    // Element '.contact .contact__question'
+    & &__question{
+        
+        &-send{
+            text-align: center;
+        }
+    }
 }
 
-// width 1024 - 1219
-@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-lg-min - 1)) {
 
-}
-// width 768 - 1023
-@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-md-min - 1)) {
-  .contact{
-    & &__title {
-      min-height: 200px;
-    }
-    & &__title-text{
-      font-size: 4rem !important;
+// ----------------------------------------
+// Size : xLarge
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xlg-min) {
 
+    // ------------------------------------
+    // Block '.contact'
+    // ------------------------------------
+    .contact {
+        
     }
-    & &__content-form{
-      padding: 30px 5px 0;
-    }
-  }
-}
-// width 320 - 767
-@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-sm-min - 1) {
-  .contact{
-    & &__title {
-      min-height: 200px;
-    }
-    & &__title-text{
-      font-size: 3rem !important;
-    }
-    & &__content-form{
-      padding: 20px 5px 0;
-    }
-  }
 }
 
-// width 0 - 319
-@media only screen and (max-width: @breakpoint-xs-min) {
-  .contact{
-    & &__title {
-      min-height: 150px;
+// ----------------------------------------
+// Size : Large
+// ----------------------------------------
+@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+
+    // ------------------------------------
+    // Block '.contact'
+    // ------------------------------------
+    .contact {
+        
     }
-    & &__title-text{
-      font-size: 3rem !important;
+}
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+
+    // ------------------------------------
+    // Block '.contact'
+    // ------------------------------------
+    .contact {
+        
     }
-    & &__content-form{
-      padding: 20px 5px 0;
+}
+
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+
+    // ------------------------------------
+    // Block '.contact'
+    // ------------------------------------
+    .contact {
+        
+        // Element '.contact .contact__body'
+        & &__body{
+            padding: 100px 50px;
+        }
+
+        // Element '.contact .contact__question'
+        & &__question{
+            
+            &-send{
+                margin-bottom: 20px;
+            }
+        }
     }
-  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+    
+    // ------------------------------------
+    // Block '.contact'
+    // ------------------------------------
+    .contact {
+        flex-wrap: wrap;
+        
+        
+        // Element '.contact .contact__left'
+        & &__left{
+            display: none;
+            // width: 100%;
+            // height: 300px;
+            // min-height: auto;
+        }
+        
+        // Element '.contact .contact__body'
+        & &__body{
+            width: 100%;
+            padding: 100px 30px;
+        }
+
+        // Element '.contact .contact__question'
+        & &__question{
+            
+            &-send{
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
