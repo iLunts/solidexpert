@@ -15,7 +15,7 @@
             <div class="input-group input-group--required" [ngClass]="{ 'isError': f.name.errors && (f.name.dirty || f.name.touched) }">
               <input
                class="input-group__input"
-               type="text" 
+               type="text"
                formControlName="name"
                name="userName">
             </div>
@@ -23,24 +23,24 @@
           <div>
             <label class="label">E-mail address</label>
             <div class="input-group input-group--required" [ngClass]="{ 'isError': f.email.errors && (f.email.dirty || f.email.touched) }">
-              <input 
-              class="input-group__input" 
-              type="text" 
+              <input
+              class="input-group__input"
+              type="text"
               formControlName="email"
               name="userEmail">
             </div>
           </div>
           <div>
             <label class="label">Telephone number</label>
-            <input 
-            class="input" 
-            type="text" 
+            <input
+            class="input"
+            type="text"
             formControlName="telephone"
             name="userPhone">
           </div>
           <div>
             <label class="label">Your message</label>
-            <textarea class="input" rows="10" name="userMessage"></textarea>
+            <textarea class="input" rows="10" formControlName="userMessage"></textarea>
           </div>
 
           <div class="checkbox">
