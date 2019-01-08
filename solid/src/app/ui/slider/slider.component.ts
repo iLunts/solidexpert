@@ -11,13 +11,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 export class SliderComponent implements OnInit {
   slides = [
     {
-      mention: `It is a long established fact that a reader will be distracted by the readable content
-      of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-      more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-      making it look like readable English. Many desktop publishing packages and web page editors now
-      use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-      sites still in their infancy. Various versions have evolved over the years, sometimes by accident,
-      sometimes on purpose (injected humour and the like).`,
+      mention: `A few years ago we decided to improve our business with the help of modern technologies. We investigated  different solutions on the market, but no one  product fully satisfied us until we found a solution from the SolidExpert. That was exactly what we were looking for. This is truly the best solution for our business segment!`,
       name: 'Joe Spencer',
       position: 'Director',
       company: 'PhotoBrief',
@@ -25,10 +19,7 @@ export class SliderComponent implements OnInit {
     },
     {
       mention:
-      ` It is a long established fact that a reader will be distracted by the readable content
-      of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-      more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-      making it look like readable English. `,
+      `Collaboration with SolidExpert has been a very productive and satisfying experience for us. They have shown technical competence, business domain expertise and also a real understanding of our needs. With that understanding, they have been able to develop CRM system, that really helps our business to grow. Technical support is always in touch and ready to help in any difficult situation. We hope for further successful work with SolidExpert.`,
       name: 'Marvin Gutierrez',
       position: 'Manager',
       company: 'SolidEx CRM',
@@ -36,14 +27,7 @@ export class SliderComponent implements OnInit {
     },
     {
       mention:
-      ` Many desktop publishing packages and web page editors now
-      use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-      sites still in their infancy. Various versions have evolved over the years, sometimes by accident,
-      sometimes on purpose (injected humour and the like).
-      It is a long established fact that a reader will be distracted by the readable content
-      of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-      more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-      making it look like readable English. `,
+      `We strongly recommend SolidExpert to anyone looking to develop a complex project. Besides being experts in web development, their team is very experienced, reliable and hard-working and will do their best to help customers to embody their expectations into the best solutions.  We really enjoyed working with the company that strives to meet the needs of their customers. We will definitely work with SolidExpert at the same software development projects in the future.`,
       name: 'Fernando Sullivan',
       position: 'Chief',
       company: 'SalesInteract',
@@ -51,10 +35,7 @@ export class SliderComponent implements OnInit {
     },
     {
       mention:
-        ` It is a long established fact that a reader will be distracted by the readable content
-      of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-      more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-      making it look like readable English. `,
+      `We made the right decision when seeked to SolidExpert. They are competent, professional, meet deadlines and react flexibly to changing project requirements. We highly recommend this company.`,
       name: 'Ekaterina',
       position: 'Project Manager',
       company: 'ABW.by',
@@ -62,10 +43,7 @@ export class SliderComponent implements OnInit {
     },
     {
       mention:
-        ` It is a long established fact that a reader will be distracted by the readable content
-      of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-      more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-      making it look like readable English. `,
+      `SolidExpert  has proved to be excellent. We were impressed by the qualifications and skills of their specialists. The SolidExpert team  helped us to improve our business and meet the needs and requirements of our customers.`,
       name: 'Koen',
       position: 'Project Manager',
       company: 'joinUz.nl',
