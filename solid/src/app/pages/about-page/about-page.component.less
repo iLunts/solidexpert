@@ -33,7 +33,6 @@
         font-size: 8rem;
         line-height: 11.2rem;
         font-weight: 700;
-
         margin-bottom: 3rem;   
     }
 
@@ -103,14 +102,7 @@
   @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
     .block {
       min-height: 30vh;
-
-      & &__body {
-        padding-top: 50px;
-      }
-  
-      & &__overlay {
-        font-size: 45rem;
-      }
+            
       & &__title {
         font-size: 6rem;
       }
@@ -120,9 +112,12 @@
       }
       & &__link {
         display: inline-block;
+        padding: 1rem 2rem;
       }
-    }
-  
+      & .col--gray{         
+        padding: 4rem 2rem 4rem 2rem;
+      }       
+    }  
   }
   
   // ----------------------------------------
@@ -142,19 +137,24 @@
       & &__subtitle {
         font-size: 2em;
         line-height: 3rem;
+        margin-bottom: 2rem;
       }
   
       & &__text {
         font-size: 1.5rem;
         line-height: 1.5rem;
-        // font-weight: 600;
+        margin-bottom: 2rem;       
       }
       & &__link {
         display: inline-block;
+        padding: 1rem 2rem;
       }
       & .col--white{
         align-items: center;
       }
+      & .col--gray{         
+        padding: 4rem 2rem;
+      }      
     }
   }
   
@@ -166,7 +166,7 @@
       min-height: 30vh;
 
       & &__title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 2rem;
         margin-bottom: 1rem;
       }
@@ -174,18 +174,24 @@
       & &__subtitle {
         font-size: 1.2rem;
         line-height: 1.5rem;
+        margin-bottom: 1rem;
       }
   
       & &__text {
         font-size: 0.8rem;
-        line-height: 1rem;       
+        line-height: 1rem; 
+        margin-bottom: 1rem;      
       }
       & &__link {
         display: inline-block;
+        padding: 1rem 2rem;
       }
       & .col--white{
         align-items: center;
       }
+      & .col--gray{         
+        padding: 2rem;
+      }      
     }
   }
   
