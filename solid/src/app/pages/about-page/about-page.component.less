@@ -1,0 +1,191 @@
+@import '../../../../web-src/less/variables.less';
+
+// --------------------------------------------------------
+
+.block{    
+    min-height: 50vh;
+    padding: @block-large-padding-vertical-large 0;
+    overflow: hidden;
+
+
+  // ------------------------------------------------
+  // All modificators
+  // ------------------------------------------------
+  // Modificators '.block--'
+  
+    &--header{      
+        background-color: #252525;
+        color: #fff;
+    }
+    &--body{      
+        padding: 0;
+        border-bottom: 1px solid #DFDFDF;
+    }
+    & .col--gray{
+        background: #FBFBFB;
+        border-right: 1px solid #DFDFDF; 
+        padding: 8rem 4rem 8rem 8rem;
+    }       
+    
+
+    // Elements '.block .block__title'
+    & &__title {
+        font-size: 8rem;
+        line-height: 11.2rem;
+        font-weight: 700;
+
+        margin-bottom: 3rem;   
+    }
+
+  // Elements '.block .block__subtitle'
+    & &__subtitle {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+
+    // Elements '.block .block__text'
+    & &__text {
+       
+        text-align: justify;        
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+    // Elements '.block .block__link'
+    & &__link {
+        display: block;
+        color: #fff;
+        text-align: center;        
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        padding: 2rem 4rem;
+        background: #00b715;
+        border: 2px solid #00b715;
+        &:hover{
+            color: #00b715;
+            background: #fff;
+            border: 2px solid #00b715;
+            text-decoration: none;
+        }       
+
+    }
+}
+
+// ----------------------------------------
+// Size : xLarge
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xlg-min) {
+    .block {
+      & &__text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  // ----------------------------------------
+  // Size : Large
+  // ----------------------------------------
+  @media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+    // .block {
+      .block{    
+        min-height: 30vh;
+      }
+    // }
+  }
+  
+  // ----------------------------------------
+  // Size : Medium
+  // ----------------------------------------
+  @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+    .block {
+      min-height: 30vh;
+
+      & &__body {
+        padding-top: 50px;
+      }
+  
+      & &__overlay {
+        font-size: 45rem;
+      }
+      & &__title {
+        font-size: 6rem;
+      }
+  
+      & &__subtitle {
+        font-size: 3rem;
+      }
+      & &__link {
+        display: inline-block;
+      }
+    }
+  
+  }
+  
+  // ----------------------------------------
+  // Size : Small
+  // ----------------------------------------
+  @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+  
+    .block {
+      min-height: 30vh;
+
+      & &__title {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin-bottom: 2rem;
+      }
+  
+      & &__subtitle {
+        font-size: 2em;
+        line-height: 3rem;
+      }
+  
+      & &__text {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        // font-weight: 600;
+      }
+      & &__link {
+        display: inline-block;
+      }
+      & .col--white{
+        align-items: center;
+      }
+    }
+  }
+  
+  // ----------------------------------------
+  // Size : xSmall
+  // ----------------------------------------
+  @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+    .block {   
+      min-height: 30vh;
+
+      & &__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      & &__subtitle {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+  
+      & &__text {
+        font-size: 0.8rem;
+        line-height: 1rem;       
+      }
+      & &__link {
+        display: inline-block;
+      }
+      & .col--white{
+        align-items: center;
+      }
+    }
+  }
+  
