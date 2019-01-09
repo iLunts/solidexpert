@@ -1,6 +1,6 @@
 <div class="grid">
   <div class="col--xlg-4-6 col--lg-4-6 col--md-1-1 col--sm-1-1 col--xs-1-1 ">
-    <carousel>
+    <carousel [noPause]="false">
       <slide *ngFor="let slide of slides">
         <h1 class="slider__title ">{{slide.company}}</h1>
 
