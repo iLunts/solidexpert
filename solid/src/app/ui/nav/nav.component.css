@@ -120,7 +120,7 @@
 .nav.open .nav__burger-line:nth-child(2) {
   transform: rotate(-45deg);
 }
-.nav.open .nav__burger-line + .header__burger-line {
+.nav.open .nav__burger-line + .nav__burger-line {
   margin-top: -1px;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
