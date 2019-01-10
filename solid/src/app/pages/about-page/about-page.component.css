@@ -35,22 +35,15 @@
   font-weight: 400;
   margin-bottom: 3rem;
 }
-.block .block__link {
-  display: block;
-  color: #fff;
-  text-align: center;
+.block .btn {
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 4.4rem;
   font-weight: 600;
-  padding: 2rem 4rem;
-  background: #00b715;
-  border: 2px solid #00b715;
 }
-.block .block__link:hover {
+.block .btn:hover {
   color: #00b715;
   background: #fff;
   border: 2px solid #00b715;
-  text-decoration: none;
 }
 @media only screen and (min-width: 1600px) {
   .block .block__text {
@@ -71,10 +64,6 @@
   }
   .block .block__subtitle {
     font-size: 3rem;
-  }
-  .block .block__link {
-    display: inline-block;
-    padding: 1rem 2rem;
   }
   .block .col--gray {
     padding: 4rem 2rem 4rem 2rem;
@@ -98,10 +87,6 @@
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;
-  }
-  .block .block__link {
-    display: inline-block;
-    padding: 1rem 2rem;
   }
   .block .col--white {
     align-items: center;
@@ -129,9 +114,9 @@
     line-height: 1rem;
     margin-bottom: 1rem;
   }
-  .block .block__link {
-    display: inline-block;
-    padding: 1rem 2rem;
+  .block .btn {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
   }
   .block .col--white {
     align-items: center;
