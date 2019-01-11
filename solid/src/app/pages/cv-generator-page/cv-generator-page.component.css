@@ -1,0 +1,16 @@
+.generator {
+  max-width: 80%;
+  margin: 120px auto;
+}
+.generator .generator__form .label {
+  margin-right: 0.5rem;
+}
+.generator .generator__form .label--w30 {
+  width: 30%;
+}
+.generator .generator__form .label--w100 {
+  width: 100%;
+}
+.generator .generator__form .label--level {
+  width: 14%;
+}
