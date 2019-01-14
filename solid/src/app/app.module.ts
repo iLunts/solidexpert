@@ -26,7 +26,10 @@ import { NavComponent } from './ui/nav/nav.component';
 import { GridLineComponent } from './ui/grid-line/grid-line.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
-import { CvPreviewComponent } from './app/cv-preview/cv-preview.component';
+import { CvPreviewComponent } from './pages/cv-preview/cv-preview.component';
+import { CvHeaderComponent } from './pages/cv-preview/cv-header/cv-header.component';
+import { CvFooterComponent } from './pages/cv-preview/cv-footer/cv-footer.component';
+import { CvBodyComponent } from './pages/cv-preview/cv-body/cv-body.component';
 
 
 
@@ -49,6 +52,9 @@ import { CvPreviewComponent } from './app/cv-preview/cv-preview.component';
     GridLineComponent,
     ProductsListPageComponent,
     CvPreviewComponent,
+    CvHeaderComponent,
+    CvFooterComponent,
+    CvBodyComponent,
   ],
   imports: [
     BrowserModule,

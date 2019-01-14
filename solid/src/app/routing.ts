@@ -8,6 +8,7 @@ import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
 import { CvGeneratorPageComponent } from './pages/cv-generator-page/cv-generator-page.component';
+import { CvPreviewComponent } from './pages/cv-preview/cv-preview.component';
 
 const routes: Routes = [
     // { path: '', component: HomePageComponent, pathMatch: 'full' },
@@ -18,7 +19,7 @@ const routes: Routes = [
     { path: 'contact', component: ContactUsPageComponent },
     { path: '', component: MainPageComponent },
     { path: 'cd/generator', component: CvGeneratorPageComponent },
-    
+    { path: 'cv-preview', component: CvPreviewComponent }
     // { path: 'order', component: HomePageComponent, pathMatch: 'full' },
     // { path: '**', component: HomePageComponent },
 ];
