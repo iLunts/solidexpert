@@ -26,6 +26,7 @@ import { NavComponent } from './ui/nav/nav.component';
 import { GridLineComponent } from './ui/grid-line/grid-line.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
+import { CvPreviewComponent } from './app/cv-preview/cv-preview.component';
 
 
 
@@ -47,6 +48,7 @@ import { ProductsListPageComponent } from './pages/products-list-page/products-l
     NavComponent,
     GridLineComponent,
     ProductsListPageComponent,
+    CvPreviewComponent,
   ],
   imports: [
     BrowserModule,
