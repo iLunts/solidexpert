@@ -18,7 +18,7 @@ const routes: Routes = [
     { path: 'services', component: ServicesPageComponent },
     { path: 'contact', component: ContactUsPageComponent },
     { path: '', component: MainPageComponent },
-    { path: 'cd/generator', component: CvGeneratorPageComponent },
+    { path: 'cv/generator', component: CvGeneratorPageComponent },
     { path: 'cv-preview', component: CvPreviewComponent }
     // { path: 'order', component: HomePageComponent, pathMatch: 'full' },
     // { path: '**', component: HomePageComponent },
