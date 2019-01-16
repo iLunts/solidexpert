@@ -1,14 +1,15 @@
-.cv-list .block {
+.block {
   padding-top: 100px;
 }
-.cv-list .block--green {
+.block--green {
   background: #0fb239;
   min-height: 30vh;
 }
-.cv-list .block__filter {
+.block__filter {
   background: #fbfbfb;
+  background: red;
   border: 1px solid #dfdfdf;
 }
-.cv-list .block__list-item {
+.block__list-item {
   border: 1px solid #dfdfdf;
 }
