@@ -8,10 +8,11 @@ export const DEVELOPERS: Developer[] = [
     lastName: 'Guerrero',
     specialization: 'Android',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+        specimen book.`,
+    link: ''
   },
   {
     hours: 20,
@@ -19,10 +20,11 @@ export const DEVELOPERS: Developer[] = [
     lastName: 'Shadel',
     specialization: 'Java',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-when an unknown printer took a galley of type and scrambled it to make a type
-specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 21,
@@ -30,10 +32,11 @@ specimen book.`
     lastName: 'Fusco',
     specialization: '.Net',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-when an unknown printer took a galley of type and scrambled it to make a type
-specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 22,
@@ -41,10 +44,11 @@ specimen book.`
     lastName: 'Bundy',
     specialization: 'Front End',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+        specimen book.`,
+    link: ''
   },
   {
     hours: 27,
@@ -52,10 +56,11 @@ specimen book.`
     lastName: 'Sarkisian',
     specialization: 'Designer',
     level: 'Middle' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+        specimen book.`,
+    link: ''
   },
   {
     hours: 40,
@@ -63,10 +68,11 @@ specimen book.`
     lastName: 'Krichmar',
     specialization: 'Sale manager',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+        specimen book.`,
+    link: '',
   },
   {
     hours: 33,
@@ -74,10 +80,11 @@ specimen book.`
     lastName: 'Maalouf',
     specialization: 'Phyton',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+        specimen book.`,
+    link: ''
   },
   {
     hours: 35,
@@ -85,10 +92,11 @@ specimen book.`
     lastName: 'Ayling',
     specialization: 'JavaScript',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+        specimen book.`,
+    link: ''
   },
   {
     hours: 30,
@@ -96,10 +104,11 @@ specimen book.`
     lastName: 'Guerrero',
     specialization: 'Android',
     level: 'Middle' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+        specimen book.`,
+    link: ''
   },
   {
     hours: 22,
@@ -107,10 +116,11 @@ specimen book.`
     lastName: 'Shadel',
     specialization: 'Java',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-when an unknown printer took a galley of type and scrambled it to make a type
-specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 24,
@@ -118,10 +128,11 @@ specimen book.`
     lastName: 'Fusco',
     specialization: '.Net',
     level: 'Middle' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-when an unknown printer took a galley of type and scrambled it to make a type
-specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 28,
@@ -129,10 +140,11 @@ specimen book.`
     lastName: 'Bundy',
     specialization: 'Front End',
     level: 'Middle' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 25,
@@ -140,10 +152,11 @@ specimen book.`
     lastName: 'Sarkisian',
     specialization: 'Designer',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 20,
@@ -151,10 +164,11 @@ specimen book.`
     lastName: 'Krichmar',
     specialization: 'Sale manager',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 27,
@@ -162,10 +176,11 @@ specimen book.`
     lastName: 'Maalouf',
     specialization: 'Phyton',
     level: 'Middle' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   },
   {
     hours: 25,
@@ -173,10 +188,11 @@ specimen book.`
     lastName: 'Ayling',
     specialization: 'JavaScript',
     level: 'Senior' ,
-    Info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book.`
+    info: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.`,
+    link: ''
   }
 ];
 

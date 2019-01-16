@@ -1,13 +1,14 @@
-.block {
+.cv-list .block {
   padding-top: 100px;
 }
-.block--green {
-  background: aquamarine;
+.cv-list .block--green {
+  background: #0fb239;
   min-height: 30vh;
 }
-.block .block__aside {
-  background: gainsboro;
+.cv-list .block__filter {
+  background: #fbfbfb;
+  border: 1px solid #dfdfdf;
 }
-.block .block__list {
-  background: grey;
+.cv-list .block__list-item {
+  border: 1px solid #dfdfdf;
 }

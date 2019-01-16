@@ -5,5 +5,6 @@ export class Developer{
   lastName: string;
   specialization: string;
   level: string;
-  Info: string;
+  info: string;
+  link: string;
 }
