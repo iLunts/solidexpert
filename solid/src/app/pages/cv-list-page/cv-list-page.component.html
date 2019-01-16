@@ -1,7 +1,12 @@
 <section class="container-fluid">
   <div class="block block--green"><h1>Title</h1></div>
   <div class="grid ">
-    <div class="col--1-3 ">side</div>
+    <div class="col--1-3 ">
+      side
+      <div ng2-sticky sticky-after=".nav">
+        <h1>Sticky!</h1>
+      </div>
+    </div>
     <div class="col--2-3">
       <ul>
         <li class="grid" *ngFor="let developer of developers">

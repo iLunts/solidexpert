@@ -23,6 +23,7 @@
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
     "ng-inline-svg": "^8.2.2",
+    "ng2-sticky": "^0.5.0",
     "ngx-bootstrap": "^3.1.2",
     "require-dir": "^1.1.0",
     "rxjs": "^6.3.3",
