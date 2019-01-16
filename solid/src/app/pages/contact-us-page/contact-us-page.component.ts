@@ -40,7 +40,7 @@ export class ContactUsPageComponent implements OnInit {
     alert('Thx!!! :-)');
     this.requestForm.reset();
   }
-  
+
   send() {
 
     const body = new HttpParams()

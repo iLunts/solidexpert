@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -48,7 +49,7 @@ import { CvListPageComponent } from './pages/cv-list-page/cv-list-page.component
     NavComponent,
     GridLineComponent,
     ProductsListPageComponent,
-    CvListPageComponent,
+    CvListPageComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +60,7 @@ import { CvListPageComponent } from './pages/cv-list-page/cv-list-page.component
     InlineSVGModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
-    InlineSVGModule.forRoot()
+    InlineSVGModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
