@@ -25,7 +25,6 @@
     "ng-inline-svg": "^8.2.2",
     "ng2-sticky": "^0.5.0",
     "ngx-bootstrap": "^3.1.2",
-    "ngx-sticky": "^2.0.1",
     "require-dir": "^1.1.0",
     "rxjs": "^6.3.3",
     "zone.js": "^0.8.26"
