@@ -7,6 +7,7 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
+import { CvListPageComponent } from './pages/cv-list-page/cv-list-page.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,8 @@ const routes: Routes = [
     { path: 'services', component: ServicesPageComponent },
     { path: 'contact', component: ContactUsPageComponent },
     { path: '', component: MainPageComponent },
+    { path: 'cv', component: CvListPageComponent }
+
     // { path: 'order', component: HomePageComponent, pathMatch: 'full' },
     // { path: '**', component: HomePageComponent },
 ];
