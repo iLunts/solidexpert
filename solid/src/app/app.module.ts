@@ -28,6 +28,7 @@ import { GridLineComponent } from './ui/grid-line/grid-line.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
 import { CvListPageComponent } from './pages/cv-list-page/cv-list-page.component';
+import { Ng2StickyModule } from 'ng2-sticky';
 
 
 
@@ -61,6 +62,7 @@ import { CvListPageComponent } from './pages/cv-list-page/cv-list-page.component
     FormsModule,
     ReactiveFormsModule,
     InlineSVGModule.forRoot(),
+    Ng2StickyModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

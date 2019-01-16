@@ -1,8 +1,7 @@
-import { LEVELS } from './list-level';
 import { Component, OnInit } from '@angular/core';
 import { SPECIALIZATIONS } from './list-specialization';
 import { DEVELOPERS } from './list-developers';
-
+import { LEVELS } from './list-level';
 
 @Component({
   selector: 'app-cv-list-page',
