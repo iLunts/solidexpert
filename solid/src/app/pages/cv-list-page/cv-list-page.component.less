@@ -1,21 +1,77 @@
-.cv-list {
-  .block{
+.block {
   padding-top: 100px;
 
-  &--green{
-  background: #0fb239;
-  min-height: 30vh;
-}
-  &__filter{
+  // --------------------------------------------
+  //  Modificator .block--
+
+  &--green {
+    background: #0fb239;
+    min-height: 30vh;
+  }
+
+  // --------------------------------------------
+  // All Elements
+
+  &__filter {
     background: #fbfbfb;
+    border: 1px solid #dfdfdf;
 
-    border: 1px solid #dfdfdf;
+    .label--w100 {
+      width: 100%;
+      font-size: 2rem;
+    }
+    .input {
+      margin: 1rem 0 3rem;
+      font-size: 2rem;
+    }
   }
-  &__list-item{
-    border: 1px solid #dfdfdf;
+
+  &__list-item {
+    border: 0.5px solid #dfdfdf;
+    padding: 20px 20px 20px 150px;
+    min-height: 100%;
+    &:hover{
+      box-shadow: inset 0px 0px 0px 8px rgba(223,223,223,1);
+    }
+  }
+  &__question {
+    padding: 2rem;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    & &-text {
+      font-size: 6rem;
+      line-height: 8rem;
+    }
+
+  }
+  &__title {
+    font-size: 8rem;
+    line-height: 11.2rem;
+    font-weight: 700;
+
+    margin-bottom: 3rem;
+  }
+  &__subtitle {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+
+    margin-bottom: 3rem;
+  }
+  &__subtitle-inner {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
   }
 }
-// #dfdfdf
-
-}
-

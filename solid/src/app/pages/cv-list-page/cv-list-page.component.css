@@ -1,14 +1,62 @@
-.cv-list .block {
+.block {
   padding-top: 100px;
 }
-.cv-list .block--green {
+.block--green {
   background: #0fb239;
   min-height: 30vh;
 }
-.cv-list .block__filter {
+.block__filter {
   background: #fbfbfb;
   border: 1px solid #dfdfdf;
 }
-.cv-list .block__list-item {
-  border: 1px solid #dfdfdf;
+.block__filter .label--w100 {
+  width: 100%;
+  font-size: 2rem;
+}
+.block__filter .input {
+  margin: 1rem 0 3rem;
+  font-size: 2rem;
+}
+.block__list-item {
+  border: 0.5px solid #dfdfdf;
+  padding: 20px 20px 20px 150px;
+  min-height: 100%;
+}
+.block__list-item:hover {
+  box-shadow: inset 0px 0px 0px 8px #dfdfdf;
+}
+.block__question {
+  padding: 2rem;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.block__question .block__question-text {
+  font-size: 6rem;
+  line-height: 8rem;
+}
+.block__title {
+  font-size: 8rem;
+  line-height: 11.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.block__subtitle {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.block__subtitle-inner {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.block__text {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }

@@ -1,17 +1,20 @@
-<section class="cv-list container-fluid">
-  <div class="block block--green"><h1 class="t--c">Title</h1></div>
-  <div class="grid ">
-    <div class="block__filter col--1-3">
+<section class="container-fluid">
+  <div class="block block--green">
+    <h1 class="block__title t--c">Title</h1>
+    <h2 class="block__subtitle t--c"> SubTitle </h2>
+  </div>
+  <div class="grid grid--collapse">
+    <div class="block__filter col--1-4">
       <form class="h-100vh p--lg" ng2-sticky sticky-after=".nav">
-        <h2>Filter</h2>
+        <h3 class="block__subtitle">Filter</h3>
         <div>
-          <label class="label">
+          <label class="label label--w100">
             Search <input class="input" type="text" />
           </label>
         </div>
 
         <div>
-          <label class="label">
+          <label class="label label--w100">
             Specialization <input class="input" list="inputSpec" />
             <datalist id="inputSpec">
               <option
@@ -23,37 +26,47 @@
           </label>
         </div>
         <div>
-          <label class="label">
+          <label class="label label--w100">
             Professional experience <input class="input" list="inputLevel"/>
             <datalist id="inputLevel">
               <option *ngFor="let level of levels" value="{{ level.devLevel }}">
               </option></datalist
           ></label>
         </div>
-        <input type="button" value="Find" />
-        <p>Total {{ totalCv }} CV</p>
+        <input class="btn btn--lg btn--green" type="button" value="Find" />
+
       </form>
     </div>
-    <div class="block__list col--2-3 ">
-      <ul class="p--lg">
+    <div class=" col--3-4 ">
+      <ul class="block__list">
         <li class="block__list-item" *ngFor="let developer of developers">
           <a class="grid link link--reset" href="">
-            <div class="col--1-3">
-              <h2 class="">
+            <div class="col--1-5">
+              <p class="block__text t--gray t--bold">
                 {{ developer.firstName }} {{ developer.lastName }}
-              </h2>
-              <h2 class="t--bold">{{ developer.specialization }}</h2>
-              <h2 class="t--bold" *ngIf="developer?.level">
+              </p>
+
+              <p class="block__subtitle-inner t--bold t--green" *ngIf="developer?.level">
                 {{ developer?.level }}
-              </h2>
+              </p>
+              <p class="block__subtitle-inner t--bold t--green">{{ developer.specialization }}</p>
             </div>
-            <div class="col--2-3">
-              <p>{{ developer.info }}</p>
-              <p class="t--bold" *ngIf="developer?.hours">
+            <div class="col--4-5">
+              <p class="block__text">{{ developer.info }}</p>
+              <p class="block__text t--bold" *ngIf="developer?.hours">
                 Available {{ developer?.hours }} hours a week
               </p>
             </div>
           </a>
+        </li>
+        <li>
+          <div class="block__question">
+            <p class="block__question-text">
+              Did not you find what you were looking for?
+            </p>
+            <a class="btn btn--lg btn--green" href="">Let us know!</a>
+          </div>
+
         </li>
       </ul>
     </div>
