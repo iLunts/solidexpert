@@ -27,15 +27,12 @@ import { NavComponent } from './ui/nav/nav.component';
 import { GridLineComponent } from './ui/grid-line/grid-line.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
-<<<<<<< HEAD
 import { CvListPageComponent } from './pages/cv-list-page/cv-list-page.component';
 import { Ng2StickyModule } from 'ng2-sticky';
-=======
 import { CvPreviewComponent } from './pages/cv-preview/cv-preview.component';
 import { CvHeaderComponent } from './pages/cv-preview/cv-header/cv-header.component';
 import { CvFooterComponent } from './pages/cv-preview/cv-footer/cv-footer.component';
 import { CvBodyComponent } from './pages/cv-preview/cv-body/cv-body.component';
->>>>>>> feature/cv-generator-page
 
 
 
@@ -57,14 +54,11 @@ import { CvBodyComponent } from './pages/cv-preview/cv-body/cv-body.component';
     NavComponent,
     GridLineComponent,
     ProductsListPageComponent,
-<<<<<<< HEAD
     CvListPageComponent
-=======
     CvPreviewComponent,
     CvHeaderComponent,
     CvFooterComponent,
     CvBodyComponent,
->>>>>>> feature/cv-generator-page
   ],
   imports: [
     BrowserModule,
