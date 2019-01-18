@@ -1,4 +1,4 @@
-export class Developer{
+export class Developer {
 
   hours: number;
   firstName: string;

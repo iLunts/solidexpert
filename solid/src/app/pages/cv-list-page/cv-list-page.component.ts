@@ -14,9 +14,17 @@ export class CvListPageComponent implements OnInit {
   specializations = SPECIALIZATIONS;
   levels = LEVELS ;
 
-  totalCv = 50;
+  isShowSearch = false;
 
   constructor() {}
 
   ngOnInit() {}
+
+  showSearch() {
+    if (this.isShowSearch) {
+      this.isShowSearch = false;
+    } else {
+      this.isShowSearch = true;
+    }
+  }
 }

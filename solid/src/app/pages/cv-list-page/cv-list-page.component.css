@@ -1,62 +1,193 @@
-.block {
+.block .block__layout {
   padding-top: 100px;
 }
-.block--green {
+.block .block__layout--green {
   background: #0fb239;
-  min-height: 30vh;
+  min-height: 40vh;
 }
-.block__filter {
+.block .block__filter {
   background: #fbfbfb;
   border: 1px solid #dfdfdf;
 }
-.block__filter .label--w100 {
+.block .block__filter-btn {
+  display: none;
+}
+.block .block__filter-form {
+  height: 100vh;
+  padding: 40px;
+}
+.block .block__filter .label--w100 {
   width: 100%;
   font-size: 2rem;
 }
-.block__filter .input {
+.block .block__filter .input {
   margin: 1rem 0 3rem;
   font-size: 3rem;
 }
-.block__list-item {
+.block .block__list-item {
   border: 0.5px solid #dfdfdf;
   padding: 20px 20px 20px 150px;
   min-height: 100%;
 }
-.block__list-item:hover {
+.block .block__list-item:hover {
   box-shadow: inset 0px 0px 0px 8px #dfdfdf;
 }
-.block__question {
+.block .block__question {
   padding: 2rem;
   background: #000;
   text-align: center;
   color: #fff;
   font-weight: 500;
 }
-.block__question .block__question-text {
+.block .block__question-text {
   font-size: 6rem;
   line-height: 8rem;
 }
-.block__title {
+.block .block__title {
   font-size: 8rem;
   line-height: 11.2rem;
   font-weight: 700;
   margin-bottom: 3rem;
 }
-.block__subtitle {
+.block .block__subtitle {
   font-size: 4rem;
   line-height: 4.5rem;
   font-weight: 500;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
-.block__subtitle-inner {
+.block .block__subtitle-inner {
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
-.block__text {
+.block .block__text {
   font-size: 1.8rem;
   line-height: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .block .block__layout--green {
+    min-height: 30vh;
+  }
+  .block .block__filter-form {
+    padding: 40px 25px 25px;
+  }
+  .block .block__filter-form .label--w100 {
+    font-size: 1.5rem;
+  }
+  .block .block__filter-form .input {
+    font-size: 2rem;
+  }
+  .block .block__filter-form .open {
+    display: block;
+  }
+  .block .block__list-item {
+    padding: 20px;
+  }
+  .block .block__title {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+  .block .block__subtitle {
+    line-height: 3.5rem;
+  }
+  .block .block__subtitle-inner {
+    font-size: 1.6rem;
+  }
+  .block .block__text {
+    font-size: 1.5rem;
+  }
+  .block .block__question-text {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .block .block__layout--green {
+    min-height: 30vh;
+  }
+  .block .block__filter-btn {
+    display: block;
+  }
+  .block .block__filter-form {
+    height: 100%;
+    padding: 40px 25px 25px;
+    display: none;
+  }
+  .block .block__filter-form.open {
+    display: block;
+  }
+  .block .block__filter-form .label--w100 {
+    font-size: 1.5rem;
+  }
+  .block .block__filter-form .input {
+    font-size: 2rem;
+  }
+  .block .block__list-item {
+    padding: 25px;
+  }
+  .block .block__title {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .block .block__subtitle {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .block .block__subtitle-inner {
+    font-size: 2rem;
+  }
+  .block .block__text {
+    font-size: 1.5rem;
+  }
+  .block .block__question-text {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .block .block__layout--green {
+    min-height: 30vh;
+    padding-bottom: 3rem;
+  }
+  .block .block__filter-btn {
+    display: block;
+  }
+  .block .block__filter-form {
+    height: 100%;
+    padding: 40px 25px 25px;
+    display: none;
+  }
+  .block .block__filter-form.open {
+    display: block;
+  }
+  .block .block__filter-form .label--w100 {
+    font-size: 1.5rem;
+  }
+  .block .block__filter-form .input {
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+  .block .block__list-item {
+    padding: 25px;
+  }
+  .block .block__title {
+    font-size: 3rem;
+    line-height: 6rem;
+    margin-bottom: 1rem;
+  }
+  .block .block__subtitle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .block .block__subtitle-inner {
+    font-size: 2rem;
+  }
+  .block .block__text {
+    font-size: 1.5rem;
+  }
+  .block .block__question-text {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
 }
