@@ -33,6 +33,7 @@ import { CvPreviewComponent } from './pages/cv-preview/cv-preview.component';
 import { CvHeaderComponent } from './pages/cv-preview/cv-header/cv-header.component';
 import { CvFooterComponent } from './pages/cv-preview/cv-footer/cv-footer.component';
 import { CvBodyComponent } from './pages/cv-preview/cv-body/cv-body.component';
+import { CvDetailsPageComponent } from './pages/cv-details-page/cv-details-page.component';
 
 
 
@@ -59,6 +60,7 @@ import { CvBodyComponent } from './pages/cv-preview/cv-body/cv-body.component';
     CvHeaderComponent,
     CvFooterComponent,
     CvBodyComponent,
+    CvDetailsPageComponent,
   ],
   imports: [
     BrowserModule,
