@@ -20,7 +20,7 @@ const routes: Routes = [
     { path: 'services', component: ServicesPageComponent },
     { path: 'contact', component: ContactUsPageComponent },
     { path: '', component: MainPageComponent },
-    { path: 'cv', component: CvListPageComponent }
+    { path: 'cv', component: CvListPageComponent },
 
     { path: 'cv/generator', component: CvGeneratorPageComponent },
     { path: 'cv-preview', component: CvPreviewComponent }

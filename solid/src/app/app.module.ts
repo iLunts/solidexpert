@@ -54,7 +54,7 @@ import { CvBodyComponent } from './pages/cv-preview/cv-body/cv-body.component';
     NavComponent,
     GridLineComponent,
     ProductsListPageComponent,
-    CvListPageComponent
+    CvListPageComponent,
     CvPreviewComponent,
     CvHeaderComponent,
     CvFooterComponent,
