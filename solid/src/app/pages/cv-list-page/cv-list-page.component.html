@@ -47,15 +47,15 @@
                 {{ developer.firstName }} {{ developer.lastName }}
               </p>
 
-              <p class="block__subtitle-inner t--bold t--green" *ngIf="developer?.level">
-                {{ developer?.level }}
+              <p class="block__subtitle-inner t--bold t--green" *ngIf="developer?.levelSeniority">
+                {{ developer?.levelSeniority }}
               </p>
               <p class="block__subtitle-inner t--bold t--green">{{ developer.specialization }}</p>
             </div>
             <div class="col--md-4-5 col--sm-3-5 col--xs-1-1">
-              <p class="block__text">{{ developer.info }}</p>
-              <p class="block__text t--bold" *ngIf="developer?.hours">
-                Available {{ developer?.hours }} hours a week
+              <p class="block__text">{{ developer.description}}</p>
+              <p class="block__text t--bold" *ngIf="developer?.hoursFree">
+                Available {{ developer?.hoursFree }} hours a week
               </p>
             </div>
           </a>

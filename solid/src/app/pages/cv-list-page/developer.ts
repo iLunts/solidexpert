@@ -1,10 +1,10 @@
 export class Developer {
 
-  hours: number;
+  hoursFree: number;
   firstName: string;
   lastName: string;
   specialization: string;
-  level: string;
-  info: string;
+  levelSeniority: string;
+  description: string;
   link: string;
 }
