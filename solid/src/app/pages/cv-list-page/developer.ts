@@ -6,5 +6,5 @@ export class Developer {
   specialization: string;
   levelSeniority: string;
   description: string;
-  link: string;
+  id: number;
 }

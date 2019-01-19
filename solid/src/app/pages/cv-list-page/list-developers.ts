@@ -12,7 +12,7 @@ export const DEVELOPERS: Developer[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
         specimen book.`,
-    link: ''
+    id: 1,
   },
   {
     hoursFree: 20,
@@ -24,7 +24,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 2,
   },
   {
     hoursFree: 21,
@@ -36,7 +36,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 3,
   },
   {
     hoursFree: 22,
@@ -48,7 +48,7 @@ export const DEVELOPERS: Developer[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
         specimen book.`,
-    link: ''
+    id: 4,
   },
   {
     hoursFree: 27,
@@ -60,7 +60,7 @@ export const DEVELOPERS: Developer[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
         specimen book.`,
-    link: ''
+    id: 5,
   },
   {
     hoursFree: 40,
@@ -72,7 +72,7 @@ export const DEVELOPERS: Developer[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
         specimen book.`,
-    link: '',
+    id: 6,
   },
   {
     hoursFree: 33,
@@ -84,7 +84,7 @@ export const DEVELOPERS: Developer[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
         specimen book.`,
-    link: ''
+    id: 7,
   },
   {
     hoursFree: 35,
@@ -96,7 +96,7 @@ export const DEVELOPERS: Developer[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
         specimen book.`,
-    link: ''
+    id: 8,
   },
   {
     hoursFree: 30,
@@ -108,7 +108,7 @@ export const DEVELOPERS: Developer[] = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type
         specimen book.`,
-    link: ''
+    id: 9,
   },
   {
     hoursFree: 22,
@@ -120,7 +120,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 10,
   },
   {
     hoursFree: 24,
@@ -132,7 +132,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 11,
   },
   {
     hoursFree: 28,
@@ -144,7 +144,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 12,
   },
   {
     hoursFree: 25,
@@ -156,7 +156,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 13,
   },
   {
     hoursFree: 20,
@@ -168,7 +168,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 14,
   },
   {
     hoursFree: 27,
@@ -180,7 +180,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 15,
   },
   {
     hoursFree: 25,
@@ -192,7 +192,7 @@ export const DEVELOPERS: Developer[] = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took a galley of type and scrambled it to make a type
       specimen book.`,
-    link: ''
+    id: 16,
   }
 ];
 
