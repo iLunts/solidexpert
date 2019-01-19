@@ -1,0 +1,225 @@
+.block {
+  min-height: 50vh;
+  padding: 100px 0;
+  overflow: hidden;
+}
+.block--header {
+  background-color: #252525;
+  color: #fff;
+}
+.block--body {
+  padding: 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+.block .col--gray {
+  background: #fbfbfb;
+  border-right: 1px solid #dfdfdf;
+  padding: 8rem 4rem 8rem 8rem;
+}
+.block .block__line {
+  margin: 0 auto;
+  width: 50%;
+  height: 2px;
+  background-color: #e4e4e4;
+  position: relative;
+  max-width: 550px;
+}
+.block .block__dots {
+  position: relative;
+}
+.block .block__dots-item {
+  position: absolute;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+  background-color: #252525;
+  display: inline-block;
+  border: 2px solid #e4e4e4;
+  border-radius: 100%;
+}
+.block .block__dots-item--holder:nth-child(1) {
+  left: 0;
+}
+.block .block__dots-item--holder:nth-child(2) {
+  left: 33.333333%;
+}
+.block .block__dots-item--holder:nth-child(3) {
+  left: 66.666666%;
+}
+.block .block__dots-item--holder:nth-child(4) {
+  left: 100%;
+}
+.block .block__dots-item--active::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #0fb239;
+  top: 2px;
+  left: 2px;
+  border-radius: 100%;
+}
+.block .block__title {
+  font-size: 8rem;
+  line-height: 11.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.block .block__subtitle {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.block .block__subtitle-inner {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.block .block__text {
+  text-align: justify;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.block .block__text--translate {
+  transform: translate(-20px, 15px);
+}
+.block .btn {
+  font-size: 2rem;
+  line-height: 4.4rem;
+  font-weight: 600;
+}
+.block .btn:hover {
+  color: #00b715;
+  background: #fff;
+  border: 2px solid #00b715;
+}
+.block .link--hover-line {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.block .link--hover-line:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  background-color: #000;
+  transition: all 0.5s;
+  height: 1px;
+}
+.block .link--hover-line:hover:after {
+  width: 100%;
+}
+@media only screen and (min-width: 1600px) {
+  .block .block__text {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1220px) and (max-width: 1599px) {
+  .block {
+    min-height: 30vh;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .block {
+    min-height: 30vh;
+  }
+  .block .block__title {
+    font-size: 6rem;
+  }
+  .block .block__subtitle {
+    font-size: 3rem;
+  }
+  .block .col--gray {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .block {
+    min-height: 30vh;
+  }
+  .block .block__contacts {
+    text-align: center;
+  }
+  .block .block__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  .block .block__subtitle {
+    font-size: 2em;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+  .block .block__subtitle-inner {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+  .block .block__subtitle--center {
+    text-align: center;
+  }
+  .block .block__text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .block .col--white {
+    align-items: center;
+  }
+  .block .col--gray {
+    padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .block {
+    min-height: 30vh;
+  }
+  .block .block__contacts {
+    text-align: center;
+  }
+  .block .link--hover-line {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .block .block__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .block .block__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .block .block__subtitle-inner {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .block .block__subtitle--center {
+    text-align: center;
+  }
+  .block .block__text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+  }
+  .block .block__text--translate {
+    transform: translate(-7px, 15px);
+  }
+  .block .btn {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .block .col--white {
+    align-items: center;
+  }
+  .block .col--gray {
+    padding: 2rem;
+  }
+}
