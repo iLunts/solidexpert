@@ -154,43 +154,6 @@ svg [STROKE*='#']{
     }
 }
 
-// ------------------------------------------------
-// Block '.line'
-// ------------------------------------------------
-.line {
-    border-top: 2px solid #ddd;
-
-    // Modificator '.line.line--sm'
-    &--sm {
-        border-top: 1px solid #ddd;
-    }
-
-    // Modificator '.line.line--sm'
-    &--dashed {
-        border-top-style: dashed;
-    }
-}
-
-// ------------------------------------------------
-// Block 'after-hover'
-// ------------------------------------------------
-.after-hover{
-
-    // Element 'after-hover__show'
-    &__show{
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s, opacity 0.2s linear;
-    }
-
-    // Action ':hover'
-    &:hover &__show{
-        visibility: visible;
-        opacity: 1;
-        transition: visibility 0s, opacity 0.2s linear;
-    }
-}
-
 // ******************************************************************
 // Component:       'margin'
 //
