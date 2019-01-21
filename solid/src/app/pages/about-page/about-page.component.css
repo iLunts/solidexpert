@@ -1,5 +1,5 @@
 .block {
-  min-height: 50vh;
+  min-height: auto;
   padding: 100px 0;
   overflow: hidden;
 }
@@ -63,7 +63,7 @@
   font-size: 8rem;
   line-height: 11.2rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin: 0;
 }
 .block .block__subtitle {
   font-size: 4rem;
