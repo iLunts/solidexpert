@@ -41,7 +41,7 @@
     <div class=" col--md-3-4 col--sm-1-1 col--xs-1-1">
       <ul class="block__list">
         <li class="block__list-item" *ngFor="let developer of developers">
-          <a class="grid link link--reset" href="">
+          <a class="grid link link--reset" routerLink="/cv/details/{{developer.id}}">
             <div class="col--md-1-5 col--sm-2-5 col--xs-1-1">
               <p class="block__text t--bold">
                 {{ developer.firstName }} {{ developer.lastName }}

@@ -22,8 +22,8 @@ const routes: Routes = [
     { path: '', component: MainPageComponent },
     { path: 'cv', component: CvListPageComponent },
     { path: 'cv/generator', component: CvGeneratorPageComponent },
-    { path: 'cv-preview', component: CvPreviewComponent },
-    { path: 'cv-details', component: CvDetailsPageComponent }
+    { path: 'cv/preview', component: CvPreviewComponent },
+    { path: 'cv/details/:id', component: CvDetailsPageComponent }
     // { path: 'order', component: HomePageComponent, pathMatch: 'full' },
     // { path: '**', component: HomePageComponent },
 ];
