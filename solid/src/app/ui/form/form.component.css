@@ -22,7 +22,7 @@
 .form__input::placeholder {
   color: #808080;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 400;
 }
 .form__input:focus {
   outline: none;

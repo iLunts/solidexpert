@@ -45,17 +45,17 @@
 .block.block--white .block__overlay {
   color: #f8f8f8;
 }
-.block.block--green {
+.block.block--blue {
   align-items: center;
   justify-content: center;
-  background-color: #0fb239;
-  color: #333;
-}
-.block.block--green .block__title {
+  background-color: #54a4ff;
   color: #fff;
 }
-.block.block--green .block__overlay {
-  color: #0ca734;
+.block.block--blue .block__title {
+  color: #fff;
+}
+.block.block--blue .block__overlay {
+  color: #4099ff;
 }
 .block .block__title {
   font-size: 4rem;
@@ -97,7 +97,7 @@
   display: block;
   width: 4px;
   height: 4px;
-  background-color: #333;
+  background-color: #fff;
 }
 .block .block__body {
   position: relative;

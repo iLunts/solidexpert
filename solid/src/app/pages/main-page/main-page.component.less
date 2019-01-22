@@ -67,14 +67,13 @@
     }
   }
 
-  // Modificators '.block.block--green'
-  &&--green {
+  // Modificators '.block.block--blue'
+  &&--blue {
     align-items: center;
     justify-content: center;
 
-    background-color: #0fb239;
-    // background-color: #4caf50;
-    color: #333;
+    background-color: @color-blue;
+    color: #fff;
 
     .block__title {
       color: #fff;
@@ -82,16 +81,9 @@
     }
 
     .block__overlay {
-      color: #0ca734;
+      color: darken(@color-blue, 4%);
     }
   }
-  // &&__stack-item{
-  //   background-color: #0fb239 ;
-  //   color: #fff ;
-  // }
-  
-  
- 
 
   // ------------------------------------------------
   // All elements
@@ -147,7 +139,7 @@
         display: block;
         width: 4px;
         height: 4px;
-        background-color: #333;
+        background-color: #fff;
       }
     }
   }

@@ -19,7 +19,7 @@ export class FormComponent implements OnInit {
   click() {
 
     const body = new HttpParams()
-    //  .set('is_company',"false")
+     .set('is_company', "false")
      .set('firstName', this.yourName)
      .set('contactInfo_Phone_1', this.contactInfo_Phone_1)
      .set('contactInfo_Email_1', this.contactInfo_Email_1)
