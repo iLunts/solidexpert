@@ -2,7 +2,7 @@
   color: #000;
   background: #fff;
 }
-.footer li {
+.footer .link {
   margin-bottom: 0.5rem;
 }
 .footer .footer__nav-link:after {
