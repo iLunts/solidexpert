@@ -11,7 +11,7 @@
   bottom: 0px;
   left: 0;
   width: 0;
-  background-color: #00b715;
+  background-color: #54a4ff;
   transition: all 0.5s;
   height: 2px;
 }
@@ -23,7 +23,7 @@
   height: 1.8rem;
 }
 .footer .footer__statment:hover::first-letter {
-  color: #00b715;
+  color: #54a4ff;
 }
 .footer .link--hover-line:after {
   content: "";
@@ -43,7 +43,7 @@
   height: 100%;
 }
 .footer .svg:hover {
-  color: #00b715;
+  color: #54a4ff;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer .footer__nav {

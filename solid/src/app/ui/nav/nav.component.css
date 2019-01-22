@@ -97,10 +97,10 @@
   width: 100%;
 }
 .nav .nav__link.active {
-  color: #00b715;
+  color: #54a4ff;
 }
 .nav .nav__link.active:after {
-  background-color: #00b715;
+  background-color: #54a4ff;
 }
 .nav.open {
   min-height: 100vh;

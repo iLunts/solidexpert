@@ -239,13 +239,32 @@ button{
             color: @color-green-dark;
             text-shadow: none;
 
-            // &:hover{
-            //     background: lighten(@color-green, 48%);
-            // }
+            &:disabled{
+                border-color: #bbb;
+                color: #bbb;
+            }
+        }
+    }
 
-            // &:focus{
-            //     box-shadow: 0 0 0 3px lighten(@color-green, 30%);
-            // }
+    // Modificator '.btn.btn--blue'
+    &&--blue{
+        background: @color-blue;
+        color: #fff;
+
+        &:disabled{
+            background: #eee;
+            color: #bbb;
+        }
+
+        &:hover{
+            background: @color-blue;
+            border-color: @color-blue;
+        }
+
+        &.btn--border{
+            border-color: @color-blue;
+            color: @color-blue-dark;
+            text-shadow: none;
 
             &:disabled{
                 border-color: #bbb;

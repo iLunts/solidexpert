@@ -81,16 +81,6 @@
 .block .block__text--translate {
   transform: translate(-20px, 15px);
 }
-.block .btn {
-  font-size: 2rem;
-  line-height: 4.4rem;
-  font-weight: 600;
-}
-.block .btn:hover {
-  color: #00b715;
-  background: #fff;
-  border: 2px solid #00b715;
-}
 @media only screen and (min-width: 1600px) {
   .block .block__text {
     font-size: 1.5rem;
