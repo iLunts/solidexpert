@@ -10,16 +10,16 @@
     }
     .carousel-indicators li {
     background-color: #000;
-    } 
+    }
     li.active {
-      background-color: #0ca734;
+      background-color: @color-blue;
     }
     .carousel-control-next-icon{
       background-image: url(/assets/img/icons/right-arrow.svg);
-  
+
     }
     .carousel-control-prev-icon{
-      background-image: url(/assets/img/icons/left-arrow.svg); 
+      background-image: url(/assets/img/icons/left-arrow.svg);
     }
     .carousel-control-next{
       right: -5rem;
@@ -30,7 +30,7 @@
     .slider__title{
       font-size: 4rem;
       line-height: 4.2rem;
-      font-weight: 600;  
+      font-weight: 600;
       margin-bottom: 3rem;
     }
     .slider__text{
@@ -39,22 +39,22 @@
       font-weight: 500;
       padding-left: 3rem;
      &--mention::before{
-       content: open-quote; 
-       color: #0ca734;
+       content: open-quote;
+       color: @color-blue;
      }
      &--mention::after{
-      content: close-quote; 
-      color: #0ca734;
+      content: close-quote;
+      color: @color-blue;
       }
     }
-  
+
   }
 
 // ----------------------------------------
 // Size : Medium
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
-  .block--white {   
+  .block--white {
     .carousel-inner{
       min-height: 40vh;
     }
@@ -67,18 +67,18 @@
 // Size : Small
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
-  .block--white {   
-    
+  .block--white {
+
     .slider__title {
       font-size: 3rem;
       line-height: 3.2rem;
       margin-bottom: 2rem;
-    } 
+    }
 
     .slider__text {
       font-weight: 600;
 
-    }    
+    }
     .carousel-control{
       display: none;
     }
@@ -90,7 +90,7 @@
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
   .block {
-    
+
     .slider__title {
       font-size: 1.5rem;
       line-height: 2rem;

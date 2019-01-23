@@ -10,7 +10,7 @@
   background-color: #000;
 }
 .block--white li.active {
-  background-color: #0ca734;
+  background-color: #54a4ff;
 }
 .block--white .carousel-control-next-icon {
   background-image: url(/assets/img/icons/right-arrow.svg);
@@ -38,11 +38,11 @@
 }
 .block--white .slider__text--mention::before {
   content: open-quote;
-  color: #0ca734;
+  color: #54a4ff;
 }
 .block--white .slider__text--mention::after {
   content: close-quote;
-  color: #0ca734;
+  color: #54a4ff;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
   .block--white .carousel-inner {
