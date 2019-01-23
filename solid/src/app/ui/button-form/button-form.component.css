@@ -5,8 +5,8 @@
 .page-form__button-line {
   display: block;
   width: 20px;
-  height: 2px;
-  background-color: #00b715;
+  height: 3px;
+  background-color: #54a4ff;
   transition: all 0.4s;
 }
 .page-form__button-line--left {

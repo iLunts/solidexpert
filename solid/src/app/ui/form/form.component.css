@@ -4,7 +4,7 @@
   bottom: 0px;
   left: 0;
   width: 0;
-  background-color: #00b715;
+  background-color: #54a4ff;
   transition: all 0.5s;
   height: 3px;
 }
@@ -27,7 +27,7 @@
 .form__input:focus {
   outline: none;
   border: none;
-  border-bottom: 1px solid #00b715;
+  border-bottom: 1px solid #54a4ff;
 }
 .form__input-message {
   height: 100%;
