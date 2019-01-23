@@ -44,26 +44,25 @@
   line-height: 8rem;
 }
 .block .block__title {
-  font-size: 8rem;
-  line-height: 11.2rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 600;
 }
 .block .block__subtitle {
-  font-size: 4rem;
-  line-height: 4.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
   margin-bottom: 0;
 }
 .block .block__subtitle-inner {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 .block .block__text {
-  font-size: 1.8rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
