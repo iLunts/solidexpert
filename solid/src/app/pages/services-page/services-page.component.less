@@ -9,27 +9,27 @@
   & &__text {
     text-align: justify;
   }
-  
+
   // Element '.services .services__list'
   & &__list{
-    
+
     // Element '.services .services__list-item'
     &-item {
       list-style-type: square;
       list-style-position: inside;
     }
-    
+
     // Element '.services .services__list-text'
     &-text {
       color: #000;
     }
   }
-  
+
   // Element '.services .services__header'
   & &__header {
     min-height: 50vh;
-    padding-top: 150px;
-    
+    padding-top: 100px;
+
     // Element '.services .services__header-title'
     &-title {
       text-align: center;
@@ -39,7 +39,7 @@
       font-size: 5rem;
       line-height: 5rem;
     }
-    
+
     // Element '.services .services__header-subtitle'
     &-subtitle {
       padding-right: 5%;
@@ -110,6 +110,14 @@
   .services {
     & &__header {
       min-height: 40vh;
+      &-title{
+      text-align: center;
+      color: #222;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 4rem;
+      line-height: 5rem;
+      }
     }
 
     & &__img {
@@ -136,11 +144,22 @@
   // ------------------------------------
   .services {
     & &__img {
+
       margin: 10px 0;
     }
 
     & &__header {
       min-height: 40vh;
+      padding-top: 50px;
+
+      &-title{
+        text-align: center;
+        color: #222;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 3rem;
+        line-height: 4rem;
+        }
     }
 
     & &__custom {

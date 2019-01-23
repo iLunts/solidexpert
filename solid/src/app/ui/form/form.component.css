@@ -4,12 +4,18 @@
   bottom: 0px;
   left: 0;
   width: 0;
-  background-color: #00b715;
+  background-color: #54a4ff;
   transition: all 0.5s;
   height: 3px;
 }
 .form .form__button:hover:after {
   width: 80%;
+}
+.form .btn {
+  border: 2px solid #54a4ff;
+}
+.form .btn:hover {
+  border-color: #fff;
 }
 .form__input {
   outline: none;
@@ -27,7 +33,7 @@
 .form__input:focus {
   outline: none;
   border: none;
-  border-bottom: 1px solid #00b715;
+  border-bottom: 1px solid #54a4ff;
 }
 .form__input-message {
   height: 100%;

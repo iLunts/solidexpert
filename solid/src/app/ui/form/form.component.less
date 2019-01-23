@@ -1,4 +1,5 @@
 @import '../../../../web-src/less/variables.less';
+
 .form{
   & &__button {
 
@@ -8,7 +9,7 @@
       bottom: 0px;
       left: 0;
       width: 0;
-      background-color:@color-green;
+      background-color: @color-blue;
       transition: all 0.5s;
       height: 3px;
     }
@@ -17,6 +18,12 @@
       &:after {
         width: 80%;
       }
+    }
+  }
+  & .btn{
+    border: 2px solid @color-blue;
+    &:hover{
+      border-color:  #fff;
     }
   }
 
@@ -37,7 +44,7 @@
     &:focus{
       outline: none;
       border: none;
-      border-bottom:1px solid @color-green;
+      border-bottom:1px solid @color-blue;
     }
     &-message{
       height: 100%;
