@@ -3,171 +3,167 @@
 // Block '.contact'
 // ---------------------------------------
 .contact {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    // Element '.contact .contact__left'
-    & &__left{
-        display: block;
-        width: 50%;
-        max-width: 50%;
-        max-height: 100vh;
-        overflow: hidden;
-        
-        // Element '.contact .contact__left-img'
-        &-img{
-            background-image: url('/assets/img/contact-page/contact.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
-            -webkit-clip-path: polygon(0 0,100% 0,88% 100%,0% 100%);
-            clip-path: polygon(0 0,100% 0,88% 100%,0% 100%);
-            
-            // Element '.contact .contact__left-img img'
-            img{
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
+  // Element '.contact .contact__left'
+  & &__left {
+    display: block;
+    width: 50%;
+    max-width: 50%;
+    max-height: 100vh;
+    overflow: hidden;
+
+    // Element '.contact .contact__left-img'
+    &-img {
+      background-image: url("/assets/img/contact-page/contact.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      -webkit-clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+
+      // Element '.contact .contact__left-img img'
+      img {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
-    
-    // Element '.contact .contact__body'
-    & &__body{
-        display: block;
-        width: 50%;
-        min-height: 100vh;
-        padding: 100px;
+  }
+
+  // Element '.contact .contact__body'
+  & &__body {
+    display: block;
+    width: 50%;
+    min-height: 100vh;
+    padding: 100px;
+
+    & .input:focus{
+      border-color:@color-blue;
+    }
+  }
+
+  // Element '.contact .contact__address'
+  & &__address {
+    // Element '.contact .contact__address-text'
+    &-text {
+      display: block;
+      margin: 0;
+      line-height: 1.5;
     }
 
-    // Element '.contact .contact__address'
-    & &__address{
-        
-        // Element '.contact .contact__address-text'
-        &-text{
-            display: block;
-            margin: 0;
-            line-height: 1.5;
-        }
+    // Element '.contact .contact__address-link'
+    &-link {
+      display: block;
+      margin: 0;
+      line-height: 1.5;
+      color: #333;
+      text-decoration: underline;
+    }
 
-        // Element '.contact .contact__address-link'
-        &-link{
-            display: block;
-            margin: 0;
-            line-height: 1.5;
-            color: #333;
-            text-decoration: underline;
+  }
+
+  // Element '.contact .contact__question'
+  & &__question {
+    &-send {
+      text-align: center;
+      & .btn {
+        border: 2px solid @color-blue;
+        &:hover {
+          border-color: #fff;
         }
+      }
     }
-        
-    // Element '.contact .contact__question'
-    & &__question{
-        
-        &-send{
-            text-align: center;
-        }
-    }
+  }
 }
-
 
 // ----------------------------------------
 // Size : xLarge
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-xlg-min) {
-
-    // ------------------------------------
-    // Block '.contact'
-    // ------------------------------------
-    .contact {
-        
-    }
+  // ------------------------------------
+  // Block '.contact'
+  // ------------------------------------
+  .contact {
+  }
 }
 
 // ----------------------------------------
 // Size : Large
 // ----------------------------------------
-@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
-
-    // ------------------------------------
-    // Block '.contact'
-    // ------------------------------------
-    .contact {
-        
-    }
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+  // ------------------------------------
+  // Block '.contact'
+  // ------------------------------------
+  .contact {
+  }
 }
 
 // ----------------------------------------
 // Size : Medium
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
-
-    // ------------------------------------
-    // Block '.contact'
-    // ------------------------------------
-    .contact {
-        
-    }
+  // ------------------------------------
+  // Block '.contact'
+  // ------------------------------------
+  .contact {
+  }
 }
 
 // ----------------------------------------
 // Size : Small
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
-
-    // ------------------------------------
-    // Block '.contact'
-    // ------------------------------------
-    .contact {
-        
-        // Element '.contact .contact__body'
-        & &__body{
-            padding: 100px 50px;
-        }
-
-        // Element '.contact .contact__question'
-        & &__question{
-            
-            &-send{
-                margin-bottom: 20px;
-            }
-        }
+  // ------------------------------------
+  // Block '.contact'
+  // ------------------------------------
+  .contact {
+    // Element '.contact .contact__body'
+    & &__body {
+      padding: 100px 50px;
     }
+
+    // Element '.contact .contact__question'
+    & &__question {
+      &-send {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 // ----------------------------------------
 // Size : xSmall
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
-    
-    // ------------------------------------
-    // Block '.contact'
-    // ------------------------------------
-    .contact {
-        flex-wrap: wrap;
-        
-        
-        // Element '.contact .contact__left'
-        & &__left{
-            display: none;
-            // width: 100%;
-            // height: 300px;
-            // min-height: auto;
-        }
-        
-        // Element '.contact .contact__body'
-        & &__body{
-            width: 100%;
-            padding: 100px 30px;
-        }
+  // ------------------------------------
+  // Block '.contact'
+  // ------------------------------------
+  .contact {
+    flex-wrap: wrap;
 
-        // Element '.contact .contact__question'
-        & &__question{
-            
-            &-send{
-                margin-bottom: 20px;
-            }
-        }
+    // Element '.contact .contact__left'
+    & &__left {
+      display: none;
+      // width: 100%;
+      // height: 300px;
+      // min-height: auto;
     }
+
+    // Element '.contact .contact__body'
+    & &__body {
+      width: 100%;
+      padding: 100px 30px;
+    }
+
+    // Element '.contact .contact__question'
+    & &__question {
+      &-send {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
