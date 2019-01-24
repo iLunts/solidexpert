@@ -1,9 +1,12 @@
+.block {
+  padding-top: 0;
+}
 .block .block__layout {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .block .block__layout--green {
-  background: #0fb239;
-  min-height: 40vh;
+  background: #4d7cfe;
+  min-height: 45vh;
 }
 .block .block__filter {
   background: #fbfbfb;
@@ -22,15 +25,21 @@
 }
 .block .block__filter .input {
   margin: 1rem 0 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.block .block__filter .input:focus {
+  border-color: #4d7cfe;
 }
 .block .block__list-item {
   border: 0.5px solid #dfdfdf;
-  padding: 20px 20px 20px 150px;
-  min-height: 100%;
+  padding: 3rem;
+  min-height: 10vh;
 }
 .block .block__list-item:hover {
   box-shadow: inset 0px 0px 0px 8px #dfdfdf;
+}
+.block .block__list-item--p-l {
+  padding-right: 8rem;
 }
 .block .block__question {
   padding: 2rem;
@@ -49,38 +58,48 @@
   font-weight: 600;
 }
 .block .block__subtitle {
-  font-size: 2rem;
-  line-height: 2rem;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-.block .block__subtitle-inner {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
+.block .block__subtitle-inner {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 800;
+  text-indent: 2px;
+  text-transform: uppercase;
+}
 .block .block__text {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
   margin-bottom: 1rem;
+}
+.block .bg--blue {
+  background-color: #4d7cfe;
+  padding: 0.2rem;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
   .block .block__layout--green {
     min-height: 30vh;
   }
+  .block .block__filter-btn {
+    display: block;
+  }
   .block .block__filter-form {
+    height: 100%;
     padding: 40px 25px 25px;
+    display: none;
+  }
+  .block .block__filter-form.open {
+    display: block;
   }
   .block .block__filter-form .label--w100 {
     font-size: 1.5rem;
   }
   .block .block__filter-form .input {
     font-size: 2rem;
-  }
-  .block .block__filter-form .open {
-    display: block;
   }
   .block .block__list-item {
     padding: 20px;

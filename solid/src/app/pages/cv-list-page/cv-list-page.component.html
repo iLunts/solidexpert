@@ -13,10 +13,10 @@
 
   </div>
   <div class="grid grid--collapse">
-    <div class="block__filter col--md-1-4 col--sm-1-1 col--xs-1-1">
+    <div class="block__filter col--md-1-5 col--sm-1-1 col--xs-1-1">
       <button role="button" aria-label="Search CV Button" class="block__filter-btn" (click)="showSearch()"> Open filter </button>
       <form class="block__filter-form " [ngClass]="{'open': isShowSearch}" ng2-sticky sticky-after=".nav">
-        <h3 class="block__subtitle-inner">Filter</h3>
+        <h3 class="block__subtitle">Filter</h3>
         <div>
           <label class="label label--w100">
             Search <input class="input" type="text" />
@@ -47,21 +47,19 @@
 
       </form>
     </div>
-    <div class=" col--md-3-4 col--sm-1-1 col--xs-1-1">
+    <div class=" col--md-4-5 col--sm-1-1 col--xs-1-1">
       <ul class="block__list">
         <li class="block__list-item" *ngFor="let developer of developers">
           <a class="grid link link--reset" routerLink="/cv/details/{{developer.id}}">
-            <div class="col--md-1-5 col--sm-2-5 col--xs-1-1">
-              <p class="block__text t--bold">
-                {{ developer.firstName }} {{ developer.lastName }}
+            <div class="col--lg-2-10 push--1-10 col--md-1-1 col--sm-1-1 col--xs-1-1">
+              <p class="block__subtitle" *ngIf="developer?.levelSeniority">
+                {{ developer?.levelSeniority }} {{ developer.specialization }}
               </p>
-
-              <p class="block__subtitle-inner t--bold t--green" *ngIf="developer?.levelSeniority">
-                {{ developer?.levelSeniority }}
-              </p>
-              <p class="block__subtitle-inner t--bold t--green">{{ developer.specialization }}</p>
+              <p class="block__subtitle-inner ">
+                  <span class="bg--blue">{{ developer.firstName }} {{ developer.lastName }}</span>
+                </p>
             </div>
-            <div class="col--md-4-5 col--sm-3-5 col--xs-1-1">
+            <div class="block__list-item--p-l col--lg-6-10 push--1-10 col--md-1-1 col--sm-1-1 col--xs-1-1">
               <p class="block__text">{{ developer.description}}</p>
               <p class="block__text t--bold" *ngIf="developer?.hoursFree">
                 Available {{ developer?.hoursFree }} hours a week
@@ -74,7 +72,7 @@
             <p class="block__question-text">
               Did not you find what you were looking for?
             </p>
-            <a class="btn btn--lg btn--green" href="">Let us know!</a>
+            <a class="btn btn--lg btn--blue" href="">Let us know!</a>
           </div>
 
         </li>

@@ -1,12 +1,13 @@
 @import "../../../../web-src/less/variables.less";
 
 .block {
+  padding-top: 0;
   & &__layout {
-    padding-top: 100px;
+    padding-top: 50px;
 
     &--green {
-      background: #0fb239;
-      min-height: 40vh;
+      background: @color-blue;
+      min-height: 45vh;
     }
   }
 
@@ -26,16 +27,22 @@
     }
     .input {
       margin: 1rem 0 3rem;
-      font-size: 3rem;
+      font-size: 2rem;
+      &:focus{
+        border-color: @color-blue;
+      }
     }
   }
 
   & &__list-item {
     border: 0.5px solid #dfdfdf;
-    padding: 20px 20px 20px 150px;
-    min-height: 100%;
+    padding: 3rem;
+    min-height: 10vh;
     &:hover {
       box-shadow: inset 0px 0px 0px 8px rgba(223, 223, 223, 1);
+    }
+    &--p-l{
+      padding-right: 8rem;
     }
   }
 
@@ -61,26 +68,32 @@
   }
 
   & &__subtitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2rem;
-    font-weight: 400;
+    font-weight: 700;
 
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   & &__subtitle-inner {
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-weight: 800;
+    // padding: 0.5rem;
+
+    text-indent: 2px;
+    text-transform: uppercase;
   }
 
   & &__text {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 500;
     margin-bottom: 1rem;
+  }
+  & .bg--blue{
+    background-color: @color-blue;
+    padding: 0.2rem;
   }
 }
 
@@ -104,18 +117,26 @@
     & &__layout--green {
       min-height: 30vh;
     }
+    & &__filter {
 
-    & &__filter-form {
-      padding: 40px 25px 25px;
-      .label--w100 {
-        // width: 100%;
-        font-size: 1.5rem;
-      }
-      .input {
-        font-size: 2rem;
-      }
-      .open {
+      &-btn {
         display: block;
+      }
+      &-form {
+
+        height: 100%;
+        padding: 40px 25px 25px;
+        display: none;
+        &.open {
+          display: block;
+        }
+        .label--w100 {
+          // width: 100%;
+          font-size: 1.5rem;
+        }
+        .input {
+          font-size: 2rem;
+        }
       }
     }
 
