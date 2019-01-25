@@ -3,7 +3,7 @@
   background: #fff;
 }
 .footer .link {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 .footer .footer__nav-link:after {
   content: "";
@@ -17,6 +17,9 @@
 }
 .footer .footer__nav-link:hover:after {
   width: 80%;
+}
+.footer .footer__contact-list-item {
+  font-size: 1.2rem;
 }
 .footer .footer__social-link {
   width: 1.8rem;
@@ -68,7 +71,6 @@
     text-align: center;
   }
   .footer .footer__contact-list {
-    font-size: 0.6rem;
     text-align: center;
     margin: 1rem 0;
   }
@@ -77,26 +79,5 @@
   }
   .footer .footer__social-svg {
     width: 1.5rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .footer .footer__nav {
-    display: none;
-  }
-  .footer .footer__statment {
-    text-align: center;
-    width: 100%;
-    font-size: 0.5rem;
-  }
-  .footer .footer__contact-list {
-    font-size: 0.6rem;
-    text-align: center;
-  }
-  .footer .footer__social {
-    margin: 1rem 0;
-    text-align: center;
-  }
-  .footer .footer__social-svg {
-    width: 1rem;
   }
 }

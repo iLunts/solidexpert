@@ -5,7 +5,7 @@
   background: #fff;
 
     & .link {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
 
     & &__nav-link {
@@ -26,6 +26,9 @@
         width: 80%;
       }
     }
+  }
+  & &__contact-list-item{
+    font-size: 1.2rem;
   }
 
   & &__social-link{
@@ -79,8 +82,7 @@
     }
     & &__contact-list {
       text-align: center;
-      }
-
+    }
     & &__social {
       text-align: center;
     }
@@ -98,7 +100,6 @@
       text-align: center;
     }
     & &__contact-list {
-      font-size: 0.6rem;
       text-align: center;
       margin: 1rem 0;
       }
@@ -111,31 +112,5 @@
       width: 1.5rem;
     }
 
-  }
-}
-
-// width 0 - 319
-@media only screen and (max-width: @breakpoint-xs-min) {
-  .footer {
-    & &__nav {
-      display: none;
-    }
-    & &__statment {
-      text-align: center;
-      width: 100%;
-      font-size: 0.5rem;
-    }
-    & &__contact-list {
-      font-size: 0.6rem;
-      text-align: center;
-    }
-
-    & &__social{
-      margin: 1rem 0;
-      text-align: center;
-    }
-    & &__social-svg{
-      width: 1rem;
-    }
   }
 }
