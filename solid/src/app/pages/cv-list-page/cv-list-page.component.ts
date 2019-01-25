@@ -10,6 +10,7 @@ import { LEVELS } from './list-level';
 })
 export class CvListPageComponent implements OnInit {
 
+  totalCv = 77;
   developers = DEVELOPERS;
   specializations = SPECIALIZATIONS;
   levels = LEVELS ;
