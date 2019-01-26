@@ -1,6 +1,8 @@
+import { Developer } from './developer';
+import { DevService } from './dev.service';
 import { Component, OnInit } from '@angular/core';
 import { SPECIALIZATIONS } from './list-specialization';
-import { DEVELOPERS } from './list-developers';
+
 import { LEVELS } from './list-level';
 
 @Component({
@@ -11,15 +13,22 @@ import { LEVELS } from './list-level';
 export class CvListPageComponent implements OnInit {
 
   totalCv = 77;
-  developers = DEVELOPERS;
+  developers: Developer[];
   specializations = SPECIALIZATIONS;
   levels = LEVELS ;
 
   isShowSearch = false;
 
-  constructor() {}
+  constructor(private devService: DevService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getDev();
+  }
+
+  getDev(): void {
+    this.devService.getDev()
+      .subscribe(developers => this.developers = developers);
+  }
 
   showSearch() {
     if (this.isShowSearch) {

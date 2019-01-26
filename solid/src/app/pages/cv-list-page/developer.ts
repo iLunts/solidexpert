@@ -7,4 +7,10 @@ export class Developer {
   levelSeniority: string;
   description: string;
   id: number;
+  languages;
+  dataBase;
+  technologies;
+  rapidApp;
+  teamProj;
+  personalProj;
 }

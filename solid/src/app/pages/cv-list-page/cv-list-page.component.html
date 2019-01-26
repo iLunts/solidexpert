@@ -93,6 +93,7 @@
           <a
             class="grid link link--reset"
             routerLink="/cv/details/{{ developer.id }}"
+
           >
             <div
               class="col--lg-2-10  col--md-1-1 col--sm-1-1 col--xs-1-1 push--lg-1-10"
@@ -111,7 +112,7 @@
             >
               <p class="block__text">{{ developer.description }}</p>
               <p class="block__text t--gray" *ngIf="developer?.hoursFree">
-                Available {{ developer?.hoursFree }} hours a week
+                Available {{developer}} {{ developer?.hoursFree }} hours a week
               </p>
             </div>
           </a>
