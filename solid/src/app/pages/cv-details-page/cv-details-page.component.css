@@ -17,6 +17,9 @@
   border-right: 1px solid #dfdfdf;
   padding: 5rem 4rem 8rem 5rem;
 }
+.block .block__contacts {
+  padding: 8rem 4rem;
+}
 .block .block__line {
   margin: 0 auto;
   width: 50%;
@@ -138,7 +141,7 @@
 }
 .block .btn {
   font-size: 2rem;
-  line-height: 4.4rem;
+  line-height: 3.4rem;
   font-weight: 600;
 }
 .block .btn:hover {
@@ -178,7 +181,7 @@
     min-height: 30vh;
   }
   .block .block__title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .block .block__subtitle {
     font-size: 3rem;
