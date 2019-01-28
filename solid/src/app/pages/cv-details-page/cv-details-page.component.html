@@ -1,8 +1,8 @@
-<section class="block block--header">
-  <h1 class="block__title t--c">CV details</h1>
-  <h2 class="block__subtitle t--c t--gray">There will be a slogan</h2>
+<section class="block block--header" *ngIf="developer">
+  <h1 class="block__title t--c">{{developer.firstName}} {{developer.lastName.slice(0,1)}} </h1>
+  <h2 class="block__subtitle t--c t--gray">( Solid Expert {{developer.levelSeniority}} {{developer.specialization}} )</h2>
   <div class="block__line">
-    <ul class="block__dots">
+    <!-- <ul class="block__dots">
       <li
         class="block__dots-item block__dots-item--holder block__dots-item--active"
       >
@@ -17,100 +17,136 @@
       <li class="block__dots-item block__dots-item--holder">
         <p class="block__text block__text--translate">Text</p>
       </li>
-    </ul>
+    </ul> -->
   </div>
+  <button class="btn btn--back btn--md btn--green position--a" (click)="goBack()">go back</button>
 </section>
+
 <section class="block block--body">
   <div class="grid grid--collapse">
     <div class="col--md-4-6 col--sm-1-1 col--xs-1-1 col--gray">
-      <div class="grid">
-        <div class="col--2-3">
-          <h1 class="block__subtitle">First Last</h1>
-          <p class="block__text">Solid Expert --- Developer</p>
-        </div>
-        <div class="block__photo col--1-3">
-          <img class="block__photo-img" src="" alt="developer photo" />
-        </div>
-        <div class="col--1-1">
-          <p class="block__text">Faculty, Specialization</p>
-          <p class="block__text">
-            Educational establishment, Graduation year
-          </p>
-          <p class="block__text">GPA : ---</p>
-        </div>
+      <div class="body__name m--v-lg">
+        <h1 class="title">{{developer.firstName}} {{developer.lastName.slice(0,1)}}</h1>
+        <p class="subtitle">( Solid Expert {{developer.levelSeniority}} {{developer.specialization}} )</p>
+      </div>
+      <div class="body__education m--v-lg">
+        <p class="text t--gray">
+          Bachelor of mathematics & informatics, specialization is economical
+          cybernetics
+        </p>
+        <p class="text t--gray">
+          Grodno state Yanka Kupala University | 2011 - 2016
+        </p>
+        <p class="text t--gray">GPA :7.5</p>
+      </div>
+      <div class="t--c t--gray">~~~~~~~~~~~~</div>
 
-        <div class="col--1-1">
-          <h2 class="block__subtitle-inner t--c">TECHNICAL EXPERIENCE</h2>
-           <dl class="grid">
-            <dt class="block__text col--4-5">Skill 1</dt>
-            <dd class="block__text col--1-5">level 1</dd>
-            <dt class="block__text col--4-5">Skill 2</dt>
-            <dd class="block__text col--1-5">level 2</dd>
-          </dl>
-        </div>
-<!--
-        <div class="col--1-1">
-          <h2 class="block__subtitle-inner t--c">PROJECTS SUMMARY</h2>
-          <div class="grid">
-            <div class="col--lg-1-2 col--md-1-1 col--sm-1-1 col--xs-1-1">
-              <dl class="grid">
-                <dt class="block__text t--bold col--1-2">Project name</dt>
-                <dd class="block__text col--1-2">Name</dd>
-                <dt class="block__text t--bold col--1-2">
-                  Project time spent
-                </dt>
-                <dd class="block__text col--1-2">1000 h</dd>
-                <dt class="block__text t--bold col--1-2">Job Position</dt>
-                <dd class="block__text col--1-2">determination 3</dd>
-                <dt class="block__text t--bold col--1-2">Roles</dt>
-                <dd class="block__text col--1-2">determination 4</dd>
-                <dt class="block__text t--bold col--1-2">Product</dt>
-                <dd class="block__text col--1-2">determination 5</dd>
-                <dt class="block__text t--bold col--1-2">Customer</dt>
-                <dd class="block__text col--1-2">determination 6</dd>
-                <dt class="block__text t--bold col--1-2">Participation</dt>
-                <dd class="block__text col--1-2">determination 7</dd>
-                <dt class="block__text t--bold col--1-2">Team</dt>
-                <dd class="block__text col--1-2">determination 8</dd>
-                <dt class="block__text t--bold col--1-2">Database (DBMS)</dt>
-                <dd class="block__text col--1-2">determination 9</dd>
-                <dt class="block__text t--bold col--1-2">Tools</dt>
-                <dd class="block__text col--1-2">determination 10</dd>
-                <dt class="block__text t--bold col--1-2">Technologies</dt>
-                <dd class="block__text col--1-2">determination 11</dd>
-              </dl>
-            </div>
-            <div class="col--lg-1-2 col--md-1-1 col--sm-1-1 col--xs-1-1">
-                <dl class="grid">
-                  <dt class="block__text t--bold col--1-2">Project name</dt>
-                  <dd class="block__text col--1-2">Name</dd>
-                  <dt class="block__text t--bold col--1-2">
-                    Project time spent
-                  </dt>
-                  <dd class="block__text col--1-2">1000 h</dd>
-                  <dt class="block__text t--bold col--1-2">Job Position</dt>
-                  <dd class="block__text col--1-2">determination 3</dd>
-                  <dt class="block__text t--bold col--1-2">Roles</dt>
-                  <dd class="block__text col--1-2">determination 4</dd>
-                  <dt class="block__text t--bold col--1-2">Product</dt>
-                  <dd class="block__text col--1-2">determination 5</dd>
-                  <dt class="block__text t--bold col--1-2">Customer</dt>
-                  <dd class="block__text col--1-2">determination 6</dd>
-                  <dt class="block__text t--bold col--1-2">Participation</dt>
-                  <dd class="block__text col--1-2">determination 7</dd>
-                  <dt class="block__text t--bold col--1-2">Team</dt>
-                  <dd class="block__text col--1-2">determination 8</dd>
-                  <dt class="block__text t--bold col--1-2">Database (DBMS)</dt>
-                  <dd class="block__text col--1-2">determination 9</dd>
-                  <dt class="block__text t--bold col--1-2">Tools</dt>
-                  <dd class="block__text col--1-2">determination 10</dd>
-                  <dt class="block__text t--bold col--1-2">Technologies</dt>
-                  <dd class="block__text col--1-2">determination 11</dd>
-                </dl>
-              </div>
-
+      <div class="body__experience m--v-lg ">
+        <h2 class="subtitle">TECHNICAL EXPERIENCE</h2>
+        <ul class="body__experience-list position--r list-style--none" *ngIf="developer?.languages">
+          <span class="body__experience-list-subtitle position--r subtitle--inner t--gray">
+            Programming languages
+          </span>
+          <span class="body__experience-list-years position--a subtitle--inner t--gray">
+            Years
+          </span >
+          <li class="body__experience-list-item position--r" *ngFor=" let lang of developer.languages">
+            <span class="body__experience-list-skill position--r text">{{lang.name}}</span>
+            <span class="body__experience-list-level position--a text">{{lang.years}}</span>
+          </li>
+        </ul>
+        <ul class="body__experience-list position--r list-style--none" *ngIf="developer?.dataBase">
+          <span class="body__experience-list-subtitle position--r subtitle--inner t--gray">RDBMS</span>
+          <span class="body__experience-list-years position--a subtitle--inner t--gray">Years</span>
+          <li class="body__experience-list-item position--r" *ngFor=" let data of developer.dataBase">
+            <span class="body__experience-list-skill position--r text">{{data.name}}</span>
+            <span class="body__experience-list-level position--a text">{{data.years}}</span>
+          </li>
+        </ul>
+        <ul class="body__experience-list position--r list-style--none" *ngIf="developer?.technologies">
+          <span class="body__experience-list-subtitle position--r subtitle--inner t--gray">
+            Internet Technologies
+          </span>
+          <span
+            class="body__experience-list-years position--a subtitle--inner t--gray">
+            Years
+          </span>
+          <li class="body__experience-list-item position--r" *ngFor=" let technology of developer.technologies">
+            <span class="body__experience-list-skill position--r text">{{technology.name}} </span>
+            <span class="body__experience-list-level position--a text">{{technology.years}}</span>
+          </li>
+        </ul>
+        <ul class="body__experience-list position--r list-style--none" *ngIf="developer?.rapidApp">
+          <span class="body__experience-list-subtitle position--r subtitle--inner t--gray">
+            Rapid Application Development Systems (RAD)
+          </span>
+          <span class="body__experience-list-years position--a subtitle--inner t--gray">
+            Years
+          </span>
+          <li class="body__experience-list-item position--r" *ngFor=" let app of developer.rapidApp">
+            <span class="body__experience-list-skill position--r text">{{app.name}}</span>
+            <span class="body__experience-list-level position--a text">{{app.years}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="body__compamy m--v-lg">
+        <h2 class="subtitle ">COMPANY DETAILS</h2>
+        <div class="body__compamy-site">
+          <div>
+            <a class="text t--black" href="http://solidexpert.site"
+              >http://solidexpert.site</a
+            >
           </div>
-        </div> -->
+          <div class="body__compamy-adress col--1-3">
+            <h3 class="subtitle--inner t--gray">Offices</h3>
+            <p class="text">Headquarters Minsk, Minskaya</p>
+          </div>
+          <div class="body__compamy-type col--1-3">
+            <h3 class="subtitle--inner t--gray">Company type</h3>
+            <p class="text ">Privately Held</p>
+          </div>
+          <div class="body__compamy-size col--1-3">
+            <h3 class="subtitle--inner t--gray">Company size</h3>
+            <p class="text ">2-10 employees</p>
+          </div>
+          <div class="clearfix"></div>
+          <div class="body__compamy-sprec">
+            <h3 class="subtitle--inner t--gray">Specialties</h3>
+            <p class="text ">
+              .Net, .Net Core, Kotlin, Objective-C, Java, Android, iOS application.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="body__projects  m--v-lg">
+        <h2 class="subtitle ">PROJECTS SUMMARY</h2>
+
+        <ul class="body__project-list" *ngIf="developer?.teamProj">
+          <span class="body__project-list-subtitle  subtitle--inner t--gray">
+            Developed in a team
+          </span>
+          <li class="body__project-list-item " *ngFor=" let project of developer.teamProj">
+            <span class="body__project-list-name subtitle--bold"> {{ project.name }} </span>
+            <span class="body__project-list-info  text"> {{ project.description }} </span>
+          </li>
+
+        </ul>
+        <ul class="body__project-list " *ngIf="developer?.personalProj">
+          <span class="body__project-list-subtitle  subtitle--inner t--gray">
+            Developed personally
+          </span>
+          <li class="body__project-list-item " *ngFor=" let project of developer.personalProj">
+            <span class="body__project-list-name subtitle--bold"> {{ project.name }} </span>
+            <span class="body__project-list-info  text"> {{ project.description }} </span>
+            <p>
+              <a
+                class="subtitle--inner t--blue"
+                href="{{project.link}}" >
+                {{project.link}}
+              </a>
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
 

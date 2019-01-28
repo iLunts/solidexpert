@@ -1,7 +1,8 @@
 .block {
-  min-height: 50vh;
+  min-height: 30vh;
   padding: 100px 0;
   overflow: hidden;
+  /*  Element */
 }
 .block--header {
   background-color: #252525;
@@ -14,7 +15,7 @@
 .block .col--gray {
   background: #fbfbfb;
   border-right: 1px solid #dfdfdf;
-  padding: 8rem 4rem 8rem 8rem;
+  padding: 5rem 4rem 8rem 5rem;
 }
 .block .block__line {
   margin: 0 auto;
@@ -58,6 +59,54 @@
   top: 2px;
   left: 2px;
   border-radius: 100%;
+}
+.block .body__experience-list {
+  list-style-position: inside;
+  margin-top: 1rem;
+}
+.block .body__experience-list-item {
+  border-bottom: 1px dotted #000;
+  margin: 1.5rem;
+}
+.block .body__experience-list-years {
+  right: 0;
+  top: -20px;
+}
+.block .body__experience-list-skill {
+  padding: 5px;
+  bottom: -4px;
+  background-color: #fbfbfb;
+}
+.block .body__experience-list-level {
+  padding: 5px;
+  background-color: #fbfbfb;
+  bottom: -35px;
+  right: 0;
+}
+.block .body__project-list-item {
+  margin: 1.5rem 0;
+}
+.block .btn--back {
+  top: 0;
+}
+.block .title {
+  font: italic 700 1.8rem/2rem 'Merriweather', serif;
+}
+.block .text {
+  color: #444444;
+  font: 400 1.3rem/1.8rem 'Merriweather', serif;
+  margin-bottom: 1.5em;
+}
+.block .subtitle {
+  font: italic 700 1.5rem/1.8rem 'Merriweather', serif;
+  margin: 2rem 0;
+}
+.block .subtitle--inner {
+  font: italic 500 1.1rem/1.2rem 'Merriweather', serif;
+  margin: 2rem 0;
+}
+.block .subtitle--bold {
+  font: italic 700 1.4rem/1.5rem 'Merriweather', serif;
 }
 .block .block__title {
   font-size: 8rem;

@@ -3,7 +3,7 @@
 // --------------------------------------------------------
 
 .block {
-  min-height: 50vh;
+  min-height: 30vh;
   padding: @block-large-padding-vertical-large 0;
   overflow: hidden;
 
@@ -23,10 +23,10 @@
   & .col--gray {
     background: #fbfbfb;
     border-right: 1px solid #dfdfdf;
-    padding: 8rem 4rem 8rem 8rem;
+    padding: 5rem 4rem 8rem 5rem;
   }
 
-  // ------------------------------------------
+  // Elements block__line
 
   & &__line {
     margin: 0 auto;
@@ -36,6 +36,8 @@
     position: relative;
     max-width: 550px;
   }
+
+ // Elements block__dots
 
   & &__dots {
     position: relative;
@@ -73,6 +75,64 @@
       border-radius: 100%;
     }
   }
+
+
+    //--------------------------------------------------------------------
+
+   .body__experience-list{
+    list-style-position: inside;
+    margin-top: 1rem;
+  }
+   .body__experience-list-item{
+    border-bottom: 1px dotted #000;
+    margin:1.5rem;
+  }
+   .body__experience-list-years{
+    right: 0;
+    top: -20px;
+  }
+
+   .body__experience-list-skill {
+    padding: 5px;
+    bottom: -4px;
+    background-color: #fbfbfb;
+  }
+   .body__experience-list-level {
+    padding: 5px;
+    background-color: #fbfbfb;
+    bottom: -35px;
+    right: 0;
+  }
+  .body__project-list-item {
+    margin:1.5rem 0;
+  }
+
+
+  /*  Element */
+   .btn--back{
+    top: 0;
+  }
+   .title {
+    font: italic 700 1.8rem/2rem 'Merriweather', serif;
+
+  }
+   .text {
+    color: #444444;
+    font: 400 1.3rem/1.8rem 'Merriweather', serif;
+    margin-bottom: 1.5em;
+  }
+   .subtitle {
+    font: italic 700 1.5rem/1.8rem 'Merriweather', serif;
+    margin: 2rem 0;
+  }
+   .subtitle--inner {
+    font: italic 500 1.1rem/1.2rem 'Merriweather', serif;
+     margin: 2rem 0;
+  }
+  .subtitle--bold {
+     font: italic 700 1.4rem/1.5rem 'Merriweather', serif;
+  }
+  //--------------------------------------------------------------------
 
   // Elements '.block .block__title'
   & &__title {
