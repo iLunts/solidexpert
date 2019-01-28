@@ -2,11 +2,10 @@
   padding-top: 0;
 }
 .block .block__layout {
-  padding-top: 50px;
+  padding: 50px;
 }
 .block .block__layout--green {
   background: #4d7cfe;
-  min-height: 45vh;
 }
 .block .block__layout--green .btn {
   color: #fff;
