@@ -1,23 +1,43 @@
 @import "../../../../../web-src/less/variables.less";
 
 .first-block{
-  // height: 100vh;
+
   width: 70%;
   margin: 0 auto;
+  padding: 15rem 0;
+
 
   & &__description{
-    padding-top: 10rem;
+    height: 100vh;
+    z-index: 2;
+  }
+  & &__picture{
+
+
+  &-main{
+    top: -510px;
+    left: -740px;
+    -webkit-transform: scale3d(0.65, 0.65, 0.65);
+    transform: scale3d(0.65, 0.65, 0.65);
 
   }
-  & &__picture-img{
+   &-backdrop{
+    top: 15px;
+    left: -650px;
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+   }
 
-    height: 100%;
-    top: 0;
-    width: 1900px;
-    left: -250px;
   }
 
+  .arrow{
+    transition: all 1s;
+    padding-top: 8rem;
 
+    &:hover{
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  }
   .title{
     font-size: 6rem;
     line-height: 6.5rem;

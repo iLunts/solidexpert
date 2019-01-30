@@ -1,15 +1,30 @@
 .first-block {
   width: 70%;
   margin: 0 auto;
+  padding: 15rem 0;
 }
 .first-block .first-block__description {
-  padding-top: 10rem;
+  height: 100vh;
+  z-index: 2;
 }
-.first-block .first-block__picture-img {
-  height: 100%;
-  top: 0;
-  width: 1900px;
-  left: -250px;
+.first-block .first-block__picture-main {
+  top: -510px;
+  left: -740px;
+  -webkit-transform: scale3d(0.65, 0.65, 0.65);
+  transform: scale3d(0.65, 0.65, 0.65);
+}
+.first-block .first-block__picture-backdrop {
+  top: 15px;
+  left: -650px;
+  -webkit-transform: scale3d(0.9, 0.9, 0.9);
+  transform: scale3d(0.9, 0.9, 0.9);
+}
+.first-block .arrow {
+  transition: all 1s;
+  padding-top: 8rem;
+}
+.first-block .arrow:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
 }
 .first-block .title {
   font-size: 6rem;
