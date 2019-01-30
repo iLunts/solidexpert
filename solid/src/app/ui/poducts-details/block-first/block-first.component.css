@@ -1,0 +1,33 @@
+.first-block {
+  width: 70%;
+  margin: 0 auto;
+}
+.first-block .first-block__description {
+  padding-top: 10rem;
+}
+.first-block .first-block__picture-img {
+  height: 100%;
+  top: 0;
+  width: 1900px;
+  left: -250px;
+}
+.first-block .title {
+  font-size: 6rem;
+  line-height: 6.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #54a4ff;
+}
+.first-block .subtitle {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #A7AEB3;
+}
+.first-block .text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}

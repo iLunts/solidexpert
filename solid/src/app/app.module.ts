@@ -27,6 +27,9 @@ import { GridLineComponent } from './ui/grid-line/grid-line.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { PoductsDetailsComponent } from './pages/poducts-details/poducts-details.component';
+import { BlockFirstComponent } from './ui/poducts-details/block-first/block-first.component';
+import { BlockSecondComponent } from './ui/poducts-details/block-second/block-second.component';
 
 
 
@@ -49,6 +52,9 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     GridLineComponent,
     ProductsListPageComponent,
     AboutPageComponent,
+    PoductsDetailsComponent,
+    BlockFirstComponent,
+    BlockSecondComponent,
   ],
   imports: [
     BrowserModule,

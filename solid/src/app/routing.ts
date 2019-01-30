@@ -8,6 +8,7 @@ import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
 import {AboutPageComponent} from './pages/about-page/about-page.component';
+import { PoductsDetailsComponent } from './pages/poducts-details/poducts-details.component';
 
 
 const routes: Routes = [
@@ -18,9 +19,9 @@ const routes: Routes = [
     { path: 'services', component: ServicesPageComponent },
     { path: 'contact', component: ContactUsPageComponent },
     { path: 'about', component: AboutPageComponent },
-    
-    { path: '', component: MainPageComponent },
 
+    { path: '', component: MainPageComponent },
+    { path: 'products/details', component: PoductsDetailsComponent },
     // { path: 'order', component: HomePageComponent, pathMatch: 'full' },
     // { path: '**', component: HomePageComponent },
 ];
