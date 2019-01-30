@@ -1,12 +1,14 @@
 .second-block {
-  height: 100vh;
   width: 70%;
   margin: 0 auto;
-  padding: 15rem 0;
+  padding: 10rem 0;
 }
 .second-block .second-block__description {
-  height: 100vh;
+  z-index: 2;
   padding-left: 10rem;
+}
+.second-block .second-block__picture {
+  height: 100vh;
 }
 .second-block .second-block__picture-main {
   top: -152px;
@@ -26,6 +28,7 @@
   left: 530px;
 }
 .second-block .second-block__picture-icon:hover {
+  -webkit-transform: scale3d(1.2, 1.2, 1.2);
   transform: scale3d(1.2, 1.2, 1.2);
 }
 .second-block .title {
@@ -36,11 +39,13 @@
   color: #54a4ff;
 }
 .second-block .btn {
+  height: 4rem;
   width: 40%;
   transition: all 1s;
   margin-right: 5%;
 }
 .second-block .btn:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
 }
 .second-block .subtitle {

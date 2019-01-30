@@ -1,0 +1,58 @@
+.third-block {
+  width: 70%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+.third-block .third-block__description {
+  z-index: 2;
+}
+.third-block .third-block__picture {
+  height: 100vh;
+}
+.third-block .third-block__picture-main {
+  top: -100px;
+  left: 130px;
+  -webkit-transform: scale3d(1.8, 1.8, 1.8);
+  transform: scale3d(1.8, 1.8, 1.8);
+}
+.third-block .third-block__picture-keyboard {
+  top: 400px;
+  left: -300px;
+  -webkit-transform: scale3d(0.8, 0.8, 0.8);
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+.third-block .third-block__picture-mouse {
+  top: 780px;
+  left: 570px;
+  -webkit-transform: scale3d(0.8, 0.8, 0.8);
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+.third-block .title {
+  font-size: 6rem;
+  line-height: 6.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #54a4ff;
+}
+.third-block .btn {
+  height: 4rem;
+  width: 40%;
+  transition: all 1s;
+  margin-right: 5%;
+}
+.third-block .btn:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.third-block .subtitle {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #A7AEB3;
+}
+.third-block .text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}

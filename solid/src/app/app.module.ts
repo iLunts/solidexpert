@@ -30,6 +30,8 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { PoductsDetailsComponent } from './pages/poducts-details/poducts-details.component';
 import { BlockFirstComponent } from './ui/poducts-details/block-first/block-first.component';
 import { BlockSecondComponent } from './ui/poducts-details/block-second/block-second.component';
+import { BlockThirdComponent } from './ui/poducts-details/block-third/block-third.component';
+import { BlockFourthComponent } from './ui/poducts-details/block-fourth/block-fourth.component';
 
 
 
@@ -55,6 +57,8 @@ import { BlockSecondComponent } from './ui/poducts-details/block-second/block-se
     PoductsDetailsComponent,
     BlockFirstComponent,
     BlockSecondComponent,
+    BlockThirdComponent,
+    BlockFourthComponent,
   ],
   imports: [
     BrowserModule,
