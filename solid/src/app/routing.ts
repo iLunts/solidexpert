@@ -21,7 +21,7 @@ const routes: Routes = [
     { path: 'about', component: AboutPageComponent },
 
     { path: '', component: MainPageComponent },
-    { path: 'products/details', component: PoductsDetailsComponent },
+    { path: 'products/:shortcut', component: PoductsDetailsComponent },
     // { path: 'order', component: HomePageComponent, pathMatch: 'full' },
     // { path: '**', component: HomePageComponent },
 ];
