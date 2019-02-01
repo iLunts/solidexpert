@@ -1,44 +1,42 @@
 @import "../../../../../web-src/less/variables.less";
 
 .first-block{
-
-  width: 70%;
-  margin: 0 auto;
-  padding: 10rem 0;
-
+  height: 100%;
 
   & &__description{
-    // height: 100vh;
+    height: 100vh;
     z-index: 2;
   }
-  & &__picture{
-    height: 100vh;
 
-  &-main{
-    top: -510px;
-    left: -740px;
-    -webkit-transform: scale3d(0.65, 0.65, 0.65);
-    transform: scale3d(0.65, 0.65, 0.65);
+  & &__picture{
+    // height: 100vh;
+
+    &-main{
+    top: 0px;
+    left: 0px;
 
   }
-   &-backdrop{
-    top: 15px;
-    left: -650px;
-    -webkit-transform: scale3d(0.9, 0.9, 0.9);
-    transform: scale3d(0.9, 0.9, 0.9);
-   }
-
+  //  &-backdrop{
+  //   top: 205px;
+  //   left: -10px;
+  //  }
   }
 
   .arrow{
     transition: all 1s;
-    padding-top: 8rem;
+    margin-top: 8rem;
 
     &:hover{
       -webkit-transform: scale3d(1.2, 1.2, 1.2);
       transform: scale3d(1.2, 1.2, 1.2);
     }
   }
+
+  .img{
+    width: 100%;
+    max-width: 100%;
+  }
+
   .title{
     font-size: 6rem;
     line-height: 6.5rem;
@@ -67,5 +65,77 @@
 
     margin-bottom: 1.5rem;
   }
+}
+// ----------------------------------------
+// Size : xLarge
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xlg-min) {
 
+}
+
+// ----------------------------------------
+// Size : Large
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+
+}
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+ .first-block{
+
+   & &__description{
+     height: 30vh;
+   }
+
+   & &__picture{
+    height: 50vh;
+   }
+   .title{
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+ }
+}
+
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+  .first-block{
+
+    & &__description{
+      height: 30vh;
+    }
+
+    & &__picture{
+     height: 50vh;
+    }
+    .title{
+     font-size: 3rem;
+     line-height: 3.5rem;
+   }
+  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+  .first-block{
+
+    & &__description{
+      height: 30vh;
+    }
+
+    & &__picture{
+     height: 50vh;
+    }
+    .title{
+     font-size: 2rem;
+     line-height: 2.5rem;
+   }
+  }
 }

@@ -2,18 +2,17 @@
 
 .fourht-block{
 
-  width: 70%;
-  margin: 0 auto;
-  padding: 5rem 0;
+ height: 100vh;
+  // padding: 5rem 0;
 
 
   & &__description{
 
     z-index: 2;
     &-left{
-      padding: 6rem;
+      padding: 4rem;
       background-color: #E1E5E6;
-      border-radius: 10px;;
+      border-radius: 10px;
       &-img{
         left: 0px;
         bottom: 0px;
@@ -23,7 +22,7 @@
     &-right{
       height: 90vh;
       margin-top: -10%;
-      border-radius: 10px;;
+      border-radius: 10px;
 
       &-backdrop{
 
@@ -34,49 +33,160 @@
         border-radius: 10px;
       }
       &-img{
-        width: 100%;
+
         margin-bottom: 8rem;
       }
     }
   }
 
-
-  .w--60 {
+   & .w--60 {
     width: 60%;
   }
-  .title{
+
+  & .img{
+    width: 100%;
+    max-width: 100%;
+  }
+  & .title{
     font-size: 6rem;
     line-height: 6.5rem;
-
     font-weight: 500;
-
     margin-bottom: 2rem;
     color: #54a4ff;
   }
 
-  .subtitle{
+  & .subtitle{
     font-size: 2rem;
     line-height: 2.5rem;
-
     font-weight: 500;
-
     margin-bottom: 2rem;
     color:#A7AEB3;
   }
-  .subtitle--black{
+  & .subtitle--black{
     color: #535261;
     font-size: 3.8rem;
     line-height: 4rem;
     font-weight: 500;
     margin-bottom: 2rem;
   }
-  .text{
+  & .text{
     font-size: 1.5rem;
     line-height: 2rem;
-
     font-weight: 400;
-
     margin-bottom: 1.5rem;
   }
+}
+// ----------------------------------------
+// Size : Large
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
 
+}
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+  .fourht-block{
+      height: 100%;
+      & &__description{
+
+      &-left{
+        height: 60vh;
+        padding: 4rem;
+        background-color: #E1E5E6;
+        border-radius: 10px;
+      }
+
+      &-right{
+       display: none;
+      }
+    }
+    & .title{
+      font-size: 3rem;
+      line-height: 3.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      color: #54a4ff;
+    }
+    & .subtitle--black{
+      color: #535261;
+      font-size: 2.8rem;
+      line-height: 3rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+  .fourht-block{
+    height: 100%;
+    & &__description{
+
+    &-left{
+      height: 60vh;
+      padding: 4rem;
+      background-color: #E1E5E6;
+      border-radius: 10px;
+    }
+
+    &-right{
+    display: none;
+    }
+  }
+    & .title{
+      font-size: 3rem;
+      line-height: 3.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      color: #54a4ff;
+    }
+    & .subtitle--black{
+      color: #535261;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+  .fourht-block{
+    height: 100%;
+    & &__description{
+
+    &-left{
+      height: 60vh;
+      padding: 4rem;
+      background-color: #E1E5E6;
+      border-radius: 10px;
+    }
+
+    &-right{
+    display: none;
+    }
+  }
+    & .title{
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      color: #54a4ff;
+    }
+    & .subtitle--black{
+      color: #535261;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+  }
 }

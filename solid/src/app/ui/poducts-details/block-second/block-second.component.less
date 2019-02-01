@@ -1,44 +1,45 @@
 @import "../../../../../web-src/less/variables.less";
 
 .second-block{
+  height: 100vh;
 
-  width: 70%;
-  margin: 0 auto;
-  padding: 10rem 0;
+  // padding: 10rem 0;
 
 
   & &__description{
     z-index: 2;
-    padding-left: 10rem;
+
   }
 
   & &__picture{
-    height: 100vh;
-      &-main{
-        top: -152px;
-        left: 176px;
-      }
-      &-backdrop{
-        background-color: #fff;
-        border-radius: 100%;
-        width: 800px;
-        height: 800px;
-        top: -140px;
-        left: -106px;
-      }
-      &-icon{
-        transition: all 1s;
-        top: 190px;
-        left: 530px;
 
-        &:hover{
-          -webkit-transform: scale3d(1.2, 1.2, 1.2);
-          transform: scale3d(1.2, 1.2, 1.2);
-         }
-      }
+    &-main{
+      top: 0px;
+      left: 0px;
+    }
+    // &-backdrop{
+    //   background-color: #fff;
+    //   border-radius: 100%;
+    //   width: 100%;
+    //   height: 100%;
+    //   top: -140px;
+    //   left: -106px;
+    // }
+    &-icon{
+      transition: all 1s;
+      top: 0px;
+      right: 0px;
 
+      &:hover{
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2);
+        }
+    }
   }
-
+  .img{
+    width: 100%;
+    max-width: 100%;
+  }
   .title{
     font-size: 6rem;
     line-height: 6.5rem;
@@ -49,13 +50,13 @@
     color: #54a4ff;
   }
   .btn {
+    border: 2px solid @color-blue;
     height: 4rem;
     width: 40%;
     transition: all 1s;
     margin-right: 5%;
     &:hover{
-      -webkit-transform:scale3d(1.1, 1.1, 1.1);
-      transform: scale3d(1.1, 1.1, 1.1);
+      border-color:  #EEF1F1;
     }
 
   }
@@ -78,4 +79,52 @@
     margin-bottom: 1.5rem;
   }
 
+}
+// ----------------------------------------
+// Size : Large
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+
+}
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+  .second-block{
+    height: 50vh;
+
+    .title{
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+  .second-block{
+    height: 50vh;
+
+    .title{
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+  .second-block{
+    height: 50vh;
+
+    .title{
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
 }

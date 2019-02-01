@@ -1,31 +1,20 @@
 .third-block {
-  width: 70%;
-  margin: 0 auto;
-  padding: 5rem 0;
+  height: 100vh;
 }
 .third-block .third-block__description {
   z-index: 2;
 }
-.third-block .third-block__picture {
-  height: 100vh;
-}
-.third-block .third-block__picture-main {
-  top: -100px;
-  left: 130px;
-  -webkit-transform: scale3d(1.8, 1.8, 1.8);
-  transform: scale3d(1.8, 1.8, 1.8);
-}
 .third-block .third-block__picture-keyboard {
-  top: 400px;
-  left: -300px;
-  -webkit-transform: scale3d(0.8, 0.8, 0.8);
-  transform: scale3d(0.8, 0.8, 0.8);
+  top: 0px;
+  left: 0px;
 }
 .third-block .third-block__picture-mouse {
-  top: 780px;
-  left: 570px;
-  -webkit-transform: scale3d(0.8, 0.8, 0.8);
-  transform: scale3d(0.8, 0.8, 0.8);
+  top: 0px;
+  left: 0px;
+}
+.third-block .img {
+  width: 100%;
+  max-width: 100%;
 }
 .third-block .title {
   font-size: 6rem;
@@ -35,13 +24,14 @@
   color: #54a4ff;
 }
 .third-block .btn {
+  border: 2px solid #54a4ff;
   height: 4rem;
   width: 40%;
   transition: all 1s;
   margin-right: 5%;
 }
 .third-block .btn:hover {
-  transform: scale3d(1.1, 1.1, 1.1);
+  border-color: #EEF1F1;
 }
 .third-block .subtitle {
   font-size: 2rem;
@@ -55,4 +45,31 @@
   line-height: 2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
+  .third-block {
+    height: 50vh;
+  }
+  .third-block .title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .third-block {
+    height: 50vh;
+  }
+  .third-block .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .third-block {
+    height: 50vh;
+  }
+  .third-block .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }
