@@ -1,28 +1,27 @@
 @import "../../../../../web-src/less/variables.less";
 
 .third-block{
-  height: 100vh;
+  height: 100%;
 
   // padding: 5rem 0;
 
 
   & &__description{
+    height: 90vh;
     z-index: 2;
   }
   & &__picture{
+    padding-left: 0;
+    &-keyboard{
+      top: 0px;
+      left: 0px;
 
-      &-keyboard{
-        top: 0px;
-        left: 0px;
+    }
+    &-mouse{
+      top: 0px;
+      left: 0px;
 
-      }
-      &-mouse{
-        top: 0px;
-        left: 0px;
-
-      }
-
-
+    }
   }
   .img{
     width: 100%;
@@ -79,8 +78,13 @@
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
  .third-block {
-    height: 50vh;
 
+    & &__description{
+      height: 100%;
+    }
+    & &__picture{
+      height: 40vh;
+    }
     .title{
       font-size: 4rem;
       line-height: 4.5rem;
@@ -93,7 +97,12 @@
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
   .third-block {
-    height: 50vh;
+    & &__description{
+      height: 100%;
+    }
+    & &__picture{
+      height: 50vh;
+    }
 
     .title{
       font-size: 3rem;
@@ -108,11 +117,22 @@
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
 
   .third-block {
-    height: 50vh;
+    & &__description{
+      height: 100%;
+    }
+    & &__picture{
+      margin-top: 4rem;
+      height: 40vh;
+    }
 
     .title{
       font-size: 2rem;
       line-height: 2.5rem;
+      font-weight: 600;
+    }
+    .subtitle{
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
 }

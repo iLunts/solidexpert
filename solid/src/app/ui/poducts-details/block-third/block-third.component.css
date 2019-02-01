@@ -1,8 +1,12 @@
 .third-block {
-  height: 100vh;
+  height: 100%;
 }
 .third-block .third-block__description {
+  height: 90vh;
   z-index: 2;
+}
+.third-block .third-block__picture {
+  padding-left: 0;
 }
 .third-block .third-block__picture-keyboard {
   top: 0px;
@@ -47,8 +51,11 @@
   margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
-  .third-block {
-    height: 50vh;
+  .third-block .third-block__description {
+    height: 100%;
+  }
+  .third-block .third-block__picture {
+    height: 40vh;
   }
   .third-block .title {
     font-size: 4rem;
@@ -56,7 +63,10 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .third-block {
+  .third-block .third-block__description {
+    height: 100%;
+  }
+  .third-block .third-block__picture {
     height: 50vh;
   }
   .third-block .title {
@@ -65,11 +75,20 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .third-block {
-    height: 50vh;
+  .third-block .third-block__description {
+    height: 100%;
+  }
+  .third-block .third-block__picture {
+    margin-top: 4rem;
+    height: 40vh;
   }
   .third-block .title {
     font-size: 2rem;
     line-height: 2.5rem;
+    font-weight: 600;
+  }
+  .third-block .subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }

@@ -1,8 +1,6 @@
-.second-block {
-  height: 100vh;
-}
 .second-block .second-block__description {
   z-index: 2;
+  height: 90vh;
 }
 .second-block .second-block__picture-main {
   top: 0px;
@@ -52,7 +50,7 @@
   margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
-  .second-block {
+  .second-block .second-block__description {
     height: 50vh;
   }
   .second-block .title {
@@ -61,7 +59,7 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .second-block {
+  .second-block .second-block__description {
     height: 50vh;
   }
   .second-block .title {
@@ -71,10 +69,25 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .second-block {
+    flex-wrap: wrap-reverse;
+  }
+  .second-block .second-block__picture {
+    margin-top: 4rem;
     height: 50vh;
+  }
+  .second-block .second-block__picture-icon {
+    width: 2rem;
+  }
+  .second-block .second-block__description {
+    height: 100%;
   }
   .second-block .title {
     font-size: 2rem;
     line-height: 2.5rem;
+    font-weight: 600;
+  }
+  .second-block .subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }

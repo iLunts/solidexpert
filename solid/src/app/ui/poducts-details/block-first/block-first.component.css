@@ -67,13 +67,22 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .first-block .first-block__description {
-    height: 30vh;
+    height: 100%;
   }
   .first-block .first-block__picture {
-    height: 50vh;
+    height: 30vh;
   }
   .first-block .title {
     font-size: 2rem;
     line-height: 2.5rem;
+    font-weight: 600;
+  }
+  .first-block .subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .first-block .arrow {
+    width: 2rem;
+    margin-top: 4rem;
   }
 }
