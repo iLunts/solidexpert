@@ -621,9 +621,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\artur.kuznetsov.SOLIDEXPERT\Documents\solidexpert\solid\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-__webpack_require__(/*! C:\Users\artur.kuznetsov.SOLIDEXPERT\Documents\solidexpert\solid\node_modules\ngx-bootstrap\datepicker\bs-datepicker.css */"./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css");
-module.exports = __webpack_require__(/*! C:\Users\artur.kuznetsov.SOLIDEXPERT\Documents\solidexpert\solid\src\assets\css\site.min.css */"./src/assets/css/site.min.css");
+__webpack_require__(/*! /Users/roma/github/solidexpert/solid/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! /Users/roma/github/solidexpert/solid/node_modules/ngx-bootstrap/datepicker/bs-datepicker.css */"./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css");
+module.exports = __webpack_require__(/*! /Users/roma/github/solidexpert/solid/src/assets/css/site.min.css */"./src/assets/css/site.min.css");
 
 
 /***/ })
