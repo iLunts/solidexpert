@@ -1,0 +1,9 @@
+.details {
+  background: #EEF1F1;
+  padding: 10rem 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .details {
+    padding: 5rem 0;
+  }
+}

@@ -1,0 +1,144 @@
+@import "../../../../../web-src/less/variables.less";
+
+.second-block{
+  // height: 100vh;
+
+  // padding: 10rem 0;
+
+
+  & &__description{
+    z-index: 2;
+    height: 90vh;
+  }
+
+  & &__picture{
+
+    &-main{
+      top: 0px;
+      left: 0px;
+    }
+
+    &-icon{
+      transition: all 1s;
+      top: 0px;
+      right: 0px;
+
+      &:hover{
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2);
+        }
+    }
+  }
+  .img{
+    width: 100%;
+    max-width: 100%;
+  }
+  .title{
+    font-size: 6rem;
+    line-height: 6.5rem;
+
+    font-weight: 500;
+
+    margin-bottom: 2rem;
+    color: #54a4ff;
+  }
+  .btn {
+    border: 2px solid @color-blue;
+    height: 4rem;
+    width: 40%;
+    transition: all 1s;
+    margin-right: 5%;
+    &:hover{
+      border-color:  #EEF1F1;
+    }
+
+  }
+  .subtitle{
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    font-weight: 500;
+
+    margin-bottom: 2rem;
+    color:#A7AEB3;
+  }
+
+  .text{
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    font-weight: 400;
+
+    margin-bottom: 1.5rem;
+  }
+
+}
+// ----------------------------------------
+// Size : Large
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
+
+}
+
+// ----------------------------------------
+// Size : Medium
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
+  .second-block{
+    & &__description{
+
+      height: 50vh;
+    }
+
+    .title{
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : Small
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
+  .second-block{
+    & &__description{
+
+      height: 50vh;
+    }
+    .title{
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+}
+
+// ----------------------------------------
+// Size : xSmall
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+  .second-block{
+    flex-wrap: wrap-reverse;
+
+    & &__picture{
+      margin-top: 4rem;
+      height: 50vh;
+       &-icon{
+      width: 2rem;
+    }
+    }
+    & &__description{
+      height: 100%;
+    }
+
+    .title{
+     font-size: 2rem;
+     line-height: 2.5rem;
+     font-weight: 600;
+    }
+    .subtitle{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}

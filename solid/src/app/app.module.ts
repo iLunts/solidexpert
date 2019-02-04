@@ -27,9 +27,12 @@ import { GridLineComponent } from './ui/grid-line/grid-line.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { ProductsListPageComponent } from './pages/products-list-page/products-list-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { PoductsDetailsComponent } from './pages/poducts-details/poducts-details.component';
 import { BlockFirstComponent } from './ui/poducts-details/block-first/block-first.component';
 import { BlockSecondComponent } from './ui/poducts-details/block-second/block-second.component';
-
+import { BlockThirdComponent } from './ui/poducts-details/block-third/block-third.component';
+import { BlockFourthComponent } from './ui/poducts-details/block-fourth/block-fourth.component';
+// import { NgwWowModule } from 'ngx-wow';
 
 
 @NgModule({
@@ -51,8 +54,11 @@ import { BlockSecondComponent } from './ui/poducts-details/block-second/block-se
     GridLineComponent,
     ProductsListPageComponent,
     AboutPageComponent,
+    PoductsDetailsComponent,
     BlockFirstComponent,
-    BlockSecondComponent
+    BlockSecondComponent,
+    BlockThirdComponent,
+    BlockFourthComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,7 +69,8 @@ import { BlockSecondComponent } from './ui/poducts-details/block-second/block-se
     InlineSVGModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
-    InlineSVGModule.forRoot()
+    InlineSVGModule.forRoot(),
+    // NgwWowModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,42 +1,32 @@
 @import "../../../../../web-src/less/variables.less";
 
-.first-block{
+.third-block{
   height: 100%;
 
+  // padding: 5rem 0;
+
+
   & &__description{
-    height: 100vh;
+    height: 90vh;
     z-index: 2;
   }
-
   & &__picture{
-    // height: 100vh;
+    padding-left: 0;
+    &-keyboard{
+      top: 0px;
+      left: 0px;
 
-    &-main{
-    top: 0px;
-    left: 0px;
+    }
+    &-mouse{
+      top: 0px;
+      left: 0px;
 
-  }
-  //  &-backdrop{
-  //   top: 205px;
-  //   left: -10px;
-  //  }
-  }
-
-  .arrow{
-    transition: all 1s;
-    margin-top: 8rem;
-
-    &:hover{
-      -webkit-transform: scale3d(1.2, 1.2, 1.2);
-      transform: scale3d(1.2, 1.2, 1.2);
     }
   }
-
   .img{
     width: 100%;
     max-width: 100%;
   }
-
   .title{
     font-size: 6rem;
     line-height: 6.5rem;
@@ -46,7 +36,16 @@
     margin-bottom: 2rem;
     color: #54a4ff;
   }
-
+  .btn {
+    border: 2px solid @color-blue;
+    height: 4rem;
+    width: 40%;
+    transition: all 1s;
+    margin-right: 5%;
+    &:hover{
+      border-color:  #EEF1F1;
+    }
+  }
   .subtitle{
     font-size: 2rem;
     line-height: 2.5rem;
@@ -65,14 +64,8 @@
 
     margin-bottom: 1.5rem;
   }
-}
-// ----------------------------------------
-// Size : xLarge
-// ----------------------------------------
-@media only screen and (min-width: @breakpoint-xlg-min) {
 
 }
-
 // ----------------------------------------
 // Size : Large
 // ----------------------------------------
@@ -84,39 +77,37 @@
 // Size : Medium
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
- .first-block{
+ .third-block {
 
-   & &__description{
-     height: 30vh;
-   }
-
-   & &__picture{
-    height: 50vh;
-   }
-   .title{
-    font-size: 4rem;
-    line-height: 4.5rem;
+    & &__description{
+      height: 100%;
+    }
+    & &__picture{
+      height: 40vh;
+    }
+    .title{
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
   }
- }
 }
 
 // ----------------------------------------
 // Size : Small
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
-  .first-block{
-
+  .third-block {
     & &__description{
-      height: 30vh;
+      height: 100%;
+    }
+    & &__picture{
+      height: 50vh;
     }
 
-    & &__picture{
-     height: 50vh;
-    }
     .title{
-     font-size: 3rem;
-     line-height: 3.5rem;
-   }
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
   }
 }
 
@@ -124,28 +115,24 @@
 // Size : xSmall
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
-  .first-block{
 
+  .third-block {
     & &__description{
       height: 100%;
     }
-
     & &__picture{
-     height: 30vh;
-    }
-    .title{
-     font-size: 2rem;
-     line-height: 2.5rem;
-     font-weight: 600;
-   }
-   .subtitle{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-   .arrow{
-      width: 2rem;
       margin-top: 4rem;
+      height: 40vh;
+    }
 
+    .title{
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+    }
+    .subtitle{
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
 }
