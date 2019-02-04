@@ -32,7 +32,7 @@ import { BlockFirstComponent } from './ui/poducts-details/block-first/block-firs
 import { BlockSecondComponent } from './ui/poducts-details/block-second/block-second.component';
 import { BlockThirdComponent } from './ui/poducts-details/block-third/block-third.component';
 import { BlockFourthComponent } from './ui/poducts-details/block-fourth/block-fourth.component';
-
+import { NgwWowModule } from 'ngx-wow';
 
 
 @NgModule({
@@ -68,6 +68,7 @@ import { BlockFourthComponent } from './ui/poducts-details/block-fourth/block-fo
     CarouselModule.forRoot(),
     InlineSVGModule.forRoot(),
     FormsModule,
+    NgwWowModule,
     ReactiveFormsModule,
     InlineSVGModule.forRoot()
   ],
