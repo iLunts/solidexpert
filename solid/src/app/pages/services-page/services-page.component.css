@@ -1,3 +1,6 @@
+.services .services__title {
+  margin-bottom: 1.5rem;
+}
 .services .services__text {
   text-align: justify;
 }
@@ -19,9 +22,11 @@
   text-transform: uppercase;
   font-size: 5rem;
   line-height: 5rem;
+  margin-bottom: 3rem;
 }
 .services .services__header-subtitle {
   padding-right: 5%;
+  margin-bottom: 2rem;
 }
 .services .services__img--custom {
   background: url(/assets/img/page-service/custom.jpg) no-repeat;
@@ -55,6 +60,7 @@
     text-transform: uppercase;
     font-size: 4rem;
     line-height: 5rem;
+    margin-bottom: 2rem;
   }
   .services .services__img {
     margin: 10px 0;

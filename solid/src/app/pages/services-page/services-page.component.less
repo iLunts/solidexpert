@@ -4,15 +4,16 @@
 // Block '.service'
 // ----------------------------------------------------
 .services {
-
+  & &__title{
+    margin-bottom: 1.5rem;
+  }
   // Element '.services .services__text'
   & &__text {
     text-align: justify;
   }
 
   // Element '.services .services__list'
-  & &__list{
-
+  & &__list {
     // Element '.services .services__list-item'
     &-item {
       list-style-type: square;
@@ -38,11 +39,13 @@
       text-transform: uppercase;
       font-size: 5rem;
       line-height: 5rem;
+      margin-bottom: 3rem;
     }
 
     // Element '.services .services__header-subtitle'
     &-subtitle {
       padding-right: 5%;
+      margin-bottom: 2rem;
     }
   }
 
@@ -66,29 +69,24 @@
 // Size : xLarge
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-xlg-min) {
-
   // ------------------------------------
   // Block ''
   // ------------------------------------
-
 }
 
 // ----------------------------------------
 // Size : Large
 // ----------------------------------------
-@media only screen and (min-width:@breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
-
+@media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
   // ------------------------------------
   // Block ''
   // ------------------------------------
-
 }
 
 // ----------------------------------------
 // Size : Medium
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-md-min) and (max-width: (@breakpoint-md-max)) {
-
   // ------------------------------------
   // Block ''
   // ------------------------------------
@@ -103,20 +101,20 @@
 // Size : Small
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-sm-min) and (max-width: (@breakpoint-sm-max)) {
-
   // ------------------------------------
   // Block ''
   // ------------------------------------
   .services {
     & &__header {
       min-height: 40vh;
-      &-title{
-      text-align: center;
-      color: #222;
-      font-weight: 900;
-      text-transform: uppercase;
-      font-size: 4rem;
-      line-height: 5rem;
+      &-title {
+        text-align: center;
+        color: #222;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 4rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -138,13 +136,11 @@
 // Size : xSmall
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
-
   // ------------------------------------
   // Block ''
   // ------------------------------------
   .services {
     & &__img {
-
       margin: 10px 0;
     }
 
@@ -152,14 +148,14 @@
       min-height: 40vh;
       padding-top: 50px;
 
-      &-title{
+      &-title {
         text-align: center;
         color: #222;
         font-weight: 900;
         text-transform: uppercase;
         font-size: 3rem;
         line-height: 4rem;
-        }
+      }
     }
 
     & &__custom {
