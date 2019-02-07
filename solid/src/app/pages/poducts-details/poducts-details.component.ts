@@ -1,4 +1,11 @@
+import { ProductService } from './../products-list-page/product.service';
 import {  Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { Product } from '../products-list-page/product';
+
+
+
 
 @Component({
   selector: 'app-poducts-details',
@@ -7,9 +14,25 @@ import {  Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class PoductsDetailsComponent implements OnInit {
 
-  constructor() { }
+  product: Product;
 
-  ngOnInit() {
+  constructor(
+    private route: ActivatedRoute,
+    private prodctService: ProductService,
+    private location: Location
+  ) {}
+
+  ngOnInit(): void {
+    this.getProduct();
   }
 
+  getProduct(): void {
+    const shortcut = +this.route.snapshot.paramMap.get('shortcut');
+    this.prodctService.getProduct(shortcut)
+      .subscribe(product => this.product = product);
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
 }

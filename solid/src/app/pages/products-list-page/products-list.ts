@@ -1,8 +1,37 @@
 import { Product } from './product';
 
 export const PRODUCTS: Product [] = [
-  // ----------------------------- marketplace-------------------------------------
+   // ----------------------------- services -------------------------------------
+   {
+      pageTitle: 'PRODUCTS',
+      pageSubtitle: `Are you tired of switching between your email client, excel file, calendar and phone in the course of one interaction?
+        This is where CRM comes into play.`,
+      pageText : `To date, customer relations management (CRM) continues to be one of the most powerful tools for business automation.
+        A well-tailored custom CRM system centralizes your communication in one place and gives you an advantage to
+        manage all pipeline in a more efficient way.`,
+      background_image: '/assets/img/product-list/products.jpg',
+
+      // for details
+
+      title: '',
+      shortcut: '',
+      preamble: ``,
+      img: '',
+      shortDescription: ``,
+      shortDescriptionList: [ ],
+      prodName: '',
+      prodDescriotion: '',
+      prodFeatures: [ ]
+  },
+  // ----------------------------- marketplace -------------------------------------
   {
+    pageTitle: 'Ineedatractor.com',
+    pageSubtitle: 'A modern online service and a mobile application to rent construction equipment and specialized vehicles.',
+    pageText: '',
+    background_image: '/assets/img/product-list/ineedatractor.jpg',
+
+    // for details
+
     title: 'SAAS MARKETPLACE',
     shortcut: 'ineedatractor',
     preamble: `Have an idea to run your business in a smarter and more efficient way without a
@@ -60,8 +89,15 @@ export const PRODUCTS: Product [] = [
       }
     ]
   },
-  // ----------------------------- crm-------------------------------------
+  // ----------------------------- crm -------------------------------------
   {
+    pageTitle: 'SolidExCRM.com',
+    pageSubtitle: 'CRM for your business',
+    pageText: '',
+    background_image:  '/assets/img/product-list/solidexcrm.jpg',
+
+    // for details
+
     title: 'SolidExCRM',
     shortcut: 'crm',
     preamble: `Online Booking - Let your customers check in all by themselves.

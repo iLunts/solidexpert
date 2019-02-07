@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-block-first',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./block-first.component.less']
 })
 export class BlockFirstComponent implements OnInit {
+
+ @Input() product;
 
   constructor() { }
 

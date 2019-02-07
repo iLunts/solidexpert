@@ -135,12 +135,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_poducts_details_poducts_details_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/poducts-details/poducts-details.component */ "./src/app/pages/poducts-details/poducts-details.component.ts");
 /* harmony import */ var _ui_poducts_details_block_first_block_first_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./ui/poducts-details/block-first/block-first.component */ "./src/app/ui/poducts-details/block-first/block-first.component.ts");
 /* harmony import */ var _ui_poducts_details_block_second_block_second_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./ui/poducts-details/block-second/block-second.component */ "./src/app/ui/poducts-details/block-second/block-second.component.ts");
+/* harmony import */ var _ui_poducts_details_block_third_block_third_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./ui/poducts-details/block-third/block-third.component */ "./src/app/ui/poducts-details/block-third/block-third.component.ts");
+/* harmony import */ var _ui_poducts_details_block_fourth_block_fourth_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./ui/poducts-details/block-fourth/block-fourth.component */ "./src/app/ui/poducts-details/block-fourth/block-fourth.component.ts");
+/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ngx-wow */ "./node_modules/ngx-wow/esm5/ngx-wow.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -195,6 +201,8 @@ var AppModule = /** @class */ (function () {
                 _pages_poducts_details_poducts_details_component__WEBPACK_IMPORTED_MODULE_25__["PoductsDetailsComponent"],
                 _ui_poducts_details_block_first_block_first_component__WEBPACK_IMPORTED_MODULE_26__["BlockFirstComponent"],
                 _ui_poducts_details_block_second_block_second_component__WEBPACK_IMPORTED_MODULE_27__["BlockSecondComponent"],
+                _ui_poducts_details_block_third_block_third_component__WEBPACK_IMPORTED_MODULE_28__["BlockThirdComponent"],
+                _ui_poducts_details_block_fourth_block_fourth_component__WEBPACK_IMPORTED_MODULE_29__["BlockFourthComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -204,6 +212,7 @@ var AppModule = /** @class */ (function () {
                 ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_15__["CarouselModule"].forRoot(),
                 ng_inline_svg__WEBPACK_IMPORTED_MODULE_22__["InlineSVGModule"].forRoot(),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_16__["FormsModule"],
+                ngx_wow__WEBPACK_IMPORTED_MODULE_30__["NgwWowModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_16__["ReactiveFormsModule"],
                 ng_inline_svg__WEBPACK_IMPORTED_MODULE_22__["InlineSVGModule"].forRoot()
             ],
@@ -652,7 +661,7 @@ var MainPageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"details\">\n  <app-block-first ></app-block-first>\n  <app-block-second ></app-block-second>\n</div>\n\n"
+module.exports = "<div class=\"details container-fluid\">\r\n  <app-block-first></app-block-first>\r\n  <app-block-second></app-block-second>\r\n  <app-block-third></app-block-third>\r\n  <app-block-fourth></app-block-fourth>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -663,7 +672,7 @@ module.exports = "<div class=\"details\">\n  <app-block-first ></app-block-first
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".details {\n  background: #EEF1F1;\n  padding-top: 50px;\n}\n"
+module.exports = ".details {\n  background: #EEF1F1;\n  padding: 10rem 0;\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .details {\n    padding: 5rem 0;\n  }\n}\n"
 
 /***/ }),
 
@@ -953,7 +962,7 @@ var routes = [
     { path: 'contact', component: _pages_contact_us_page_contact_us_page_component__WEBPACK_IMPORTED_MODULE_3__["ContactUsPageComponent"] },
     { path: 'about', component: _pages_about_page_about_page_component__WEBPACK_IMPORTED_MODULE_6__["AboutPageComponent"] },
     { path: '', component: _pages_main_page_main_page_component__WEBPACK_IMPORTED_MODULE_4__["MainPageComponent"] },
-    { path: 'products/details', component: _pages_poducts_details_poducts_details_component__WEBPACK_IMPORTED_MODULE_7__["PoductsDetailsComponent"] },
+    { path: 'products/:shortcut', component: _pages_poducts_details_poducts_details_component__WEBPACK_IMPORTED_MODULE_7__["PoductsDetailsComponent"] },
 ];
 var route = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes);
 
@@ -1421,7 +1430,7 @@ var NavComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"first-block grid\">\n <div class=\"col--2-6 push--1-6\">\n   <h1 class=\"first-block__title\">Your Favorite Devices Mockup Pack</h1>\n   <h2 class=\"first-block__subtitle\">for Sketch and Photoshop</h2>\n   <p class=\"first-block__text\">Super clean, minimalistic, stylized mockup collection with awesome customization features and huge resolution</p>\n </div>\n <div class=\"col--2-6\">\n   <img src=\"/assets/img/product-list/details/laptop.pag\" alt=\"laptop\">\n </div>\n</div>\n"
+module.exports = "<div class=\"first-block grid\">\r\n  <div class=\"first-block__description col--lg-2-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6\">\r\n\r\n   <h1 class=\"title\">Your Favorite Devices Mockup Pack</h1>\r\n   <h3 class=\"subtitle\">for Sketch and Photoshop</h3>\r\n   <p class=\"text\">\r\n     Super clean, minimalistic, stylized mockup collection with awesome customization features and huge resolution\r\n   </p>\r\n   <img class=\"arrow\"\r\n        alt=\"arrow down\"\r\n        src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\" />\r\n  </div>\r\n\r\n  <div class=\"first-block__picture col--lg-3-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6 position--r\">\r\n   <!-- <img class=\"first-block__picture-backdrop img position--r\" src=\"https://uploads-ssl.webflow.com/5a4e0f14056b6a0001011f8d/5a4e0f14056b6a0001011fe9_Svg%20Bg.svg\" alt=\"backdrop\"> -->\r\n   <img class=\"first-block__picture-main img position--a\" src=\"/assets/img/product-list/details/laptop.png\" alt=\"laptop\">\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1432,7 +1441,7 @@ module.exports = "<div class=\"first-block grid\">\n <div class=\"col--2-6 push-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".first-block {\n  min-height: 100vh;\n}\n.first-block .first-block__title {\n  font-size: 4rem;\n  line-height: 4.5rem;\n  font-weight: 600;\n  margin-bottom: 2rem;\n  color: #54a4ff;\n}\n.first-block .first-block__subtitle {\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #A7AEB3;\n}\n.first-block .first-block__text {\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 400;\n  margin-bottom: 1rem;\n}\n"
+module.exports = ".first-block {\n  height: 100%;\n}\n.first-block .first-block__description {\n  height: 100vh;\n  z-index: 2;\n}\n.first-block .first-block__picture-main {\n  top: 0px;\n  left: 0px;\n}\n.first-block .arrow {\n  transition: all 1s;\n  margin-top: 8rem;\n}\n.first-block .arrow:hover {\n  -webkit-transform: scale3d(1.2, 1.2, 1.2);\n  transform: scale3d(1.2, 1.2, 1.2);\n}\n.first-block .img {\n  width: 100%;\n  max-width: 100%;\n}\n.first-block .title {\n  font-size: 6rem;\n  line-height: 6.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #54a4ff;\n}\n.first-block .subtitle {\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #A7AEB3;\n}\n.first-block .text {\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 400;\n  margin-bottom: 1.5rem;\n}\n@media only screen and (min-width: 1024px) and (max-width: 1219px) {\n  .first-block .first-block__description {\n    height: 30vh;\n  }\n  .first-block .first-block__picture {\n    height: 50vh;\n  }\n  .first-block .title {\n    font-size: 4rem;\n    line-height: 4.5rem;\n  }\n}\n@media only screen and (min-width: 768px) and (max-width: 1023px) {\n  .first-block .first-block__description {\n    height: 30vh;\n  }\n  .first-block .first-block__picture {\n    height: 50vh;\n  }\n  .first-block .title {\n    font-size: 3rem;\n    line-height: 3.5rem;\n  }\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .first-block .first-block__description {\n    height: 100%;\n  }\n  .first-block .first-block__picture {\n    height: 30vh;\n  }\n  .first-block .title {\n    font-size: 2rem;\n    line-height: 2.5rem;\n    font-weight: 600;\n  }\n  .first-block .subtitle {\n    font-size: 1.5rem;\n    line-height: 2rem;\n  }\n  .first-block .arrow {\n    width: 2rem;\n    margin-top: 4rem;\n  }\n}\n"
 
 /***/ }),
 
@@ -1477,6 +1486,69 @@ var BlockFirstComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/ui/poducts-details/block-fourth/block-fourth.component.html":
+/*!*****************************************************************************!*\
+  !*** ./src/app/ui/poducts-details/block-fourth/block-fourth.component.html ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"fourht-block grid\">\r\n  <!-- <h2 class=\"col--4-6 push--1-6 title\">Unlimited possibilities</h2> -->\r\n  <div class=\"fourht-block__description col--4-6 push--1-6\">\r\n    <div class=\"grid\">\r\n      <h2 class=\"col--3-5 title\">Unlimited possibilities</h2>\r\n      <div class=\"fourht-block__description-left position--r col--lg-3-5 col--md--1-1 \">\r\n        <h3 class=\"subtitle--black w--60\">For beautiful stylized presentations</h3>\r\n        <img class=\"fourht-block__description-left-img img position--a\" src=\"/assets/img/product-list/details/presentation.png\" alt=\"presentation style\">\r\n      </div>\r\n      <div class=\"fourht-block__description-right position--r col--lg-2-5 col--md-1-1\">\r\n        <div class=\"fourht-block__description-right-backdrop\">\r\n          <img class=\"fourht-block__description-right-img img\" src=\"/assets/img/product-list/details/media.png\" alt=\"media style\">\r\n          <h3 class=\"subtitle--black\">For social media posts</h3>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/poducts-details/block-fourth/block-fourth.component.less":
+/*!*****************************************************************************!*\
+  !*** ./src/app/ui/poducts-details/block-fourth/block-fourth.component.less ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".fourht-block .fourht-block__description {\n  z-index: 2;\n}\n.fourht-block .fourht-block__description-left {\n  height: 90vh;\n  padding: 4rem;\n  background-color: #E1E5E6;\n  border-radius: 10px;\n}\n.fourht-block .fourht-block__description-left-img {\n  left: 0px;\n  bottom: 0px;\n}\n.fourht-block .fourht-block__description-right {\n  margin-top: -10%;\n  border-radius: 10px;\n}\n.fourht-block .fourht-block__description-right-backdrop {\n  padding: 15% 10%;\n  background-color: #fff;\n  width: 100%;\n  height: 100%;\n  border-radius: 10px;\n}\n.fourht-block .fourht-block__description-right-img {\n  margin-bottom: 8rem;\n}\n.fourht-block .w--60 {\n  width: 60%;\n}\n.fourht-block .img {\n  width: 100%;\n  max-width: 100%;\n}\n.fourht-block .title {\n  font-size: 6rem;\n  line-height: 6.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #54a4ff;\n}\n.fourht-block .subtitle {\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #A7AEB3;\n}\n.fourht-block .subtitle--black {\n  color: #535261;\n  font-size: 3.8rem;\n  line-height: 4rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n}\n.fourht-block .text {\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 400;\n  margin-bottom: 1.5rem;\n}\n@media only screen and (min-width: 1024px) and (max-width: 1219px) {\n  .fourht-block {\n    height: 100%;\n  }\n  .fourht-block .fourht-block__description-left {\n    height: 60vh;\n  }\n  .fourht-block .fourht-block__description-right {\n    padding-left: 0;\n    margin-top: 1rem;\n  }\n  .fourht-block .fourht-block__description-right-img {\n    margin-bottom: 2rem;\n  }\n  .fourht-block .title {\n    font-size: 3rem;\n    line-height: 3.5rem;\n    font-weight: 500;\n    margin-bottom: 2rem;\n    color: #54a4ff;\n  }\n  .fourht-block .subtitle--black {\n    color: #535261;\n    font-size: 2.8rem;\n    line-height: 3rem;\n    font-weight: 500;\n    margin-bottom: 2rem;\n  }\n}\n@media only screen and (min-width: 768px) and (max-width: 1023px) {\n  .fourht-block {\n    height: 100%;\n  }\n  .fourht-block .fourht-block__description-left {\n    height: 60vh;\n  }\n  .fourht-block .fourht-block__description-right {\n    padding-left: 0;\n    margin-top: 1rem;\n  }\n  .fourht-block .fourht-block__description-right-img {\n    margin-bottom: 2rem;\n  }\n  .fourht-block .title {\n    font-size: 3rem;\n    line-height: 3.5rem;\n    font-weight: 500;\n    margin-bottom: 2rem;\n    color: #54a4ff;\n  }\n  .fourht-block .subtitle--black {\n    color: #535261;\n    font-size: 2rem;\n    line-height: 2.5rem;\n    font-weight: 500;\n    margin-bottom: 2rem;\n  }\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .fourht-block {\n    height: 100%;\n  }\n  .fourht-block .fourht-block__description-left {\n    height: 60vh;\n  }\n  .fourht-block .fourht-block__description-right {\n    padding-left: 0;\n    margin-top: 1rem;\n  }\n  .fourht-block .fourht-block__description-right-img {\n    margin-bottom: 2rem;\n  }\n  .fourht-block .title {\n    font-size: 2rem;\n    line-height: 2.5rem;\n    font-weight: 600;\n  }\n  .fourht-block .subtitle {\n    font-size: 1.5rem;\n    line-height: 2rem;\n  }\n  .fourht-block .subtitle--black {\n    font-size: 1.6rem;\n    line-height: 1.8rem;\n  }\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/poducts-details/block-fourth/block-fourth.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/ui/poducts-details/block-fourth/block-fourth.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: BlockFourthComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockFourthComponent", function() { return BlockFourthComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BlockFourthComponent = /** @class */ (function () {
+    function BlockFourthComponent() {
+    }
+    BlockFourthComponent.prototype.ngOnInit = function () {
+    };
+    BlockFourthComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-block-fourth',
+            template: __webpack_require__(/*! ./block-fourth.component.html */ "./src/app/ui/poducts-details/block-fourth/block-fourth.component.html"),
+            styles: [__webpack_require__(/*! ./block-fourth.component.less */ "./src/app/ui/poducts-details/block-fourth/block-fourth.component.less")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BlockFourthComponent);
+    return BlockFourthComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/ui/poducts-details/block-second/block-second.component.html":
 /*!*****************************************************************************!*\
   !*** ./src/app/ui/poducts-details/block-second/block-second.component.html ***!
@@ -1484,7 +1556,7 @@ var BlockFirstComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  block-second works!\n</p>\n"
+module.exports = "<div class=\"second-block grid\">\r\n    <div class=\"second-block__picture col--lg-1-6 col--md-2-10 col--sm-2-10 col--xs-4-10 push--lg-1-6 push--md-1-10 push--sm-1-10 push--xs-3-10 position--r\">\r\n      <!-- <div class=\" second-block__picture-backdrop  position--a\"> </div> -->\r\n      <img class=\" second-block__picture-main img position--a\" src=\"/assets/img/product-list/details/tel.png\" alt=\"phone\">\r\n      <img  class=\"second-block__picture-icon position--a\" alt=\"arrow\" src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\" />\r\n    </div>\r\n    <div class=\"second-block__description col--lg-2-6 col--md-4-10 col--sm-4-10 col--xs-8-10 push--lg-2-6 push--md-3-10 push--xs-1-10 push--sm-3-10 \">\r\n     <h2 class=\"title\">Easy-to-use</h2>\r\n     <h3 class=\"subtitle\">Just choose mockup, open in your favorite software and paste your screenshot.</h3>\r\n     <p class=\"text\">\r\n        For Sketch version you also need to install free Magic Mirror plugin.\r\n     </p>\r\n     <button class=\"btn btn--md btn--blue\"> Button 1</button>\r\n     <button class=\"btn btn--md btn--blue\"> Button 2</button>\r\n    </div>\r\n\r\n  </div>\r\n"
 
 /***/ }),
 
@@ -1495,7 +1567,7 @@ module.exports = "<p>\n  block-second works!\n</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".second-block .second-block__description {\n  z-index: 2;\n  height: 90vh;\n}\n.second-block .second-block__picture-main {\n  top: 0px;\n  left: 0px;\n}\n.second-block .second-block__picture-icon {\n  transition: all 1s;\n  top: 0px;\n  right: 0px;\n}\n.second-block .second-block__picture-icon:hover {\n  -webkit-transform: scale3d(1.2, 1.2, 1.2);\n  transform: scale3d(1.2, 1.2, 1.2);\n}\n.second-block .img {\n  width: 100%;\n  max-width: 100%;\n}\n.second-block .title {\n  font-size: 6rem;\n  line-height: 6.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #54a4ff;\n}\n.second-block .btn {\n  border: 2px solid #54a4ff;\n  height: 4rem;\n  width: 40%;\n  transition: all 1s;\n  margin-right: 5%;\n}\n.second-block .btn:hover {\n  border-color: #EEF1F1;\n}\n.second-block .subtitle {\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #A7AEB3;\n}\n.second-block .text {\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 400;\n  margin-bottom: 1.5rem;\n}\n@media only screen and (min-width: 1024px) and (max-width: 1219px) {\n  .second-block .second-block__description {\n    height: 50vh;\n  }\n  .second-block .title {\n    font-size: 4rem;\n    line-height: 4.5rem;\n  }\n}\n@media only screen and (min-width: 768px) and (max-width: 1023px) {\n  .second-block .second-block__description {\n    height: 50vh;\n  }\n  .second-block .title {\n    font-size: 3rem;\n    line-height: 3.5rem;\n  }\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .second-block {\n    flex-wrap: wrap-reverse;\n  }\n  .second-block .second-block__picture {\n    margin-top: 4rem;\n    height: 50vh;\n  }\n  .second-block .second-block__picture-icon {\n    width: 2rem;\n  }\n  .second-block .second-block__description {\n    height: 100%;\n  }\n  .second-block .title {\n    font-size: 2rem;\n    line-height: 2.5rem;\n    font-weight: 600;\n  }\n  .second-block .subtitle {\n    font-size: 1.5rem;\n    line-height: 2rem;\n  }\n}\n"
 
 /***/ }),
 
@@ -1534,6 +1606,69 @@ var BlockSecondComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], BlockSecondComponent);
     return BlockSecondComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/ui/poducts-details/block-third/block-third.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/ui/poducts-details/block-third/block-third.component.html ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"third-block grid\">\r\n  <div class=\"third-block__description col--lg-2-6 col--md-4-10 col--sm-4-10 col--xs-8-10 push--lg-1-6 push--md-1-10 push--sm-1-10 push--xs-1-10\">\r\n    <h2 class=\"title\">Easily change colors of each device</h2>\r\n    <h3 class=\"subtitle\"></h3>\r\n    <p class=\"text\">\r\n      In each device shadows and reflections are in separate layers, this allows you to change the color of objects and accurately adjust lighting\r\n    </p>\r\n    <button class=\"btn btn--md btn--blue\"> Button 1</button>\r\n    <button class=\"btn btn--md btn--blue\"> Button 2</button>\r\n  </div>\r\n\r\n  <div class=\"third-block__picture col--lg-3-6 col--md-5-10 col--sm-5-10 col--xs-8-10 push--lg-1-6  push--sm-1-10 push--xs-1-10 position--r\">\r\n   <img class=\"third-block__picture-main img position--a\"\r\n   src=\"/assets/img/product-list/details/screen.png\"\r\n      alt=\"screen\"\r\n    >\r\n    <!-- <img class=\"third-block__picture-mouse img position--a\"\r\n    src=\"/assets/img/product-list/details/mouse.png\"\r\n      alt=\"mouse\"\r\n    > -->\r\n    <!-- <img class=\"third-block__picture-keyboard img position--a\"\r\n      src=\"/assets/img/product-list/details/keyboard.png\"\r\n      alt=\"keyboard\"\r\n    > -->\r\n  </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/poducts-details/block-third/block-third.component.less":
+/*!***************************************************************************!*\
+  !*** ./src/app/ui/poducts-details/block-third/block-third.component.less ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".third-block {\n  height: 100%;\n}\n.third-block .third-block__description {\n  height: 90vh;\n  z-index: 2;\n}\n.third-block .third-block__picture {\n  padding-left: 0;\n}\n.third-block .third-block__picture-keyboard {\n  top: 0px;\n  left: 0px;\n}\n.third-block .third-block__picture-mouse {\n  top: 0px;\n  left: 0px;\n}\n.third-block .img {\n  width: 100%;\n  max-width: 100%;\n}\n.third-block .title {\n  font-size: 6rem;\n  line-height: 6.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #54a4ff;\n}\n.third-block .btn {\n  border: 2px solid #54a4ff;\n  height: 4rem;\n  width: 40%;\n  transition: all 1s;\n  margin-right: 5%;\n}\n.third-block .btn:hover {\n  border-color: #EEF1F1;\n}\n.third-block .subtitle {\n  font-size: 2rem;\n  line-height: 2.5rem;\n  font-weight: 500;\n  margin-bottom: 2rem;\n  color: #A7AEB3;\n}\n.third-block .text {\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 400;\n  margin-bottom: 1.5rem;\n}\n@media only screen and (min-width: 1024px) and (max-width: 1219px) {\n  .third-block .third-block__description {\n    height: 100%;\n  }\n  .third-block .third-block__picture {\n    height: 40vh;\n  }\n  .third-block .title {\n    font-size: 4rem;\n    line-height: 4.5rem;\n  }\n}\n@media only screen and (min-width: 768px) and (max-width: 1023px) {\n  .third-block .third-block__description {\n    height: 100%;\n  }\n  .third-block .third-block__picture {\n    height: 50vh;\n  }\n  .third-block .title {\n    font-size: 3rem;\n    line-height: 3.5rem;\n  }\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .third-block .third-block__description {\n    height: 100%;\n  }\n  .third-block .third-block__picture {\n    margin-top: 4rem;\n    height: 40vh;\n  }\n  .third-block .title {\n    font-size: 2rem;\n    line-height: 2.5rem;\n    font-weight: 600;\n  }\n  .third-block .subtitle {\n    font-size: 1.5rem;\n    line-height: 2rem;\n  }\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/poducts-details/block-third/block-third.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/ui/poducts-details/block-third/block-third.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: BlockThirdComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockThirdComponent", function() { return BlockThirdComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BlockThirdComponent = /** @class */ (function () {
+    function BlockThirdComponent() {
+    }
+    BlockThirdComponent.prototype.ngOnInit = function () {
+    };
+    BlockThirdComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-block-third',
+            template: __webpack_require__(/*! ./block-third.component.html */ "./src/app/ui/poducts-details/block-third/block-third.component.html"),
+            styles: [__webpack_require__(/*! ./block-third.component.less */ "./src/app/ui/poducts-details/block-third/block-third.component.less")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BlockThirdComponent);
+    return BlockThirdComponent;
 }());
 
 
