@@ -1,9 +1,8 @@
-import { ProductService } from './../products-list-page/product.service';
-import {  Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {  Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Product } from '../products-list-page/product';
-
+import { ProductService } from './../products-list-page/product.service';
 
 
 

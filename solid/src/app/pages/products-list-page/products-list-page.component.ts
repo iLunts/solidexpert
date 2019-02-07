@@ -10,7 +10,7 @@ import { Product } from './product';
 })
 export class ProductsListPageComponent implements OnInit {
 
-  productsList: Product[];
+  products: Product[];
 
   // productList = [
   //   {
@@ -52,7 +52,7 @@ export class ProductsListPageComponent implements OnInit {
 
   getProducts(): void {
     this.productService.getProducts()
-      .subscribe(products => this.productsList = products);
+      .subscribe(products => this.products = products);
   }
 
 }
