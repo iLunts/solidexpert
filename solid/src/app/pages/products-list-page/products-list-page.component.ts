@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-products-list-page',
@@ -26,7 +28,8 @@ export class ProductsListPageComponent implements OnInit {
     },
     {
       title: 'Ineedatractor.com',
-      subtitle: 'A modern online service and a mobile application to rent construction equipment and specialized vehicles.',
+      subtitle: `A modern online service and a mobile application to rent construction 
+        equipment and specialized vehicles.`,
       text: '',
       background_image: '/assets/img/product-list/ineedatractor.jpg',
     },
@@ -38,9 +41,19 @@ export class ProductsListPageComponent implements OnInit {
     // },
   ];
 
-  constructor() { }
+  constructor(private titleService: Title, private meta: Meta ) { }
+
 
   ngOnInit() {
-  }
 
+    this.titleService.setTitle('Solid Products');
+
+    this.meta.updateTag(
+      { 
+        name: 'description', 
+        content: `Are you tired of switching between your email client, excel file,
+        calendar and phone in the course of one interaction? This is where CRM comes into play.` 
+      }
+    );
+  }
 }
