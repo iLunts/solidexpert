@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { SPECIALIZATIONS } from './list-specialization';
 
 import { LEVELS } from './list-level';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cv-list-page',
@@ -19,10 +20,19 @@ export class CvListPageComponent implements OnInit {
 
   isShowSearch = false;
 
-  constructor(private devService: DevService) { }
+  constructor(private devService: DevService, private titleService: Title, private meta: Meta) { }
 
   ngOnInit() {
     this.getDev();
+
+    this.titleService.setTitle('Solid Developers');
+
+    this.meta.updateTag(
+      {
+        name: 'description',
+        content: `Free developers`
+      }
+      );
   }
 
   getDev(): void {
