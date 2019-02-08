@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cv-generator-page',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvGeneratorPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title, private meta: Meta) { }
 
   ngOnInit() {
+
+    this.titleService.setTitle('Solid CV-generator');
+
+    this.meta.updateTag(
+      {
+        name: 'description',
+        content: `CV-generator`
+      }
+      );
   }
 
 }

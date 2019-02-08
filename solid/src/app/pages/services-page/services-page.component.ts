@@ -17,9 +17,9 @@ export class ServicesPageComponent implements OnInit {
     this.titleService.setTitle('Solid Services');
 
     this.meta.updateTag(
-      { 
-        name: 'description', 
-        content: `We make apps that easily integrate with what people need and expect from a trusted 
+      {
+        name: 'description',
+        content: `We make apps that easily integrate with what people need and expect from a trusted
         digital product. Our team is experiences to support you with both native or cross-platform mobile
         development.`
       }

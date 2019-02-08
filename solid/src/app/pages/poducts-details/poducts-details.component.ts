@@ -17,9 +17,9 @@ export class PoductsDetailsComponent implements OnInit {
     this.titleService.setTitle('Solid Products');
 
     this.meta.updateTag(
-      { 
-        name: 'description', 
-        content: `A modern online services for your business` 
+      {
+        name: 'description',
+        content: `A modern online services for your business`
       }
       );
   }

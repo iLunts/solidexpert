@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-contact-us-page',
@@ -16,15 +18,25 @@ export class ContactUsPageComponent implements OnInit {
   userEmail = '';
   userMessage = '';
 
-  constructor(private formBuilder: FormBuilder, protected http: HttpClient) { }
+  constructor(private titleService: Title, private meta: Meta, private formBuilder: FormBuilder, protected http: HttpClient) { }
 
   ngOnInit() {
+
     this.requestForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       telephone: ['', ],
       privacy: ['', Validators.requiredTrue],
     });
+
+    this.titleService.setTitle('Solid Contacts');
+
+    this.meta.updateTag(
+      {
+        name: 'description',
+        content: `Have  a question - send a message`
+      }
+      );
   }
 
   // convenience getter for easy access to form fields
@@ -40,7 +52,7 @@ export class ContactUsPageComponent implements OnInit {
     alert('Thx!!! :-)');
     this.requestForm.reset();
   }
-  
+
   send() {
 
     const body = new HttpParams()

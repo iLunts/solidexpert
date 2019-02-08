@@ -28,7 +28,7 @@ export class ProductsListPageComponent implements OnInit {
     },
     {
       title: 'Ineedatractor.com',
-      subtitle: `A modern online service and a mobile application to rent construction 
+      subtitle: `A modern online service and a mobile application to rent construction
         equipment and specialized vehicles.`,
       text: '',
       background_image: '/assets/img/product-list/ineedatractor.jpg',
@@ -49,10 +49,10 @@ export class ProductsListPageComponent implements OnInit {
     this.titleService.setTitle('Solid Products');
 
     this.meta.updateTag(
-      { 
-        name: 'description', 
+      {
+        name: 'description',
         content: `Are you tired of switching between your email client, excel file,
-        calendar and phone in the course of one interaction? This is where CRM comes into play.` 
+        calendar and phone in the course of one interaction? This is where CRM comes into play.`
       }
     );
   }
