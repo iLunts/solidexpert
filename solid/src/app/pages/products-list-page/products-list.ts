@@ -14,7 +14,7 @@ export const PRODUCTS: Product [] = [
       // for details
 
       title: '',
-      shortcut: '',
+      shortcut: null,
       preamble: ``,
       img: '',
       shortDescription: ``,
@@ -33,7 +33,7 @@ export const PRODUCTS: Product [] = [
     // for details
 
     title: 'SAAS MARKETPLACE',
-    shortcut: 'ineedatractor',
+    shortcut: 22,
     preamble: `Have an idea to run your business in a smarter and more efficient way without a
       need to buy and deploy the software itself? Take an advantage of using already
     	installed and configured SaaS solutions, and thus reduce your time to benefit.`,
@@ -99,7 +99,7 @@ export const PRODUCTS: Product [] = [
     // for details
 
     title: 'SolidExCRM',
-    shortcut: 'crm',
+    shortcut: 33,
     preamble: `Online Booking - Let your customers check in all by themselves.
      This function enables a 24/7 booking and excludes any overlapping errors. Extremely useful for
      large studios seeking to off-load the receptionists. The calendar implemented in our system has much

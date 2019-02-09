@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { PRODUCTS } from './products-list';
-import { Product } from './product';
 import { Observable, of } from 'rxjs';
+import { Product } from './product';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,8 @@ export class ProductService {
     return of(PRODUCTS);
   }
 
-  getProduct(shortcut: any): Observable<Product> {
+  getProduct(shortcut: number): Observable<Product> {
     return of(PRODUCTS.find(product => product.shortcut === shortcut));
   }
 }
+

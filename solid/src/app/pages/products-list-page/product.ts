@@ -4,7 +4,7 @@ export class Product {
   pageText: string;
   background_image: string;
   title: string;
-  shortcut: string;
+  shortcut: number;
   preamble: string;
   img: string;
   shortDescription: string;
