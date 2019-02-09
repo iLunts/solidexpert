@@ -5,6 +5,7 @@
 
   & &__description{
     height: 100vh;
+
     z-index: 2;
   }
 
@@ -22,7 +23,7 @@
   //  }
   }
 
-  .arrow{
+  & .arrow{
     transition: all 1s;
     margin-top: 8rem;
 
@@ -32,12 +33,29 @@
     }
   }
 
-  .img{
+  & .img{
     width: 100%;
     max-width: 100%;
   }
+& .list{
+  color:#A7AEB3;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 
-  .title{
+  &__item{
+    color: #000;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-top: .8rem;
+  }
+}
+
+  & .title{
     font-size: 6rem;
     line-height: 6.5rem;
 
@@ -47,7 +65,7 @@
     color: #54a4ff;
   }
 
-  .subtitle{
+  & .subtitle{
     font-size: 2rem;
     line-height: 2.5rem;
 
@@ -57,7 +75,7 @@
     color:#A7AEB3;
   }
 
-  .text{
+  & .text{
     font-size: 1.5rem;
     line-height: 2rem;
 

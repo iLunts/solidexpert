@@ -1,3 +1,6 @@
+.second-block {
+  margin-top: 5rem;
+}
 .second-block .second-block__description {
   z-index: 2;
   height: 90vh;

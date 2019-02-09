@@ -11,6 +11,8 @@ import { filter } from 'rxjs/operators';
 })
 export class BlockFirstComponent implements OnInit {
 
+  @Input() product;
+
 
   private wowSubscription: Subscription;
 

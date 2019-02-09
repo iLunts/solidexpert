@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { NgwWowService } from 'ngx-wow';
 import { Router, NavigationEnd } from '@angular/router';
@@ -10,6 +10,8 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./block-third.component.less']
 })
 export class BlockThirdComponent implements OnInit {
+
+  @Input() product;
 
   private wowSubscription: Subscription;
 

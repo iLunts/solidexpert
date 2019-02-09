@@ -1,5 +1,6 @@
 .third-block {
   height: 100%;
+  margin-top: 5rem;
 }
 .third-block .third-block__description {
   height: 90vh;

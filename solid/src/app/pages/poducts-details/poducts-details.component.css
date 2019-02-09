@@ -1,6 +1,15 @@
 .details {
   background: #EEF1F1;
-  padding: 10rem 0;
+  padding: 5rem 0;
+}
+.details .btn {
+  border: 2px solid #54a4ff;
+  top: -25px;
+  transition: all 1s;
+  margin-right: 5%;
+}
+.details .btn:hover {
+  border-color: #EEF1F1;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .details {
