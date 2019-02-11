@@ -1,14 +1,14 @@
 @import "../../../../../web-src/less/variables.less";
 
 .second-block{
-  // height: 100vh;
+  // height: 90vh;
 
   margin-top: 5rem;
 
 
   & &__description{
     z-index: 2;
-    height: 90vh;
+    // height: 90vh;
   }
 
   & &__picture{
@@ -74,10 +74,21 @@
 
 }
 // ----------------------------------------
+// Size : xLarge
+// ----------------------------------------
+@media only screen and (min-width: @breakpoint-xlg-min) {
+  .second-block{
+    height: 100vh;
+  }
+}
+
+// ----------------------------------------
 // Size : Large
 // ----------------------------------------
 @media only screen and (min-width: @breakpoint-lg-min) and (max-width: (@breakpoint-lg-max)) {
-
+  .second-block{
+    height: 100vh;
+  }
 }
 
 // ----------------------------------------
@@ -139,6 +150,10 @@
     .subtitle{
       font-size: 1.5rem;
       line-height: 2rem;
+    }
+    & .text{
+      font-size: 1.2rem;
+      line-height: 2.2rem;
     }
   }
 }

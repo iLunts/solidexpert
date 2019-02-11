@@ -23,8 +23,6 @@ export class PoductsDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProduct();
-
-    console.log ('oninit', this.product);
   }
 
   getProduct(): void {

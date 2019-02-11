@@ -1,8 +1,4 @@
-.first-block {
-  height: 100%;
-}
 .first-block .first-block__description {
-  height: 100vh;
   z-index: 2;
 }
 .first-block .first-block__picture-main {
@@ -26,16 +22,16 @@
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 .first-block .list__item {
   color: #000;
   list-style-type: disc;
   list-style-position: inside;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-weight: 400;
-  margin-top: .8rem;
+  margin-top: 1rem;
 }
 .first-block .title {
   font-size: 6rem;
@@ -53,14 +49,21 @@
 }
 .first-block .text {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
-@media only screen and (min-width: 1024px) and (max-width: 1219px) {
-  .first-block .first-block__description {
-    height: 30vh;
+@media only screen and (min-width: 1600px) {
+  .first-block {
+    height: 100vh;
   }
+}
+@media only screen and (min-width: 1220px) and (max-width: 1599px) {
+  .first-block {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1219px) {
   .first-block .first-block__picture {
     height: 50vh;
   }
@@ -70,9 +73,6 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .first-block .first-block__description {
-    height: 30vh;
-  }
   .first-block .first-block__picture {
     height: 50vh;
   }
@@ -82,9 +82,6 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .first-block .first-block__description {
-    height: 100%;
-  }
   .first-block .first-block__picture {
     height: 30vh;
   }
@@ -96,6 +93,10 @@
   .first-block .subtitle {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .first-block .text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
   }
   .first-block .arrow {
     width: 2rem;
