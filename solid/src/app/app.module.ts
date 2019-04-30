@@ -61,7 +61,7 @@ import { BlockFourthComponent } from './ui/poducts-details/block-fourth/block-fo
     BlockFourthComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'yuor-app-id'}),
     HttpClientModule,
     RouterModule,
     route,

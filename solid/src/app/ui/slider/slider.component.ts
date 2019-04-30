@@ -57,18 +57,7 @@ export class SliderComponent implements OnInit {
       position: 'Project Manager',
       company: 'ABW.by',
       logoPath: '/assets/img/main-gallery/abw.png'
-    },
-    {
-      mention:
-      `Many words come to my mind when considering the partnership with SolidExpert, but i think that the
-       key point that gravitated us towards them is their being clientele-focused. Their team evaluated
-       our vision, our product, asked spot-on questions.....i was immersed in real collaboration. What
-       began as a trial relationship has evolved into an ongoing partnership that will continue growing.`,
-      name: 'Kohen Lendon,',
-      position: 'Team Lead',
-      company: 'joinUz.nl',
-      logoPath: '/assets/svg/main-gallery/joinuz.svg'
-    },
+    }
   ];
 
   constructor() {}
