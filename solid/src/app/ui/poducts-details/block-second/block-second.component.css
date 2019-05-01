@@ -1,6 +1,8 @@
+.second-block {
+  margin-top: 5rem;
+}
 .second-block .second-block__description {
   z-index: 2;
-  height: 90vh;
 }
 .second-block .second-block__picture-main {
   top: 0px;
@@ -49,6 +51,16 @@
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
+@media only screen and (min-width: 1600px) {
+  .second-block {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1220px) and (max-width: 1599px) {
+  .second-block {
+    height: 100vh;
+  }
+}
 @media only screen and (min-width: 1024px) and (max-width: 1219px) {
   .second-block .second-block__description {
     height: 50vh;
@@ -89,5 +101,9 @@
   .second-block .subtitle {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .second-block .text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
   }
 }

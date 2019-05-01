@@ -1,18 +1,28 @@
 <div class="first-block grid">
-  <div class="first-block__description col--lg-2-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6">
+  <div class="first-block__description wow bounceInLeft col--lg-2-6 col--md-4-6 col--sm-4-6 col--xs-8-10 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-10">
 
-   <h1 class="title">Your Favorite Devices Mockup Pack</h1>
-   <h3 class="subtitle">for Sketch and Photoshop</h3>
-   <p class="text">
-     Super clean, minimalistic, stylized mockup collection with awesome customization features and huge resolution
+   <h1 class="title">{{product?.title}}</h1>
+   <p class="text" *ngIf="product?.preamble">
+      {{product?.preamble}}
    </p>
-   <img class="arrow"
+   <!-- <h3 class="subtitle" *ngIf="product?.prodName">{{product?.prodName}} </h3>
+   <p class="text" *ngIf="product?.prodDescriotion">
+      {{product?.prodDescriotion}}
+   </p> -->
+   <ul class="list" *ngIf="product?.shortDescriptionList">
+      {{product?.shortDescription}}
+     <li class="list__item" *ngFor="let item of product?.shortDescriptionList">
+       {{item}}
+     </li>
+   </ul>
+
+   <!-- <img class="arrow"
         alt="arrow down"
-        src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+        src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /> -->
   </div>
 
-  <div class="first-block__picture col--lg-3-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6 position--r">
-   <!-- <img class="first-block__picture-backdrop img position--r" src="https://uploads-ssl.webflow.com/5a4e0f14056b6a0001011f8d/5a4e0f14056b6a0001011fe9_Svg%20Bg.svg" alt="backdrop"> -->
-   <img class="first-block__picture-main img position--a" src="/assets/img/product-list/details/laptop.png" alt="laptop">
+  <div class="first-block__picture wow bounceInRight col--lg-3-6 col--md-4-6 col--sm-4-6 col--xs-8-10 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-10 position--r">
+    <!-- <img class="first-block__picture-backdrop img position--r" src="https://uploads-ssl.webflow.com/5a4e0f14056b6a0001011f8d/5a4e0f14056b6a0001011fe9_Svg%20Bg.svg" alt="backdrop"> -->
+    <img class="first-block__picture-main img position--a" src="/assets/img/product-list/details/laptop.png" alt="laptop">
   </div>
 </div>

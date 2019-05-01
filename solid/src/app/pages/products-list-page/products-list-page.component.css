@@ -6,6 +6,15 @@
   padding: 100px 0;
   overflow: hidden;
 }
+.block .btn--white {
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 1s;
+  background: transparent;
+}
+.block .btn--white:hover {
+  border-width: 4px;
+}
 .block.block--green {
   align-items: center;
   justify-content: center;

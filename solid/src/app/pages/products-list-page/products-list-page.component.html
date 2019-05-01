@@ -1,22 +1,39 @@
-<div class="block block--green" *ngFor="let item of productList">
-  <div class="block__overlay block__overlay--img" *ngIf="item?.background_image" [style.background-image]="'url(' + item?.background_image + ')'"></div>
+<div class="block block--green" *ngFor="let item of products">
+  <div
+    class="block__overlay block__overlay--img"
+    *ngIf="item?.background_image"
+    [style.background-image]="'url(' + item?.background_image + ')'"
+  ></div>
 
   <div class="block__body">
     <div class="container">
       <div class="grid">
         <div class="col--1-1">
-          <h1 class="block__title" *ngIf="item?.title">{{item?.title}}</h1>
-          <h2 class="block__subtitle" *ngIf="item?.subtitle">
-            {{item?.subtitle}}
+          <h1 class="block__title" *ngIf="item?.pageTitle">
+            {{ item?.pageTitle }}
+          </h1>
+          <h2 class="block__subtitle" *ngIf="item?.pageSubtitle">
+            {{ item?.pageSubtitle }}
           </h2>
+          <a
+            class="btn btn--white"
+            *ngIf="item?.shortcut"
+            [routerLink]="['/products/', item.shortcut]"
+          >
+            View more details
+          </a>
         </div>
 
-        <div class="col--2-5 col--sm-4-5 col--xs-4-5 push--1-5" *ngIf="item?.text">
+        <div
+          class="col--2-5 col--sm-4-5 col--xs-4-5 push--1-5"
+          *ngIf="item?.pageText"
+        >
           <p class="block__text">
-            {{item?.text}}
+            {{ item?.pageText }}
           </p>
         </div>
       </div>
     </div>
   </div>
 </div>
+

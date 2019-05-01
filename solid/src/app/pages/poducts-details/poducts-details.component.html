@@ -1,7 +1,8 @@
-<div class="details container-fluid">
-  <app-block-first></app-block-first>
-  <app-block-second></app-block-second>
-  <app-block-third></app-block-third>
-  <app-block-fourth></app-block-fourth>
-</div>
+<div class="details container-fluid" *ngIf="product">
+  <button class="btn btn--blue" (click)="goBack()">go back</button>
 
+  <app-block-first [product]="product"> </app-block-first>
+  <app-block-second [product]="product"> </app-block-second>
+  <app-block-third [product]="product" > </app-block-third>
+  <app-block-fourth [product]="product"> </app-block-fourth>
+</div>

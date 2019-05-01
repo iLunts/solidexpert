@@ -137,6 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_poducts_details_block_second_block_second_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./ui/poducts-details/block-second/block-second.component */ "./src/app/ui/poducts-details/block-second/block-second.component.ts");
 /* harmony import */ var _ui_poducts_details_block_third_block_third_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./ui/poducts-details/block-third/block-third.component */ "./src/app/ui/poducts-details/block-third/block-third.component.ts");
 /* harmony import */ var _ui_poducts_details_block_fourth_block_fourth_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./ui/poducts-details/block-fourth/block-fourth.component */ "./src/app/ui/poducts-details/block-fourth/block-fourth.component.ts");
+/* harmony import */ var ngx_wow__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ngx-wow */ "./node_modules/ngx-wow/esm5/ngx-wow.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -210,6 +211,7 @@ var AppModule = /** @class */ (function () {
                 ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_15__["CarouselModule"].forRoot(),
                 ng_inline_svg__WEBPACK_IMPORTED_MODULE_22__["InlineSVGModule"].forRoot(),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_16__["FormsModule"],
+                ngx_wow__WEBPACK_IMPORTED_MODULE_30__["NgwWowModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_16__["ReactiveFormsModule"],
                 ng_inline_svg__WEBPACK_IMPORTED_MODULE_22__["InlineSVGModule"].forRoot()
             ],
@@ -658,7 +660,7 @@ var MainPageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"details container-fluid\">\n  <app-block-first></app-block-first>\n  <app-block-second></app-block-second>\n  <app-block-third></app-block-third>\n  <app-block-fourth></app-block-fourth>\n</div>\n\n"
+module.exports = "<div class=\"details container-fluid\" *ngIf=\"product\">\r\n  <button class=\"btn btn--blue\" (click)=\"goBack()\">go back</button>\r\n<p> {{product.title}}</p>\r\n<p> {{product.shortcut}}</p>\r\n<p> {{product.preamble}}</p>\r\n\r\n  <app-block-first> </app-block-first>\r\n  <app-block-second> </app-block-second>\r\n  <app-block-third> </app-block-third>\r\n  <app-block-fourth> </app-block-fourth>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -684,6 +686,9 @@ module.exports = ".details {\n  background: #EEF1F1;\n  padding: 10rem 0;\n}\n@m
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PoductsDetailsComponent", function() { return PoductsDetailsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _products_list_page_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../products-list-page/product.service */ "./src/app/pages/products-list-page/product.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -694,10 +699,26 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var PoductsDetailsComponent = /** @class */ (function () {
-    function PoductsDetailsComponent() {
+    function PoductsDetailsComponent(route, prodctService, location) {
+        this.route = route;
+        this.prodctService = prodctService;
+        this.location = location;
     }
     PoductsDetailsComponent.prototype.ngOnInit = function () {
+        this.getProduct();
+    };
+    PoductsDetailsComponent.prototype.getProduct = function () {
+        var _this = this;
+        var shortcut = +this.route.snapshot.paramMap.get('shortcut');
+        this.prodctService.getProduct(shortcut)
+            .subscribe(function (product) { return _this.product = product; });
+    };
+    PoductsDetailsComponent.prototype.goBack = function () {
+        this.location.back();
     };
     PoductsDetailsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -705,9 +726,58 @@ var PoductsDetailsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./poducts-details.component.html */ "./src/app/pages/poducts-details/poducts-details.component.html"),
             styles: [__webpack_require__(/*! ./poducts-details.component.less */ "./src/app/pages/poducts-details/poducts-details.component.less")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _products_list_page_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
     ], PoductsDetailsComponent);
     return PoductsDetailsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/products-list-page/product.service.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/pages/products-list-page/product.service.ts ***!
+  \*************************************************************/
+/*! exports provided: ProductService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductService", function() { return ProductService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _products_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./products-list */ "./src/app/pages/products-list-page/products-list.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ProductService = /** @class */ (function () {
+    function ProductService() {
+    }
+    ProductService.prototype.getProducts = function () {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_products_list__WEBPACK_IMPORTED_MODULE_1__["PRODUCTS"]);
+    };
+    ProductService.prototype.getProduct = function (shortcut) {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_products_list__WEBPACK_IMPORTED_MODULE_1__["PRODUCTS"].find(function (product) { return product.shortcut === shortcut; }));
+    };
+    ProductService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], ProductService);
+    return ProductService;
 }());
 
 
@@ -721,7 +791,7 @@ var PoductsDetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"block block--green\" *ngFor=\"let item of productList\">\n  <div class=\"block__overlay block__overlay--img\" *ngIf=\"item?.background_image\" [style.background-image]=\"'url(' + item?.background_image + ')'\"></div>\n\n  <div class=\"block__body\">\n    <div class=\"container\">\n      <div class=\"grid\">\n        <div class=\"col--1-1\">\n          <h1 class=\"block__title\" *ngIf=\"item?.title\">{{item?.title}}</h1>\n          <h2 class=\"block__subtitle\" *ngIf=\"item?.subtitle\">\n            {{item?.subtitle}}\n          </h2>\n        </div>\n\n        <div class=\"col--2-5 col--sm-4-5 col--xs-4-5 push--1-5\" *ngIf=\"item?.text\">\n          <p class=\"block__text\">\n            {{item?.text}}\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"block block--green\" *ngFor=\"let item of products\">\r\n  <div\r\n    class=\"block__overlay block__overlay--img\"\r\n    *ngIf=\"item?.background_image\"\r\n    [style.background-image]=\"'url(' + item?.background_image + ')'\"\r\n  ></div>\r\n\r\n  <div class=\"block__body\">\r\n    <div class=\"container\">\r\n      <div class=\"grid\">\r\n        <div class=\"col--1-1\">\r\n          <h1 class=\"block__title\" *ngIf=\"item?.pageTitle\">\r\n            {{ item?.pageTitle }}\r\n          </h1>\r\n          <h2 class=\"block__subtitle\" *ngIf=\"item?.pageSubtitle\">\r\n            {{ item?.pageSubtitle }}\r\n          </h2>\r\n          <a\r\n            class=\"btn\"\r\n            *ngIf=\"item?.shortcut\"\r\n            [routerLink]=\"['/products/', item.shortcut]\"\r\n          >\r\n            View more details\r\n          </a>\r\n        </div>\r\n\r\n        <div\r\n          class=\"col--2-5 col--sm-4-5 col--xs-4-5 push--1-5\"\r\n          *ngIf=\"item?.pageText\"\r\n        >\r\n          <p class=\"block__text\">\r\n            {{ item?.pageText }}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -747,6 +817,7 @@ module.exports = ".block {\n  position: relative;\n  display: flex;\n  flex-dire
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductsListPageComponent", function() { return ProductsListPageComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _product_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./product.service */ "./src/app/pages/products-list-page/product.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -757,30 +828,48 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var ProductsListPageComponent = /** @class */ (function () {
-    function ProductsListPageComponent() {
-        this.productList = [
-            {
-                title: 'PRODUCTS',
-                subtitle: "Are you tired of switching between your email client, excel file, calendar and phone in the course of one interaction?\n                This is where CRM comes into play.",
-                text: "To date, customer relations management (CRM) continues to be one of the most powerful tools for business automation.\n              A well-tailored custom CRM system centralizes your communication in one place and gives you an advantage to\n              manage all pipeline in a more efficient way.",
-                background_image: '/assets/img/product-list/products.jpg',
-            },
-            {
-                title: 'SolidExCRM.com',
-                subtitle: 'CRM for your business',
-                text: '',
-                background_image: '/assets/img/product-list/solidexcrm.jpg',
-            },
-            {
-                title: 'Ineedatractor.com',
-                subtitle: 'A modern online service and a mobile application to rent construction equipment and specialized vehicles.',
-                text: '',
-                background_image: '/assets/img/product-list/ineedatractor.jpg',
-            },
-        ];
+    // productList = [
+    //   {
+    //     title: 'PRODUCTS',
+    //     subtitle: `Are you tired of switching between your email client, excel file, calendar and phone in the course of one interaction?
+    //               This is where CRM comes into play.`,
+    //     text: `To date, customer relations management (CRM) continues to be one of the most powerful tools for business automation.
+    //             A well-tailored custom CRM system centralizes your communication in one place and gives you an advantage to
+    //             manage all pipeline in a more efficient way.`,
+    //     background_image: '/assets/img/product-list/products.jpg',
+    //     // background_image: 'https://sevenstars.nl/assets/img/wemakeitspark/image06.jpg',
+    //   },
+    //   {
+    //     title: 'SolidExCRM.com',
+    //     subtitle: 'CRM for your business',
+    //     text: '',
+    //     background_image: '/assets/img/product-list/solidexcrm.jpg',
+    //   },
+    //   {
+    //     title: 'Ineedatractor.com',
+    //     subtitle: 'A modern online service and a mobile application to rent construction equipment and specialized vehicles.',
+    //     text: '',
+    //     background_image: '/assets/img/product-list/ineedatractor.jpg',
+    //   },
+    //   // {
+    //   //   title: '',
+    //   //   subtitle: '',
+    //   //   text: '',
+    //   //   background_image: '',
+    //   // },
+    // ];
+    function ProductsListPageComponent(productService) {
+        this.productService = productService;
     }
     ProductsListPageComponent.prototype.ngOnInit = function () {
+        this.getProducts();
+    };
+    ProductsListPageComponent.prototype.getProducts = function () {
+        var _this = this;
+        this.productService.getProducts()
+            .subscribe(function (products) { return _this.products = products; });
     };
     ProductsListPageComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -788,11 +877,147 @@ var ProductsListPageComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./products-list-page.component.html */ "./src/app/pages/products-list-page/products-list-page.component.html"),
             styles: [__webpack_require__(/*! ./products-list-page.component.less */ "./src/app/pages/products-list-page/products-list-page.component.less")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_product_service__WEBPACK_IMPORTED_MODULE_1__["ProductService"]])
     ], ProductsListPageComponent);
     return ProductsListPageComponent;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/pages/products-list-page/products-list.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/pages/products-list-page/products-list.ts ***!
+  \***********************************************************/
+/*! exports provided: PRODUCTS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PRODUCTS", function() { return PRODUCTS; });
+var PRODUCTS = [
+    // ----------------------------- services -------------------------------------
+    {
+        pageTitle: 'PRODUCTS',
+        pageSubtitle: "Are you tired of switching between your email client, excel file, calendar and phone in the course of one interaction?\n        This is where CRM comes into play.",
+        pageText: "To date, customer relations management (CRM) continues to be one of the most powerful tools for business automation.\n        A well-tailored custom CRM system centralizes your communication in one place and gives you an advantage to\n        manage all pipeline in a more efficient way.",
+        background_image: '/assets/img/product-list/products.jpg',
+        // for details
+        title: '',
+        shortcut: '',
+        preamble: "",
+        img: '',
+        shortDescription: "",
+        shortDescriptionList: [],
+        prodName: '',
+        prodDescriotion: '',
+        prodFeatures: []
+    },
+    // ----------------------------- marketplace -------------------------------------
+    {
+        pageTitle: 'Ineedatractor.com',
+        pageSubtitle: 'A modern online service and a mobile application to rent construction equipment and specialized vehicles.',
+        pageText: '',
+        background_image: '/assets/img/product-list/ineedatractor.jpg',
+        // for details
+        title: 'SAAS MARKETPLACE',
+        shortcut: 'ineedatractor',
+        preamble: "Have an idea to run your business in a smarter and more efficient way without a\n      need to buy and deploy the software itself? Take an advantage of using already\n    \tinstalled and configured SaaS solutions, and thus reduce your time to benefit.",
+        img: '',
+        shortDescription: "How can a SaaS benefit your business?",
+        shortDescriptionList: [
+            "It costs less comparing to its legacy system;",
+            "It cuts  overhead costs;",
+            "It enables collaboration in large and decentralized teams;",
+            "It saves the time needed for setup and training;",
+            "It facilitates access to data;",
+            "It eliminates the burden of a proprietary software upgrading and maintenance"
+        ],
+        prodName: 'Ineedatractor.com',
+        prodDescriotion: '- a modern online service and a mobile application to rent construction equipment and specialized vehicles.',
+        prodFeatures: [
+            {
+                name: 'Catalogue',
+                property: " - One of the most complete existing in the market nowadays.\n         Our catalogue enables a user to find any machinery and equipment in the selected district,\n         compare the prices, and choose a subcontractor that meets all the requirements. We don\u2019t\n         charge the equipment owners for being present in the catalogue, though provide them with a\n         ient tool to display their assortment and manage the orders. We take the responsibility for\n         promoting your services and attracting new clients upon ourselves."
+            },
+            {
+                name: 'Orders',
+                property: " - Place an order by filling out a special blank on the website.\n         All the equipment owners are immediately notified about a new order placement.\n         The one to confirm his promptitude first fulfills the order. At the same time the\n         service provides a fair mechanism of orders assignment across all the equipment owners..\n         Access the incoming requests via your Personal account on the website or in the mobile\n         app. "
+            },
+            {
+                name: 'Reviews & Comments',
+                property: " - Stay informed about unreliable customers.\n          If you have a negative experience in working with any particular customer,\n          leave your comment and help all the system users be updated on the matter.\n          The comments automatically pop up with a new order placement."
+            },
+            {
+                name: 'Agreements',
+                property: " \u2013 Get immediate access to the templates of contracts and agreements to\n          build partnership relations with your customers. All the documents are developed in\n         accordance with the law and secure the interests of both of the parties. "
+            },
+            {
+                name: 'Mobile App',
+                property: "App \u2013 Stay connected and receive orders on the go. Download the mobile app\n          from Google or App Store and place the actual orders and get new orders at any time to\n          avoid idle periods or dry runs."
+            }
+        ]
+    },
+    // ----------------------------- crm -------------------------------------
+    {
+        pageTitle: 'SolidExCRM.com',
+        pageSubtitle: 'CRM for your business',
+        pageText: '',
+        background_image: '/assets/img/product-list/solidexcrm.jpg',
+        // for details
+        title: 'SolidExCRM',
+        shortcut: 'crm',
+        preamble: "Online Booking - Let your customers check in all by themselves.\n     This function enables a 24/7 booking and excludes any overlapping errors. Extremely useful for\n     large studios seeking to off-load the receptionists. The calendar implemented in our system has much\n     in common with the Google calendar. It makes an opportunity to trace the current schedule of available\n     and appropriate halls in one window. In addition, any action is fixed in the history, so it makes it\n     impossible to remove the reservation without a trace.",
+        img: '',
+        shortDescription: "",
+        shortDescriptionList: [
+            "A purpose designed application for the site;",
+            "A special code is required for the installation on the site;",
+            "A new contact confirmation by SMS.",
+        ],
+        prodName: '',
+        prodDescriotion: '',
+        prodFeatures: [
+            {
+                name: 'Online payment',
+                property: " - Receive bills via SMS.\n          All the invoices issued after the payment are automatically linked to the bookings and\n        \tmarked as paid/ partially paid without any administrator involvement."
+            },
+            {
+                name: 'Automatic annulment',
+                property: "- If a payment fails to go through in due time, the entry for the customer\n          is canceled automatically from the system."
+            },
+            {
+                name: 'Activity',
+                property: " - Keep the track record of the history.\n        All the customers\u2019 performance is accumulated in the Activity folder, so nothing remains\n        without a trace."
+            },
+            {
+                name: 'Tasks',
+                property: " \u2013 Manage your workflow in one place.\n        With the best practices of Agile & Kanban methodology implemented in the system, our\n        task module gives a chance to create and edit tasks in 1 click.  Assign duty-holders and\n        trace the tasks execution. "
+            },
+            {
+                name: 'CRM',
+                property: "-  Collect orders through our system, aggregate them with an on-line\n        form, and monitor the progress in the sales funnel."
+            },
+            {
+                name: 'Contracts ',
+                property: "-  Draft a contract on the go. This module allows to draw up the agreements right in\n          the system without a need to use any other editor program. Open an order made through our system and print\n          the contract promptly!"
+            },
+            {
+                name: 'Clients',
+                property: "-  maintain your customer\u2019 satisfaction and high loyalty degree. Based\n          on the visits frequency, booking cancellation number and the timeliness of such actions,\n          the system calculates a customer reliability level. Considering these metrics, a client is\n          apt to set the upfront payment amount to prevent the halls standstill because of the\n          customer disloyalty. A single data base makes it possible to trace the negative customer\n          statistics across all the studios. All client activity is private for each studio. That is,\n          other studios will not see the activity of your customers."
+            },
+            {
+                name: 'Black list',
+                property: "-  This function allows you to block clients who violate the rules of the\n        studio. Invoicing can be done both automatically (non-appearance, late cancellation,\n        and in manual (violation of rules in the studio, property damage). Any financial claim is\n        accompanied by an automatic sending of the check-link, after which the client can pay\n        for the default, thereby removing the lock. One of the advantages of the function is the\n        ability to configure automatic actions with the remaining armor in cases when the client\n         does not pay the bill in a given time."
+            },
+            {
+                name: 'Statistics',
+                property: "-  function, which will help to see the following statistics for the selected period:\n          the amount of arrival for each room, the total sum of the arrival, as well as on weekends / weekdays, the number\n         of hours sold is common and on weekends / weekdays. A convenient filter by type of payment will help to see\n          additional information for the period by selecting the type of payment types. Depending on the initial settings,\n          it can be: \"Cash\", \"Card\", \"On-line payment\", \"Claim\", and others."
+            },
+        ]
+    }
+];
 
 
 /***/ }),
@@ -1427,7 +1652,7 @@ var NavComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"first-block grid\">\n  <div class=\"first-block__description col--lg-2-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6\">\n\n   <h1 class=\"title\">Your Favorite Devices Mockup Pack</h1>\n   <h3 class=\"subtitle\">for Sketch and Photoshop</h3>\n   <p class=\"text\">\n     Super clean, minimalistic, stylized mockup collection with awesome customization features and huge resolution\n   </p>\n   <img class=\"arrow\"\n        alt=\"arrow down\"\n        src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\" />\n  </div>\n\n  <div class=\"first-block__picture col--lg-3-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6 position--r\">\n   <!-- <img class=\"first-block__picture-backdrop img position--r\" src=\"https://uploads-ssl.webflow.com/5a4e0f14056b6a0001011f8d/5a4e0f14056b6a0001011fe9_Svg%20Bg.svg\" alt=\"backdrop\"> -->\n   <img class=\"first-block__picture-main img position--a\" src=\"/assets/img/product-list/details/laptop.png\" alt=\"laptop\">\n  </div>\n</div>\n"
+module.exports = "<div class=\"first-block grid\">\r\n  <div class=\"first-block__description col--lg-2-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6\">\r\n\r\n   <h1 class=\"title\">Your Favorite Devices Mockup Pack</h1>\r\n   <h3 class=\"subtitle\">for Sketch and Photoshop </h3>\r\n\r\n   <p class=\"text\">\r\n     Super clean, minimalistic, stylized mockup collection with awesome customization features and huge resolution\r\n   </p>\r\n   <img class=\"arrow\"\r\n        alt=\"arrow down\"\r\n        src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\" />\r\n  </div>\r\n\r\n  <div class=\"first-block__picture col--lg-3-6 col--md-4-6 col--sm-4-6 col--xs-4-6 push--lg-1-6 push--md-1-6 push--sm-1-6 push--xs-1-6 position--r\">\r\n   <!-- <img class=\"first-block__picture-backdrop img position--r\" src=\"https://uploads-ssl.webflow.com/5a4e0f14056b6a0001011f8d/5a4e0f14056b6a0001011fe9_Svg%20Bg.svg\" alt=\"backdrop\"> -->\r\n   <img class=\"first-block__picture-main img position--a\" src=\"/assets/img/product-list/details/laptop.png\" alt=\"laptop\">\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1468,6 +1693,10 @@ var BlockFirstComponent = /** @class */ (function () {
     }
     BlockFirstComponent.prototype.ngOnInit = function () {
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], BlockFirstComponent.prototype, "product", void 0);
     BlockFirstComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-block-first',
@@ -1490,7 +1719,7 @@ var BlockFirstComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"fourht-block grid\">\n  <!-- <h2 class=\"col--4-6 push--1-6 title\">Unlimited possibilities</h2> -->\n  <div class=\"fourht-block__description col--4-6 push--1-6\">\n    <div class=\"grid\">\n      <h2 class=\"col--3-5 title\">Unlimited possibilities</h2>\n      <div class=\"fourht-block__description-left position--r col--lg-3-5 col--md--1-1 \">\n        <h3 class=\"subtitle--black w--60\">For beautiful stylized presentations</h3>\n        <img class=\"fourht-block__description-left-img img position--a\" src=\"/assets/img/product-list/details/presentation.png\" alt=\"presentation style\">\n      </div>\n      <div class=\"fourht-block__description-right position--r col--lg-2-5 col--md-1-1\">\n        <div class=\"fourht-block__description-right-backdrop\">\n          <img class=\"fourht-block__description-right-img img\" src=\"/assets/img/product-list/details/media.png\" alt=\"media style\">\n          <h3 class=\"subtitle--black\">For social media posts</h3>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"fourht-block grid\">\r\n  <!-- <h2 class=\"col--4-6 push--1-6 title\">Unlimited possibilities</h2> -->\r\n  <div class=\"fourht-block__description col--4-6 push--1-6\">\r\n    <div class=\"grid\">\r\n      <h2 class=\"col--3-5 title\">Unlimited possibilities</h2>\r\n      <div class=\"fourht-block__description-left position--r col--lg-3-5 col--md--1-1 \">\r\n        <h3 class=\"subtitle--black w--60\">For beautiful stylized presentations</h3>\r\n        <img class=\"fourht-block__description-left-img img position--a\" src=\"/assets/img/product-list/details/presentation.png\" alt=\"presentation style\">\r\n      </div>\r\n      <div class=\"fourht-block__description-right position--r col--lg-2-5 col--md-1-1\">\r\n        <div class=\"fourht-block__description-right-backdrop\">\r\n          <img class=\"fourht-block__description-right-img img\" src=\"/assets/img/product-list/details/media.png\" alt=\"media style\">\r\n          <h3 class=\"subtitle--black\">For social media posts</h3>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1553,7 +1782,7 @@ var BlockFourthComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"second-block grid\">\n    <div class=\"second-block__picture col--lg-1-6 col--md-2-10 col--sm-2-10 col--xs-4-10 push--lg-1-6 push--md-1-10 push--sm-1-10 push--xs-3-10 position--r\">\n      <!-- <div class=\" second-block__picture-backdrop  position--a\"> </div> -->\n      <img class=\" second-block__picture-main img position--a\" src=\"/assets/img/product-list/details/tel.png\" alt=\"phone\">\n      <img  class=\"second-block__picture-icon position--a\" alt=\"arrow\" src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\" />\n    </div>\n    <div class=\"second-block__description col--lg-2-6 col--md-4-10 col--sm-4-10 col--xs-8-10 push--lg-2-6 push--md-3-10 push--xs-1-10 push--sm-3-10 \">\n     <h2 class=\"title\">Easy-to-use</h2>\n     <h3 class=\"subtitle\">Just choose mockup, open in your favorite software and paste your screenshot.</h3>\n     <p class=\"text\">\n        For Sketch version you also need to install free Magic Mirror plugin.\n     </p>\n     <button class=\"btn btn--md btn--blue\"> Button 1</button>\n     <button class=\"btn btn--md btn--blue\"> Button 2</button>\n    </div>\n\n  </div>\n"
+module.exports = "<div class=\"second-block grid\">\r\n    <div class=\"second-block__picture col--lg-1-6 col--md-2-10 col--sm-2-10 col--xs-4-10 push--lg-1-6 push--md-1-10 push--sm-1-10 push--xs-3-10 position--r\">\r\n      <!-- <div class=\" second-block__picture-backdrop  position--a\"> </div> -->\r\n      <img class=\" second-block__picture-main img position--a\" src=\"/assets/img/product-list/details/tel.png\" alt=\"phone\">\r\n      <img  class=\"second-block__picture-icon position--a\" alt=\"arrow\" src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzMywwLDAsMTE0Ljg0NCwwLDI1NnMxMTQuODMzLDI1NiwyNTYsMjU2czI1Ni0xMTQuODQ0LDI1Ni0yNTZTMzk3LjE2NywwLDI1NiwweiBNMzcwLjIwOCwzMTYuODc1ICAgIEwyNjMuNTQyLDQyMy41NDJjLTQuMTY3LDQuMTY3LTEwLjkxNyw0LjE2Ny0xNS4wODMsMEwxNDEuNzkyLDMxNi44NzVjLTMuMDQyLTMuMDUyLTMuOTU4LTcuNjM1LTIuMzEzLTExLjYyNSAgICBjMS42NDYtMy45OSw1LjU0Mi02LjU4Myw5Ljg1NC02LjU4M2gzMmMyLjgzMywwLDUuNTQyLDEuMTI1LDcuNTQyLDMuMTI1bDQ1Ljc5Miw0NS43OTJWOTZjMC01Ljg5Niw0Ljc3MS0xMC42NjcsMTAuNjY3LTEwLjY2NyAgICBoMjEuMzMzYzUuODk2LDAsMTAuNjY3LDQuNzcxLDEwLjY2NywxMC42Njd2MjUxLjU4M2w0NS43OTItNDUuNzkyYzItMiw0LjcwOC0zLjEyNSw3LjU0Mi0zLjEyNWgzMiAgICBjNC4zMTMsMCw4LjIwOCwyLjU5NCw5Ljg1NCw2LjU4M0MzNzQuMTY3LDMwOS4yNCwzNzMuMjUsMzEzLjgyMywzNzAuMjA4LDMxNi44NzV6IiBmaWxsPSIjNTRhNGZmIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\" />\r\n    </div>\r\n    <div class=\"second-block__description col--lg-2-6 col--md-4-10 col--sm-4-10 col--xs-8-10 push--lg-2-6 push--md-3-10 push--xs-1-10 push--sm-3-10 \">\r\n     <h2 class=\"title\">Easy-to-use</h2>\r\n     <h3 class=\"subtitle\">Just choose mockup, open in your favorite software and paste your screenshot.</h3>\r\n     <p class=\"text\">\r\n        For Sketch version you also need to install free Magic Mirror plugin.\r\n     </p>\r\n     <button class=\"btn btn--md btn--blue\"> Button 1</button>\r\n     <button class=\"btn btn--md btn--blue\"> Button 2</button>\r\n    </div>\r\n\r\n  </div>\r\n"
 
 /***/ }),
 
@@ -1616,7 +1845,7 @@ var BlockSecondComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"third-block grid\">\n  <div class=\"third-block__description col--lg-2-6 col--md-4-10 col--sm-4-10 col--xs-8-10 push--lg-1-6 push--md-1-10 push--sm-1-10 push--xs-1-10\">\n    <h2 class=\"title\">Easily change colors of each device</h2>\n    <h3 class=\"subtitle\"></h3>\n    <p class=\"text\">\n      In each device shadows and reflections are in separate layers, this allows you to change the color of objects and accurately adjust lighting\n    </p>\n    <button class=\"btn btn--md btn--blue\"> Button 1</button>\n    <button class=\"btn btn--md btn--blue\"> Button 2</button>\n  </div>\n\n  <div class=\"third-block__picture col--lg-3-6 col--md-5-10 col--sm-5-10 col--xs-8-10 push--lg-1-6  push--sm-1-10 push--xs-1-10 position--r\">\n   <img class=\"third-block__picture-main img position--a\"\n   src=\"/assets/img/product-list/details/screen.png\"\n      alt=\"screen\"\n    >\n    <!-- <img class=\"third-block__picture-mouse img position--a\"\n    src=\"/assets/img/product-list/details/mouse.png\"\n      alt=\"mouse\"\n    > -->\n    <!-- <img class=\"third-block__picture-keyboard img position--a\"\n      src=\"/assets/img/product-list/details/keyboard.png\"\n      alt=\"keyboard\"\n    > -->\n  </div>\n</div>\n"
+module.exports = "<div class=\"third-block grid\">\r\n  <div class=\"third-block__description col--lg-2-6 col--md-4-10 col--sm-4-10 col--xs-8-10 push--lg-1-6 push--md-1-10 push--sm-1-10 push--xs-1-10\">\r\n    <h2 class=\"title\">Easily change colors of each device</h2>\r\n    <h3 class=\"subtitle\"></h3>\r\n    <p class=\"text\">\r\n      In each device shadows and reflections are in separate layers, this allows you to change the color of objects and accurately adjust lighting\r\n    </p>\r\n    <button class=\"btn btn--md btn--blue\"> Button 1</button>\r\n    <button class=\"btn btn--md btn--blue\"> Button 2</button>\r\n  </div>\r\n\r\n  <div class=\"third-block__picture col--lg-3-6 col--md-5-10 col--sm-5-10 col--xs-8-10 push--lg-1-6  push--sm-1-10 push--xs-1-10 position--r\">\r\n   <img class=\"third-block__picture-main img position--a\"\r\n   src=\"/assets/img/product-list/details/screen.png\"\r\n      alt=\"screen\"\r\n    >\r\n    <!-- <img class=\"third-block__picture-mouse img position--a\"\r\n    src=\"/assets/img/product-list/details/mouse.png\"\r\n      alt=\"mouse\"\r\n    > -->\r\n    <!-- <img class=\"third-block__picture-keyboard img position--a\"\r\n      src=\"/assets/img/product-list/details/keyboard.png\"\r\n      alt=\"keyboard\"\r\n    > -->\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 

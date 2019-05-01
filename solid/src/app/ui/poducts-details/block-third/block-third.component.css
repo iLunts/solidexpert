@@ -1,5 +1,6 @@
 .third-block {
   height: 100%;
+  margin-top: 5rem;
 }
 .third-block .third-block__description {
   height: 90vh;
@@ -90,5 +91,9 @@
   .third-block .subtitle {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .third-block .text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
   }
 }

@@ -29,11 +29,11 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "../node_modules/animate.css/animate.css",
+              "./node_modules/animate.css/animate.css",
               "src/assets/css/site.min.css"
             ],
             "scripts": [
-              "../node_modules/wowjs/dist/wow.js"
+              "./node_modules/wowjs/dist/wow.js"
             ]
           },
           "configurations": {
